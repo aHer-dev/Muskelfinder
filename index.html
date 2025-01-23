@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta-Informationen -->
+    <meta charset="UTF-8"> <!-- Zeichensatz -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsives Design -->
+    <title>Muskelfinder</title> <!-- Titel der Seite -->
+    <!-- Verlinkung des externen Stylesheets -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Header der Seite -->
+    <header>
+        <h1>Muskelfinder</h1> <!-- Haupttitel -->
+        <p>Finde Muskeln, ihre Funktionen und Innervationen!</p> <!-- Kurzbeschreibung -->
+    </header>
+
+    <!-- Hauptinhalt -->
+    <main>
+        <!-- Suchbereich -->
+        <section id="search">
+            <h2>Muskel suchen</h2> <!-- Titel für die Suche -->
+            <input type="text" id="search-bar" placeholder="Muskelname eingeben..."> <!-- Suchleiste -->
+        </section>
+
+        <!-- Filterbereich -->
+        <section id="filters">
+            <h2>Filteroptionen</h2> <!-- Titel für Filter -->
+            <!-- Filter für Gelenke -->
+            <label for="joint-filter">Gelenk auswählen:</label>
+            <select id="joint-filter"> <!-- Dropdown-Menü -->
+                <option value="">Alle Gelenke</option>
+                <option value="Art. humeri">Art. humeri</option>
+                <option value="Art. coxae">Art. coxae</option>
+                <option value="Art. cubiti">Art. cubiti</option>
+                <option value="Art. genus">Art. genus</option>
+                <option value="Art. talocruralis">Art. talocruralis</option>
+            </select>
+
+            <!-- Filter für Bewegungen -->
+            <label for="movement-filter">Bewegung auswählen:</label>
+            <select id="movement-filter"> <!-- Dropdown-Menü -->
+                <option value="">Alle Bewegungen</option>
+                <option value="Flexion">Flexion</option>
+                <option value="Extension">Extension</option>
+                <option value="Abduktion">Abduktion</option>
+                <option value="Außenrotation">Außenrotation</option>
+                <option value="Plantarflexion">Plantarflexion</option>
+            </select>
+
+            <!-- Filter für Nerven -->
+            <label for="nerve-filter">Innervation auswählen:</label>
+            <select id="nerve-filter"> <!-- Dropdown-Menü -->
+                <option value="">Alle Segmente</option>
+                <option value="L1">L1</option>
+                <option value="L2">L2</option>
+                <option value="L3">L3</option>
+                <option value="L4">L4</option>
+                <option value="S1">S1</option>
+            </select>
+
+            <!-- Button zum Anwenden der Filter -->
+            <button id="filter-button">Filter anwenden</button>
+        </section>
+
+        <!-- Ergebnisbereich -->
+        <section id="results">
+            <h2>Suchergebnisse</h2> <!-- Titel für Ergebnisse -->
+            <ul id="result-list">
+                <!-- Ergebnisse werden hier dynamisch eingefügt -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Muskelfinder</p> <!-- Copyright -->
+    <!-- Verlinkung des JavaScript-Skripts -->
+    <script src="scripts/app.js" defer></script>
+</body>
+</html>

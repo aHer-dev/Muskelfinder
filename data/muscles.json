@@ -1,0 +1,154 @@
+{
+    "Sheet1":[
+     {
+      "Name": "M. iliopsoas",
+      "Joints": "Art. coxae",
+      "Movements": "Flexion, Außenrotation",
+      "Segments": "L1, L2, L3, L4"
+     },
+     {
+      "Name": "M. tensor fasciae latae",
+      "Joints": "Art. coxae",
+      "Movements": "Abduktion, Flexion, Innenrotation",
+      "Segments": "L4, L5, S1"
+     },
+     {
+      "Name": "M. quadriceps femoris",
+      "Joints": "Art. genus, Art. coxae",
+      "Movements": "Extension, Flexion",
+      "Segments": "L2, L3, L4"
+     },
+     {
+      "Name": "M. biceps femoris",
+      "Joints": "Art. genus, Art. coxae",
+      "Movements": "Flexion, Außenrotation",
+      "Segments": "L5, S1, S2"
+     },
+     {
+      "Name": "M. gastrocnemius",
+      "Joints": "Art. genus, Art. talocruralis",
+      "Movements": "Plantarflexion, Flexion",
+      "Segments": "S1, S2"
+     },
+     {
+      "Name": "M. gluteus maximus",
+      "Joints": "Art. coxae",
+      "Movements": "Extension, Außenrotation, Abduktion, Adduktion",
+      "Segments": "L5, S1, S2"
+     },
+     {
+      "Name": "M. gluteus medius",
+      "Joints": "Art. coxae",
+      "Movements": "Abduktion, Flexion, Innenrotation",
+      "Segments": "L4, L5, S1"
+     },
+     {
+      "Name": "M. gluteus minimus",
+      "Joints": "Art. coxae",
+      "Movements": "Abduktion, Flexion, Innenrotation",
+      "Segments": "L4, L5, S1"
+     },
+     {
+      "Name": "M. gluteus maximus",
+      "Joints": "Art. coxae",
+      "Movements": "Extension,Außenrotation,Abduktion,Adduktion",
+      "Segments": "L5,S2"
+     },
+     {
+      "Name": "M. gluteus medius",
+      "Joints": "Art. coxae",
+      "Movements": "Abduktion,Stabilisierung,Flextion,Innenrotation",
+      "Segments": "L4,S1"
+     },
+     {
+      "Name": "M. gluteus minimus",
+      "Joints": "Art. coxae",
+      "Movements": "Abduktion,Flexion,Innenrotation",
+      "Segments": "L4,S1"
+     },
+     {
+      "Name": "M. iliopsoas",
+      "Joints": "Art. coxae",
+      "Movements": "Flexion,Außenrotation",
+      "Segments": "L1,L4"
+     },
+     {
+      "Name": "M. tensor fasciae latae",
+      "Joints": "Art. coxae",
+      "Movements": "Abduktion,Flexion,Innenrotation",
+      "Segments": "L4,S1"
+     },
+     {
+      "Name": "M. quadriceps femoris",
+      "Joints": "Art. genus,Art. coxae",
+      "Movements": "Extension,Flexion",
+      "Segments": "L2,L4"
+     },
+     {
+      "Name": "M. sartorius",
+      "Joints": "Art. coxae,Art. genus",
+      "Movements": "Flexion,Abduktion,Außenrotation",
+      "Segments": "L2,L4"
+     },
+     {
+      "Name": "M. triceps surae",
+      "Joints": "Art. talocruralis",
+      "Movements": "Plantarflexion,Flexion",
+      "Segments": "S1,S2"
+     },
+     {
+      "Name": "M. biceps femoris",
+      "Joints": "Art. genus,Art. coxae",
+      "Movements": "Flexion,Außenrotation",
+      "Segments": "L5,S2"
+     },
+     {
+      "Name": "M. semitendinosus",
+      "Joints": "Art. genus,Art. coxae",
+      "Movements": "Flexion,Innenrotation",
+      "Segments": "L5,S2"
+     },
+     {
+      "Name": "M. semimembranosus",
+      "Joints": "Art. genus,Art. coxae",
+      "Movements": "Flexion,Innenrotation",
+      "Segments": "L5,S2"
+     },
+     {
+      "Name": "M. gastrocnemius",
+      "Joints": "Art. genus,Art. talocruralis",
+      "Movements": "Plantarflexion,Flexion",
+      "Segments": "S1,S2"
+     },
+     {
+      "Name": "M. soleus",
+      "Joints": "Art. talocruralis",
+      "Movements": "Plantarflexion",
+      "Segments": "S1,S2"
+     },
+     {
+      "Name": "M. tibialis anterior",
+      "Joints": "Art. talocruralis",
+      "Movements": "Dorsalextension",
+      "Segments": "L4,L5"
+     },
+     {
+      "Name": "M. tibialis posterior",
+      "Joints": "Art. talocruralis",
+      "Movements": "Plantarflexion,Inversion",
+      "Segments": "L4,L5"
+     },
+     {
+      "Name": "M. peroneus longus",
+      "Joints": "Art. talocruralis",
+      "Movements": "Plantarflexion,Eversion",
+      "Segments": "L5,S1"
+     },
+     {
+      "Name": "M. peroneus brevis",
+      "Joints": "Art. talocruralis",
+      "Movements": "Plantarflexion,Eversion",
+      "Segments": "L5,S1"
+     }
+    ]
+    }
