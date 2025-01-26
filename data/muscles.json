@@ -17,7 +17,7 @@
         "Joints": "Art. genus, Art. coxae",
         "Movements": "Flexion (Art. coxae), Extension (Art. genus)",
         "Segments": "L2, L3, L4",
-        "Image": "/assets/images/quadriceps_image.jpg",
+        "Image": "assets/images/quadriceps_image.jpg",
         "Origin": [
             { "Part": "Rectus femoris", "Location": "Spina iliaca anterior inferior" },
             { "Part": "Vastus lateralis", "Location": "Trochanter major, Linea aspera" },
