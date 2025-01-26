@@ -1,10 +1,12 @@
 /* Grundlegendes Styling */
-body {
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
     color: #333;
+    height: 100%;
+    flex-direction: column;
 }
 
 /* Header-Design */
@@ -23,6 +25,7 @@ main {
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center; /* Zentriert den Inhalt */
 }
 
 /* Formularelemente */
@@ -64,6 +67,7 @@ ul li {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #007bff;
     color: white;
+    margin-top: auto; /* Schiebt den Footer ans Ende */
 }

@@ -13,10 +13,20 @@
       "Segments": "L4, L5, S1"
      },
      {
-      "Name": "M. quadriceps femoris",
-      "Joints": "Art. genus, Art. coxae",
-      "Movements": "Extension, Flexion",
-      "Segments": "L2, L3, L4"
+        "Name": "M. quadriceps femoris",
+        "Joints": "Art. genus, Art. coxae",
+        "Movements": "Flexion (Art. coxae), Extension (Art. genus)",
+        "Segments": "L2, L3, L4",
+        "Image": "/assets/images/quadriceps_image.jpg",
+        "Origin": [
+            { "Part": "Rectus femoris", "Location": "Spina iliaca anterior inferior" },
+            { "Part": "Vastus lateralis", "Location": "Trochanter major, Linea aspera" },
+            { "Part": "Vastus medialis", "Location": "Linea aspera, Medialfläche des Femurs" },
+            { "Part": "Vastus intermedius", "Location": "Vorderfläche des Femurs" }
+            
+        ], 
+        "Insertion": "Tuberositas tibiae",
+        "Function": "Extension im Kniegelenk, Flexion im Hüftgelenk"
      },
      {
       "Name": "M. biceps femoris",

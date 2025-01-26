@@ -40,9 +40,33 @@ function filterResults() {
 
     // Ergebnisse anzeigen
     resultList.innerHTML = ""; // Alte Ergebnisse löschen
-    filtered.forEach(muscle => {
-        const li = document.createElement("li");
-        li.textContent = `${muscle.Name} - Gelenke: ${muscle.Joints}, Bewegungen: ${muscle.Movements}, Innervation: ${muscle.Segments}`;
+    if (filtered.length === 0) {
+        // Nachricht anzeigen, wenn keine Ergebnisse gefunden wurden
+        resultList.innerHTML = "<li>Keine Ergebnisse gefunden</li>";
+        return;
+    }
+    
+     // Ergebnisse dynamisch erstellen
+     filtered.forEach(muscle => {
+        const li = document.createElement("li"); // Neues Listenelement erstellen
+        li.className = "result-item"; // Styling-Klasse hinzufügen
+        
+        // Link erstellen
+        const link = document.createElement("a");
+        link.href = `muscle-details.html?name=${encodeURIComponent(muscle.Name)}`; // Detailseite-Link
+        link.textContent = muscle.Name; // Muskelname als Link-Text
+        link.className = "result-link"; // Styling-Klasse für den Link
+
+        // Muskelinformationen als Vorschau
+        const info = document.createElement("p");
+        info.textContent = `Gelenke: ${muscle.Joints} | Bewegungen: ${muscle.Movements} | Innervation: ${muscle.Segments}`;
+        info.className = "result-info"; // Styling-Klasse für die Vorschau
+
+        // Link und Vorschau hinzufügen
+        li.appendChild(link);
+        li.appendChild(info);
+
+        // Element zur Ergebnisliste hinzufügen
         resultList.appendChild(li);
     });
 }
