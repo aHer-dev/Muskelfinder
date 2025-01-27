@@ -121,3 +121,20 @@ footer {
 #back-button:hover {
     background-color: #0056b3; /* Dunkleres Blau beim Hover */
 }
+
+/* Lizenzinformationen im Footer */
+footer .license-info {
+    font-size: 0.8rem; /* Schriftgröße reduzieren */
+    color: #a3a5df; /* Graue Farbe für Unauffälligkeit */
+    margin-top: 10px; /* Abstand nach oben */
+    text-align: center;
+}
+
+footer .license-info a {
+    color: #ffffff; /* Blaue Links */
+    text-decoration: none;
+}
+
+footer .license-info a:hover {
+    text-decoration: underline; /* Unterstreichung bei Hover */
+}

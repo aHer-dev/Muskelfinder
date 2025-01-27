@@ -23,10 +23,15 @@
             { "Part": "Vastus lateralis", "Location": "Trochanter major, Linea aspera" },
             { "Part": "Vastus medialis", "Location": "Linea aspera, Medialfläche des Femurs" },
             { "Part": "Vastus intermedius", "Location": "Vorderfläche des Femurs" }
-            
+
         ], 
         "Insertion": "Tuberositas tibiae",
-        "Function": "Extension im Kniegelenk, Flexion im Hüftgelenk"
+        "Function": "Extension im Kniegelenk, Flexion im Hüftgelenk",
+        "Attribution": {
+            "Author": "Alfred Grudszus",
+            "License": "CC BY-SA 3.0",
+            "Source": "https://commons.wikimedia.org/wiki/File:M_quadriceps2.jpg"
+          }
      },
      {
       "Name": "M. biceps femoris",
