@@ -29,19 +29,42 @@ function filterResults() {
     const selectedMovement = movementFilter.value; // Ausgewählte Bewegung
     const selectedNerve = nerveFilter.value; // Ausgewählter Nerv
 
-    // Filter anwenden
-    const filtered = muscles.filter(muscle => {
-        const matchesSearch = muscle.Name.toLowerCase().includes(searchQuery);
-        const matchesJoint = !selectedJoint || muscle.Joints.includes(selectedJoint);
-        const matchesMovement = !selectedMovement || muscle.Movements.includes(selectedMovement);
-        const matchesNerve = !selectedNerve || muscle.Segments.includes(selectedNerve);
-        return matchesSearch && matchesJoint && matchesMovement && matchesNerve;
-    });
+    let filtered = muscles;
+
+    // Falls "Obere Extremitäten" gewählt wurde, mehrere Gelenke berücksichtigen
+    if (selectedJoint === "Schultergürtel, Art. humeri, Art. cubiti, Art. manus, MCP, PIP, DIP, Daumensattelgelenk") {
+        const jointList = ["Schultergürtel", "Art. humeri", "Art. cubiti", "Art. manus", "MCP", "PIP", "DIP", "Daumensattelgelenk"]; // Einzelne Gelenke als Liste
+filtered = filtered.filter(muscle => 
+        jointList.some(joint => muscle.Joints.split(",").map(j => j.trim()).includes(joint))
+    );
+} 
+    else if (selectedJoint === "MCP, PIP, DIP, Daumensattelgelenk") {
+        const jointListFinger = ["MCP", "PIP", "DIP", "Daumensattelgelenk"]; // Einzelne Gelenke als Liste
+        filtered = filtered.filter(muscle => 
+            jointListFinger.some(joint => muscle.Joints.split(",").map(j => j.trim()).includes(joint))
+        );
+    }
+    else if (selectedJoint) {
+    // Falls ein einzelnes Gelenk gewählt wurde
+    filtered = filtered.filter(muscle => muscle.Joints.split(",").map(j => j.trim()).includes(selectedJoint));
+}
+
+    // Bewegung filtern
+    if (selectedMovement) {
+        filtered = filtered.filter(muscle => muscle.Movements.includes(selectedMovement));
+    }
+
+    // Innervation filtern
+    if (selectedNerve) {
+        filtered = filtered.filter(muscle => muscle.Segments.includes(selectedNerve));
+    }
+
+    // Suchbegriff filtern
+    filtered = filtered.filter(muscle => muscle.Name.toLowerCase().includes(searchQuery));
 
     // Ergebnisse anzeigen
     resultList.innerHTML = ""; // Alte Ergebnisse löschen
     if (filtered.length === 0) {
-        // Nachricht anzeigen, wenn keine Ergebnisse gefunden wurden
         resultList.innerHTML = "<li>Keine Ergebnisse gefunden</li>";
         return;
     }

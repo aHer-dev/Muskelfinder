@@ -28,9 +28,12 @@ main {
 /* Muskel-Bild */
 .image-container img {
     width: 100%;
-    max-width: 300px;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
     display: block;
     margin: 0 auto;
+    object-fit: contain; /* Stellt sicher, dass das Bild nicht verzerrt wird */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

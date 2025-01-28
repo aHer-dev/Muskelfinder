@@ -1,18 +1,53 @@
+const licenseInfo = document.getElementById("license-info");
+
+if (!licenseInfo) {
+    console.error("Fehler: Das Element #license-info wurde nicht gefunden.");
+}
+
+const muscleTitleName = document.getElementById("muscle-Titlename");
+
+if (!licenseInfo) {
+    console.error("Fehler: Das Element #license-info wurde nicht gefunden.");
+}
+
+const muscleDetailsContainer = document.getElementById("muscle-details");
+
+function loadMuscleDetails() {
+    if (!muscleDetailsContainer) {
+        console.error("Fehler: Das Element #muscle-details wurde nicht gefunden.");
+        return;
+    }
+    console.log("muscleDetailsContainer erfolgreich gefunden:", muscleDetailsContainer);
+}
+
+    // JSON-Daten laden und verarbeiten
+    fetch("data/muscles.json")
+        .then(response => response.json())
+        .then(data => {
+            muscles = data.Sheet1;
+            loadMuscleDetails();
+        })
+        .catch(error => console.error("Fehler beim Laden der JSON-Datei:", error));
+
 function loadMuscleDetails() {
     const params = new URLSearchParams(window.location.search);
     const muscleName = params.get("name");
 
     const muscle = muscles.find(m => m.Name === muscleName);
 
+    muscleTitleName.innerHTML = muscle.Name
+
     if (muscle) {
-        let originsHTML = "";
-        if (Array.isArray(muscle.Origin)) {
-            muscle.Origin.forEach(origin => {
-                originsHTML += `<p><strong>${origin.Part}:</strong> ${origin.Location}</p>`;
-            });
+       let originsHTML = "";
+if (Array.isArray(muscle.Origin)) {
+    muscle.Origin.forEach(origin => {
+        if (origin.Part) {
+            originsHTML += `<p><strong>${origin.Part}:</strong> ${origin.Location}</p>`;
         } else {
-            originsHTML = `<p>${muscle.Origin || "Keine Daten verfügbar"}</p>`;
+            originsHTML += `<p>${origin.Location}</p>`; // Falls Part leer ist, kein ":" anzeigen
         }
+    });
+}
 
         let insertionsHTML = "";
         if (Array.isArray(muscle.Insertion)) {
@@ -50,7 +85,7 @@ function loadMuscleDetails() {
         `;
 
         licenseInfo.innerHTML = muscle.Attribution
-            ? `Bild von <a href="${muscle.Attribution.Source}" target="_blank">${muscle.Attribution.Author}</a>, lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">${muscle.Attribution.License}</a>.`
+            ? `Bild von <a href="${muscle.ImageSource}" target="_blank">${muscle.Attribution.Author}</a>, lizenziert unter <a href="${muscle.Attribution.Source}" target="_blank">${muscle.Attribution.License}</a>.`
             : "Keine Lizenzinformationen verfügbar.";
 
         // Modal-Logik bleibt gleich ...
