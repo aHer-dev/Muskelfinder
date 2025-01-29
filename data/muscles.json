@@ -2,9 +2,9 @@
     "Sheet1": [
         {
             "Name": "M. supraspinatus",
-            "Joints": "Art. humeri,",
-            "Movements": "Abduktion,",
-            "Segments": "",
+            "Joints": "Art. humeri",
+            "Movements": "Abduktion",
+            "Segments": "N. suprascapularis, C4, C5, C6",
             "Image": "assets/images/Supraspinatus_muscle_back4.png",
             "Origin": [
                 {
@@ -15,7 +15,7 @@
             "Insertion": [
                 "Tuberculum majus des Humerus"
             ],
-            "Function": "Abduktion,",
+            "Function": "Abduktion",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -25,9 +25,9 @@
         },
         {
             "Name": "M. infraspinatus",
-            "Joints": "Art. humeri,",
-            "Movements": "Außenrotation,",
-            "Segments": "",
+            "Joints": "Art. humeri",
+            "Movements": "Außenrotation",
+            "Segments": "N. suprascapularis, C4, C5, C6",
             "Image": "assets/images/512px-Infraspinatus_muscle_back4.png",
             "Origin": [
                 {
@@ -38,7 +38,7 @@
             "Insertion": [
                 "Tuberculum majus des Humerus"
             ],
-            "Function": "Außenrotation,",
+            "Function": "Außenrotation",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -48,9 +48,9 @@
         },
         {
             "Name": "M. teres minor",
-            "Joints": "Art. humeri,",
-            "Movements": "Außenrotation,",
-            "Segments": "",
+            "Joints": "Art. humeri",
+            "Movements": "Außenrotation",
+            "Segments": "N. axillaris, C5, C6",
             "Image": "assets/images/Teres_minor_muscle_back4.png",
             "Origin": [
                 {
@@ -61,7 +61,7 @@
             "Insertion": [
                 "Tuberculum majus des Humerus"
             ],
-            "Function": "Außenrotation,",
+            "Function": "Außenrotation",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -71,9 +71,9 @@
         },
         {
             "Name": "M. subscapularis",
-            "Joints": "Art. humeri,",
-            "Movements": "Innenrotation,",
-            "Segments": "",
+            "Joints": "Art. humeri",
+            "Movements": "Innenrotation",
+            "Segments": "N. subscapularis, C5, C6",
             "Image": "assets/images/Subscapularis_muscle_frontal2.png",
             "Origin": [
                 {
@@ -84,7 +84,7 @@
             "Insertion": [
                 "Tuberculum minus des Humerus"
             ],
-            "Function": "Innenrotation,",
+            "Function": "Innenrotation",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -94,9 +94,9 @@
         },
         {
             "Name": "M. deltoideus",
-            "Joints": "Art. humeri,",
-            "Movements": "Abduktion,",
-            "Segments": "",
+            "Joints": "Art. humeri",
+            "Movements": "Abduktion",
+            "Segments": "N. axillaris, C5, C6",
             "Image": "assets/images/Deltoid_muscle_back2.png",
             "Origin": [
                 {
@@ -115,7 +115,7 @@
             "Insertion": [
                 "Tuberositas deltoidea am Humerus"
             ],
-            "Function": "Abduktion,",
+            "Function": "Abduktion",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -125,9 +125,9 @@
         },
         {
             "Name": "M. teres major",
-            "Joints": "Art. humeri,",
+            "Joints": "Art. humeri",
             "Movements": "Innenrotation, Adduktion, Extension",
-            "Segments": "",
+            "Segments": "N. thoracodorsalis, C6, C7, C8",
             "Image": "assets/images/Teres_major_muscle_back2.png",
             "Origin": [
                 {
@@ -148,9 +148,9 @@
         },
         {
             "Name": "M. latissimus dorsi",
-            "Joints": "Art. humeri,",
-            "Movements": "Extension, Innenrotation, Adduktion,",
-            "Segments": "Nervus thoracodorsalis, C6, C7, C8",
+            "Joints": "Art. humeri",
+            "Movements": "Extension, Innenrotation, Adduktion",
+            "Segments": "N. thoracodorsalis, C6, C7, C8",
             "Image": "assets/images/Latissimus_dorsi_muscle_back2.png",
             "Origin": [
                 {
@@ -159,7 +159,7 @@
                 },
                 {
                     "Part": "Pars vertebralis",
-                    "Location": "7.–12. BWK Procc. spinosi, Fascia thoracolumbalis"
+                    "Location": "7.–12. BWK Procc. Spinosi, Fascia thoracolumbalis"
                 },
                 {
                     "Part": "Pars costalis",
@@ -173,7 +173,7 @@
             "Insertion": [
                 "Crista tuberculi minoris des Humerus"
             ],
-            "Function": "Extension, Innenrotation, Adduktion,",
+            "Function": "Extension, Innenrotation, Adduktion",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -183,9 +183,9 @@
         },
         {
             "Name": "M. pectoralis major",
-            "Joints": "Art. humeri,",
-            "Movements": "Adduktion, Innenrotation, Flexion,",
-            "Segments": "",
+            "Joints": "Art. humeri",
+            "Movements": "Adduktion, Innenrotation, Flexion",
+            "Segments": "Nn. Pectorales mediales & laterales, C5, C6, C7, C8, TH1",
             "Image": "assets/images/Pectoralis_Major_Muscle.png",
             "Origin": [
                 {
@@ -198,13 +198,13 @@
                 },
                 {
                     "Part": "Pars abdominalis",
-                    "Location": "ventrale Sehnenhülle der \t\t\t\t    Bauchmuskulatur"
+                    "Location": "anteriore Sehnenhülle der Bauchmuskulatur"
                 }
             ],
             "Insertion": [
                 "Crista tuberculi majoris des Humerus"
             ],
-            "Function": "Adduktion, Innenrotation, Flexion,",
+            "Function": "Adduktion, Innenrotation, Flexion",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -214,9 +214,9 @@
         },
         {
             "Name": "M. coracobrachialis",
-            "Joints": "Art. humeri,",
-            "Movements": "Flexion,",
-            "Segments": "",
+            "Joints": "Art. humeri",
+            "Movements": "Flexion",
+            "Segments": "N. musculocutaneus, C6, C7",
             "Image": "assets/images/Coracobrachialis_muscle06.png",
             "Origin": [
                 {
@@ -227,19 +227,19 @@
             "Insertion": [
                 "mediales Drittel des Humerus"
             ],
-            "Function": "Flexion,",
+            "Function": "Flexion",
             "Attribution": {
                 "Author": "DrJanaOfficial",
                 "License": "CC BY 4.0",
                 "Source": "https://creativecommons.org/licenses/by/4.0/"
             },
-            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Pectoralis_Major_Muscle.png/640px-Pectoralis_Major_Muscle.png"
+            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Biceps_brachii_muscle06.png/640px-Biceps_brachii_muscle06.png"
         },
         {
             "Name": "M. biceps brachii",
-            "Joints": "Art. cubiti, Art. humeri,",
-            "Movements": "Flexion, Supination,",
-            "Segments": "",
+            "Joints": "Art. cubiti, Art. humeri",
+            "Movements": "Flexion, Supination",
+            "Segments": "N. musculocutaneus, C5, C6, C7",
             "Image": "assets/images/640px-Biceps_brachii_muscle06.png",
             "Origin": [
                 {
@@ -254,7 +254,7 @@
             "Insertion": [
                 "Tuberositas radii"
             ],
-            "Function": "Flexion, Supination,",
+            "Function": "Flexion, Supination",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -264,9 +264,9 @@
         },
         {
             "Name": "M. triceps brachii",
-            "Joints": "Art. cubiti, Art. humeri,",
-            "Movements": "Extension,",
-            "Segments": "",
+            "Joints": "Art. cubiti, Art. humeri",
+            "Movements": "Extension",
+            "Segments": "N. radialis, C6, C7, C8",
             "Image": "assets/images/Triceps_brachii_muscle06.png",
             "Origin": [
                 {
@@ -285,7 +285,7 @@
             "Insertion": [
                 "Olecranon der Ulna"
             ],
-            "Function": "Extension,",
+            "Function": "Extension",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -295,9 +295,9 @@
         },
         {
             "Name": "M. trapezius – pars descendens",
-            "Joints": "Schultergürtel,",
-            "Movements": "Elevation, Lateralflexion, Rotation,",
-            "Segments": "",
+            "Joints": "Schultergürtel",
+            "Movements": "Elevation, Lateralflexion, Rotation",
+            "Segments": "XI. Hirnnerv (N. accessorius), Plexus cervicalis, C2, C3, C4",
             "Image": "assets/images/Trapezius_lateral3.png",
             "Origin": [
                 {
@@ -308,7 +308,7 @@
             "Insertion": [
                 "laterales Drittel der Clavicula"
             ],
-            "Function": "Elevation, Lateralflexion, Rotation,",
+            "Function": "Elevation, Lateralflexion, Rotation",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -318,20 +318,20 @@
         },
         {
             "Name": "M. trapezius – pars transversa",
-            "Joints": "Schultergürtel,",
-            "Movements": "Retraktion,",
-            "Segments": "",
+            "Joints": "Schultergürtel",
+            "Movements": "Retraktion",
+            "Segments": "XI. Hirnnerv (N. accessorius), Plexus cervicalis, C2, C3, C4",
             "Image": "assets/images/Trapezius_lateral3.png",
             "Origin": [
                 {
                     "Part": "",
-                    "Location": "Procc. spinosi   TH 1 – TH 4 (Brustwirbelkörper)"
+                    "Location": "Sehnenspiegel auf Höhe Procc. spinosi   TH 1 – TH 4"
                 }
             ],
             "Insertion": [
                 "Acromion"
             ],
-            "Function": "Retraktion,",
+            "Function": "Retraktion",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -341,9 +341,9 @@
         },
         {
             "Name": "M. trapezius – pars ascendens",
-            "Joints": "Schultergürtel,",
-            "Movements": "Depression,",
-            "Segments": "",
+            "Joints": "Schultergürtel",
+            "Movements": "Depression",
+            "Segments": "XI. Hirnnerv (N. accessorius), Plexus cervicalis, C2, C3, C4",
             "Image": "assets/images/Trapezius_lateral3.png",
             "Origin": [
                 {
@@ -354,7 +354,7 @@
             "Insertion": [
                 "Spina scapulae"
             ],
-            "Function": "Depression,",
+            "Function": "Depression",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -364,9 +364,9 @@
         },
         {
             "Name": "M. levator scapulae",
-            "Joints": "Schultergürtel,",
-            "Movements": "Elevation,",
-            "Segments": "",
+            "Joints": "Schultergürtel",
+            "Movements": "Elevation",
+            "Segments": "N. dorsalis scapulae, C4, C5",
             "Image": "assets/images/Levator_scapulae_muscle_back.png",
             "Origin": [
                 {
@@ -377,7 +377,7 @@
             "Insertion": [
                 "Angulus superior der Scapula"
             ],
-            "Function": "Elevation,",
+            "Function": "Elevation",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -387,25 +387,24 @@
         },
         {
             "Name": "M. rhomboideus minor & major",
-            "Joints": "Schultergürtel,",
-            "Movements": "Retraktion,",
-            "Segments": "",
+            "Joints": "Schultergürtel",
+            "Movements": "Retraktion",
+            "Segments": "N. dorsalis scapulae, C4, C5",
             "Image": "assets/images/Rhomboid_muscles_back.png",
             "Origin": [
                 {
-                    "Part": "",
-                    "Location": "Procc. Spinosi C 6 + C 7 (minor),"
+                    "Part": "M. rhomboideus minor",
+                    "Location": "Procc. spinosi C6 -C7"
                 },
                 {
-                    "Part": "",
-                    "Location": "Procc. Spinosi Th 1 – Th 4 ,"
+                    "Part": "M. rhomboideus major",
+                    "Location": "Procc. spinosi  TH 1 - TH 4"
                 }
             ],
             "Insertion": [
-                "Margo medialis der Scapula",
                 "Margo medialis der Scapula"
             ],
-            "Function": "Retraktion,",
+            "Function": "Retraktion",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -415,20 +414,24 @@
         },
         {
             "Name": "M. pectoralis minor",
-            "Joints": "Schultergürtel,",
-            "Movements": "Protraktion,",
-            "Segments": "",
+            "Joints": "Schultergürtel",
+            "Movements": "Protraktion",
+            "Segments": "Nn. Pectorales mediales & laterales, C6, C7, C8, Th1",
             "Image": "assets/images/Pectoralis_minor_muscle_frontal.png",
             "Origin": [
                 {
                     "Part": "",
                     "Location": "3. – 5. Rippe"
+                },
+                {
+                    "Part": "",
+                    "Location": "3.- 5. Rippe"
                 }
             ],
             "Insertion": [
                 "Proc. coracoideus der Scapula"
             ],
-            "Function": "Protraktion,",
+            "Function": "Protraktion",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -438,9 +441,9 @@
         },
         {
             "Name": "M. serratus anterior",
-            "Joints": "Schultergürtel,",
-            "Movements": "Protraktion,",
-            "Segments": "C5, C6, C7, Nervus thoracicus longus,",
+            "Joints": "Schultergürtel",
+            "Movements": "Protraktion",
+            "Segments": "Nervus thoracicus longus , C5, C6, C7",
             "Image": "assets/images/Serratus_anterior_muscles_lateral.png",
             "Origin": [
                 {
@@ -456,8 +459,12 @@
                     "Location": "4.-9./10. Rippe"
                 }
             ],
-            "Insertion": [],
-            "Function": "Protraktion,",
+            "Insertion": [
+                "Pars superior: Angulus superior",
+                "Pars intermedia: Margo medialis",
+                "Pars inferior : Angulus inferior und Margo medialis"
+            ],
+            "Function": "Protraktion",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -467,13 +474,20 @@
         },
         {
             "Name": "M. flexor carpi radialis",
-            "Joints": "Art. cubiti, Art. manus,",
-            "Movements": "Flexion, Radialduktion,",
-            "Segments": "",
+            "Joints": "Art. cubiti, Art. manus",
+            "Movements": "Flexion, Radialduktion",
+            "Segments": "N. medianus, C6, C7, C8",
             "Image": "assets/images/640px-Flexor-carpi-radialis.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Flexion, Radialduktion,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Epicondylus medialis des Humerus"
+                }
+            ],
+            "Insertion": [
+                "Basis Os metacarpi II"
+            ],
+            "Function": "Flexion, Radialduktion",
             "Attribution": {
                 "Author": "Grays Anatomy, modified by en:user Selket",
                 "License": "Public domain",
@@ -483,13 +497,20 @@
         },
         {
             "Name": "M. palmaris longus",
-            "Joints": "Art. cubiti, Art. manus,",
-            "Movements": "Flexion,",
-            "Segments": "",
+            "Joints": "Art. cubiti, Art. manus",
+            "Movements": "Flexion",
+            "Segments": "N. medianus, C8, TH1",
             "Image": "assets/images/Palmaris-longus-horizontal.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Flexion,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Epicondylus medialis des Humerus"
+                }
+            ],
+            "Insertion": [
+                "Palmaraponeurose"
+            ],
+            "Function": "Flexion, Palmarflexion",
             "Attribution": {
                 "Author": "Henry Gray",
                 "License": "Public domain",
@@ -499,13 +520,24 @@
         },
         {
             "Name": "M. pronator teres",
-            "Joints": "Art. cubiti,  Art. manus,",
-            "Movements": "Pronation, Flexion,",
-            "Segments": "",
+            "Joints": "Art. cubiti",
+            "Movements": "Pronation, Flexion",
+            "Segments": "N. medianus, C6",
             "Image": "assets/images/640px-Pronator-teres.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Pronation, Flexion,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Epicondylus medialis des Humerus"
+                },
+                {
+                    "Part": "",
+                    "Location": "Proc. coronoideus der Ulna"
+                }
+            ],
+            "Insertion": [
+                "Laterale Fläche des Radius"
+            ],
+            "Function": "Pronation, Flexion",
             "Attribution": {
                 "Author": "Henry Gray",
                 "License": "Public domain",
@@ -515,13 +547,24 @@
         },
         {
             "Name": "M. flexor digitorum superficialis",
-            "Joints": "Art. cubiti,  Art. manus,",
-            "Movements": "Flexion,",
-            "Segments": "",
+            "Joints": "Art. cubiti,  Art. manus, MCP, PIP",
+            "Movements": "Flexion",
+            "Segments": "N. medianus, C7, C8, TH1",
             "Image": "assets/images/Flexor_carpi_ulnaris.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Flexion,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Epicondylus medialis des Humerus"
+                },
+                {
+                    "Part": "",
+                    "Location": "Proc. coronoideus der Ulna"
+                }
+            ],
+            "Insertion": [
+                "Lateral an den Phalanx media II -V"
+            ],
+            "Function": "Flexion",
             "Attribution": {
                 "Author": "Henry Gray",
                 "License": "Public domain",
@@ -531,13 +574,24 @@
         },
         {
             "Name": "M. flexor carpi ulnaris",
-            "Joints": "Art. cubiti,  Art. manus,",
-            "Movements": "Flexion,",
-            "Segments": "",
+            "Joints": "Art. cubiti,  Art. manus",
+            "Movements": "Flexion",
+            "Segments": "N. ulnaris, C7, C8, TH1",
             "Image": "assets/images/Flexor-carpi-ulnaris-horizontal.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Flexion,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Epicondylus medialis des Humerus"
+                },
+                {
+                    "Part": "",
+                    "Location": "Olecranon der Ulna"
+                }
+            ],
+            "Insertion": [
+                "Os hamatum, Basis Os metacarpi II"
+            ],
+            "Function": "Flexion, Ulnarduktion",
             "Attribution": {
                 "Author": "Henry Gray",
                 "License": "Public domain",
@@ -547,13 +601,20 @@
         },
         {
             "Name": "M. flexor digitorum profundus",
-            "Joints": "Art. manus,",
-            "Movements": "Flexion,",
-            "Segments": "",
+            "Joints": "Art. manus, MCP, PIP, DIP",
+            "Movements": "Flexion",
+            "Segments": "N. medianus, N. ulnaris, C7, C8, TH1",
             "Image": "assets/images/Flexor-digitorum-profundis.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Flexion,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Palmare, proximale Seite der Ulna, Membrana interossea"
+                }
+            ],
+            "Insertion": [
+                "Palmar Phalanx distalis II - V"
+            ],
+            "Function": "Flexion",
             "Attribution": {
                 "Author": "Henry Gray",
                 "License": "Public domain",
@@ -563,13 +624,20 @@
         },
         {
             "Name": "M. flexor pollicis longus",
-            "Joints": "Art. manus,",
-            "Movements": "Flexion,",
-            "Segments": "",
+            "Joints": "Art. manus, Daumensattelgelenk, MCP, IP",
+            "Movements": "Flexion",
+            "Segments": "N. medianus, C6, C7, C8",
             "Image": "assets/images/Musculus_flexor_pollicis_longus.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Flexion,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Mittlere palmare Fläche des Radius"
+                }
+            ],
+            "Insertion": [
+                "Palmarseite der Endphalanx"
+            ],
+            "Function": "Flexion, Opposition",
             "Attribution": {
                 "Author": "Henry Gray",
                 "License": "Public domain",
@@ -579,13 +647,20 @@
         },
         {
             "Name": "M. pronator quadratus",
-            "Joints": "Art. cubiti,",
-            "Movements": "Pronation,",
-            "Segments": "",
+            "Joints": "Art. Cubiti",
+            "Movements": "Pronation",
+            "Segments": "N. medianus, C8, TH1",
             "Image": "assets/images/640px-Pronator-quadratus.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Pronation,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Distales Viertel der palmaren Fläche der Ulna"
+                }
+            ],
+            "Insertion": [
+                "Distales Viertel der palmaren Fläche des Radius"
+            ],
+            "Function": "Pronation",
             "Attribution": {
                 "Author": "",
                 "License": "",
@@ -595,13 +670,20 @@
         },
         {
             "Name": "M. extensor digitorum",
-            "Joints": "Art. cubiti,  Art. manus,",
-            "Movements": "Extension,",
-            "Segments": "",
+            "Joints": "Art. cubiti,  Art. manus, MCP, PIP, DIP",
+            "Movements": "Extension",
+            "Segments": "N. radialis, C6, C7, C8",
             "Image": "assets/images/640px-Extensor_digitorum_muscle.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Extension,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Epicondylus lateralis des Humerus"
+                }
+            ],
+            "Insertion": [
+                "Dorsalaponeurose II - V"
+            ],
+            "Function": "Extension",
             "Attribution": {
                 "Author": "Mikael Häggström",
                 "License": "Public domain",
@@ -611,13 +693,20 @@
         },
         {
             "Name": "M. extensor digiti minimi",
-            "Joints": "Art. manus,",
-            "Movements": "Extension,",
-            "Segments": "",
+            "Joints": "Art. manus, MCP, PIP, DIP",
+            "Movements": "Extension",
+            "Segments": "N. radialis, C6, C7, C8",
             "Image": "",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Extension,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Epicondylus lateralis des Humerus"
+                }
+            ],
+            "Insertion": [
+                "Dorsalaponeurose V"
+            ],
+            "Function": "Extension, Ulnarduktion",
             "Attribution": {
                 "Author": "",
                 "License": "",
@@ -627,13 +716,20 @@
         },
         {
             "Name": "M. extensor carpi ulnaris",
-            "Joints": "Art. cubiti,",
-            "Movements": "Extension, Ulnarduktion,",
-            "Segments": "",
+            "Joints": "Art. cubiti, Art. manus",
+            "Movements": "Extension, Ulnarduktion",
+            "Segments": "N. radialis, C6, C7, C8",
             "Image": "assets/images/640px-Extensor_carpi_ulnaris_muscle.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Extension, Ulnarduktion,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Epicondylus lateralis des Humerus"
+                }
+            ],
+            "Insertion": [
+                "Basis Os metacarpi V"
+            ],
+            "Function": "Extension, Ulnarduktion",
             "Attribution": {
                 "Author": "Mikael Häggström",
                 "License": "Public domain",
@@ -643,13 +739,20 @@
         },
         {
             "Name": "M. brachioradialis",
-            "Joints": "Art. cubiti,",
-            "Movements": "Flexion,",
-            "Segments": "",
+            "Joints": "Art. cubiti",
+            "Movements": "Flexion",
+            "Segments": "N. radialis, C5, C6 , C7",
             "Image": "assets/images/640px-Brachioradialis.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Flexion,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Crista supracondylaris lateralis"
+                }
+            ],
+            "Insertion": [
+                "Proc. styloideus radii"
+            ],
+            "Function": "Flexion",
             "Attribution": {
                 "Author": "Henry Vandyke Carter",
                 "License": "Public domain",
@@ -659,13 +762,25 @@
         },
         {
             "Name": "M. extensor carpi radialis longus & brevis",
-            "Joints": "Art. cubiti,",
-            "Movements": "Extension, Radialduktion,",
-            "Segments": "",
+            "Joints": "Art. cubiti, Art. manus",
+            "Movements": "Extension, Radialduktion",
+            "Segments": "N. radialis, C6, C7",
             "Image": "assets/images/Extensor_carpi_radialis_longus.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Extension, Radialduktion,",
+            "Origin": [
+                {
+                    "Part": "longus",
+                    "Location": "Crista supracondylaris lateralis"
+                },
+                {
+                    "Part": "brevis",
+                    "Location": "Epicondylus lateralis"
+                }
+            ],
+            "Insertion": [
+                "Basis des Os metacarpale II",
+                "Os metacarpale III"
+            ],
+            "Function": "Extension, Radialduktion",
             "Attribution": {
                 "Author": "Henry Vandyke Carter",
                 "License": "Public domain",
@@ -675,13 +790,20 @@
         },
         {
             "Name": "M. supinator",
-            "Joints": "Art. cubiti,",
-            "Movements": "Supination,",
-            "Segments": "",
+            "Joints": "Art. cubiti",
+            "Movements": "Supination",
+            "Segments": "N. radialis, C5, C6",
             "Image": "assets/images/Gray_—_musculus_supinator.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Supination,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Olecranon Ulnae"
+                }
+            ],
+            "Insertion": [
+                "Radius (zwischen Tuberositas radii & Ansatz M. pronator teres"
+            ],
+            "Function": "Supination",
             "Attribution": {
                 "Author": "Henry Vandyke Carter",
                 "License": "Public domain",
@@ -691,13 +813,20 @@
         },
         {
             "Name": "M. abduktor pollicis longus",
-            "Joints": "Art. manus, MCP, PIP, DIP, Daumensattelgelenk,",
-            "Movements": "Abduktion,",
-            "Segments": "",
+            "Joints": "Art. manus, Daumensattelgelenk",
+            "Movements": "Abduktion",
+            "Segments": "N. radialis, C6, C7, C8",
             "Image": "",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Abduktion,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Dorsal Radius & Ulnar, Membran"
+                }
+            ],
+            "Insertion": [
+                "Basis des Os metacarpi I"
+            ],
+            "Function": "Abduktion, Radialduktion",
             "Attribution": {
                 "Author": "",
                 "License": "",
@@ -707,13 +836,21 @@
         },
         {
             "Name": "M. extensor pollicis brevis & longus",
-            "Joints": "Art. manus, MCP, PIP, DIP, Daumensattelgelenk,",
-            "Movements": "Extension,",
-            "Segments": "",
+            "Joints": "Art. manus, Daumensattelgelenk, MCP, (IP)",
+            "Movements": "Extension",
+            "Segments": "N. radialis, C6, C7, C8",
             "Image": "assets/images/640px-Extensor_pollicis_longus_muscle.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Extension,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Hinterfläche des Radius, Membrana interossea"
+                }
+            ],
+            "Insertion": [
+                "Basis Phalanx proximalis",
+                "Basis Os metacarpi I"
+            ],
+            "Function": "Extension",
             "Attribution": {
                 "Author": "Mikael Häggström",
                 "License": "Public domain",
@@ -723,13 +860,18 @@
         },
         {
             "Name": "M. extensor indicis",
-            "Joints": "Art. manus, MCP, PIP, DIP,",
-            "Movements": "Extension,",
-            "Segments": "",
+            "Joints": "Art. manus, MCP, PIP, DIP",
+            "Movements": "Extension",
+            "Segments": "N. radialis, C6, C7, C8",
             "Image": "assets/images/640px-Extensor_indicis_muscle.png",
-            "Origin": [],
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Dorsal Ulna, Membrana interossea"
+                }
+            ],
             "Insertion": [],
-            "Function": "Extension,",
+            "Function": "Extension",
             "Attribution": {
                 "Author": "Mikael Häggström",
                 "License": "Public domain",
@@ -739,13 +881,20 @@
         },
         {
             "Name": "M. abduktor pollicis brevis",
-            "Joints": "",
-            "Movements": "Abduktion,",
-            "Segments": "",
+            "Joints": "Art. manus,   Daumensattelgelenk, MCP",
+            "Movements": "Abduktion",
+            "Segments": "N. medianus, C6, C7",
             "Image": "assets/images/Musculus_abductor_pollicis_brevis_-_red.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Abduktion,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Os scaphoideum"
+                }
+            ],
+            "Insertion": [
+                "Basis Phalanx proximalis"
+            ],
+            "Function": "Abduktion, Flexion",
             "Attribution": {
                 "Author": "Henry Vandyke Carter",
                 "License": "Public domain",
@@ -755,13 +904,24 @@
         },
         {
             "Name": "M. adduktor pollicis",
-            "Joints": "",
-            "Movements": "Adduktion,",
-            "Segments": "",
+            "Joints": "Daumensattelgelenk, MCP",
+            "Movements": "Adduktion",
+            "Segments": "N. ulnaris, C8, TH1",
             "Image": "assets/images/Gray415_-_Adductor_pollicis_-_red.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Adduktion,",
+            "Origin": [
+                {
+                    "Part": "Caput transversum",
+                    "Location": "Metacarpus 3, palmar"
+                },
+                {
+                    "Part": "Caput obliquum",
+                    "Location": "Os capitatum, Basis ossis metacarpi II"
+                }
+            ],
+            "Insertion": [
+                "Basis Phalanx proximalis I"
+            ],
+            "Function": "Adduktion, Opposition, Flexion",
             "Attribution": {
                 "Author": "Arent",
                 "License": "CC0 1.0",
@@ -771,13 +931,24 @@
         },
         {
             "Name": "M. flexor pollicis brevis",
-            "Joints": "",
-            "Movements": "Flexion,",
-            "Segments": "",
+            "Joints": "Daumensattelgelenk, MCP",
+            "Movements": "Flexion",
+            "Segments": "N. medianus, C8, TH1",
             "Image": "assets/images/Gray_—_musculus_flexor_pollicis_brevis.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Flexion,",
+            "Origin": [
+                {
+                    "Part": "Caput superficiale",
+                    "Location": "Retinaculum mm. Flexorum"
+                },
+                {
+                    "Part": "Caput profundum",
+                    "Location": "Os capitatum, Os trapezium"
+                }
+            ],
+            "Insertion": [
+                "Basis Phalanx proximalis I"
+            ],
+            "Function": "Flexion, Opposition, Flexion",
             "Attribution": {
                 "Author": "Henry Vandyke Carter",
                 "License": "Public domain",
@@ -787,13 +958,20 @@
         },
         {
             "Name": "M. opponens pollicis",
-            "Joints": "",
-            "Movements": "Opposition,",
-            "Segments": "",
+            "Joints": "Daumensattelgelenk",
+            "Movements": "Opposition",
+            "Segments": "N. medianus, C6, C7",
             "Image": "assets/images/Musculus_opponens_pollicis_-_red.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Opposition,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Os trapezium"
+                }
+            ],
+            "Insertion": [
+                "Os Metacarpus I"
+            ],
+            "Function": "Opposition",
             "Attribution": {
                 "Author": "Arent",
                 "License": "CC0 1.0",
@@ -803,13 +981,20 @@
         },
         {
             "Name": "M. abduktor digiti minimi",
-            "Joints": "",
-            "Movements": "Abduktion,",
-            "Segments": "",
+            "Joints": "MCP, PIP, DIP",
+            "Movements": "Abduktion",
+            "Segments": "N. ulnaris, C8, TH1",
             "Image": "assets/images/Musculus_abductor_digiti_minimi_(Hand).png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Abduktion,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Os pisiforme"
+                }
+            ],
+            "Insertion": [
+                "Basis Phalanx proximalis V"
+            ],
+            "Function": "Abduktion",
             "Attribution": {
                 "Author": "modified by Uwe Gille",
                 "License": "Public domain",
@@ -819,13 +1004,20 @@
         },
         {
             "Name": "M. flexor digiti minimi",
-            "Joints": "",
-            "Movements": "Flexion,",
-            "Segments": "",
+            "Joints": "MCP",
+            "Movements": "Flexion",
+            "Segments": "N. ulnaris, C8, TH1",
             "Image": "assets/images/Gray_—_musculus_flexor_digiti_minimi_brevis.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Flexion,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Os hamatum"
+                }
+            ],
+            "Insertion": [
+                "Basis Phalanx proximalis V"
+            ],
+            "Function": "Flexion",
             "Attribution": {
                 "Author": "Henry Vandyke Carter",
                 "License": "Public domain",
@@ -835,19 +1027,76 @@
         },
         {
             "Name": "M. opponens digiti minimi",
-            "Joints": "",
-            "Movements": "Opposition,",
-            "Segments": "",
+            "Joints": "MCP",
+            "Movements": "Opposition",
+            "Segments": "N. ulnaris, C8, TH1",
             "Image": "assets/images/Gray_—_musculus_opponens_digiti_minimi.png",
-            "Origin": [],
-            "Insertion": [],
-            "Function": "Opposition,",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Os hamatum"
+                }
+            ],
+            "Insertion": [
+                "Os Metacarpus I ulnare Seite"
+            ],
+            "Function": "Opposition",
             "Attribution": {
                 "Author": "Henry Vandyke Carter",
                 "License": "Public domain",
                 "Source": "https://creativecommons.org/public-domain/"
             },
             "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Gray_%E2%80%94_musculus_opponens_digiti_minimi.png/640px-Gray_%E2%80%94_musculus_opponens_digiti_minimi.png"
+        },
+        {
+            "Name": "M. sternocleidomastoideus",
+            "Joints": "Kopf, Wirbelsäule",
+            "Movements": "Lateralflexion, Rotation, Dorsalextension",
+            "Segments": "XI. Hirnnerv (N. accessorius), Plexus cervicalis, C1, C2",
+            "Image": "assets/images/Sternomastoid_muscle_frontal.png",
+            "Origin": [
+                {
+                    "Part": "Caput sternale",
+                    "Location": "Manubrium sterni"
+                },
+                {
+                    "Part": "Caput claviculare",
+                    "Location": "mediales Drittel der Clavicula"
+                }
+            ],
+            "Insertion": [
+                "Proc. Mastoideus und Linea nuchalis superior"
+            ],
+            "Function": "Lateralflexion, Rotation, Dorsalextension",
+            "Attribution": {
+                "Author": "Anatomography",
+                "License": "CC BY-SA 2.1 JP",
+                "Source": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
+            },
+            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Sternomastoid_muscle_frontal.png/640px-Sternomastoid_muscle_frontal.png"
+        },
+        {
+            "Name": "M. brachialis",
+            "Joints": "Art. Cubiti",
+            "Movements": "Flexion",
+            "Segments": "N. musculocutaneus, C5, C6, C7",
+            "Image": "assets/images/Brachialis_muscle02.png",
+            "Origin": [
+                {
+                    "Part": "",
+                    "Location": "Distale Hälfte der Facies anterior des Humerus"
+                }
+            ],
+            "Insertion": [
+                "Tuberositas ulnae"
+            ],
+            "Function": "Flexion",
+            "Attribution": {
+                "Author": "Anatomography",
+                "License": "CC BY-SA 2.1 JP",
+                "Source": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
+            },
+            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Brachialis_muscle02.png/640px-Brachialis_muscle02.png"
         }
     ]
 }

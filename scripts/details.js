@@ -7,6 +7,10 @@ const modal = document.getElementById("image-modal");
 const modalImage = document.getElementById("modal-image");
 const closeButton = document.querySelector(".close-button");
 
+window.onload = function() {
+    document.getElementById("image-modal").style.display = "none";
+};
+
 // Fehlerbehandlung: Existenz der Elemente prüfen
 if (!muscleDetailsContainer) {
     console.error("Fehler: Das Element #muscle-details wurde nicht gefunden.");
@@ -94,10 +98,20 @@ function loadMuscleDetails() {
     // ** MODAL FUNKTIONIEREND MACHEN **
     const muscleImage = document.getElementById("muscle-image"); // Bild erneut auswählen
     if (muscleImage) {
-        muscleImage.addEventListener("click", () => {
+        function openModal() {
             modal.style.display = "block";
-            modalImage.src = muscleImage.src; // Bild in Modal setzen
-        });
+            modalImage.src = document.getElementById("muscle-image").src;
+        }
+        
+        function closeModal() {
+            modal.style.display = "none";
+        }
+        
+        function outsideClick(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
     }
 
     // Event: Modal schließen mit "X"

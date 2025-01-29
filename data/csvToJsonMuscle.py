@@ -53,6 +53,6 @@ def csv_to_json(csv_file_path, json_file_path):
         json.dump({"Sheet1": data}, json_file, ensure_ascii=False, indent=4)
 
 # Beispielaufruf
-csv_file_path = "Muskel-Liste Datenbank.csv"  # Ersetze durch deinen Dateinamen
-json_file_path = "Muskel-Datenbank.json"
+csv_file_path = "/home/pepperboy8/projects/Muskelfinder/data/muskel_list_new.csv"  # Ersetze durch deinen Dateinamen
+json_file_path = "/home/pepperboy8/projects/Muskelfinder/data/muscles1.json"
 csv_to_json(csv_file_path, json_file_path)

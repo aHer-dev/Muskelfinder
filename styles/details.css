@@ -71,7 +71,7 @@ footer {
 
 /* Modal-Styling */
 .modal {
-    display: none; /* Versteckt das Modal initial */
+    display: none; /* Modal ist beim Laden der Seite versteckt */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -79,8 +79,18 @@ footer {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8); /* Abgedunkelter Hintergrund */
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 .modal-content {
     margin: auto;
