@@ -150,7 +150,7 @@
             "Name": "M. latissimus dorsi",
             "Joints": "Art. humeri,",
             "Movements": "Extension, Innenrotation, Adduktion,",
-            "Segments": "",
+            "Segments": "Nervus thoracodorsalis, C6, C7, C8",
             "Image": "assets/images/Latissimus_dorsi_muscle_back2.png",
             "Origin": [
                 {
@@ -159,7 +159,7 @@
                 },
                 {
                     "Part": "Pars vertebralis",
-                    "Location": "7.–12. BWK Procc. Spinosi, Fascia thoracolumbalis"
+                    "Location": "7.–12. BWK Procc. spinosi, Fascia thoracolumbalis"
                 },
                 {
                     "Part": "Pars costalis",
