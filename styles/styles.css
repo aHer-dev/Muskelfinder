@@ -71,3 +71,18 @@ footer {
     color: white;
     margin-top: auto; /* Schiebt den Footer ans Ende */
 }
+
+.result-link {
+    color: #007bff; /* Dunkleres Blau */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-weight: bold; /* Optional: Macht den Text dicker */
+}
+
+.result-link:hover {
+    color: #003d80; /* Noch dunkleres Blau beim Hover */
+    text-decoration: underline; /* Optional: Unterstreichung beim Hover */
+}
+
+.result-link:visited {
+    color: #007bff; /* Gleiche Farbe wie normale Links, damit sie nicht lila werden */
+}
