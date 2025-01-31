@@ -1,85 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <!-- Meta-Informationen -->
-    <meta charset="UTF-8"> <!-- Zeichensatz -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsives Design -->
-    <title>Muskelfinder</title> <!-- Titel der Seite -->
-    <!-- Verlinkung des externen Stylesheets -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskelfinder</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <!-- Header der Seite -->
     <header>
-        <h1>Muskelfinder</h1> <!-- Haupttitel -->
-        <p>Finde Muskeln, ihre Funktionen und Innervationen!</p> <!-- Kurzbeschreibung -->
+        <h1>Muskelfinder</h1>
+        <p>Finde Muskeln, ihre Funktionen und Innervationen!</p>
     </header>
 
-    <!-- Hauptinhalt -->
     <main>
-        <!-- Suchbereich -->
+        <div id="loading">Lade Muskeldaten...</div>
+
         <section id="search">
-            <h2>Muskel suchen</h2> <!-- Titel für die Suche -->
-            <input type="text" id="search-bar" placeholder="Muskelname eingeben..."> <!-- Suchleiste -->
+            <h2>Muskel suchen</h2>
+            <input type="text" id="search-bar" 
+                   placeholder="Muskelname eingeben..."
+                   aria-label="Suchfeld für Muskelnamen">
         </section>
-
-        <!-- Filterbereich -->
         <section id="filters">
-            <h2>Filteroptionen</h2> <!-- Titel für Filter -->
-            <!-- Filter für Gelenke -->
-            <label for="joint-filter">Gelenk auswählen:</label>
-            <select id="joint-filter"> <!-- Dropdown-Menü -->
-                <option value="">Alle Gelenke</option>
-                <option value="Schultergürtel, Art. humeri, Art. cubiti, Art. manus, MCP, PIP, DIP, Daumensattelgelenk">Obere Extremitäten</option>
-                <option value="Schultergürtel">Schultergürtel</option>
-                <option value="Art. humeri">Art. humeri</option>
-                <option value="Art. cubiti">Art. cubiti</option>
-                <option value="Art. manus">Art. manus</option>
-                <option value="MCP, PIP, DIP, Daumensattelgelenk">Fingergelenke</option>
+            <h2>Filteroptionen</h2>
 
-            </select>
+            <div class="filter-group">
+                <label for="joint-filter" id="joint-label">Gelenk:</label>
+                <select id="joint-filter" aria-labelledby="joint-label">
+                    <option value="">Alle Gelenke</option>
+                    <option value="Obere Extremitäten">Obere Extremitäten</option>
+                    <option value="Schultergürtel">Schultergürtel</option>
+                    <option value="Art. humeri">Art. humeri</option>
+                    <option value="Art. cubiti">Art. cubiti</option>
+                    <option value="Art. manus">Art. manus</option>
+                    <option value="Fingergelenke">Fingergelenke</option>
+                </select>
+            </div>
 
-            <!-- Filter für Bewegungen -->
-            <label for="movement-filter">Bewegung auswählen:</label>
-            <select id="movement-filter"> <!-- Dropdown-Menü -->
-                <option value="">Alle Bewegungen</option>
-                <option value="Flexion">Flexion</option>
-                <option value="Extension">Extension</option>
-                <option value="Abduktion">Abduktion</option>                
-                <option value="Adduktion">Adduktion</option>
-                <option value="Innenrotation">Innenrotation</option>
-                <option value="Außenrotation">Außenrotation</option>
-                <option value="Supination">Supination</option>
-                <option value="Pronation">Pronation</option>
-                <option value="Elevation">Elevation</option>
-                <option value="Depression">Depression</option>
-                <option value="Protraktion">Protraktion</option>
-                <option value="Retraktion">Retraktion</option>
-            </select>
+            <div class="filter-group">
+                <label for="movement-filter" id="movement-label">Bewegung:</label>
+                <select id="movement-filter" aria-labelledby="movement-label">
+                    <option value="">Alle Bewegungen</option>
+                    <option value="Flexion">Flexion</option>
+                    <option value="Extension">Extension</option>
+                    <option value="Abduktion">Abduktion</option>
+                    <option value="Adduktion">Adduktion</option>
+                    <option value="Innenrotation">Innenrotation</option>
+                    <option value="Außenrotation">Außenrotation</option>
+                    <option value="Supination">Supination</option>
+                    <option value="Pronation">Pronation</option>
+                    <option value="Elevation">Elevation</option>
+                    <option value="Depression">Depression</option>
+                    <option value="Protraktion">Protraktion</option>
+                    <option value="Retraktion">Retraktion</option>
+                </select>
+            </div>
 
-        <!-- Filter für Nerven -->
-        <label for="nerve-filter">Innervation auswählen:</label>
-        <select id="nerve-filter">
-            <option value="">Alle Segmente</option> <!-- Standard-Option -->
-        </select>
-
-            <!-- Button zum Anwenden der Filter -->
-            <button id="filter-button">Filter anwenden</button>
+            <div class="filter-group">
+                <label for="nerve-filter" id="nerve-label">Innervation:</label>
+                <select id="nerve-filter" aria-labelledby="nerve-label"></select>
+            </div>
         </section>
 
-        <!-- Ergebnisbereich -->
         <section id="results">
             <h2>Suchergebnisse</h2>
-            <ul id="result-list">
-                <!-- Dynamisch generierte Links zu Muskel-Details -->
-            </ul>
+            <ul id="result-list"></ul>
         </section>
-    </main>
+    </footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Muskelfinder</p> <!-- Copyright -->
-    <!-- Verlinkung des JavaScript-Skripts -->
-    <script src="scripts/app.js" defer></script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>

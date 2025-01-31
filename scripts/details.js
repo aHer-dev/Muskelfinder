@@ -1,133 +1,145 @@
-const licenseInfo = document.getElementById("license-info");
-const muscleTitleName = document.getElementById("muscle-Titlename");
-const muscleDetailsContainer = document.getElementById("muscle-details");
-
-// Modal-Elemente auswählen
-const modal = document.getElementById("image-modal");
-const modalImage = document.getElementById("modal-image");
-const closeButton = document.querySelector(".close-button");
-
-window.onload = function() {
-    document.getElementById("image-modal").style.display = "none";
+// Globale Elementreferenzen zentral verwalten
+const elements = {
+    licenseInfo: document.getElementById("license-info"),
+    muscleTitleName: document.getElementById("muscle-Titlename"),
+    muscleDetailsContainer: document.getElementById("muscle-details"),
+    modal: document.getElementById("image-modal"),
+    modalImage: document.getElementById("modal-image"),
+    closeButton: document.querySelector(".close-button"),
+    backButton: document.getElementById("back-button")
 };
 
-// Fehlerbehandlung: Existenz der Elemente prüfen
-if (!muscleDetailsContainer) {
-    console.error("Fehler: Das Element #muscle-details wurde nicht gefunden.");
-}
-if (!modal || !modalImage || !closeButton) {
-    console.error("Fehler: Modal-Elemente fehlen.");
+// Initialisierung nach DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+    // Elemente auf Existenz prüfen
+    if (!checkElements()) return;
+
+    // Event-Listener für Modal initialisieren
+    initModal();
+    
+    // Modal load BUG - opens instantly without this
+    window.onload = function() {
+        document.getElementById("image-modal").style.display = "none";
+    };
+    
+    // Daten laden und verarbeiten
+    fetchMuscleData().then(loadMuscleDetails).catch(handleError);
+});
+
+function checkElements() {
+    const requiredElements = [
+        'muscleDetailsContainer', 'modal', 'modalImage', 
+        'closeButton', 'backButton', 'licenseInfo'
+    ];
+    
+    return requiredElements.every(key => {
+        if (!elements[key]) {
+            console.error(`Fehler: Element ${key} nicht gefunden`);
+            return false;
+        }
+        return true;
+    });
 }
 
-// JSON-Daten laden und verarbeiten
-fetch("data/muscles.json")
-    .then(response => response.json())
-    .then(data => {
-        muscles = data.Sheet1;
-        loadMuscleDetails();
-    })
-    .catch(error => console.error("Fehler beim Laden der JSON-Datei:", error));
+async function fetchMuscleData() {
+    const response = await fetch("data/muscles.json");
+    if (!response.ok) throw new Error('Netzwerkfehler');
+    return response.json();
+}
 
-function loadMuscleDetails() {
+function handleError(error) {
+    console.error("Fehler:", error.message);
+    elements.muscleDetailsContainer.innerHTML = 
+        '<p>Daten konnten nicht geladen werden</p>';
+}
+
+function initModal() {
+    // Event-Listener für Schließen
+    elements.closeButton.addEventListener('click', closeModal);
+    elements.modal.addEventListener('click', event => 
+        event.target === elements.modal && closeModal()
+    );
+}
+
+function closeModal() {
+    elements.modal.style.display = "none";
+}
+
+function openModal(imageSrc) {
+    elements.modalImage.src = imageSrc;
+    elements.modal.style.display = "block";
+}
+
+function createInfoHTML(title, content) {
+    return `
+        <div class="info-box">
+            <h2>${title}</h2>
+            ${content}
+        </div>
+    `;
+}
+
+function loadMuscleDetails(data) {
     const params = new URLSearchParams(window.location.search);
-    const muscleName = params.get("name");
-
-    const muscle = muscles.find(m => m.Name === muscleName);
+    const muscle = data.Sheet1.find(m => m.Name === params.get("name"));
 
     if (!muscle) {
-        muscleDetailsContainer.innerHTML = "<p>Muskel nicht gefunden.</p>";
+        elements.muscleDetailsContainer.innerHTML = "<p>Muskel nicht gefunden</p>";
         return;
     }
 
-    muscleTitleName.innerHTML = muscle.Name;
+    // Seitentitel aktualisieren
+    elements.muscleTitleName.textContent = muscle.Name;
 
-    // Ursprung korrekt formatieren
-    let originsHTML = "";
-    if (Array.isArray(muscle.Origin)) {
-        muscle.Origin.forEach(origin => {
-            if (origin.Part && origin.Part.trim() !== "") {
-                originsHTML += `<p><strong>${origin.Part}:</strong> ${origin.Location}</p>`;
-            } else {
-                originsHTML += `<p>${origin.Location}</p>`; // Falls "Part" leer ist, kein ":" anzeigen
-            }
-        });
-    }
-
-    // Ansatz korrekt formatieren
-    let insertionsHTML = "";
-    if (Array.isArray(muscle.Insertion)) {
-        muscle.Insertion.forEach(insertion => {
-            insertionsHTML += `<p>${insertion}</p>`; // Direkt als Liste darstellen
-        });
-    } else {
-        insertionsHTML = `<p>${muscle.Insertion || "Keine Daten verfügbar"}</p>`;
-    }
-
-    // Muskelinformationen in HTML einfügen
-    muscleDetailsContainer.innerHTML = `
+    // HTML Generierung
+    elements.muscleDetailsContainer.innerHTML = `
         <section class="details-section">
             <div class="image-container">
-                <img src="${muscle.Image}" alt="${muscle.Name}" id="muscle-image" style="cursor: pointer; max-width: 400px;">
+                <img src="${muscle.Image}" alt="${muscle.Name}" 
+                     class="zoomable-image" style="max-width: 400px;">
             </div>
             <div class="info-container">
-                <div class="info-box">
-                    <h2>Ursprung</h2>
-                    ${originsHTML}
-                </div>
-                <div class="info-box">
-                    <h2>Ansatz</h2>
-                    ${insertionsHTML}
-                </div>
-                <div class="info-box">
-                    <h2>Funktion</h2>
-                    <p>${muscle.Function || "Keine Daten verfügbar"}</p>
-                </div>
-                <div class="info-box">
-                    <h2>Innervation</h2>
-                    <p>${muscle.Segments || "Keine Daten verfügbar"}</p>
-                </div>
+                ${createInfoHTML('Ursprung', formatOrigin(muscle.Origin))}
+                ${createInfoHTML('Ansatz', formatInsertion(muscle.Insertion))}
+                ${createInfoHTML('Funktion', muscle.Function || "Keine Daten verfügbar")}
+                ${createInfoHTML('Innervation', muscle.Segments || "Keine Daten verfügbar")}
             </div>
         </section>
     `;
 
-    // Lizenzinformationen einfügen
-    licenseInfo.innerHTML = muscle.Attribution
-        ? `Bild von <a href="${muscle.ImageSource}" target="_blank">${muscle.Attribution.Author}</a>, lizenziert unter <a href="${muscle.Attribution.Source}" target="_blank">${muscle.Attribution.License}</a>.`
-        : "Keine Lizenzinformationen verfügbar.";
+    // Lizenzinformationen
+    elements.licenseInfo.innerHTML = muscle.Attribution 
+        ? generateAttribution(muscle) 
+        : "Keine Lizenzinformationen verfügbar";
 
-    // ** MODAL FUNKTIONIEREND MACHEN **
-    const muscleImage = document.getElementById("muscle-image"); // Bild erneut auswählen
-    if (muscleImage) {
-        function openModal() {
-            modal.style.display = "block";
-            modalImage.src = document.getElementById("muscle-image").src;
-        }
-        
-        function closeModal() {
-            modal.style.display = "none";
-        }
-        
-        function outsideClick(event) {
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        }
-    }
-
-    // Event: Modal schließen mit "X"
-    closeButton.addEventListener("click", () => {
-        modal.style.display = "none";
-    });
-
-    // Event: Modal schließen bei Klick außerhalb
-    modal.addEventListener("click", event => {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    });
-
-    // Event: Zurück-Button
-    document.getElementById("back-button").addEventListener("click", () => {
-        window.location.href = "index.html";
-    });
+    // Event-Listener für Bild hinzufügen
+    document.querySelector('.zoomable-image')?.addEventListener('click', () => 
+        openModal(muscle.Image)
+    );
 }
+
+function formatOrigin(origin) {
+    if (!Array.isArray(origin)) return "<p>Keine Daten verfügbar</p>";
+    
+    return origin.map(item => 
+        item.Part?.trim() 
+            ? `<p><strong>${item.Part}:</strong> ${item.Location}</p>`
+            : `<p>${item.Location}</p>`
+    ).join('');
+}
+
+function formatInsertion(insertion) {
+    if (!Array.isArray(insertion)) return `<p>${insertion || "Keine Daten verfügbar"}</p>`;
+    
+    return insertion.map(item => `<p>${item}</p>`).join('');
+}
+
+function generateAttribution(muscle) {
+    return `Bild von <a href="${muscle.ImageSource}" target="_blank">${muscle.Attribution.Author}</a>, 
+            lizenziert unter <a href="${muscle.Attribution.Source}" target="_blank">${muscle.Attribution.License}</a>`;
+}
+
+// Back-Button Event-Listener
+elements.backButton.addEventListener('click', () => 
+    window.location.href = "index.html"
+);

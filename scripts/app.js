@@ -1,141 +1,163 @@
-// HTML-Elemente auswählen
-const searchBar = document.getElementById("search-bar");
-const jointFilter = document.getElementById("joint-filter");
-const movementFilter = document.getElementById("movement-filter");
-const nerveFilter = document.getElementById("nerve-filter");
-const resultList = document.getElementById("result-list");
+// DOM-Elemente
+const elements = {
+    searchBar: document.getElementById('search-bar'),
+    jointFilter: document.getElementById('joint-filter'),
+    movementFilter: document.getElementById('movement-filter'),
+    nerveFilter: document.getElementById('nerve-filter'),
+    resultList: document.getElementById('result-list'),
+    loading: document.getElementById('loading')
+    
+};
 
-// Variable für die JSON-Daten
+// Muskel-Daten und Konfiguration
 let muscles = [];
+const spinalSegments = {
+    "Cervical": ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8"],
+    "Thoracal": ["TH1", "TH2", "TH3", "TH4", "TH5", "TH6", "TH7", "TH8", "TH9", "TH10", "TH11", "TH12"],
+    "Lumbal": ["L1", "L2", "L3", "L4", "L5"],
+    "Sacral": ["S1", "S2", "S3", "S4", "S5"]
+};
 
-// JSON-Datei laden
-fetch("data/muscles.json")
-    .then(response => {
-        if (!response.ok) {
-            throw new Error("Fehler beim Laden der JSON-Datei");
-        }
-        return response.json();
-    })
-    .then(data => {
-        muscles = data.Sheet1; // JSON-Daten in die Variable speichern
-        console.log("Daten erfolgreich geladen:", muscles);
-    })
-    .catch(error => console.error("Fehler:", error));
+// Initialisierung
+document.addEventListener('DOMContentLoaded', () => {
+    initFilters();
+    loadMuscleData();
+});
 
-    // **Spinalsegmente einmalig beim Seitenaufbau ins Dropdown einfügen**
- const spinalSegments = {
-    "Cervical (Alle)": ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8"],
-    "Thoracal (Alle)": ["TH1", "TH2", "TH3", "TH4", "TH5", "TH6", "TH7", "TH8", "TH9", "TH10", "TH11", "TH12"],
-    "Lumbal (Alle)": ["L1", "L2", "L3", "L4", "L5"],
-    "Sacral (Alle)": ["S1", "S2", "S3", "S4", "S5"]
- };
+function initFilters() {
+    generateNerveDropdown();
+    setupEventListeners();
+}
 
-// **Dropdown-Menü für Nerven generieren**
+async function loadMuscleData() {
+    try {
+        elements.loading.style.display = 'block';
+        const response = await fetch('data/muscles.json');
+        
+        if (!response.ok) throw new Error('Netzwerkfehler');
+        
+        const data = await response.json();
+        muscles = data.Sheet1;
+        filterResults();
+    } catch (error) {
+        console.error('Fehler:', error);
+        elements.resultList.innerHTML = '<li>Daten konnten nicht geladen werden</li>';
+    } finally {
+        elements.loading.style.display = 'none';
+    }
+}
+
 function generateNerveDropdown() {
-    const nerveFilter = document.getElementById("nerve-filter");
-    nerveFilter.innerHTML = '<option value="">Alle Segmente</option>'; // Standardoption
+    const fragment = document.createDocumentFragment();
+    
+    // Standardoption
+    const defaultOption = new Option('Alle Segmente', '');
+    fragment.appendChild(defaultOption);
 
-    // Hauptgruppen und Segmente hinzufügen
+    // Gruppen und Segmente hinzufügen
     Object.entries(spinalSegments).forEach(([group, segments]) => {
-        // Hauptgruppe als auswählbare Option
-        let groupOption = document.createElement("option");
-        groupOption.value = group;  // Jetzt auswählbar
-        groupOption.textContent = group;
-        groupOption.style.fontWeight = "bold"; // Fett machen zur Unterscheidung
-        nerveFilter.appendChild(groupOption);
-
-        // Einzelne Segmente der Gruppe hinzufügen
+        // Optgroup für die Kategorie
+        const groupElement = document.createElement('optgroup');
+        groupElement.label = group;
+        
+        // Einzelne Segmente
         segments.forEach(segment => {
-            let option = document.createElement("option");
-            option.value = segment;
-            option.textContent = `  ${segment}`; // Einrückung für bessere Übersicht
-            nerveFilter.appendChild(option);
+            groupElement.appendChild(new Option(segment, segment));
+        });
+        
+        fragment.appendChild(groupElement);
+    });
+
+    elements.nerveFilter.appendChild(fragment);
+}
+
+function setupEventListeners() {
+    // Sofortiges Filtern bei Änderungen
+    [elements.searchBar, elements.jointFilter, 
+     elements.movementFilter, elements.nerveFilter].forEach(element => {
+        element.addEventListener('input' in element ? 'input' : 'change', () => {
+            filterResults();
         });
     });
-}
 
-// Dropdown-Menü beim Laden der Seite einmal erstellen
-generateNerveDropdown();
-
-
-// Filter- und Suchlogik
-function filterResults() {
-    const searchQuery = searchBar.value.toLowerCase(); // Eingabe aus Suchfeld
-    const selectedJoint = jointFilter.value; // Ausgewähltes Gelenk
-    const selectedMovement = movementFilter.value; // Ausgewählte Bewegung
-    const selectedNerve = nerveFilter.value; // Ausgewählter Nerv
-
-    let filtered = muscles;
-
-    // Falls "Obere Extremitäten" gewählt wurde, mehrere Gelenke berücksichtigen
-    if (selectedJoint === "Schultergürtel, Art. humeri, Art. cubiti, Art. manus, MCP, PIP, DIP, Daumensattelgelenk") {
-        const jointList = ["Schultergürtel", "Art. humeri", "Art. cubiti", "Art. manus", "MCP", "PIP", "DIP", "Daumensattelgelenk"]; // Einzelne Gelenke als Liste
-filtered = filtered.filter(muscle => 
-        jointList.some(joint => muscle.Joints.split(",").map(j => j.trim()).includes(joint))
-    );
-} 
-    else if (selectedJoint === "MCP, PIP, DIP, Daumensattelgelenk") {
-        const jointListFinger = ["MCP", "PIP", "DIP", "Daumensattelgelenk"]; // Einzelne Gelenke als Liste
-        filtered = filtered.filter(muscle => 
-            jointListFinger.some(joint => muscle.Joints.split(",").map(j => j.trim()).includes(joint))
-        );
-    }
-    else if (selectedJoint) {
-    // Falls ein einzelnes Gelenk gewählt wurde
-    filtered = filtered.filter(muscle => muscle.Joints.split(",").map(j => j.trim()).includes(selectedJoint));
-}
-
-    // Bewegung filtern
-    if (selectedMovement) {
-        filtered = filtered.filter(muscle => muscle.Movements.includes(selectedMovement));
-    }
-
-    // **Innervation filtern**
-    if (selectedNerve) {
-        if (spinalSegments[selectedNerve]) {
-            // Falls eine Gruppe (z. B. "Thoracal (Alle)") ausgewählt wurde, alle darunterliegenden Segmente filtern
-            const segmentList = spinalSegments[selectedNerve]; 
-            filtered = filtered.filter(muscle => muscle.Segments.split(",").some(seg => segmentList.includes(seg.trim())));
-        } else {
-            // Falls ein einzelnes Segment (z. B. "Th5") ausgewählt wurde
-            filtered = filtered.filter(muscle => muscle.Segments.split(",").map(s => s.trim()).includes(selectedNerve));
-        }
-    }
-
-    // Suchbegriff filtern
-    filtered = filtered.filter(muscle => muscle.Name.toLowerCase().includes(searchQuery));
-
-    // Ergebnisse anzeigen
-    resultList.innerHTML = ""; // Alte Ergebnisse löschen
-    if (filtered.length === 0) {
-        resultList.innerHTML = "<li>Keine Ergebnisse gefunden</li>";
-        return;
-    }
-    
-     // Ergebnisse dynamisch erstellen
-     filtered.forEach(muscle => {
-        const li = document.createElement("li"); // Neues Listenelement erstellen
-        li.className = "result-item"; // Styling-Klasse hinzufügen
-        
-        // Link erstellen
-        const link = document.createElement("a");
-        link.href = `muscle-details.html?name=${encodeURIComponent(muscle.Name)}`; // Detailseite-Link
-        link.textContent = muscle.Name; // Muskelname als Link-Text
-        link.className = "result-link"; // Styling-Klasse für den Link
-
-        // Muskelinformationen als Vorschau
-        const info = document.createElement("p");
-        info.textContent = `Gelenke: ${muscle.Joints} | Bewegungen: ${muscle.Movements} | Innervation: ${muscle.Segments}`;
-        info.className = "result-info"; // Styling-Klasse für die Vorschau
-
-        // Link und Vorschau hinzufügen
-        li.appendChild(link);
-        li.appendChild(info);
-
-        // Element zur Ergebnisliste hinzufügen
-        resultList.appendChild(li);
+    // Debounce für Suchfeld
+    let timeout;
+    elements.searchBar.addEventListener('input', () => {
+        clearTimeout(timeout);
+        timeout = setTimeout(filterResults, 300);
     });
 }
-// Event-Listener hinzufügen
-searchBar.addEventListener("input", filterResults); // Auf Eingabe reagieren
-document.getElementById("filter-button").addEventListener("click", filterResults); // Auf Button-Klick reagieren
+
+function filterResults() {
+    const filters = {
+        search: elements.searchBar.value.trim().toLowerCase(),
+        joint: elements.jointFilter.value,
+        movement: elements.movementFilter.value,
+        nerve: elements.nerveFilter.value,
+    };
+
+    const filtered = muscles.filter(muscle => {
+        return (
+            matchesSearch(muscle, filters.search) &&
+            matchesJoint(muscle, filters.joint) &&
+            matchesMovement(muscle, filters.movement) &&
+            matchesNerve(muscle, filters.nerve)
+        );
+    });
+
+    displayResults(filtered);
+}
+
+// Filter-Hilfsfunktionen
+function matchesSearch(muscle, query) {
+    return muscle.Name.toLowerCase().includes(query);
+}
+
+function matchesJoint(muscle, selectedJoint) {
+    if (!selectedJoint) return true;
+    
+    const muscleJoints = muscle.Joints.split(',').map(j => j.trim());
+    const jointGroups = {
+        'Obere Extremitäten': ['Schultergürtel', 'Art. humeri', 'Art. cubiti', 'Art. manus'],
+        'Fingergelenke': ['MCP', 'PIP', 'DIP', 'Daumensattelgelenk']
+    };
+
+    if (jointGroups[selectedJoint]) {
+        return jointGroups[selectedJoint].some(j => muscleJoints.includes(j));
+    }
+    return muscleJoints.includes(selectedJoint);
+}
+
+function matchesMovement(muscle, selectedMovement) {
+    return !selectedMovement || muscle.Movements.includes(selectedMovement);
+}
+
+function matchesNerve(muscle, selectedNerve) {
+    if (!selectedNerve) return true;
+    
+    const muscleSegments = muscle.Segments.split(',').map(s => s.trim());
+    const segmentCategory = Object.values(spinalSegments)
+                               .find(segments => segments.includes(selectedNerve));
+    
+    return segmentCategory 
+        ? segmentCategory.some(s => muscleSegments.includes(s))
+        : muscleSegments.includes(selectedNerve);
+}
+
+function displayResults(results) {
+    elements.resultList.innerHTML = results.length > 0 
+        ? results.map(muscle => `
+            <li class="result-item">
+                <a href="muscle-details.html?name=${encodeURIComponent(muscle.Name)}" 
+                   class="result-link">
+                   ${muscle.Name}
+                </a>
+                <div class="result-info">
+                    <p>Gelenke: ${muscle.Joints}</p>
+                    <p>Bewegungen: ${muscle.Movements}</p>
+                    <p>Innervation: ${muscle.Segments}</p>
+                </div>
+            </li>
+        `).join('')
+        : '<li class="no-results">Keine passenden Muskeln gefunden</li>';
+}

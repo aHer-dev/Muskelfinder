@@ -647,7 +647,7 @@
         },
         {
             "Name": "M. pronator quadratus",
-            "Joints": "Art. Cubiti",
+            "Joints": "Art. cubiti",
             "Movements": "Pronation",
             "Segments": "N. medianus, C8, TH1",
             "Image": "assets/images/640px-Pronator-quadratus.png",
