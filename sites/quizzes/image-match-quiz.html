@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bild-Zuordnungsquiz</title>
+    <link rel="stylesheet" href="/styles/image-match-quiz.css">
+</head>
+<body>
+    <header>
+        <h1>Bild-Zuordnungsquiz</h1>
+        <p>Ordne die Bilder den richtigen Muskeln zu.</p>
+      </header>
+      <main>
+
+        <div class="quiz-container">
+            <h2 id="questionHeader">Welcher Muskel ist abgebildet?</h2>
+            <div class="image-container" id="mainImage"></div>
+            <div class="options-grid" id="options"></div>
+            <div class="feedback" id="feedback"></div>
+          </div>
+
+          
+          <div class="comparison-quiz">
+            <h2>Welches Bild zeigt den <span id="targetMuscleName"></span>?</h2>
+            <div class="image-grid" id="imageGrid"></div>
+            <div class="feedback" id="comparisonFeedback"></div>
+          </div>
+
+<div class="quiz-options" id="nameOptions"></div>
+<div class="quiz-feedback" id="feedback"></div>
+      </main>
+      <script src="/styles/image-match-quiz.js"></script>
+</body>
+<footer> © 2025 </footer>
+</html>

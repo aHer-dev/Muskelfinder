@@ -3,15 +3,27 @@ const quizTypes = {
      title:"Bildzuordnung",
      description:"Ordne die Bilder den richtigen Muskeln zu.",
      start: () => {
-        window.location.href = "image-match-quiz.html";
+        window.location.href = "/sites/quizzes/image-match-quiz.html";
     } 
 },
 
 originInsertion: {
     title: "Ursprung & Ansatz",
     description: "Wähle die richtigen Ansätze und Ursprünge aus.",
-    start: => {
-        window.location.href = "origin-insertion-quiz.html"
+    start: () => {
+        window.location.href = "/sites/quizzes/origin-insertion-quiz.html";
     }
-}
+},
+
+muscleComparison: {
+    title: "Muskelvergleich",
+    description: "Erkenne den Muskel anhand seiner Eigenschaften",
+    start: () => {
+        window.location.href = "/sites/quizzes/muscle-comparison-quiz.html";
+    }
+},
+};
+
+function startQuiz(quizType) {
+    quizTypes[quizType].start();
 }
