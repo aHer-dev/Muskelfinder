@@ -95,7 +95,7 @@
         {
             "Name": "M. deltoideus",
             "Joints": "Art. humeri",
-            "Movements": "Abduktion",
+            "Movements": "Abduktion, Flexion, Extension, Außenrotation, Innenrotation",
             "Segments": "N. axillaris, C5, C6",
             "Image": "assets/images/Deltoid_muscle_back2.png",
             "Origin": [
@@ -115,7 +115,7 @@
             "Insertion": [
                 "Tuberositas deltoidea am Humerus"
             ],
-            "Function": "Abduktion",
+            "Function": "Gesamter Muskel: Abduktion, Pars Clavicularis: Flexion, Innenrotation, Pars Spinalis: Extension, Außenrotation",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -575,7 +575,7 @@
         {
             "Name": "M. flexor carpi ulnaris",
             "Joints": "Art. cubiti,  Art. manus",
-            "Movements": "Flexion",
+            "Movements": "Flexion, Ulnarduktion",
             "Segments": "N. ulnaris, C7, C8, TH1",
             "Image": "assets/images/Flexor-carpi-ulnaris-horizontal.png",
             "Origin": [

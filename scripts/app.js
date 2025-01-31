@@ -32,7 +32,7 @@ function initFilters() {
 async function loadMuscleData() {
     try {
         elements.loading.style.display = 'block';
-        const response = await fetch('data/muscles.json');
+        const response = await fetch('/data/muscles.json');
         
         if (!response.ok) throw new Error('Netzwerkfehler');
         
@@ -56,11 +56,9 @@ function generateNerveDropdown() {
 
     // Gruppen und Segmente hinzufügen
     Object.entries(spinalSegments).forEach(([group, segments]) => {
-        // Optgroup für die Kategorie
         const groupElement = document.createElement('optgroup');
         groupElement.label = group;
         
-        // Einzelne Segmente
         segments.forEach(segment => {
             groupElement.appendChild(new Option(segment, segment));
         });
@@ -70,6 +68,7 @@ function generateNerveDropdown() {
 
     elements.nerveFilter.appendChild(fragment);
 }
+
 
 function setupEventListeners() {
     // Sofortiges Filtern bei Änderungen
@@ -133,22 +132,21 @@ function matchesMovement(muscle, selectedMovement) {
 }
 
 function matchesNerve(muscle, selectedNerve) {
-    if (!selectedNerve) return true;
-    
-    const muscleSegments = muscle.Segments.split(',').map(s => s.trim());
-    const segmentCategory = Object.values(spinalSegments)
-                               .find(segments => segments.includes(selectedNerve));
-    
-    return segmentCategory 
-        ? segmentCategory.some(s => muscleSegments.includes(s))
-        : muscleSegments.includes(selectedNerve);
+    if (!selectedNerve) return true; // Kein Filter, alle Muskeln anzeigen
+
+    // Extrahiere nur die Segmente (z. B. "C2, C3, C4") aus dem Feld
+    const segmentsText = muscle.Segments.replace(/[^C,T,H,L,S,0-9, ]/g, ''); // Entferne alles außer Segmenten
+    const muscleSegments = segmentsText.split(',').map(s => s.trim());
+
+    // Überprüfe, ob das ausgewählte Segment in den Muskelsegmenten enthalten ist
+    return muscleSegments.includes(selectedNerve);
 }
 
 function displayResults(results) {
     elements.resultList.innerHTML = results.length > 0 
         ? results.map(muscle => `
             <li class="result-item">
-                <a href="muscle-details.html?name=${encodeURIComponent(muscle.Name)}" 
+                <a href="/sites/muscle-details.html?name=${encodeURIComponent(muscle.Name)}" 
                    class="result-link">
                    ${muscle.Name}
                 </a>

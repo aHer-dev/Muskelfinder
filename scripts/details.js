@@ -42,7 +42,7 @@ function checkElements() {
 }
 
 async function fetchMuscleData() {
-    const response = await fetch("data/muscles.json");
+    const response = await fetch("/data/muscles.json");
     if (!response.ok) throw new Error('Netzwerkfehler');
     return response.json();
 }
@@ -95,7 +95,7 @@ function loadMuscleDetails(data) {
     elements.muscleDetailsContainer.innerHTML = `
         <section class="details-section">
             <div class="image-container">
-                <img src="${muscle.Image}" alt="${muscle.Name}" 
+                <img src="/${muscle.Image}" alt="${muscle.Name}" 
                      class="zoomable-image" style="max-width: 400px;">
             </div>
             <div class="info-container">
@@ -141,5 +141,5 @@ function generateAttribution(muscle) {
 
 // Back-Button Event-Listener
 elements.backButton.addEventListener('click', () => 
-    window.location.href = "index.html"
+    window.location.href = "/sites/index.html"
 );
