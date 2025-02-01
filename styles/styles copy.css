@@ -1,0 +1,88 @@
+/* Grundlegendes Styling */
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* Header-Design */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Hauptbereich */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center; /* Zentriert den Inhalt */
+}
+
+/* Formularelemente */
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button Styling */
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Ergebnisse */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    margin-top: auto; /* Schiebt den Footer ans Ende */
+}
+
+.result-link {
+    color: #007bff; /* Dunkleres Blau */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-weight: bold; /* Optional: Macht den Text dicker */
+}
+
+.result-link:hover {
+    color: #003d80; /* Noch dunkleres Blau beim Hover */
+    text-decoration: underline; /* Optional: Unterstreichung beim Hover */
+}
+
+.result-link:visited {
+    color: #007bff; /* Gleiche Farbe wie normale Links, damit sie nicht lila werden */
+}
