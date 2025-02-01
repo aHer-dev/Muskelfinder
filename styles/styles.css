@@ -213,21 +213,20 @@ footer .license-info a:hover {
     color: #007bff; /* Gleiche Farbe wie normale Links, damit sie nicht lila werden */
 }
 
+/* Buttons responsiv anpassen */
 .option {
-    background-color: #007bff; /* Blau */
-    color: white;
-    font-size: 18px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px; /* Abgerundete Ecken */
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    width: 100%; /* Volle Breite für bessere Optik */
-    max-width: 400px; /* Begrenzte Breite */
+    width: 100%; /* Volle Breite */
+    max-width: 400px; /* Maximale Breite */
     display: block;
-    margin: 10px auto; /* Mehr Abstand zwischen den Buttons */
-    text-align: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten für 3D-Effekt */
+    margin: 10px auto; /* Zentriert die Buttons */
+    padding: 12px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s;
   }
   
   .option:hover {
@@ -243,16 +242,15 @@ footer .license-info a:hover {
     background-color: #dc3545 !important; /* Rot */
   }
   
-
   #feedback {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-top: 15px;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
   }
-  
+
   #feedback.success {
     color: white;
     background-color: #28a745;
@@ -277,3 +275,50 @@ footer .license-info a:hover {
         margin-left: auto;
         margin-right: auto;
       }
+
+      #mainImage {
+        max-width: 100%; /* Passt das Bild dynamisch an */
+        height: auto;
+        border-radius: 10px;
+      }
+
+      /* Bild-Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Bild füllt den Container */
+  }
+
+  /* Hauptcontainer für das Quiz */
+.quiz-container {
+    width: 90%; /* Nimmt 90% des verfügbaren Platzes ein */
+    max-width: 600px; /* Maximal 600px, damit es nicht zu breit wird */
+    margin: 20px auto; /* Zentriert das Quiz */
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  /* --- Media Queries für kleine Geräte --- */
+@media (max-width: 768px) {
+    .quiz-container {
+      width: 95%; /* Mehr Breite auf kleinen Bildschirmen */
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    #quizHead {
+      font-size: 20px;
+    }
+  
+    .option {
+      font-size: 14px; /* Kleinere Buttons für mobile Ansicht */
+      padding: 10px;
+    }
+  }
