@@ -18,17 +18,28 @@ function getRandomMuscle() {
 }
 
 function getSmartDistractors(targetMuscle, count) {
-  return muscles
+  let distractors = muscles
     .filter(m => 
       m.Joints === targetMuscle.Joints || 
       m.Function === targetMuscle.Function
     )
-    .slice(0, count)
     .map(m => m.Name);
+
+    // Entferne Duplikate und die richtige Antwort
+distractors = [...new Set(distractors)].filter(name => name !== targetMuscle.Name);
+
+while (distractors.length < count) {
+  let randomMuscle = getRandomMuscle ().Name;
+  if (! distractors.includes(randomMuscle) &&
+randomMuscle !== targetMuscle.Name) {
+  distractors.push(randomMuscle);
+    }
+  }
+  return distractors.slice(0, count);
 }
 
 function shuffleArray(array) {
-  return array.sort(() => Math.random() - 0.5);
+  return [...array].sort(() => Math.random() - 0.5);
 }
 
 function loadQuiz() {
@@ -51,21 +62,29 @@ function generateImageQuiz(muscle) {
   ]);
 
   document.getElementById('options').innerHTML = options
-    .map(opt => `
-      <button class="option" 
-              onclick="validateAnswer('${opt === muscle.Name}')">
-        ${opt}
-      </button>
-    `).join('');
-}
-
-function validateAnswer(isCorrect) {
+  .map(opt => `
+    <button class="option" 
+            onclick="validateAnswer(event, '${opt}', '${muscle.Name}')">
+      ${opt}
+    </button>
+  `).join('');
+  }
+function validateAnswer(event, selectedName, correctName) {
+  const button = event.target; // Holt das geklickte Element
   const feedback = document.getElementById('feedback');
-  feedback.innerHTML = isCorrect ? 
-    "✓ Richtig! Gut gemacht!" : 
-    "✗ Falsch. Versuche es nochmal!";
-  
-  feedback.style.color = isCorrect ? "#28a745" : "#dc3545";
-  
-  setTimeout(loadQuiz, 2000);
+
+  if (selectedName === correctName) {
+    button.classList.add("correct");
+    feedback.classList.add("success");
+    feedback.innerHTML = "✓ Richtig! Gut gemacht!";
+  } else {
+    button.classList.add("wrong");
+    feedback.classList.add("error");
+    feedback.innerHTML = "✗ Falsch. Versuche es nochmal!";
+  }
+
+  setTimeout(() => {
+    feedback.classList.remove("success", "error");
+    loadQuiz();
+  }, 2000);
 }

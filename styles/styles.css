@@ -24,7 +24,6 @@ main {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: center; /* Zentriert den Inhalt */
 }
 
@@ -38,7 +37,6 @@ main {
     margin: 0 auto;
     object-fit: contain; /* Stellt sicher, dass das Bild nicht verzerrt wird */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Formularelemente */
@@ -214,3 +212,68 @@ footer .license-info a:hover {
 .result-link:visited {
     color: #007bff; /* Gleiche Farbe wie normale Links, damit sie nicht lila werden */
 }
+
+.option {
+    background-color: #007bff; /* Blau */
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px; /* Abgerundete Ecken */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%; /* Volle Breite für bessere Optik */
+    max-width: 400px; /* Begrenzte Breite */
+    display: block;
+    margin: 10px auto; /* Mehr Abstand zwischen den Buttons */
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten für 3D-Effekt */
+  }
+  
+  .option:hover {
+    background-color: #0056b3; /* Dunkleres Blau bei Hover */
+    transform: scale(1.05); /* Leichtes Vergrößern beim Drüberfahren */
+  }
+  
+  .option.correct {
+    background-color: #28a745 !important; /* Grün */
+  }
+  
+  .option.wrong {
+    background-color: #dc3545 !important; /* Rot */
+  }
+  
+
+  #feedback {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #feedback.success {
+    color: white;
+    background-color: #28a745;
+  }
+  
+  #feedback.error {
+    color: white;
+    background-color: #dc3545;
+  }
+
+    #quizHead {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 2px solid #332847; /* Grüne Umrandung */
+        border-radius: 8px;
+        background-color: #bdcbe4; /* Helles Grün für bessere Lesbarkeit */
+        color: #222;
+        width: 80%; /* Passt sich der Breite des Containers an */
+        margin-left: auto;
+        margin-right: auto;
+      }
