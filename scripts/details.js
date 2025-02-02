@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event-Listener für Modal initialisieren
     initModal();
-    
+    elements.modal.style.display = "none";
     // Modal load BUG - opens instantly without this
+
     window.onload = function() {
         document.getElementById("image-modal").style.display = "none";
     };
-    
     // Daten laden und verarbeiten
     fetchMuscleData().then(loadMuscleDetails).catch(handleError);
 });
@@ -40,6 +40,9 @@ function checkElements() {
         return true;
     });
 }
+
+console.log("closeButton:", elements.closeButton);
+console.log("modal:", elements.modal);
 
 async function fetchMuscleData() {
     const response = await fetch("/data/muscles.json");
@@ -66,6 +69,24 @@ function closeModal() {
 }
 
 function openModal(imageSrc) {
+    console.log("Original imageSrc:", imageSrc);
+
+    // Falls imageSrc RELATIV ist, stelle sicher, dass es ABSOLUT wird
+    if (!imageSrc.startsWith("http")) {
+        imageSrc = window.location.origin + "/" + imageSrc.replace(/^\/+/, "");
+    }
+
+    console.log("Bereinigter imageSrc:", imageSrc);
+
+    // Prüfen, ob /sites/ fälschlicherweise hinzugefügt wird
+    setTimeout(() => {
+        console.log("Final imageSrc (im Modal):", elements.modalImage.src);
+        if (elements.modalImage.src.includes("/sites/")) {
+            elements.modalImage.src = elements.modalImage.src.replace("/sites/", "/");
+            console.warn("Nachträgliche Korrektur: /sites/ wurde entfernt! Neuer Pfad:", elements.modalImage.src);
+        }
+    }, 50); // Kleiner Timeout, um sicherzugehen, dass der Pfad gesetzt ist
+
     elements.modalImage.src = imageSrc;
     elements.modal.style.display = "block";
 }

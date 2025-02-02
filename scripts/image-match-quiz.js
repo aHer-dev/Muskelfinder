@@ -1,3 +1,5 @@
+let correctAnswers = 0;
+let wrongAnswers = 0;
 let muscles = [];
 let currentMuscle;
 
@@ -69,22 +71,55 @@ function generateImageQuiz(muscle) {
     </button>
   `).join('');
   }
+
 function validateAnswer(event, selectedName, correctName) {
-  const button = event.target; // Holt das geklickte Element
+  const button = event.target;
   const feedback = document.getElementById('feedback');
 
   if (selectedName === correctName) {
-    button.classList.add("correct");
-    feedback.classList.add("success");
-    feedback.innerHTML = "✓ Richtig! Gut gemacht!";
+      button.classList.add("correct");
+      feedback.classList.add("success");
+      feedback.innerHTML = "✓ Richtig! Gut gemacht!";
+      correctAnswers++; // 🟢 Richtige Antwort zählen
   } else {
-    button.classList.add("wrong");
-    feedback.classList.add("error");
-    feedback.innerHTML = "✗ Falsch. Versuche es nochmal!";
+      button.classList.add("wrong");
+      feedback.classList.add("error");
+      feedback.innerHTML = "✗ Falsch. Versuche es nochmal!";
+      wrongAnswers++; // 🔴 Falsche Antwort zählen
   }
 
+  // Statusleiste aktualisieren
+  updateStatusBar();
+
   setTimeout(() => {
-    feedback.classList.remove("success", "error");
-    loadQuiz();
+      feedback.classList.remove("success", "error");
+      feedback.innerHTML = "";
+      loadQuiz();
   }, 2000);
+}
+
+// 🛠 Hier die neue Funktion `updateStatusBar()` einfügen:
+function updateStatusBar() {
+  const correctCount = document.getElementById('correctCount');
+  const wrongCount = document.getElementById('wrongCount');
+  const accuracy = document.getElementById('accuracy');
+  const indicator = document.getElementById('accuracyIndicator');
+
+  // Berechnung der Erfolgsquote
+  const totalAnswers = correctAnswers + wrongAnswers;
+  let accuracyPercentage = totalAnswers > 0 ? Math.round((correctAnswers / totalAnswers) * 100) : 0;
+
+  // Werte in der Statusleiste aktualisieren
+  correctCount.textContent = correctAnswers;
+  wrongCount.textContent = wrongAnswers;
+  accuracy.textContent = accuracyPercentage + "%";
+
+  // Kreisfarbe je nach Quote anpassen
+  if (accuracyPercentage >= 80) {
+      indicator.style.backgroundColor = "green";
+  } else if (accuracyPercentage >= 50) {
+      indicator.style.backgroundColor = "yellow";
+  } else {
+      indicator.style.backgroundColor = "red";
+  }
 }

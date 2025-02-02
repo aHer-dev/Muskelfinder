@@ -322,3 +322,49 @@ footer .license-info a:hover {
       padding: 10px;
     }
   }
+
+  .status-bar {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.stats {
+    flex: 1;
+}
+
+.accuracy-indicator {
+    font-family: Arial, sans-serif;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red; /* Standardfarbe */
+    transition: background-color 0.3s ease-in-out;
+}
+
+#startImageMatch {
+  width: 25%; /* Volle Breite */
+  max-width: 400px; /* Maximale Breite */
+  display: block;
+  margin: 30px auto; /* Zentriert die Buttons */
+  padding: 12px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s;
+}
+
+#startImageMatch:hover {
+  background-color: #2c9c48; /* Dunkleres Blau bei Hover */
+  transform: scale(1.05); /* Leichtes Vergrößern beim Drüberfahren */
+}

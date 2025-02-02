@@ -90,12 +90,12 @@
                 "License": "CC BY-SA 2.1 JP",
                 "Source": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
             },
-            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Teres_minor_muscle_back4.png/640px-Teres_minor_muscle_back4.png"
+            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Subscapularis_muscle_frontal2.png/640px-Subscapularis_muscle_frontal2.png"
         },
         {
             "Name": "M. deltoideus",
             "Joints": "Art. humeri",
-            "Movements": "Abduktion, Flexion, Extension, Außenrotation, Innenrotation",
+            "Movements": "Abduktion",
             "Segments": "N. axillaris, C5, C6",
             "Image": "assets/images/Deltoid_muscle_back2.png",
             "Origin": [
@@ -115,13 +115,13 @@
             "Insertion": [
                 "Tuberositas deltoidea am Humerus"
             ],
-            "Function": "Gesamter Muskel: Abduktion, Pars Clavicularis: Flexion, Innenrotation, Pars Spinalis: Extension, Außenrotation",
+            "Function": "Abduktion",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
                 "Source": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
             },
-            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Subscapularis_muscle_frontal2.png/640px-Subscapularis_muscle_frontal2.png"
+            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Deltoid_muscle_back2.png/640px-Deltoid_muscle_back2.png"
         },
         {
             "Name": "M. teres major",
@@ -144,7 +144,7 @@
                 "License": "CC BY-SA 2.1 JP",
                 "Source": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
             },
-            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Deltoid_muscle_back2.png/640px-Deltoid_muscle_back2.png"
+            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Teres_major_muscle_back2.png/640px-Teres_major_muscle_back2.png"
         },
         {
             "Name": "M. latissimus dorsi",
@@ -179,7 +179,7 @@
                 "License": "CC BY-SA 2.1 JP",
                 "Source": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
             },
-            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Teres_major_muscle_back2.png/640px-Teres_major_muscle_back2.png"
+            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Latissimus_dorsi_muscle_back2.png/640px-Latissimus_dorsi_muscle_back2.png"
         },
         {
             "Name": "M. pectoralis major",
@@ -210,7 +210,7 @@
                 "License": "CC BY-SA 2.1 JP",
                 "Source": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
             },
-            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Latissimus_dorsi_muscle_back2.png/640px-Latissimus_dorsi_muscle_back2.png"
+            "ImageSource": ""
         },
         {
             "Name": "M. coracobrachialis",
@@ -233,7 +233,7 @@
                 "License": "CC BY 4.0",
                 "Source": "https://creativecommons.org/licenses/by/4.0/"
             },
-            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Biceps_brachii_muscle06.png/640px-Biceps_brachii_muscle06.png"
+            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Coracobrachialis_muscle06.png/640px-Coracobrachialis_muscle06.png"
         },
         {
             "Name": "M. biceps brachii",
@@ -260,7 +260,7 @@
                 "License": "CC BY-SA 2.1 JP",
                 "Source": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
             },
-            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Coracobrachialis_muscle06.png/640px-Coracobrachialis_muscle06.png"
+            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Biceps_brachii_muscle06.png/640px-Biceps_brachii_muscle06.png"
         },
         {
             "Name": "M. triceps brachii",
@@ -291,7 +291,7 @@
                 "License": "CC BY-SA 2.1 JP",
                 "Source": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
             },
-            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Biceps_brachii_muscle06.png/640px-Biceps_brachii_muscle06.png"
+            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Triceps_brachii_muscle06.png/640px-Triceps_brachii_muscle06.png"
         },
         {
             "Name": "M. trapezius – pars descendens",
@@ -314,7 +314,7 @@
                 "License": "CC BY-SA 2.1 JP",
                 "Source": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
             },
-            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Triceps_brachii_muscle06.png/640px-Triceps_brachii_muscle06.png"
+            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Trapezius_lateral3.png/640px-Trapezius_lateral3.png"
         },
         {
             "Name": "M. trapezius – pars transversa",
@@ -498,7 +498,7 @@
         {
             "Name": "M. palmaris longus",
             "Joints": "Art. cubiti, Art. manus",
-            "Movements": "Flexion",
+            "Movements": "Flexion, Palmarflexion",
             "Segments": "N. medianus, C8, TH1",
             "Image": "assets/images/Palmaris-longus-horizontal.png",
             "Origin": [
@@ -625,7 +625,7 @@
         {
             "Name": "M. flexor pollicis longus",
             "Joints": "Art. manus, Daumensattelgelenk, MCP, IP",
-            "Movements": "Flexion",
+            "Movements": "Flexion, Opposition",
             "Segments": "N. medianus, C6, C7, C8",
             "Image": "assets/images/Musculus_flexor_pollicis_longus.png",
             "Origin": [
@@ -647,7 +647,7 @@
         },
         {
             "Name": "M. pronator quadratus",
-            "Joints": "Art. cubiti",
+            "Joints": "Art. Cubiti",
             "Movements": "Pronation",
             "Segments": "N. medianus, C8, TH1",
             "Image": "assets/images/640px-Pronator-quadratus.png",
@@ -662,9 +662,9 @@
             ],
             "Function": "Pronation",
             "Attribution": {
-                "Author": "",
-                "License": "",
-                "Source": ""
+                "Author": "Henry Gray",
+                "License": "Public domain",
+                "Source": "https://creativecommons.org/public-domain/"
             },
             "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Pronator-quadratus.png/640px-Pronator-quadratus.png"
         },
@@ -694,9 +694,9 @@
         {
             "Name": "M. extensor digiti minimi",
             "Joints": "Art. manus, MCP, PIP, DIP",
-            "Movements": "Extension",
+            "Movements": "Extension, Ulnarduktion",
             "Segments": "N. radialis, C6, C7, C8",
-            "Image": "",
+            "Image": "assets/images/Gray_musculus_extensor_digiti_minimi.png",
             "Origin": [
                 {
                     "Part": "",
@@ -708,11 +708,11 @@
             ],
             "Function": "Extension, Ulnarduktion",
             "Attribution": {
-                "Author": "",
-                "License": "",
-                "Source": ""
+                "Author": "Henry Vandyke Carter",
+                "License": "Public domain",
+                "Source": "https://creativecommons.org/public-domain/"
             },
-            "ImageSource": ""
+            "ImageSource": "https://upload.wikimedia.org/wikipedia/commons/8/87/Gray_%E2%80%94_musculus_extensor_digiti_minimi.png"
         },
         {
             "Name": "M. extensor carpi ulnaris",
@@ -793,7 +793,7 @@
             "Joints": "Art. cubiti",
             "Movements": "Supination",
             "Segments": "N. radialis, C5, C6",
-            "Image": "assets/images/Gray_—_musculus_supinator.png",
+            "Image": "assets/images/Gray_musculus_supinator.png",
             "Origin": [
                 {
                     "Part": "",
@@ -814,9 +814,9 @@
         {
             "Name": "M. abduktor pollicis longus",
             "Joints": "Art. manus, Daumensattelgelenk",
-            "Movements": "Abduktion",
+            "Movements": "Abduktion, Radialduktion",
             "Segments": "N. radialis, C6, C7, C8",
-            "Image": "",
+            "Image": "assets/images/Gray_musculus_abductor_pollicis_longus.png",
             "Origin": [
                 {
                     "Part": "",
@@ -828,11 +828,11 @@
             ],
             "Function": "Abduktion, Radialduktion",
             "Attribution": {
-                "Author": "",
-                "License": "",
-                "Source": ""
+                "Author": "Henry Gray (1918)",
+                "License": "Public domain",
+                "Source": "https://creativecommons.org/public-domain/"
             },
-            "ImageSource": ""
+            "ImageSource": "https://commons.wikimedia.org/wiki/Category:Abductor_pollicis_longus_muscles#/media/File:Gray_%E2%80%94_musculus_abductor_pollicis_longus.png"
         },
         {
             "Name": "M. extensor pollicis brevis & longus",
@@ -881,8 +881,8 @@
         },
         {
             "Name": "M. abduktor pollicis brevis",
-            "Joints": "Art. manus,   Daumensattelgelenk, MCP",
-            "Movements": "Abduktion",
+            "Joints": "Daumensattelgelenk, MCP",
+            "Movements": "Abduktion, Flexion",
             "Segments": "N. medianus, C6, C7",
             "Image": "assets/images/Musculus_abductor_pollicis_brevis_-_red.png",
             "Origin": [
@@ -894,7 +894,7 @@
             "Insertion": [
                 "Basis Phalanx proximalis"
             ],
-            "Function": "Abduktion, Flexion",
+            "Function": "Abduktion (DSG), Flexion (MCP I)",
             "Attribution": {
                 "Author": "Henry Vandyke Carter",
                 "License": "Public domain",
@@ -905,7 +905,7 @@
         {
             "Name": "M. adduktor pollicis",
             "Joints": "Daumensattelgelenk, MCP",
-            "Movements": "Adduktion",
+            "Movements": "Adduktion, Opposition, Flexion",
             "Segments": "N. ulnaris, C8, TH1",
             "Image": "assets/images/Gray415_-_Adductor_pollicis_-_red.png",
             "Origin": [
@@ -932,9 +932,9 @@
         {
             "Name": "M. flexor pollicis brevis",
             "Joints": "Daumensattelgelenk, MCP",
-            "Movements": "Flexion",
+            "Movements": "Flexion, Opposition, Flexion",
             "Segments": "N. medianus, C8, TH1",
-            "Image": "assets/images/Gray_—_musculus_flexor_pollicis_brevis.png",
+            "Image": "assets/images/Gray_musculus_flexor_pollicis_brevis.png",
             "Origin": [
                 {
                     "Part": "Caput superficiale",
@@ -1007,7 +1007,7 @@
             "Joints": "MCP",
             "Movements": "Flexion",
             "Segments": "N. ulnaris, C8, TH1",
-            "Image": "assets/images/Gray_—_musculus_flexor_digiti_minimi_brevis.png",
+            "Image": "assets/images/Gray_musculus_flexor_digiti_minimi_brevis.png",
             "Origin": [
                 {
                     "Part": "",
@@ -1030,7 +1030,7 @@
             "Joints": "MCP",
             "Movements": "Opposition",
             "Segments": "N. ulnaris, C8, TH1",
-            "Image": "assets/images/Gray_—_musculus_opponens_digiti_minimi.png",
+            "Image": "assets/images/Gray_musculus_opponens_digiti_minimi.png",
             "Origin": [
                 {
                     "Part": "",
@@ -1053,7 +1053,7 @@
             "Joints": "Kopf, Wirbelsäule",
             "Movements": "Lateralflexion, Rotation, Dorsalextension",
             "Segments": "XI. Hirnnerv (N. accessorius), Plexus cervicalis, C1, C2",
-            "Image": "assets/images/Sternomastoid_muscle_frontal.png",
+            "Image": "assets/images/Sternomastoid muscle frontal.png",
             "Origin": [
                 {
                     "Part": "Caput sternale",
@@ -1080,7 +1080,7 @@
             "Joints": "Art. Cubiti",
             "Movements": "Flexion",
             "Segments": "N. musculocutaneus, C5, C6, C7",
-            "Image": "assets/images/Brachialis_muscle02.png",
+            "Image": "assets/images/Brachialis muscle02.png",
             "Origin": [
                 {
                     "Part": "",
