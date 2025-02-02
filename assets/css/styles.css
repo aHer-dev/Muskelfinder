@@ -371,3 +371,21 @@ footer .license-info a:hover {
   transform: scale(1.05); /* Leichtes Vergrößern beim Drüberfahren */
 }
 
+.headButton {
+  background-color: #189e97; /* Blau */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: solid 3px;
+    border-color: #90fdfd;
+    cursor: pointer;
+    margin: 20px auto; /* Zentriert den Button */
+    display: block; /* Damit margin:auto wirkt */
+    font-size: 16px;
+    text-align: center;   
+}
+
+.headButton:hover {
+  background-color: #218a8a; /* Dunkleres Blau bei Hover */
+  transform: scale(1.05); /* Leichtes Vergrößern beim Drüberfahren */
+}
