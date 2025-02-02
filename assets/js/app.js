@@ -1,3 +1,7 @@
+// ✅ Dynamische Erkennung: GitHub Pages oder Localhost?
+const isGitHub = window.location.hostname.includes("github.io");
+const basePath = isGitHub ? "/Muskelfinder" : ".."; 
+
 // DOM-Elemente
 const elements = {
     searchBar: document.getElementById('search-bar'),
@@ -6,7 +10,6 @@ const elements = {
     nerveFilter: document.getElementById('nerve-filter'),
     resultList: document.getElementById('result-list'),
     loading: document.getElementById('loading')
-    
 };
 
 // Muskel-Daten und Konfiguration
@@ -33,11 +36,7 @@ async function loadMuscleData() {
     try {
         elements.loading.style.display = 'block';
 
-        // Dynamische Erkennung: GitHub Pages oder Localhost?
-        const isGitHub = window.location.hostname.includes("github.io");
-        const basePath = isGitHub ? "/Muskelfinder" : ".."; 
-
-        // Korrigierte URL für muscles.json
+        // Dynamischer Pfad für JSON
         const url = `${basePath}/data/muscles.json`;
         console.log(`Lade Muskel-Daten von: ${url}`);
 
@@ -62,11 +61,9 @@ async function loadMuscleData() {
 function generateNerveDropdown() {
     const fragment = document.createDocumentFragment();
     
-    // Standardoption
     const defaultOption = new Option('Alle Segmente', '');
     fragment.appendChild(defaultOption);
 
-    // Gruppen und Segmente hinzufügen
     Object.entries(spinalSegments).forEach(([group, segments]) => {
         const groupElement = document.createElement('optgroup');
         groupElement.label = group;
@@ -81,9 +78,7 @@ function generateNerveDropdown() {
     elements.nerveFilter.appendChild(fragment);
 }
 
-
 function setupEventListeners() {
-    // Sofortiges Filtern bei Änderungen
     [elements.searchBar, elements.jointFilter, 
      elements.movementFilter, elements.nerveFilter].forEach(element => {
         element.addEventListener('input' in element ? 'input' : 'change', () => {
@@ -91,7 +86,6 @@ function setupEventListeners() {
         });
     });
 
-    // Debounce für Suchfeld
     let timeout;
     elements.searchBar.addEventListener('input', () => {
         clearTimeout(timeout);
@@ -144,21 +138,20 @@ function matchesMovement(muscle, selectedMovement) {
 }
 
 function matchesNerve(muscle, selectedNerve) {
-    if (!selectedNerve) return true; // Kein Filter, alle Muskeln anzeigen
+    if (!selectedNerve) return true;
 
-    // Extrahiere nur die Segmente (z. B. "C2, C3, C4") aus dem Feld
-    const segmentsText = muscle.Segments.replace(/[^C,T,H,L,S,0-9, ]/g, ''); // Entferne alles außer Segmenten
+    const segmentsText = muscle.Segments.replace(/[^C,T,H,L,S,0-9, ]/g, '');
     const muscleSegments = segmentsText.split(',').map(s => s.trim());
 
-    // Überprüfe, ob das ausgewählte Segment in den Muskelsegmenten enthalten ist
     return muscleSegments.includes(selectedNerve);
 }
 
+// ✅ Korrigierte Funktion: Links zur Muskel-Detailseite sind dynamisch
 function displayResults(results) {
     elements.resultList.innerHTML = results.length > 0 
         ? results.map(muscle => `
             <li class="result-item">
-                <a href="/muscle-details.html?name=${encodeURIComponent(muscle.Name)}" 
+                <a href="${basePath}/muscle-details.html?name=${encodeURIComponent(muscle.Name)}" 
                    class="result-link">
                    ${muscle.Name}
                 </a>
