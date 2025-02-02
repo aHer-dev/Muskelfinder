@@ -3,7 +3,7 @@ const quizTypes = {
      title:"Bildzuordnung",
      description:"Ordne die Bilder den richtigen Muskeln zu.",
      start: () => {
-        window.location.href = "/quizzes/image-match-quiz.html";
+        window.location.href = "../quizzes/image-match-quiz.html";
     } 
 },
 
