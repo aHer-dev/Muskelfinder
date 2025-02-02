@@ -1,18 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Prüft, ob die Seite auf GitHub Pages oder Localhost läuft
     let isGitHub = window.location.hostname.includes("github.io");
     let basePath = isGitHub ? "/Muskelfinder" : ".."; 
 
     console.log(`fixPaths.js: Setze Basis-Pfad auf: ${basePath}`);
 
-    // ✅ Stylesheet-Pfad automatisch korrigieren
+    // ✅ Stylesheet
     let stylesheet = document.querySelector("link[rel='stylesheet']");
     if (stylesheet) {
+        console.log(`Altes CSS: ${stylesheet.href}`);
         stylesheet.href = basePath + "/assets/css/styles.css";
+        console.log(`Neues CSS: ${stylesheet.href}`);
     }
 
-    // ✅ ALLE Skripte mit `data-fixpath` korrigieren
+    // ✅ JavaScript
     document.querySelectorAll("script[data-fixpath]").forEach(script => {
+        console.log(`Altes JS: ${script.src}`);
         script.src = basePath + script.getAttribute("data-fixpath");
+        console.log(`Neues JS: ${script.src}`);
     });
 });
