@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muskelfinder</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Extra code damit in  git und local funktioniert-->
+    <script>
+        if (window.location.hostname === "localhost") {
+          document.write('<base href="/">');
+        } else {
+          document.write('<base href="https://aher-dev.github.io/Muskelfinder/">');
+        }
+      </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
@@ -72,7 +80,15 @@
         </section>
     </footer>
 
-    <script src="/assets/js/app.js"></script>
+<!--Anpassung an git und local-->
+
+    <script>
+        if (window.location.hostname === "localhost") {
+          document.write('<script src="/assets/js/app.js"><\/script>');
+        } else {
+          document.write('<script src="/Muskelfinder/assets/js/quiz.js"><\/script>');
+        }
+      </script>
 </body>
 <footer> © 2025 </footer>
 </html>
