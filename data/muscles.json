@@ -550,7 +550,7 @@
             "Joints": "Art. cubiti,  Art. manus, MCP, PIP",
             "Movements": "Flexion",
             "Segments": "N. medianus, C7, C8, TH1",
-            "Image": "assets/images/Flexor_carpi_ulnaris.png",
+            "Image": "assets/images/Flexor-digitorum-superficialis-horizontal.png",
             "Origin": [
                 {
                     "Part": "",
