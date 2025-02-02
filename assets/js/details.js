@@ -1,3 +1,7 @@
+// ✅ Dynamische Erkennung: GitHub Pages oder Localhost?
+const isGitHub = window.location.hostname.includes("github.io");
+const basePath = isGitHub ? "/Muskelfinder" : ".."; 
+
 // Globale Elementreferenzen zentral verwalten
 const elements = {
     licenseInfo: document.getElementById("license-info"),
@@ -45,8 +49,12 @@ console.log("closeButton:", elements.closeButton);
 console.log("modal:", elements.modal);
 
 async function fetchMuscleData() {
-    const response = await fetch("/data/muscles.json");
+    const url = `${basePath}/data/muscles.json`;
+    console.log(`Lade Muskel-Daten von: ${url}`);
+
+    const response = await fetch(url);
     if (!response.ok) throw new Error('Netzwerkfehler');
+    
     return response.json();
 }
 
@@ -71,9 +79,8 @@ function closeModal() {
 function openModal(imageSrc) {
     console.log("Original imageSrc:", imageSrc);
 
-    // Falls imageSrc RELATIV ist, stelle sicher, dass es ABSOLUT wird
     if (!imageSrc.startsWith("http")) {
-        imageSrc = window.location.origin + "/" + imageSrc.replace(/^\/+/, "");
+        imageSrc = window.location.origin + `${basePath}/` + imageSrc.replace(/^\/+/, "");
     }
 
     console.log("Bereinigter imageSrc:", imageSrc);
@@ -109,14 +116,12 @@ function loadMuscleDetails(data) {
         return;
     }
 
-    // Seitentitel aktualisieren
     elements.muscleTitleName.textContent = muscle.Name;
 
-    // HTML Generierung
     elements.muscleDetailsContainer.innerHTML = `
         <section class="details-section">
             <div class="image-container">
-                <img src="/${muscle.Image}" alt="${muscle.Name}" 
+                <img src="${basePath}/${muscle.Image}" alt="${muscle.Name}" 
                      class="zoomable-image" style="max-width: 400px;">
             </div>
             <div class="info-container">
@@ -160,7 +165,7 @@ function generateAttribution(muscle) {
             lizenziert unter <a href="${muscle.Attribution.Source}" target="_blank">${muscle.Attribution.License}</a>`;
 }
 
-// Back-Button Event-Listener
+// ✅ Back-Button Event-Listener (Funktioniert überall!)
 elements.backButton.addEventListener('click', () => 
-    window.location.href = "index.html"
+    window.location.href = `${basePath}/index.html`
 );
