@@ -298,7 +298,7 @@
             "Joints": "Schultergürtel",
             "Movements": "Elevation, Lateralflexion, Rotation",
             "Segments": "XI. Hirnnerv (N. accessorius), Plexus cervicalis, C2, C3, C4",
-            "Image": "assets/images/Trapezius_lateral3.png",
+            "Image": "assets/images/Trapezius_lateral1.png",
             "Origin": [
                 {
                     "Part": "",
@@ -321,7 +321,7 @@
             "Joints": "Schultergürtel",
             "Movements": "Retraktion",
             "Segments": "XI. Hirnnerv (N. accessorius), Plexus cervicalis, C2, C3, C4",
-            "Image": "assets/images/Trapezius_lateral3.png",
+            "Image": "assets/images/Trapezius_lateral2.png",
             "Origin": [
                 {
                     "Part": "",
