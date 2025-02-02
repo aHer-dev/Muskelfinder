@@ -1051,9 +1051,9 @@
         {
             "Name": "M. sternocleidomastoideus",
             "Joints": "Kopf, Wirbelsäule",
-            "Movements": "Lateralflexion, Rotation, Dorsalextension",
+            "Movements": "Lateralflexion, Rotation, Extension",
             "Segments": "XI. Hirnnerv (N. accessorius), Plexus cervicalis, C1, C2",
-            "Image": "assets/images/Sternomastoid muscle frontal.png",
+            "Image": "assets/images/Sternomastoid_muscle_frontal.png",
             "Origin": [
                 {
                     "Part": "Caput sternale",
@@ -1067,7 +1067,7 @@
             "Insertion": [
                 "Proc. Mastoideus und Linea nuchalis superior"
             ],
-            "Function": "Lateralflexion, Rotation, Dorsalextension",
+            "Function": "Lateralflexion, Rotation, Extension",
             "Attribution": {
                 "Author": "Anatomography",
                 "License": "CC BY-SA 2.1 JP",
@@ -1080,7 +1080,7 @@
             "Joints": "Art. Cubiti",
             "Movements": "Flexion",
             "Segments": "N. musculocutaneus, C5, C6, C7",
-            "Image": "assets/images/Brachialis muscle02.png",
+            "Image": "assets/images/Brachialis_muscle02.png",
             "Origin": [
                 {
                     "Part": "",

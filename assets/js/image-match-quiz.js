@@ -123,3 +123,4 @@ function updateStatusBar() {
       indicator.style.backgroundColor = "red";
   }
 }
+

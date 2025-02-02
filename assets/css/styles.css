@@ -345,8 +345,10 @@ footer .license-info a:hover {
     width: 25px;
     height: 25px;
     border-radius: 50%;
+    border: 2px solid #acacac;
     background-color: red; /* Standardfarbe */
     transition: background-color 0.3s ease-in-out;
+
 }
 
 #startImageMatch {
@@ -368,3 +370,4 @@ footer .license-info a:hover {
   background-color: #2c9c48; /* Dunkleres Blau bei Hover */
   transform: scale(1.05); /* Leichtes Vergrößern beim Drüberfahren */
 }
+
