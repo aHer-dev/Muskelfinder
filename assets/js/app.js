@@ -32,15 +32,27 @@ function initFilters() {
 async function loadMuscleData() {
     try {
         elements.loading.style.display = 'block';
-        const response = await fetch('/data/muscles.json');
-        
-        if (!response.ok) throw new Error('Netzwerkfehler');
-        
+
+        // Dynamische Erkennung: GitHub Pages oder Localhost?
+        const isGitHub = window.location.hostname.includes("github.io");
+        const basePath = isGitHub ? "/Muskelfinder" : ".."; 
+
+        // Korrigierte URL für muscles.json
+        const url = `${basePath}/data/muscles.json`;
+        console.log(`Lade Muskel-Daten von: ${url}`);
+
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP Fehler! Status: ${response.status}`);
+        }
+
         const data = await response.json();
         muscles = data.Sheet1;
+        console.log("Muskel-Daten erfolgreich geladen:", muscles);
+
         filterResults();
     } catch (error) {
-        console.error('Fehler:', error);
+        console.error("Fehler beim Laden der Muskel-Daten:", error);
         elements.resultList.innerHTML = '<li>Daten konnten nicht geladen werden</li>';
     } finally {
         elements.loading.style.display = 'none';
