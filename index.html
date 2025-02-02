@@ -82,13 +82,14 @@
 
 <!--Anpassung an git und local-->
 
-    <script>
-        if (window.location.hostname === "localhost") {
-          document.write('<script src="/assets/js/app.js"><\/script>');
-        } else {
-          document.write('<script src="/Muskelfinder/assets/js/quiz.js"><\/script>');
-        }
-      </script>
+<script>
+    const script = document.createElement("script");
+    script.src = window.location.hostname === "localhost"
+      ? "/assets/js/app.js"
+      : "https://aher-dev.github.io/Muskelfinder/assets/js/app.js";
+    document.body.appendChild(script);
+  </script>
+  
 </body>
 <footer> © 2025 </footer>
 </html>
