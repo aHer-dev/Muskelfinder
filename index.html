@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muskelfinder</title>
-   <link rel="stylesheet" href="assets/css/styles.css">
-<script>
-  // Erkenne GitHub Pages und setze automatisch den <base>-Pfad
-  if (location.hostname.includes("github.io")) {
-    const base = document.createElement('base');
-    base.href = '/Muskelfinder/';  // Korrigierter Repository-Name
-    document.head.appendChild(base);
-  }
-</script>
+    <base href="/">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+      // Erkenne GitHub Pages und setze automatisch den <base>-Pfad
+      if (location.hostname.includes("github.io")) {
+        const base = document.createElement('base');
+        base.href = '/Muskelfinder/'; // Ersetzt durch deinen Repository-Namen
+        document.head.appendChild(base);
+      }
+    </script>
 </head>
 <body>
     <header>
@@ -84,7 +85,7 @@
         © 2025
     </footer>
 
-<script src="assets/js/app.js"></script>
-<script src="assets/js/progress.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/progress.js"></script>
 </body>
 </html>

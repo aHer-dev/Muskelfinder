@@ -1,6 +1,6 @@
 // ✅ Dynamische Erkennung: GitHub Pages oder Localhost?
 const isGitHub = window.location.hostname.includes("github.io");
-const basePath = isGitHub ? "/Muskelfinder" : ".."; 
+const basePath = isGitHub ? "/Muskelfinder/" : "";
 
 // DOM-Elemente
 const elements = {
@@ -52,10 +52,10 @@ function matchesJoint(muscle, selectedJoint) {
 async function loadMuscleData() {
     try {
         elements.loading.style.display = 'block';
-        const response = await fetch(basePath + '/data/muscles.json'); // Verwende basePath
+        const response = await fetch(basePath + 'data/muscles.json'); // Use basePath
         if (!response.ok) {
-            // Versuche alternativen Pfad, falls der erste fehlschlägt
-            const alternativeResponse = await fetch(basePath + '/data/muscles.json');
+            // Try alternative path if the first fails
+            const alternativeResponse = await fetch(basePath + 'data/muscles.json');
             if (!alternativeResponse.ok) throw new Error('JSON-Datei nicht gefunden: ' + response.status);
             const data = await alternativeResponse.json();
             muscles = data.Sheet1;
@@ -153,11 +153,12 @@ function matchesNerve(muscle, selectedNerve) {
     return muscleSegments.includes(selectedNerve);
 }
 
+// ✅ Korrigierte Funktion: Links zur Muskel-Detailseite sind dynamisch
 function displayResults(results) {
     elements.resultList.innerHTML = results.length > 0
         ? results.map(muscle => `
             <li class="result-item">
-                <a href="${basePath}/muscle-details.html?name=${encodeURIComponent(muscle.Name)}" class="result-link">
+                <a href="${basePath}muscle-details.html?name=${encodeURIComponent(muscle.Name)}" class="result-link">
                     ${muscle.Name}
                 </a>
                 <div class="result-info">
