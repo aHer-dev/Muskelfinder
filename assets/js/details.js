@@ -83,8 +83,9 @@ function closeModal() {
 function openModal(imageSrc) {
     console.log("Original imageSrc:", imageSrc);
 
-   if (!imageSrc.startsWith("http")) {
-    imageSrc = (basePath ? basePath : '') + imageSrc.replace(/^\/+/, ""); // Entferne überflüssiges window.location.origin
+if (!imageSrc.startsWith("http")) {
+    imageSrc = (basePath ? basePath : '') + imageSrc.replace(/^\/+/, "");
+    console.log("Adjusted imageSrc for modal:", imageSrc); // Debug
 }
 
     console.log("Bereinigter imageSrc:", imageSrc);
@@ -135,7 +136,7 @@ function loadMuscleDetails(data) {
         elements.muscleDetailsContainer.innerHTML = `
             <section class="details-section">
                 <div class="image-container">
-                    <img src="${muscle.Image}" alt="${muscle.Name}" 
+                    <img src="${basePath}${muscle.Image.replace(/^\/+/, '')}" alt="${muscle.Name}" class="zoomable-image" style="max-width: 400px;">
                          class="zoomable-image" style="max-width: 400px;">
                 </div>
                 <div class="info-container">
