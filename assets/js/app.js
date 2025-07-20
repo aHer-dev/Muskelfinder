@@ -1,3 +1,7 @@
+// ✅ Dynamische Erkennung: GitHub Pages oder Localhost?
+const isGitHub = window.location.hostname.includes("github.io");
+const basePath = isGitHub ? "/Muskelfinder" : ".."; 
+
 // DOM-Elemente
 const elements = {
     searchBar: document.getElementById('search-bar'),
@@ -149,6 +153,7 @@ function matchesNerve(muscle, selectedNerve) {
     return muscleSegments.includes(selectedNerve);
 }
 
+// ✅ Korrigierte Funktion: Links zur Muskel-Detailseite sind dynamisch
 function displayResults(results) {
     elements.resultList.innerHTML = results.length > 0
         ? results.map(muscle => `

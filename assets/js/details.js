@@ -1,3 +1,7 @@
+// ✅ Dynamische Erkennung: GitHub Pages oder Localhost?
+const isGitHub = window.location.hostname.includes("github.io");
+const basePath = isGitHub ? "/Muskelfinder" : ".."; 
+
 // Globale Elementreferenzen zentral verwalten
 const elements = {
     licenseInfo: document.getElementById("licenseInfo"),
@@ -78,7 +82,7 @@ function openModal(imageSrc) {
     console.log("Original imageSrc:", imageSrc);
 
     if (!imageSrc.startsWith("http")) {
-        imageSrc = window.location.origin + "/" + imageSrc.replace(/^\/+/, "");
+        imageSrc = window.location.origin + `${basePath}/` + imageSrc.replace(/^\/+/, "");
     }
 
     console.log("Bereinigter imageSrc:", imageSrc);

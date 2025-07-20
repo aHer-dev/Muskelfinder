@@ -675,7 +675,7 @@
         {
             "Name": "M. sternocleidomastoideus",
             "Joints": "Kopf, Wirbelsäule",
-            "Movements": "Lateralflexion, Rotation, Dorsalextension",
+            "Movements": "Lateralflexion, Rotation, Extension",
             "Segments": "XI. Hirnnerv (N. accessorius), Plexus cervicalis, C1, C2",
             "Image": "/assets/images/Sternomastoid_muscle_frontal.png",
             "Origin": "Caput sternale: Manubrium sterni, Caput claviculare: mediales Drittel der Clavicula",

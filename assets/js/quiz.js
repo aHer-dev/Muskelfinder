@@ -1,3 +1,7 @@
+// Prüft, ob wir auf GitHub Pages oder lokal sind
+const isGitHub = window.location.hostname.includes("github.io");
+const basePath = isGitHub ? "/Muskelfinder" : ".."; // Setzt den Basis-Pfad
+
 const quizTypes = {
     imageMatch: {
         title: "Bildzuordnung",
