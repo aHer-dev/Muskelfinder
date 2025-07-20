@@ -7,24 +7,27 @@ const quizTypes = {
         title: "Bildzuordnung",
         description: "Ordne die Bilder den richtigen Muskeln zu.",
         start: () => {
-            window.location.href = basePath + "quizzes/image-match-quiz.html";
-            console.log("Navigating to:", basePath + "quizzes/image-match-quiz.html"); // Debug
+            const url = basePath + "quizzes/image-match-quiz.html";
+            console.log("Attempting to navigate to:", url); // Debug
+            window.location.href = url;
         }
     },
     originInsertion: {
         title: "Ursprung & Ansatz",
         description: "Wähle die richtigen Ansätze und Ursprünge aus.",
         start: () => {
-            window.location.href = basePath + "quizzes/origin-insertion-quiz.html";
-            console.log("Navigating to:", basePath + "quizzes/origin-insertion-quiz.html"); // Debug
+            const url = basePath + "quizzes/origin-insertion-quiz.html";
+            console.log("Attempting to navigate to:", url); // Debug
+            window.location.href = url;
         }
     },
     muscleComparison: {
         title: "Muskelvergleich",
         description: "Erkenne den Muskel anhand seiner Eigenschaften",
         start: () => {
-            window.location.href = basePath + "quizzes/muscle-comparison-quiz.html";
-            console.log("Navigating to:", basePath + "quizzes/muscle-comparison-quiz.html"); // Debug
+            const url = basePath + "quizzes/muscle-comparison-quiz.html";
+            console.log("Attempting to navigate to:", url); // Debug
+            window.location.href = url;
         }
     }
 };
