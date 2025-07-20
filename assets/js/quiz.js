@@ -20,16 +20,8 @@ const quizTypes = {
             console.log("Attempting to navigate to:", url); // Debug
             window.location.href = url;
         }
-    },
-    muscleComparison: {
-        title: "Muskelvergleich",
-        description: "Erkenne den Muskel anhand seiner Eigenschaften",
-        start: () => {
-            const url = basePath + "/quizzes/muscle-comparison-quiz.html";
-            console.log("Attempting to navigate to:", url); // Debug
-            window.location.href = url;
-        }
     }
+    
 };
 
 function startQuiz(quizType) {
