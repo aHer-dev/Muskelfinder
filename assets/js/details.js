@@ -55,11 +55,6 @@ function checkElements() {
     return allFound;
 }
 
-async function fetchMuscleData() {
-    const response = await fetch("/data/muscles.json");
-    if (!response.ok) throw new Error('Netzwerkfehler beim Laden von muscles.json');
-    return response.json();
-}
 
 function handleError(error) {
     console.error("Fehler:", error.message);
