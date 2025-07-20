@@ -52,10 +52,10 @@ function matchesJoint(muscle, selectedJoint) {
 async function loadMuscleData() {
     try {
         elements.loading.style.display = 'block';
-        const response = await fetch('/data/muscles.json'); // Aktueller Pfad
+        const response = await fetch(basePath + '/data/muscles.json'); // Verwende basePath
         if (!response.ok) {
             // Versuche alternativen Pfad, falls der erste fehlschlägt
-            const alternativeResponse = await fetch('./data/muscles.json');
+            const alternativeResponse = await fetch(basePath + '/data/muscles.json');
             if (!alternativeResponse.ok) throw new Error('JSON-Datei nicht gefunden: ' + response.status);
             const data = await alternativeResponse.json();
             muscles = data.Sheet1;
@@ -153,12 +153,11 @@ function matchesNerve(muscle, selectedNerve) {
     return muscleSegments.includes(selectedNerve);
 }
 
-// ✅ Korrigierte Funktion: Links zur Muskel-Detailseite sind dynamisch
 function displayResults(results) {
     elements.resultList.innerHTML = results.length > 0
         ? results.map(muscle => `
             <li class="result-item">
-                <a href="/muscle-details.html?name=${encodeURIComponent(muscle.Name)}" class="result-link">
+                <a href="${basePath}/muscle-details.html?name=${encodeURIComponent(muscle.Name)}" class="result-link">
                     ${muscle.Name}
                 </a>
                 <div class="result-info">
