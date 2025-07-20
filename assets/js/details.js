@@ -187,5 +187,8 @@ function generateAttribution(muscle) {
 }
 
 if (elements.backButton) {
-    elements.backButton.addEventListener('click', () => window.location.href = "/index.html");
+    elements.backButton.addEventListener('click', () => {
+        window.location.href = basePath + 'index.html';
+        console.log("Navigating to:", basePath + 'index.html'); // Debug
+    });
 }
