@@ -16,13 +16,13 @@ function updatePoints(addPoints) {
             notification.classList.remove('show');
             let badge = '';
             if (points >= 50 && points < 200) {
-                badge = 'Badge: Anatomy-Rooky!';
-            } else if (points >= 200 && points < 400) {
-                badge = 'Badge: Muscel-Expert!';
-            } else if (points >= 400 && points < 600) {
-                badge = 'Badge: Muscle-Pro!';
-            } else if (points >= 600) {
-                badge = 'Badge: Anatomy-Master!';
+                badge = 'Rang: Anatomy-Rooky!';
+            } else if (points >= 200 && points < 500) {
+                badge = 'Rang: Muscel-Expert!';
+            } else if (points >= 500 && points < 1000) {
+                badge = 'Rang: Muscle-Pro!';
+            } else if (points >= 1000) {
+                badge = 'Rang: Anatomy-Master!';
             }
             if (badge) {
                 notification.textContent = badge;
