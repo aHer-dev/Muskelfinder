@@ -1,6 +1,6 @@
 // ✅ Dynamische Erkennung: GitHub Pages oder Localhost?
 const isGitHub = window.location.hostname.includes("github.io");
-const basePath = isGitHub ? "/Muskelfinder" : "";
+const basePath = isGitHub ? "" : "";
 
 async function fetchMuscleData() {
     const response = await fetch(basePath + 'data/muscles.json');

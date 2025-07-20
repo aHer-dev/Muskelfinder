@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     let isGitHub = window.location.hostname.includes("github.io");
-    let basePath = isGitHub ? "/Muskelfinder" : ".."; 
+    let basePath = isGitHub ? "" : ".."; 
 
     console.log(`fixPaths.js: Setze Basis-Pfad auf: ${basePath}`);
 

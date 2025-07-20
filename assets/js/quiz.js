@@ -1,6 +1,6 @@
 // Füge basePath am Anfang hinzu
 const isGitHub = window.location.hostname.includes("github.io");
-const basePath = isGitHub ? "/Muskelfinder" : "";
+const basePath = isGitHub ? "" : "";
 
 const quizTypes = {
     imageMatch: {
