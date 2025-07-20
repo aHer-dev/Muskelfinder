@@ -11,10 +11,7 @@ fetch(basePath + '/data/muscles.json')
         return response.json();
     })
     .then(data => {
-        muscles = data.Sheet1.map(muscle => ({
-            ...muscle,
-            Image: muscle.Image.startsWith('/') ? muscle.Image : `/${muscle.Image}`
-        }));
+        muscles = data.Sheet1;
         if (muscles.length === 0) throw new Error('Keine Muskeln in der JSON-Datei');
         loadQuiz();
     })
@@ -48,14 +45,15 @@ function loadQuiz() {
     // Ursprung anzeigen
     questionBox.innerHTML = `<strong>Ursprung:</strong> ${formatOriginText(currentMuscle.Origin)}`;
 
-    // Muskelbild setzen
-    image.onerror = () => {
-    console.error(`Bild konnte nicht geladen werden: ${basePath + currentMuscle.Image}`);
-    if (!image.src.includes('fallback-error')) { // Verhindert Endlosschleife
-        image.src = basePath + '/assets/images/640px-Biceps_brachii_muscle06.png';
-    } else {
-        image.src = ''; // Stoppt nach mehreren Versuchen
-    }
+// Muskelbild setzen
+image.src = basePath + currentMuscle.Image;
+image.onerror = () => {
+  console.error(`Bild konnte nicht geladen werden: ${basePath + currentMuscle.Image}`);
+  if (!image.src.includes('fallback-error')) { // Verhindert Endlosschleife
+      image.src = basePath + '/assets/images/640px-Biceps_brachii_muscle06.png';
+  } else {
+      image.src = ''; // Stoppt nach mehreren Versuchen
+  }
 };
 
     // Muskelname (z. B. in kleiner Schrift)
