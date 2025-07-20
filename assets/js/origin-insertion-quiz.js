@@ -1,8 +1,11 @@
+const isGitHub = window.location.hostname.includes("github.io");
+const basePath = isGitHub ? "/Muskelfinder" : "";
+
 let muscles = [];
 let currentMuscle;
 
 // JSON-Daten laden
-fetch('/data/muscles.json')
+fetch(basePath + '/data/muscles.json')
     .then(response => {
         if (!response.ok) throw new Error('JSON-Datei nicht gefunden: ' + response.status);
         return response.json();

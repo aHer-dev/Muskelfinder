@@ -1,27 +1,23 @@
 // Initiale Werte aus localStorage laden
+const isGitHub = window.location.hostname.includes("github.io");
+const basePath = isGitHub ? "/Muskelfinder" : "";
+
 let muscles = [];
 let currentMuscle;
-
-// Dynamische Base-Path-Definition
-const basePath = location.hostname.includes("github.io") ? '/Muskelfinder' : '';
-console.log("Fetching from:", basePath + '/data/muscles.json'); // Debug
 
 // JSON-Daten laden
 fetch(basePath + '/data/muscles.json')
     .then(response => {
-        if (!response.ok) throw new Error('JSON-Datei nicht gefunden: ' + response.status);
+        if (!response.ok) throw new Error(`HTTP Fehler! Status: ${response.status}`);
         return response.json();
     })
     .then(data => {
-        muscles = data.Sheet1.map(muscle => ({
-            ...muscle,
-            Image: muscle.Image.startsWith('/') ? muscle.Image : `/${muscle.Image}`
-        }));
+        muscles = data.Sheet1; // Entferne Image-Mapping
         loadQuiz();
     })
     .catch(error => {
         console.error('Fehler beim Laden der JSON-Daten:', error);
-        document.getElementById('feedback').innerHTML = `<p>Fehler: ${error.message}. Das Quiz kann nicht fortgesetzt werden.</p>`;
+        document.getElementById('feedback').innerHTML = `<p>Fehler: ${error.message}. Stelle sicher, dass muscles.json im /data/ Ordner liegt.</p>`;
     });
 
 function getRandomMuscle() {
@@ -35,13 +31,13 @@ function loadQuiz() {
 
 function generateImageQuiz(muscle) {
     const img = document.getElementById('mainImage');
-    const imgSrc = basePath + '/' +muscle.Image.replace(/^\/+/, '');
-    console.log("Image source:", imgSrc); // Debug
-    img.src = imgSrc;
-    img.onerror = () => {
-        console.error(`Bild konnte nicht geladen werden: ${muscle.Image}`);
-        img.src = basePath + '/assets/images/640px-Biceps_brachii_muscle06.png';
-    };
+const imgSrc = basePath + muscle.Image;
+console.log("Image source:", imgSrc); // Debug
+img.src = imgSrc;
+img.onerror = () => {
+    console.error(`Bild konnte nicht geladen werden: ${imgSrc}`);
+    img.src = basePath + '/assets/images/640px-Biceps_brachii_muscle06.png';
+};
 
     const options = shuffleArray([
         muscle.Name,
