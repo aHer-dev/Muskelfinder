@@ -1,7 +1,14 @@
 // ✅ Dynamische Erkennung: GitHub Pages oder Localhost?
 const isGitHub = window.location.hostname.includes("github.io");
-const basePath = isGitHub ? "/Muskelfinder" : ".."; 
+const basePath = isGitHub ? "/Muskelfinder/" : "";
 
+// ... (andere Code bleibt gleich bis fetchMuscleData)
+
+async function fetchMuscleData() {
+    const response = await fetch(basePath + 'data/muscles.json');
+    if (!response.ok) throw new Error('Netzwerkfehler beim Laden von muscles.json');
+    return response.json();
+}
 // Globale Elementreferenzen zentral verwalten
 const elements = {
     licenseInfo: document.getElementById("licenseInfo"),
@@ -81,9 +88,9 @@ function closeModal() {
 function openModal(imageSrc) {
     console.log("Original imageSrc:", imageSrc);
 
-    if (!imageSrc.startsWith("http")) {
-        imageSrc = window.location.origin + `${basePath}/` + imageSrc.replace(/^\/+/, "");
-    }
+   if (!imageSrc.startsWith("http")) {
+    imageSrc = (basePath ? basePath : '') + imageSrc.replace(/^\/+/, ""); // Entferne überflüssiges window.location.origin
+}
 
     console.log("Bereinigter imageSrc:", imageSrc);
 
