@@ -3,8 +3,11 @@ let muscles = [];
 let currentMuscle;
 
 // JSON-Daten laden
-fetch('/data/muscles.json')
-    .then(response => response.json())
+fetch(basePath + 'data/muscles.json')
+    .then(response => {
+        if (!response.ok) throw new Error('JSON-Datei nicht gefunden: ' + response.status);
+        return response.json();
+    })
     .then(data => {
         muscles = data.Sheet1.map(muscle => ({
             ...muscle,
@@ -12,11 +15,10 @@ fetch('/data/muscles.json')
         }));
         loadQuiz();
     })
-    .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
-
-function getRandomMuscle() {
-    return muscles[Math.floor(Math.random() * muscles.length)];
-}
+    .catch(error => {
+        console.error('Fehler beim Laden der JSON-Daten:', error);
+        document.getElementById('feedback').innerHTML = `<p>Fehler: ${error.message}. Das Quiz kann nicht fortgesetzt werden.</p>`;
+    });
 
 function loadQuiz() {
     currentMuscle = getRandomMuscle();
@@ -25,11 +27,11 @@ function loadQuiz() {
 
 function generateImageQuiz(muscle) {
     const img = document.getElementById('mainImage');
-    img.src = muscle.Image;
-    img.onerror = () => {
-        console.error(`Bild konnte nicht geladen werden: ${muscle.Image}`);
-        img.src = '/assets/images/640px-Biceps_brachii_muscle06.png'; // Fallback-Bild
-    };
+img.src = basePath + muscle.Image.replace(/^\/+/, '');
+img.onerror = () => {
+    console.error(`Bild konnte nicht geladen werden: ${muscle.Image}`);
+    img.src = basePath + 'assets/images/640px-Biceps_brachii_muscle06.png';
+};
 
     const options = shuffleArray([
         muscle.Name,

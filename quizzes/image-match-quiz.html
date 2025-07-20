@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bild-Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bild-Quiz</title>
+    <script>
+        if (location.hostname.includes("github.io")) {
+            const base = document.createElement('base');
+            base.href = '/Muskelfinder/';
+            document.head.appendChild(base);
+        }
+    </script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
  <nav>
     <a href="../quizzes/quiz.html" class="back-button">Zurück</a>
 </nav>
