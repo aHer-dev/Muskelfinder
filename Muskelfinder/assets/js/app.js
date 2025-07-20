@@ -157,7 +157,7 @@ function displayResults(results) {
     elements.resultList.innerHTML = results.length > 0
         ? results.map(muscle => `
             <li class="result-item">
-                <a href="/muscle-details.html?name=${encodeURIComponent(muscle.Name)}" class="result-link">
+                <a href="/Muskelfinder/muscle-details.html?name=${encodeURIComponent(muscle.Name)}" class="result-link">
                     ${muscle.Name}
                 </a>
                 <div class="result-info">
