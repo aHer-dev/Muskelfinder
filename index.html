@@ -6,6 +6,14 @@
     <title>Muskelfinder</title>
     <base href="/">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <script>
+  // Erkenne GitHub Pages und setze automatisch den <base>-Pfad
+  if (location.hostname.includes("github.io")) {
+    const base = document.createElement('base');
+    base.href = '/DEIN-REPO-NAME/'; // <<< Passe das an deinen Repository-Namen an
+    document.head.appendChild(base);
+  }
+</script>
 </head>
 <body>
     <header>
