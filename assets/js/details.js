@@ -136,8 +136,7 @@ function loadMuscleDetails(data) {
         elements.muscleDetailsContainer.innerHTML = `
             <section class="details-section">
                 <div class="image-container">
-                    <img src="${basePath}${muscle.Image.replace(/^\/+/, '')}" alt="${muscle.Name}" class="zoomable-image" style="max-width: 400px;">
-                         class="zoomable-image" style="max-width: 400px;">
+                   <img src="${basePath}${muscle.Image.replace(/^\/+/, '')}" alt="${muscle.Name}" class="zoomable-image" style="max-width: 400px;">
                 </div>
                 <div class="info-container">
                     ${createInfoHTML('Ursprung', formatOrigin(muscle.Origin))}
