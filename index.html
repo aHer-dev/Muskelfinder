@@ -9,7 +9,7 @@
   // Erkenne GitHub Pages und setze automatisch den <base>-Pfad
   if (location.hostname.includes("github.io")) {
     const base = document.createElement('base');
-    base.href = '/Muskelfinder/'; // Ersetze den Platzhalter
+    base.href = '/Muskelfinder'; // Ersetze den Platzhalter
     document.head.appendChild(base);
   }
 </script>
@@ -18,7 +18,7 @@
     <header>
         <h1>Muskelfinder</h1>
         <p>Finde Muskeln, ihre Funktionen und Innervationen!</p>
-        <a href="quizzes/quiz.html" class="back-button">Quiz</a>
+        <a href="/quizzes/quiz.html" class="back-button">Quiz</a>
     </header>
 
     <main>

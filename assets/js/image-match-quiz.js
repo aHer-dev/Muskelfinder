@@ -3,11 +3,11 @@ let muscles = [];
 let currentMuscle;
 
 // Dynamische Base-Path-Definition
-const basePath = location.hostname.includes("github.io") ? '/Muskelfinder/' : '';
-console.log("Fetching from:", basePath + 'data/muscles.json'); // Debug
+const basePath = location.hostname.includes("github.io") ? '/Muskelfinder' : '';
+console.log("Fetching from:", basePath + '/data/muscles.json'); // Debug
 
 // JSON-Daten laden
-fetch(basePath + 'data/muscles.json')
+fetch(basePath + '/data/muscles.json')
     .then(response => {
         if (!response.ok) throw new Error('JSON-Datei nicht gefunden: ' + response.status);
         return response.json();
@@ -35,12 +35,12 @@ function loadQuiz() {
 
 function generateImageQuiz(muscle) {
     const img = document.getElementById('mainImage');
-    const imgSrc = basePath + muscle.Image.replace(/^\/+/, '');
+    const imgSrc = basePath + '/' +muscle.Image.replace(/^\/+/, '');
     console.log("Image source:", imgSrc); // Debug
     img.src = imgSrc;
     img.onerror = () => {
         console.error(`Bild konnte nicht geladen werden: ${muscle.Image}`);
-        img.src = basePath + 'assets/images/640px-Biceps_brachii_muscle06.png';
+        img.src = basePath + '/assets/images/640px-Biceps_brachii_muscle06.png';
     };
 
     const options = shuffleArray([

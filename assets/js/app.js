@@ -1,3 +1,5 @@
+const isGitHub = window.location.hostname.includes("github.io");
+const basePath = isGitHub ? "/Muskelfinder" : "";
 
 // DOM-Elemente
 const elements = {
