@@ -6,7 +6,6 @@ const elements = {
     nerveFilter: document.getElementById('nerve-filter'),
     resultList: document.getElementById('result-list'),
     loading: document.getElementById('loading')
-    
 };
 
 // Muskel-Daten und Konfiguration
@@ -29,19 +28,42 @@ function initFilters() {
     setupEventListeners();
 }
 
+function matchesJoint(muscle, selectedJoint) {
+    if (!selectedJoint) return true;
+
+    const muscleJoints = muscle.Joints.split(',').map(j => j.trim());
+    const jointGroups = {
+        'Obere Extremitäten': ['Schultergürtel', 'Art. humeri', 'Art. cubiti', 'Art. manus'],
+        'Fingergelenke': ['MCP', 'PIP', 'DIP', 'Daumensattelgelenk'],
+        'Untere Extremitäten': ['Art. coxae', 'Art. genus', 'Art. talocruralis'],
+        'Rumpf': ['Rumpf', 'Wirbelsäule']
+    };
+
+    if (jointGroups[selectedJoint]) {
+        return jointGroups[selectedJoint].some(j => muscleJoints.includes(j));
+    }
+    return muscleJoints.includes(selectedJoint);
+}
+
 async function loadMuscleData() {
     try {
         elements.loading.style.display = 'block';
-        const response = await fetch('/data/muscles.json');
-        
-        if (!response.ok) throw new Error('Netzwerkfehler');
-        
-        const data = await response.json();
-        muscles = data.Sheet1;
+        const response = await fetch('/data/muscles.json'); // Aktueller Pfad
+        if (!response.ok) {
+            // Versuche alternativen Pfad, falls der erste fehlschlägt
+            const alternativeResponse = await fetch('./data/muscles.json');
+            if (!alternativeResponse.ok) throw new Error('JSON-Datei nicht gefunden: ' + response.status);
+            const data = await alternativeResponse.json();
+            muscles = data.Sheet1;
+        } else {
+            const data = await response.json();
+            muscles = data.Sheet1;
+        }
+        if (!muscles || muscles.length === 0) throw new Error('Keine Muskeln in der JSON-Datei');
         filterResults();
     } catch (error) {
         console.error('Fehler:', error);
-        elements.resultList.innerHTML = '<li>Daten konnten nicht geladen werden</li>';
+        elements.resultList.innerHTML = `<li>Fehler: ${error.message}. Stelle sicher, dass muscles.json im /data/ Ordner liegt.</li>`;
     } finally {
         elements.loading.style.display = 'none';
     }
@@ -49,37 +71,28 @@ async function loadMuscleData() {
 
 function generateNerveDropdown() {
     const fragment = document.createDocumentFragment();
-    
-    // Standardoption
     const defaultOption = new Option('Alle Segmente', '');
     fragment.appendChild(defaultOption);
 
-    // Gruppen und Segmente hinzufügen
     Object.entries(spinalSegments).forEach(([group, segments]) => {
         const groupElement = document.createElement('optgroup');
         groupElement.label = group;
-        
         segments.forEach(segment => {
             groupElement.appendChild(new Option(segment, segment));
         });
-        
         fragment.appendChild(groupElement);
     });
 
     elements.nerveFilter.appendChild(fragment);
 }
 
-
 function setupEventListeners() {
-    // Sofortiges Filtern bei Änderungen
-    [elements.searchBar, elements.jointFilter, 
-     elements.movementFilter, elements.nerveFilter].forEach(element => {
+    [elements.searchBar, elements.jointFilter, elements.movementFilter, elements.nerveFilter].forEach(element => {
         element.addEventListener('input' in element ? 'input' : 'change', () => {
             filterResults();
         });
     });
 
-    // Debounce für Suchfeld
     let timeout;
     elements.searchBar.addEventListener('input', () => {
         clearTimeout(timeout);
@@ -114,13 +127,11 @@ function matchesSearch(muscle, query) {
 
 function matchesJoint(muscle, selectedJoint) {
     if (!selectedJoint) return true;
-    
     const muscleJoints = muscle.Joints.split(',').map(j => j.trim());
     const jointGroups = {
         'Obere Extremitäten': ['Schultergürtel', 'Art. humeri', 'Art. cubiti', 'Art. manus'],
         'Fingergelenke': ['MCP', 'PIP', 'DIP', 'Daumensattelgelenk']
     };
-
     if (jointGroups[selectedJoint]) {
         return jointGroups[selectedJoint].some(j => muscleJoints.includes(j));
     }
@@ -132,23 +143,18 @@ function matchesMovement(muscle, selectedMovement) {
 }
 
 function matchesNerve(muscle, selectedNerve) {
-    if (!selectedNerve) return true; // Kein Filter, alle Muskeln anzeigen
-
-    // Extrahiere nur die Segmente (z. B. "C2, C3, C4") aus dem Feld
-    const segmentsText = muscle.Segments.replace(/[^C,T,H,L,S,0-9, ]/g, ''); // Entferne alles außer Segmenten
+    if (!selectedNerve) return true;
+    const segmentsText = muscle.Segments.replace(/[^C,T,H,L,S,0-9, ]/g, '');
     const muscleSegments = segmentsText.split(',').map(s => s.trim());
-
-    // Überprüfe, ob das ausgewählte Segment in den Muskelsegmenten enthalten ist
     return muscleSegments.includes(selectedNerve);
 }
 
 function displayResults(results) {
-    elements.resultList.innerHTML = results.length > 0 
+    elements.resultList.innerHTML = results.length > 0
         ? results.map(muscle => `
             <li class="result-item">
-                <a href="/muscle-details.html?name=${encodeURIComponent(muscle.Name)}" 
-                   class="result-link">
-                   ${muscle.Name}
+                <a href="/muscle-details.html?name=${encodeURIComponent(muscle.Name)}" class="result-link">
+                    ${muscle.Name}
                 </a>
                 <div class="result-info">
                     <p>Gelenke: ${muscle.Joints}</p>

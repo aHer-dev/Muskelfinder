@@ -3,38 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muskelquizze</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Quiz - Muskelfinder</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">  <!-- Korrigierter Pfad für CSS -->
+    <script src="/assets/js/progress.js"></script>         <!-- Korrigierter Pfad für progress.js -->
+    <script src="/assets/js/quiz.js"></script>             <!-- Korrigierter Pfad für quiz.js -->
 </head>
 <body>
     <header>
-       <h1>Muskelquizze</h1> 
-       <p>Teste dein anatomisches Wissen!</p>
-       <a href="/index.html">Zurück</a>
+        <h1>Muskelfinder - Quiz</h1>
+        <nav>
+    <a href="/index.html" class="back-button">Zurück zur Suche</a>
+</nav>
     </header>
+    <main>
+        <div class="quiz-container">
+            <h2>Wähle ein Quiz</h2>
+            <div class="quiz-card">
+                <h3>Bildzuordnung</h3>
+                <p>Ordne die Bilder den richtigen Muskeln zu.</p>
+                <button class="quiz-button" onclick="startQuiz('imageMatch')">Starte Bildzuordnung</button>
+            </div>
+            <div class="quiz-card">
+                <h3>Ursprung & Ansatz</h3>
+                <p>Wähle die richtigen Ansätze und Ursprünge aus.</p>
+                <button class="quiz-button" onclick="startQuiz('originInsertion')">Starte Ursprung & Ansatz</button>
+            </div>
 
-    <main class="quiz-selection">
-
-        <div class="quiz-card" data-type="imageMatch">
-        <h2>Bild-Zuordnung</h2>
-        <p>Ordne die Bilder den richtigen Muskeln zu.</p>
-        <button id="startImageMatch"   onclick="startQuiz('imageMatch')">Start</button>
         </div>
-
-      <!-- <div class="quiz-card" data-type="originInsertion">
-            <h2>Ursprung & Ansatz</h2>
-            <p>Wähle die richtigen Ansätze und Ursprünge aus.</p>
-            <button onclick="startQuiz('originInsertion')">Start</button>
+        <div class="status-bar">
+            <div class="stats">
+                <span>Richtige Antworten: <span id="correctCount">0</span></span>
+                <span>Falsche Antworten: <span id="wrongCount">0</span></span>
+                <span>Genauigkeit: <span id="accuracy">0%</span></span>
+            </div>
+            <div class="accuracy-indicator" id="accuracyIndicator"></div>
         </div>
-
-        <div class="quiz-card" data-type="muscleComparison">
-        <h2>Muskelvergleich</h2>
-        <p>Erkenne den Muskel anhand seiner Eigenschaften</p>
-        <button onclick="startQuiz('muscleComparison')">Start</button>
-        </div>                                                                  -->
     </main>
-
- <script src="/assets/js/quiz.js"></script>   
+    <footer>
+        <p>© 2025 Muskelfinder</p>
+    </footer>
 </body>
-<footer> © 2025 </footer>
+<script>
+    // Lade die gespeicherten Werte beim Seitenladen
+    document.addEventListener('DOMContentLoaded', () => {
+        const correctCount = document.getElementById('correctCount');
+        const wrongCount = document.getElementById('wrongCount');
+        const accuracy = document.getElementById('accuracy');
+        const indicator = document.getElementById('accuracyIndicator');
+
+        // Hole Werte aus localStorage
+        let correctAnswers = localStorage.getItem('muskelCorrectAnswers') ? parseInt(localStorage.getItem('muskelCorrectAnswers')) : 0;
+        let wrongAnswers = localStorage.getItem('muskelWrongAnswers') ? parseInt(localStorage.getItem('muskelWrongAnswers')) : 0;
+
+        // Aktualisiere Anzeige
+        if (correctCount) correctCount.textContent = correctAnswers;
+        if (wrongCount) wrongCount.textContent = wrongAnswers;
+
+        // Berechne und zeige Genauigkeit
+        const totalAnswers = correctAnswers + wrongAnswers;
+        let accuracyPercentage = totalAnswers > 0 ? Math.round((correctAnswers / totalAnswers) * 100) : 0;
+        if (accuracy) accuracy.textContent = accuracyPercentage + '%';
+
+        // Aktualisiere Indikator-Farbe
+        if (indicator) {
+            if (accuracyPercentage >= 80) indicator.style.backgroundColor = "green";
+            else if (accuracyPercentage >= 50) indicator.style.backgroundColor = "yellow";
+            else indicator.style.backgroundColor = "red";
+        }
+    });
+</script>
 </html>

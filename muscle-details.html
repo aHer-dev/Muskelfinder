@@ -7,36 +7,24 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <h1 id="muscle-Titlename">Muskel-Details</h1>
+        <h1>Muskel-Details</h1>
     </header>
-
-    <!-- Hauptinhalt -->
-    <main id="muscle-details">
-        <!-- Dynamische Muskelinformationen werden hier eingefügt -->
-    </main>
-
-    <!-- Modal für Bild -->
-    <div id="image-modal" class="modal">
-        <span class="close-button">&times;</span>
-        <img id="modal-image" class="modal-content" alt="Vergrößertes Bild">
-        <div id="modal-attribution">
-            <!-- Dynamische Lizenzinformationen für das Modal -->
+    <main>
+        <h1 id="muscleTitlename">Lade Muskelname...</h1>  <!-- ID ohne Bindestrich -->
+        <div id="muscleDetails">  <!-- ID ohne Bindestrich -->
+            <p>Lade Daten...</p>
         </div>
-    </div>
-
-    <!-- Zurück-Button -->
-    <button id="back-button">Zurück zur Suche</button>
-
-    <!-- Footer -->
+        <div id="imageModal" class="modal" style="display: none;">  <!-- ID ohne Bindestrich -->
+            <span class="closeButton">×</span>  <!-- Class ohne Bindestrich -->
+            <img id="modalImage" class="modalContent" alt="Zoomed Image">  <!-- ID ohne Bindestrich -->
+        </div>
+    </main>
+    <button id="backButton" class="back-button">Zurück zur Suche</button>  <!-- ID ohne Bindestrich -->
     <footer>
+        <p id="licenseInfo" >Lade Lizenz...</p>  <!-- ID ohne Bindestrich -->
         <p>© 2025 Muskelfinder</p>
-        <!-- Dynamische Lizenzinformationen -->
-        <p id="license-info" class="license-info"></p>
     </footer>
-
-    <!-- JavaScript -->
-    <script src="/assets/js/details.js" defer></script>
+    <script src="/assets/js/details.js"></script>  <!-- Skript am Ende des Body laden -->
 </body>
 </html>

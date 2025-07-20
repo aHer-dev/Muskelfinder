@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ursprung-Ansatz-Quiz</title>
+<link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-    
+  <header>
+    <h1>Ursprung-Ansatz-Quiz</h1>
+    <nav><a href="/quizzes/quiz.html" class="back-button">Zurück</a></nav>
+  </header>
+  <main>
+    <div class="quiz-container">
+      <h2 id="quizHead">Welcher Ansatz passt zum Ursprung?</h2>
+      <h2 id="muscle-name"></h2> <!-- Muskelname hier hinzugefügt -->
+      <div class="image-container">
+        <img id="mainImage" src="" alt="Muskelbild">
+      </div>
+      <div id="question" class="origin-box"></div> <!-- Ursprung in blauer Box -->
+      <div class="options-grid" id="options"></div>
+      <div class="feedback" id="feedback"></div>
+      <div id="notification" class="notification"></div>
+    </div>
+    <div class="status-bar">
+      <div class="stats">
+        ✅ Richtig: <span id="correctCount">0</span> | ❌ Falsch: <span id="wrongCount">0</span> | 
+        🎯 Genauigkeit: <span id="accuracy">0%</span>
+      </div>
+      <div class="accuracy-indicator" id="accuracyIndicator"></div>
+    </div>
+  </main>
+  <script src="/assets/js/progress.js"></script>
+  <script src="/assets/js/origin-insertion-quiz.js"></script>
 </body>
 </html>

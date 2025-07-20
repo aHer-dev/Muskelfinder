@@ -1,352 +1,373 @@
 /* Grundlegendes Styling */
 html, body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-    height: 100%;
-    flex-direction: column;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* Helles Hintergrundgrau für Gemütlichkeit */
+  color: #333;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
 header {
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background-color: #2c3e50; /* Dunkles Blau für einen professionellen Look */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
 }
 
 /* Hauptinhalt */
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    justify-content: center; /* Zentriert den Inhalt */
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Weicherer Schatten */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Muskel-Bild */
-.image-container img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: 400px;
-    display: block;
-    margin: 0 auto;
-    object-fit: contain; /* Stellt sicher, dass das Bild nicht verzerrt wird */
-    border-radius: 10px;
+.image-container {
+  display: flex;
+  justify-content: center; /* Bild zentriert */
+  align-items: center; /* Vertikal zentriert */
+  width: 100%; /* Vollständige Breite nutzen */
 }
 
-/* Formularelemente */
+.image-container img {
+  max-height: 300px; /* Bilder kleiner halten */
+  width: auto; /* Breite passt sich an */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Formularelemente (Text-Eingabefelder anpassen) */
 input, select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  width: 100%; /* Volle Breite des Containers */
+  max-width: 600px; /* Maximale Breite, damit es nicht zu breit wird */
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #3498db;
+  outline: none;
 }
 
 /* Info-Boxen */
 .info-container {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .info-box {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #e9f4ff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ecf0f1;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .info-box h2 {
-    margin: 0 0 10px;
-    color: #007bff;
-    font-size: 18px;
+  margin: 0 0 10px;
+  color: #3498db; /* Helles Blau für Überschriften */
+  font-size: 20px;
 }
 
 .info-box p {
-    margin: 0;
+  margin: 0;
+  color: #7f8c8d;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    margin-top: auto; /* Schiebt den Footer ans Ende */
+  text-align: center;
+  padding: 10px;
+  background-color: #2c3e50;
+  color: white;
+  margin-top: auto; /* Schiebt den Footer ans Ende */
 }
 
 /* Modal-Styling */
 .modal {
-    display: none; /* Modal ist beim Laden der Seite versteckt */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: none !important; /* Modal ist beim Laden der Seite versteckt */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .close-button {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .close-button:hover,
 .close-button:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #back-button {
-    background-color: #007bff; /* Blau */
+    background-color: #2a629b !important; /* Blau, nicht grün */
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 20px auto; /* Zentriert den Button */
-    display: block; /* Damit margin:auto wirkt */
+    margin: 20px auto;
+    display: block;
     font-size: 16px;
     text-align: center;
 }
 
 
 #back-button:hover {
-    background-color: #0056b3; /* Dunkleres Blau beim Hover */
+  background-color: #0056b3; /* Dunkleres Blau beim Hover */
 }
 
 /* Button Styling */
 button {
-    background-color: #28a745;
-    color: white;
-    cursor: pointer;
-    border: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  border: none;
 }
 
 button:hover {
-    background-color: #218838;
+  background-color: #218838;
 }
 
 /* Ergebnisse */
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 ul li {
-    padding: 10px;
-    margin-bottom: 5px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #007bff;
+    padding: 15px; /* Mehr Platz für besseres Aussehen */
+    background-color: #2c3e50;
     color: white;
-    margin-top: auto; /* Schiebt den Footer ans Ende */
+    margin-top: auto;
+    width: 100%; /* Stellt sicher, dass der Footer die volle Breite nutzt */
 }
 
 /* Lizenzinformationen im Footer */
 footer .license-info {
-    font-size: 0.8rem; /* Schriftgröße reduzieren */
-    color: #a3a5df; /* Graue Farbe für Unauffälligkeit */
-    margin-top: 10px; /* Abstand nach oben */
-    text-align: center;
+  font-size: 0.8rem; /* Schriftgröße reduzieren */
+  color: #a3a5df; /* Graue Farbe für Unauffälligkeit */
+  margin-top: 10px; /* Abstand nach oben */
+  text-align: center;
 }
 
 footer .license-info a {
-    color: #ffffff; /* Blaue Links */
-    text-decoration: none;
+  color: #ffffff; /* Blaue Links */
+  text-decoration: none;
 }
 
 footer .license-info a:hover {
-    text-decoration: underline; /* Unterstreichung bei Hover */
+  text-decoration: underline; /* Unterstreichung bei Hover */
 }
 
 .result-link {
-    color: #007bff; /* Dunkleres Blau */
-    text-decoration: none; /* Entfernt die Unterstreichung */
-    font-weight: bold; /* Optional: Macht den Text dicker */
+  color: #007bff; /* Dunkleres Blau */
+  text-decoration: none; /* Entfernt die Unterstreichung */
+  font-weight: bold; /* Optional: Macht den Text dicker */
 }
 
 .result-link:hover {
-    color: #003d80; /* Noch dunkleres Blau beim Hover */
-    text-decoration: underline; /* Optional: Unterstreichung beim Hover */
+  color: #003d80; /* Noch dunkleres Blau beim Hover */
+  text-decoration: underline; /* Optional: Unterstreichung beim Hover */
 }
 
-.result-link:visited {
-    color: #007bff; /* Gleiche Farbe wie normale Links, damit sie nicht lila werden */
+.license-link:visited {
+    color: #ffffff; /* Weiß, wie der ursprüngliche Text */
 }
 
 /* Buttons responsiv anpassen */
 .option {
-    width: 100%; /* Volle Breite */
-    max-width: 400px; /* Maximale Breite */
-    display: block;
-    margin: 10px auto; /* Zentriert die Buttons */
-    padding: 12px 15px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.1s;
-  }
-  
-  .option:hover {
-    background-color: #0056b3; /* Dunkleres Blau bei Hover */
-    transform: scale(1.05); /* Leichtes Vergrößern beim Drüberfahren */
-  }
-  
-  .option.correct {
-    background-color: #28a745 !important; /* Grün */
-  }
-  
-  .option.wrong {
-    background-color: #dc3545 !important; /* Rot */
-  }
-  
-  #feedback {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-  }
+  width: 100%; /* Volle Breite */
+  max-width: 400px; /* Maximale Breite */
+  display: block;
+  margin: 10px auto; /* Zentriert die Buttons */
+  padding: 12px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s;
+}
 
-  #feedback.success {
-    color: white;
-    background-color: #28a745;
-  }
-  
-  #feedback.error {
-    color: white;
-    background-color: #dc3545;
-  }
+.option:hover {
+  background-color: #0056b3; /* Dunkleres Blau bei Hover */
+  transform: scale(1.05); /* Leichtes Vergrößern beim Drüberfahren */
+}
 
-    #quizHead {
-        text-align: center;
-        font-size: 28px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        padding: 10px;
-        border: 2px solid #332847; /* Grüne Umrandung */
-        border-radius: 8px;
-        background-color: #bdcbe4; /* Helles Grün für bessere Lesbarkeit */
-        color: #222;
-        width: 80%; /* Passt sich der Breite des Containers an */
-        margin-left: auto;
-        margin-right: auto;
-      }
+.option.correct {
+  background-color: #28a745 !important; /* Grün */
+}
 
-      #mainImage {
-        max-width: 100%; /* Passt das Bild dynamisch an */
-        height: auto;
-        border-radius: 10px;
-      }
+.option.wrong {
+  background-color: #dc3545 !important; /* Rot */
+}
 
-      /* Bild-Container */
+#feedback {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#feedback.success {
+  color: white;
+  background-color: #28a745;
+}
+
+#feedback.error {
+  color: white;
+  background-color: #dc3545;
+}
+
+#quizHead {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #332847; /* Grüne Umrandung */
+  border-radius: 8px;
+  background-color: #bdcbe4; /* Helles Grün für bessere Lesbarkeit */
+  color: #222;
+  width: 80%; /* Passt sich der Breite des Containers an */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mainImage {
+  max-width: 100%; /* Passt das Bild dynamisch an */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Bild-Container */
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Bild füllt den Container */
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Bild füllt den Container */
+}
 
-  /* Hauptcontainer für das Quiz */
+/* Hauptcontainer für das Quiz */
 .quiz-container {
-    width: 90%; /* Nimmt 90% des verfügbaren Platzes ein */
-    max-width: 600px; /* Maximal 600px, damit es nicht zu breit wird */
-    margin: 20px auto; /* Zentriert das Quiz */
-    padding: 20px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
+  width: 90%; /* Nimmt 90% des verfügbaren Platzes ein */
+  max-width: 600px; /* Maximal 600px, damit es nicht zu breit wird */
+  margin: 20px auto; /* Zentriert das Quiz */
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
 
-  /* --- Media Queries für kleine Geräte --- */
+/* --- Media Queries für kleine Geräte --- */
 @media (max-width: 768px) {
-    .quiz-container {
-      width: 95%; /* Mehr Breite auf kleinen Bildschirmen */
-      padding: 15px;
-    }
-  
-    h1 {
-      font-size: 24px;
-    }
-  
-    #quizHead {
-      font-size: 20px;
-    }
-  
-    .option {
-      font-size: 14px; /* Kleinere Buttons für mobile Ansicht */
-      padding: 10px;
-    }
+  .quiz-container {
+    width: 95%; /* Mehr Breite auf kleinen Bildschirmen */
+    padding: 15px;
   }
 
-  .status-bar {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #f8f9fa;
+  h1 {
+    font-size: 24px;
+  }
+
+  #quizHead {
+    font-size: 20px;
+  }
+
+  .option {
+    font-size: 14px; /* Kleinere Buttons für mobile Ansicht */
     padding: 10px;
-    border-radius: 8px;
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: bold;
+  }
+}
+
+.status-bar {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .stats {
-    flex: 1;
+  flex: 1;
 }
 
 .accuracy-indicator {
-    font-family: Arial, sans-serif;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: red; /* Standardfarbe */
-    transition: background-color 0.3s ease-in-out;
+  font-family: Arial, sans-serif;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: red; /* Standardfarbe */
+  transition: background-color 0.3s ease-in-out;
 }
 
 #startImageMatch {
@@ -368,3 +389,116 @@ footer .license-info a:hover {
   background-color: #2c9c48; /* Dunkleres Blau bei Hover */
   transform: scale(1.05); /* Leichtes Vergrößern beim Drüberfahren */
 }
+
+.progress-bar {
+  background: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Quiz-Karte */
+.quiz-card {
+  border: 2px solid #052b53;
+  padding: 20px;
+  margin: 10px auto; /* Nur vertikaler Abstand, horizontal keine Einschränkung */
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px rgba(0, 123, 255, 0.1); /* Leichter Schatten */
+  width: 90%; /* Volle Breite des Containers nutzen */
+}
+
+.quiz-card:hover {
+ transform-origin: center; /* Zentriert die Skalierung */
+overflow: hidden; /* Verhindert, dass Inhalt über den Rand läuft */
+}
+
+/* Feedback */
+.feedback.success {
+  background: green;
+  color: white;
+}
+
+.feedback.error {
+  background: red;
+  color: white;
+}
+
+/* Responsive Design für .quiz-card */
+@media (max-width: 768px) {
+  .quiz-card {
+    margin: 5px 0; /* Weniger Abstand auf kleinen Bildschirmen */
+    padding: 15px; /* Weniger Padding */
+  }
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.origin-box {
+  background-color: #007bff; /* Blaue Hintergrundfarbe wie die Buttons */
+  color: white; /* Weißer Text für Kontrast */
+  padding: 12px 15px; /* Etwas Platz innen */
+  border-radius: 8px; /* Abgerundete Ecken */
+  margin-bottom: 15px; /* Abstand zum nächsten Element */
+  text-align: center; /* Zentriert den Text */
+  font-size: 16px; /* Passende Schriftgröße */
+}
+
+.notification {
+  display: none; /* Standardmäßig versteckt */
+  background-color: #28a745; /* Grün für positive Nachricht */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.notification.show {
+  display: block; /* Wird sichtbar, wenn die Klasse "show" hinzugefügt wird */
+}
+
+/* Quiz-Button als Button stylen (in index.html) */
+.quiz-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2a629b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 10px rgba(52, 152, 219, 0.2);
+}
+
+.quiz-button:hover {
+  background-color: #2980b9;
+}
+
+/* Zurück-Button als Button stylen */
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2a629b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 10px rgba(52, 152, 219, 0.2);
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+/* Formularelemente (Textfeld und Dropdowns an Breite anpassen) */
+#search, #filters {
+  width: 100%;} /* Volle Breite des main-Containers */
