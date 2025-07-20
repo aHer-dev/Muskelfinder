@@ -2,13 +2,6 @@
 const isGitHub = window.location.hostname.includes("github.io");
 const basePath = isGitHub ? "/Muskelfinder/" : "";
 
-// ... (andere Code bleibt gleich bis fetchMuscleData)
-
-async function fetchMuscleData() {
-    const response = await fetch(basePath + 'data/muscles.json');
-    if (!response.ok) throw new Error('Netzwerkfehler beim Laden von muscles.json');
-    return response.json();
-}
 // Globale Elementreferenzen zentral verwalten
 const elements = {
     licenseInfo: document.getElementById("licenseInfo"),
@@ -55,6 +48,12 @@ function checkElements() {
     return allFound;
 }
 
+async function fetchMuscleData() {
+    console.log("Fetching from:", basePath + 'data/muscles.json'); // Debug
+    const response = await fetch(basePath + 'data/muscles.json');
+    if (!response.ok) throw new Error('Netzwerkfehler beim Laden von muscles.json: ' + response.status);
+    return response.json();
+}
 
 function handleError(error) {
     console.error("Fehler:", error.message);
@@ -83,10 +82,10 @@ function closeModal() {
 function openModal(imageSrc) {
     console.log("Original imageSrc:", imageSrc);
 
-if (!imageSrc.startsWith("http")) {
-    imageSrc = (basePath ? basePath : '') + imageSrc.replace(/^\/+/, "");
-    console.log("Adjusted imageSrc for modal:", imageSrc); // Debug
-}
+    if (!imageSrc.startsWith("http")) {
+        imageSrc = (basePath ? basePath : '') + imageSrc.replace(/^\/+/, "");
+        console.log("Adjusted imageSrc for modal:", imageSrc); // Debug
+    }
 
     console.log("Bereinigter imageSrc:", imageSrc);
 
@@ -133,10 +132,16 @@ function loadMuscleDetails(data) {
     }
 
     if (elements.muscleDetailsContainer) {
+        const imageUrl = `${basePath}${muscle.Image.replace(/^\/+/, '')}`;
+        console.log("Generated image URL:", imageUrl); // Debug
+        if (!imageUrl.startsWith('http') && !imageUrl.includes('/Muskelfinder/')) {
+            console.warn("Ungültiger Bildpfad, fallback verwendet:", basePath + 'assets/images/default.png');
+            imageUrl = basePath + 'assets/images/default.png'; // Fallback-Bild
+        }
         elements.muscleDetailsContainer.innerHTML = `
             <section class="details-section">
                 <div class="image-container">
-                   <img src="${basePath}${muscle.Image.replace(/^\/+/, '')}" alt="${muscle.Name}" class="zoomable-image" style="max-width: 400px;">
+                    <img src="${imageUrl}" alt="${muscle.Name}" class="zoomable-image" style="max-width: 400px;">
                 </div>
                 <div class="info-container">
                     ${createInfoHTML('Ursprung', formatOrigin(muscle.Origin))}
@@ -184,4 +189,3 @@ function generateAttribution(muscle) {
 if (elements.backButton) {
     elements.backButton.addEventListener('click', () => window.location.href = "/index.html");
 }
-
