@@ -49,10 +49,14 @@ function loadQuiz() {
     questionBox.innerHTML = `<strong>Ursprung:</strong> ${formatOriginText(currentMuscle.Origin)}`;
 
     // Muskelbild setzen
-    image.src = currentMuscle.Image;
     image.onerror = () => {
-        image.src = '/assets/images/640px-Biceps_brachii_muscle06.png'; // Fallback
-    };
+    console.error(`Bild konnte nicht geladen werden: ${basePath + currentMuscle.Image}`);
+    if (!image.src.includes('fallback-error')) { // Verhindert Endlosschleife
+        image.src = basePath + '/assets/images/640px-Biceps_brachii_muscle06.png';
+    } else {
+        image.src = ''; // Stoppt nach mehreren Versuchen
+    }
+};
 
     // Muskelname (z. B. in kleiner Schrift)
     nameField.textContent = currentMuscle.Name;
