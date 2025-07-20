@@ -1,5 +1,5 @@
 const isGitHub = window.location.hostname.includes("github.io");
-const basePath = isGitHub ? "" : "";
+const basePath = isGitHub ? "/Muskelfinder" : "";
 
 // DOM-Elemente
 const elements = {
@@ -51,17 +51,14 @@ function matchesJoint(muscle, selectedJoint) {
 async function loadMuscleData() {
     try {
         elements.loading.style.display = 'block';
-        const response = await fetch(basePath + '/data/muscles.json'); // Use basePath
+        const url = basePath + '/data/muscles.json'; // Use basePath correctly
+        console.log(`Lade Muskel-Daten von: ${url}`);
+        const response = await fetch(url);
         if (!response.ok) {
-            // Try alternative path if the first fails
-            const alternativeResponse = await fetch(basePath + '/data/muscles.json'); // Konsistenter Pfad
-            if (!alternativeResponse.ok) throw new Error('JSON-Datei nicht gefunden: ' + response.status);
-            const data = await alternativeResponse.json();
-            muscles = data.Sheet1;
-        } else {
-            const data = await response.json();
-            muscles = data.Sheet1;
+            throw new Error(`HTTP Fehler! Status: ${response.status}`);
         }
+        const data = await response.json();
+        muscles = data.Sheet1;
         if (!muscles || muscles.length === 0) throw new Error('Keine Muskeln in der JSON-Datei');
         filterResults();
     } catch (error) {
@@ -157,7 +154,7 @@ function displayResults(results) {
     elements.resultList.innerHTML = results.length > 0
         ? results.map(muscle => `
             <li class="result-item">
-                <a href="/muscle-details.html?name=${encodeURIComponent(muscle.Name)}" class="result-link">
+                <a href="${basePath}/muscle-details.html?name=${encodeURIComponent(muscle.Name)}" class="result-link">
                     ${muscle.Name}
                 </a>
                 <div class="result-info">

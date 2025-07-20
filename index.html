@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muskelfinder</title>
-   <link rel="stylesheet" href="assets/css/styles.css">.
+    <script>
+  if (location.hostname.includes("github.io")) {
+    const base = document.createElement('base');
+    base.href = '/Muskelfinder/';
+    document.head.appendChild(base);
+  }
+</script>
+   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
         <h1>Muskelfinder</h1>
         <p>Finde Muskeln, ihre Funktionen und Innervationen!</p>
-        <a href="/quizzes/quiz.html" class="back-button">Quiz</a>
+        <a href="quizzes/quiz.html" class="back-button">Quiz</a>
     </header>
 
     <main>
@@ -69,14 +76,12 @@
         <section id="results">
             <h2>Suchergebnisse</h2>
             <ul id="result-list"></ul>
-        </section>
-    </main>
+</section>
+</main>
 
-    <footer>
-        © 2025
-    </footer>
+<footer>© 2025</footer>
 
-    <script src="/assets/js/app.js"></script>
-    <script src="/assets/js/progress.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/progress.js"></script>
 </body>
 </html>

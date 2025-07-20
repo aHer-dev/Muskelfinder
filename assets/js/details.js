@@ -1,9 +1,9 @@
 // ✅ Dynamische Erkennung: GitHub Pages oder Localhost?
 const isGitHub = window.location.hostname.includes("github.io");
-const basePath = isGitHub ? "" : "";
+const basePath = isGitHub ? "/Muskelfinder" : "";
 
 async function fetchMuscleData() {
-    const response = await fetch(basePath + 'data/muscles.json');
+    const response = await fetch(basePath + '/data/muscles.json');
     if (!response.ok) throw new Error('Netzwerkfehler beim Laden von muscles.json');
     return response.json();
 }
@@ -83,7 +83,7 @@ function openModal(imageSrc) {
     console.log("Original imageSrc:", imageSrc);
 
 if (!imageSrc.startsWith("http")) {
-    imageSrc = (basePath ? basePath : '') + imageSrc.replace(/^\/+/, "");
+  imageSrc = basePath + '/' + imageSrc.replace(/^\/+/, "");
 }
 
     console.log("Bereinigter imageSrc:", imageSrc);
@@ -134,8 +134,8 @@ function loadMuscleDetails(data) {
         elements.muscleDetailsContainer.innerHTML = `
             <section class="details-section">
                 <div class="image-container">
-                    <img src="${muscle.Image}" alt="${muscle.Name}" 
-                         class="zoomable-image" style="max-width: 400px;">
+                <img src="${basePath}${muscle.Image}" alt="${muscle.Name}" class="zoomable-image" 
+                style="max-width: 400px;">
                 </div>
                 <div class="info-container">
                     ${createInfoHTML('Ursprung', formatOrigin(muscle.Origin))}
@@ -181,6 +181,6 @@ function generateAttribution(muscle) {
 }
 
 if (elements.backButton) {
-    elements.backButton.addEventListener('click', () => window.location.href = "/index.html");
+    elements.backButton.addEventListener('click', () => window.location.href = basePath + "/index.html");
 }
 
