@@ -82,6 +82,7 @@ function validateAnswer(event, selectedName, correctName) {
         feedback.classList.add("success");
         feedback.innerHTML = "✓ Richtig! Gut gemacht!";
         correctAnswers++;
+        updatePoints(10); // Punkte hinzufügen (wie in origin)
     } else {
         button.classList.add("wrong");
         feedback.classList.add("error");
