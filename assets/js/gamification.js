@@ -164,13 +164,34 @@ const Gamification = (() => {
         if (!_barEl) return;
         const { level, xpThisLevel, xpNeeded, progress } = getState();
         _barEl.innerHTML = `
-            <div class="xp-widget">
+            <div class="xp-widget" role="button" tabindex="0" aria-label="XP anzeigen" style="cursor:pointer">
                 <span class="xp-level">Lv&nbsp;${level}</span>
                 <div class="xp-track" title="${xpThisLevel} / ${xpNeeded} XP bis Level ${level + 1}">
                     <div class="xp-fill" style="width:${(progress * 100).toFixed(1)}%"></div>
                 </div>
             </div>
         `;
+        // Klick → XP-Popover anzeigen
+        const widget = _barEl.querySelector('.xp-widget');
+        if (widget) {
+            widget.addEventListener('click', () => _showXPPopover(xpThisLevel, xpNeeded, level));
+        }
+    }
+
+    // ── XP-Popover (Klick auf Bar) ────────────────────────────────
+    let _xpPopoverTimeout = null;
+
+    function _showXPPopover(current, needed, level) {
+        let pop = document.getElementById('xp-popover');
+        if (!pop) {
+            pop = document.createElement('div');
+            pop.id = 'xp-popover';
+            document.body.appendChild(pop);
+        }
+        pop.textContent = `${current} / ${needed} XP · Level ${level}`;
+        pop.classList.add('xp-popover-visible');
+        clearTimeout(_xpPopoverTimeout);
+        _xpPopoverTimeout = setTimeout(() => pop.classList.remove('xp-popover-visible'), 2200);
     }
 
     // ── Toast-Benachrichtigung ────────────────────────────────────

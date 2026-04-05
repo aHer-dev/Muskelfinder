@@ -3160,6 +3160,33 @@ html.light-mode .xp-nums   { color: #6b7280; }
     .xp-track { max-width: 70px; }
 }
 
+/* ── XP-Popover (Klick auf Bar) ─────────────────────────────── */
+#xp-popover {
+    position: fixed;
+    top: 60px;
+    right: 56px;                          /* links vom Hamburger */
+    background: var(--bg-elevated);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-sm);
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+    box-shadow: var(--shadow-md);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    z-index: 300;
+    opacity: 0;
+    transform: translateY(-4px);
+    pointer-events: none;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+}
+#xp-popover.xp-popover-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* ── Gamification: Toast-Benachrichtigungen ──────────────────── */
 #xp-toast-wrap {
     position: fixed;
