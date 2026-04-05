@@ -18,23 +18,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     const content  = document.getElementById('ms-content');
     loading.style.display = 'block';
 
-    try {
-        await MuscleData.loadConfig();
-        const config = MuscleData.getConfig();
-        await MuscleData.loadSelected(config.regions.map(r => r.id));
-        allMuscles = MuscleData.getAll();
+    await MuscleData.loadConfig();
+    const config = MuscleData.getConfig();
+    await MuscleData.loadSelected(config.regions.map(r => r.id));
+    allMuscles = MuscleData.getAll();
 
-        buildSubgroupTabs(config.regions);
-        render();
-        bindEvents();
+    buildSubgroupTabs(config.regions);
+    render();
+    bindEvents();
 
-        loading.style.display = 'none';
-        content.hidden = false;
-    } catch (err) {
-        loading.textContent = '⚠️ Fehler: ' + err.message;
-        loading.style.color = '#ef4444';
-        console.error('muscle-selection init error:', err);
-    }
+    loading.style.display = 'none';
+    content.hidden = false;
 });
 
 // ── Render ────────────────────────────────────────────────────────
