@@ -169,7 +169,6 @@ const Gamification = (() => {
                 <div class="xp-track" title="${xpThisLevel} / ${xpNeeded} XP bis Level ${level + 1}">
                     <div class="xp-fill" style="width:${(progress * 100).toFixed(1)}%"></div>
                 </div>
-                <span class="xp-nums">${xpThisLevel}<span class="xp-sep">/</span>${xpNeeded}</span>
             </div>
         `;
     }

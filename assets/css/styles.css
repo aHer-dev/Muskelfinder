@@ -3109,9 +3109,8 @@ kbd {
 
 /* Header-Elemente auf Mobile komprimieren, damit Chrome nicht reinzoomt */
 @media (max-width: 520px) {
-    header p          { display: none; }       /* Subtext weg → spart ~100px */
-    #nav-xp-bar       { width: 90px; }         /* XP-Bar schmaler */
-    .xp-track         { max-width: 50px; }
+    header p    { display: none; }   /* Subtext weg → spart ~100px */
+    #nav-xp-bar { width: 80px; }     /* Lv N + Track, keine Zahlen */
 }
 
 .xp-widget {
