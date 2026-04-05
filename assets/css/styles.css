@@ -46,6 +46,9 @@
     padding: 0;
 }
 
+/* Stellt sicher, dass [hidden] immer greift – auch wenn spezifischeres CSS display überschreibt */
+[hidden] { display: none !important; }
+
 html {
     /* Verhindert automatisches Vergrößern beim Fokus von Inputs auf iOS */
     -webkit-text-size-adjust: 100%;
@@ -54,6 +57,7 @@ html {
 
 html, body {
     height: 100%;
+    overflow-x: hidden;
     font-family: 'Inter', 'Segoe UI', system-ui, Arial, sans-serif;
     font-size: 16px;
     background: var(--bg-base);
@@ -1199,8 +1203,8 @@ footer a:hover,
 
 /* ── Buttons ────────────────────────────────────────────────────── */
 .btn-primary {
-    background: var(--accent);
-    color: #fff;
+    background: var(--accent) !important;
+    color: #fff !important;
     border: none;
     border-radius: var(--radius-md);
     padding: 12px 28px;
@@ -1215,7 +1219,7 @@ footer a:hover,
 }
 
 .btn-primary:hover:not(:disabled) {
-    background: var(--accent-hover);
+    background: var(--accent-hover) !important;
     transform: translateY(-1px);
 }
 
@@ -2217,13 +2221,31 @@ html.light-mode #main-menu {
     border-color: var(--accent);
 }
 
-/* Tastaturkürzel-Hinweis */
+/* Tastaturkürzel-Hinweis (Desktop) */
 .keyboard-hint {
     text-align: center;
     font-size: 11px;
     color: var(--text-muted);
     margin-top: 10px;
     letter-spacing: 0.02em;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+/* Swipe-Hinweis (Mobile) */
+.swipe-hint {
+    display: none;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 10px;
+    letter-spacing: 0.02em;
+}
+
+/* Auf Touch-Geräten: Tastatur-Hinweis ausblenden, Swipe-Hinweis zeigen */
+@media (hover: none) and (pointer: coarse) {
+    .keyboard-hint { display: none; }
+    .swipe-hint    { display: block; }
 }
 
 kbd {
@@ -2289,12 +2311,18 @@ kbd {
 
 .flag-btn:hover {
     background: var(--glass-hover);
-    border-color: #f97316;
-    color: #f97316;
+    border-color: var(--text-muted);
+    color: var(--text-primary);
 }
 
 .flag-btn.flag-active {
     background: rgba(249,115,22,0.15);
+    border-color: #f97316;
+    color: #f97316;
+}
+
+.flag-btn.flag-active:hover {
+    background: rgba(249,115,22,0.28);
     border-color: #f97316;
     color: #f97316;
 }
@@ -2634,6 +2662,7 @@ kbd {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
+    margin-bottom: 14px;
 }
 
 /* Muscle-Selection Overrides werden durch den zentralen Block oben abgedeckt */
@@ -3243,12 +3272,17 @@ html.light-mode .xp-nums   { color: #6b7280; }
     body.page-flashcards #setup-screen {
         display: grid;
         grid-template-columns: 1fr 340px;
+        grid-auto-flow: row dense;
         column-gap: 28px;
         align-items: start;
     }
 
-    /* Muskeln-Link + Heutige Wiederholung + Kartenlimit/Start → linke Spalte */
-    body.page-flashcards .manage-deck-link,
+    /* Muskeln-Link → volle Breite (beide Spalten), damit Inhalt bündig startet */
+    body.page-flashcards .manage-deck-link {
+        grid-column: 1 / -1;
+    }
+
+    /* Heutige Wiederholung + Kartenlimit/Start → linke Spalte */
     body.page-flashcards .fc-section:nth-child(2),
     body.page-flashcards .fc-section:nth-child(3) {
         grid-column: 1;

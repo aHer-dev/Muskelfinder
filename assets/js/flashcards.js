@@ -260,7 +260,7 @@ function buildCardBack(muscle) {
     `).join('');
 
     const clinicalSection = muscle.clinicalNote ? `
-        <div class="card-clinical-toggle" onclick="this.classList.toggle('open')">
+        <div class="card-clinical-toggle">
             <span class="card-clinical-label">🩺 Klinischer Bezug</span>
             <span class="card-clinical-arrow">▸</span>
             <div class="card-clinical-content">${muscle.clinicalNote}</div>
@@ -273,7 +273,10 @@ function buildCardBack(muscle) {
 function formatField(origin) {
     if (!origin) return '–';
     if (typeof origin === 'string') return origin;
-    if (Array.isArray(origin)) return origin.map(o => o.Part ? `<strong>${o.Part}:</strong> ${o.Location}` : o.Location).join('<br>');
+    if (Array.isArray(origin)) return origin.map(o => {
+        if (typeof o === 'string') return o;
+        return o.Part ? `<strong>${o.Part}:</strong> ${o.Location}` : o.Location;
+    }).join('<br>');
     return String(origin);
 }
 
@@ -393,6 +396,17 @@ function bindEvents() {
         const isDiff = ProgressManager.toggleDifficult(session.current);
         el.flagBtn.classList.toggle('flag-active', isDiff);
         el.cardDifficultBadge.hidden = !isDiff;
+    });
+
+    // ── Klinischer Bezug Toggle (mit Höhen-Update) ────────────────
+    el.cardBack.addEventListener('click', e => {
+        const toggle = e.target.closest('.card-clinical-toggle');
+        if (!toggle) return;
+        toggle.classList.toggle('open');
+        requestAnimationFrame(() => {
+            const back = el.cardInner.querySelector('.flashcard-back');
+            if (back) el.cardInner.style.minHeight = back.scrollHeight + 'px';
+        });
     });
 
     el.backToOverview.addEventListener('click', () => showScreen('setup'));
