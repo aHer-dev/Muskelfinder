@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz - Muskelfinder</title>
-
-<link rel="stylesheet" href="../assets/css/styles.css">
-<script src="../assets/js/progress.js"></script>
-<script src="../assets/js/quiz.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Lernen – Muskelfinder</title>
+    <link rel="icon" type="image/png" href="../assets/icons/muskelfinder-icon.png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Muskelfinder - Quiz</h1>
-<nav>
-   <a href="../index.html" class="back-button">Zurück</a>
-</nav>
-</nav>
+        <h1><img src="../assets/icons/muskelfinder-icon.png" class="header-logo" alt="">Lernen</h1>
+        <nav>
+            <a href="../index.html" class="back-button">← Suche</a>
+        </nav>
     </header>
+
     <main>
-        <div class="quiz-container">
-            <h2>Wähle ein Quiz</h2>
-            <div class="quiz-card">
-                <h3>Bildzuordnung</h3>
-                <p>Ordne die Bilder den richtigen Muskeln zu.</p>
-                <button class="quiz-button" onclick="startQuiz('imageMatch')">Starte Bildzuordnung</button>
-            </div>
-            <div class="quiz-card">
-                <h3>Ursprung & Ansatz</h3>
-                <p>Wähle die richtigen Ansätze und Ursprünge aus.</p>
-                <button class="quiz-button" onclick="startQuiz('originInsertion')">Starte Ursprung & Ansatz</button>
+        <div id="loading" style="text-align:center;padding:32px;color:var(--text-secondary)">
+            Lade Muskeldaten…
+        </div>
+
+        <div id="learn-content" hidden>
+
+            <!-- Filter (gespeichert, gilt für alle Quiz-Seiten) -->
+            <div id="quiz-filter"></div>
+
+            <!-- Quiz-Auswahl -->
+            <div class="quiz-container">
+                <h2>Wähle ein Quiz</h2>
+
+                <div class="quiz-card">
+                    <h3>🖼 Bildzuordnung</h3>
+                    <p>Erkenne den Muskel anhand eines anatomischen Bildes.</p>
+                    <a href="image-match-quiz.html" class="quiz-button">Starten</a>
+                </div>
+
+                <div class="quiz-card">
+                    <h3>📍 Ursprung & Ansatz</h3>
+                    <p>Wähle den richtigen Ansatz zum gezeigten Ursprung aus.</p>
+                    <div class="oi-mode-row" id="oi-mode-row">
+                        <button class="oi-mode-btn" data-mode="ursprung-ansatz">Ursprung → Ansatz</button>
+                        <button class="oi-mode-btn" data-mode="ansatz-ursprung">Ansatz → Ursprung</button>
+                        <button class="oi-mode-btn" data-mode="gemischt">Gemischt</button>
+                    </div>
+                    <a href="origin-insertion-quiz.html" class="quiz-button">Starten</a>
+                </div>
+
+                <div class="quiz-card">
+                    <h3>⚡ Funktions-Quiz</h3>
+                    <p>Ordne Muskeln ihren Funktionen zu — oder umgekehrt.</p>
+                    <div class="oi-mode-row">
+                        <button class="mv-mode-btn" data-mode="funktion-muskel">Funktion → Muskel</button>
+                        <button class="mv-mode-btn" data-mode="muskel-funktion">Muskel → Bewegung</button>
+                        <button class="mv-mode-btn" data-mode="gemischt">Gemischt</button>
+                    </div>
+                    <a href="movement-quiz.html" class="quiz-button">Starten</a>
+                </div>
+
+                <div class="quiz-card">
+                    <h3>🃏 Lernkarten</h3>
+                    <p>Lerne Muskeln mit dem Leitner-System und Spaced Repetition.</p>
+                    <a href="flashcards.html" class="quiz-button">Lernen</a>
+                </div>
             </div>
 
-        </div>
-        <div class="status-bar">
-            <div class="stats">
-                <span>Richtige Antworten: <span id="correctCount">0</span></span>
-                <span>Falsche Antworten: <span id="wrongCount">0</span></span>
-                <span>Genauigkeit: <span id="accuracy">0%</span></span>
-            </div>
-            <div class="accuracy-indicator" id="accuracyIndicator"></div>
         </div>
     </main>
-    <footer>
-        <p>© 2025 Muskelfinder</p>
-    </footer>
+
+    <footer>© 2026 Muskelfinder</footer>
+
+    <script src="../assets/js/gamification.js"></script>
+    <script src="../assets/js/nav.js"></script>
+    <script src="../assets/js/data-loader.js"></script>
+    <script src="../assets/js/progress.js"></script>
+    <script src="../assets/js/quiz-filter.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const loading = document.getElementById('loading');
+            const content = document.getElementById('learn-content');
+
+            await MuscleData.loadConfig();
+            const config = MuscleData.getConfig();
+            await MuscleData.loadSelected(config.regions.map(r => r.id));
+
+            QuizFilter.init(config, MuscleData.getAll(), 'quiz-filter');
+
+            // Modus-Buttons verdrahten (generisch für alle Quiz-Typen)
+            function bindModeButtons(selector, storageKey, defaultMode) {
+                const saved = localStorage.getItem(storageKey) || defaultMode;
+                document.querySelectorAll(selector).forEach(btn => {
+                    if (btn.dataset.mode === saved) btn.classList.add('oi-mode-active');
+                    btn.addEventListener('click', function () {
+                        localStorage.setItem(storageKey, this.dataset.mode);
+                        document.querySelectorAll(selector).forEach(b => b.classList.remove('oi-mode-active'));
+                        this.classList.add('oi-mode-active');
+                    });
+                });
+            }
+            bindModeButtons('.oi-mode-btn', 'muskelfinder_oi_mode', 'ursprung-ansatz');
+            bindModeButtons('.mv-mode-btn', 'muskelfinder_mv_mode', 'funktion-muskel');
+
+            loading.style.display = 'none';
+            content.hidden = false;
+        });
+    </script>
 </body>
-<script>
-    // Lade die gespeicherten Werte beim Seitenladen
-    document.addEventListener('DOMContentLoaded', () => {
-        const correctCount = document.getElementById('correctCount');
-        const wrongCount = document.getElementById('wrongCount');
-        const accuracy = document.getElementById('accuracy');
-        const indicator = document.getElementById('accuracyIndicator');
 
-        // Hole Werte aus localStorage
-        let correctAnswers = localStorage.getItem('muskelCorrectAnswers') ? parseInt(localStorage.getItem('muskelCorrectAnswers')) : 0;
-        let wrongAnswers = localStorage.getItem('muskelWrongAnswers') ? parseInt(localStorage.getItem('muskelWrongAnswers')) : 0;
-
-        // Aktualisiere Anzeige
-        if (correctCount) correctCount.textContent = correctAnswers;
-        if (wrongCount) wrongCount.textContent = wrongAnswers;
-
-        // Berechne und zeige Genauigkeit
-        const totalAnswers = correctAnswers + wrongAnswers;
-        let accuracyPercentage = totalAnswers > 0 ? Math.round((correctAnswers / totalAnswers) * 100) : 0;
-        if (accuracy) accuracy.textContent = accuracyPercentage + '%';
-
-        // Aktualisiere Indikator-Farbe
-        if (indicator) {
-            if (accuracyPercentage >= 80) indicator.style.backgroundColor = "green";
-            else if (accuracyPercentage >= 50) indicator.style.backgroundColor = "yellow";
-            else indicator.style.backgroundColor = "red";
-        }
-    });
-</script>
 </html>

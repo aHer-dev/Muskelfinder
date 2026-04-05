@@ -1,0 +1,50 @@
+{
+  "regions": [
+    {
+      "id": "obere-extremitaet",
+      "name": "Obere Extremität",
+      "icon": "💪",
+      "dataFile": "obere-extremitaet.json",
+      "subgroups": [
+        { "id": "schulter", "name": "Schultergürtel", "joints": ["Schultergürtel", "Art. humeri"] },
+        { "id": "ellenbogen", "name": "Ellenbogen", "joints": ["Art. cubiti"] },
+        { "id": "hand", "name": "Hand & Finger", "joints": ["Art. manus", "MCP", "PIP", "DIP", "Daumensattelgelenk"] }
+      ]
+    },
+    {
+      "id": "untere-extremitaet",
+      "name": "Untere Extremität",
+      "icon": "🦵",
+      "dataFile": "untere-extremitaet.json",
+      "subgroups": [
+        { "id": "huefte", "name": "Hüfte", "joints": ["Art. coxae"] },
+        { "id": "knie", "name": "Knie", "joints": ["Art. genus"] },
+        { "id": "fuss", "name": "Fuß & Sprunggelenk", "joints": ["Art. talocruralis"] }
+      ]
+    },
+    {
+      "id": "wirbelsaeule",
+      "name": "Wirbelsäule & Rumpf",
+      "icon": "🦴",
+      "dataFile": "wirbelsaeule.json",
+      "subgroups": [
+        { "id": "ruecken", "name": "Rückenmuskulatur", "joints": ["Wirbelsäule"] },
+        { "id": "bauch", "name": "Bauchmuskulatur", "joints": ["Rumpf"] }
+      ]
+    },
+    {
+      "id": "kopf-hals",
+      "name": "Kopf & Hals",
+      "icon": "🧠",
+      "dataFile": "kopf-hals.json",
+      "subgroups": [
+        { "id": "mimikmuskulatur", "name": "Mimikmuskulatur", "joints": [] },
+        { "id": "kaumuskulatur", "name": "Kaumuskulatur", "joints": [] },
+        { "id": "suprahyoidal", "name": "Suprahyoidale Muskeln", "joints": [] },
+        { "id": "infrahyoidal", "name": "Infrahyoidale Muskeln", "joints": [] },
+        { "id": "halsmuskulatur", "name": "Halsmuskulatur", "joints": [] },
+        { "id": "praevertebralis", "name": "Prävertebrale Muskeln", "joints": [] }
+      ]
+    }
+  ]
+}

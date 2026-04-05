@@ -4,37 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Bild-Quiz</title>
+  <title>Funktions-Quiz – Muskelfinder</title>
+  <script>
+    if (location.hostname.includes("github.io")) {
+      const base = document.createElement('base');
+      base.href = '/Muskelfinder/';
+      document.head.appendChild(base);
+    }
+  </script>
   <link rel="icon" type="image/png" href="../assets/icons/muskelfinder-icon.png">
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
   <header>
-    <h1><img src="../assets/icons/muskelfinder-icon.png" class="header-logo" alt="">Bild-Quiz</h1>
+    <h1><img src="../assets/icons/muskelfinder-icon.png" class="header-logo" alt="">Funktions-Quiz</h1>
     <nav>
       <a href="quiz.html" class="back-button">Zurück</a>
     </nav>
   </header>
   <main>
     <div class="quiz-container">
-
-      <!-- Modus-Auswahl -->
-      <div class="img-mode-tabs" id="img-mode-tabs">
-        <button class="img-mode-tab active" data-mode="bild-name">Bild → Name</button>
-        <button class="img-mode-tab" data-mode="name-bild">Name → Bild</button>
-      </div>
-
       <h2 id="quizHead"></h2>
-
-      <!-- Bild-Name: großes Bild oben -->
-      <div class="image-container" id="main-image-wrap">
-        <img id="mainImage" src="" alt="Muskelbild">
-      </div>
-
-      <!-- Name-Bild: Muskelname als Zielangabe -->
-      <div id="target-name-wrap" class="img-target-name" hidden></div>
-
+      <div id="question" class="origin-box"></div>
       <div id="options"></div>
       <div class="feedback" id="feedback"></div>
     </div>
@@ -49,13 +41,14 @@
     </div>
     <div id="quiz-summary" hidden></div>
   </main>
+
   <script src="../assets/js/gamification.js"></script>
   <script src="../assets/js/nav.js"></script>
   <script src="../assets/js/data-loader.js"></script>
   <script src="../assets/js/progress.js"></script>
   <script src="../assets/js/quiz-filter.js"></script>
   <script src="../assets/js/quiz-session.js"></script>
-  <script src="../assets/js/image-match-quiz.js"></script>
+  <script src="../assets/js/movement-quiz.js"></script>
 </body>
 
 </html>

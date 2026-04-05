@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Muskeln verwalten – Muskelfinder</title>
+    <script>
+        if (location.hostname.includes("github.io")) {
+            const base = document.createElement('base');
+            base.href = '/Muskelfinder/';
+            document.head.appendChild(base);
+        }
+    </script>
+    <link rel="icon" type="image/png" href="../assets/icons/muskelfinder-icon.png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1><img src="../assets/icons/muskelfinder-icon.png" class="header-logo" alt="">Muskeln verwalten</h1>
+        <p>Karteikasten</p>
+        <nav>
+            <a href="flashcards.html" class="back-button">← Lernkarten</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="loading">Lade Muskeldaten...</div>
+
+        <div id="ms-content" hidden>
+
+            <!-- ══ OBEN: Im Karteikasten ═══════════════════════ -->
+            <div class="ms-section">
+                <div class="ms-section-header ms-section-header--toggle" id="in-deck-toggle" role="button" aria-expanded="true">
+                    <h2 class="ms-section-title">Im Karteikasten</h2>
+                    <span id="in-deck-count" class="ms-count-badge"></span>
+                    <span class="ms-toggle-arrow">▾</span>
+                </div>
+                <div class="ms-in-deck-body" id="in-deck-body">
+                    <div id="in-deck-empty" class="ms-empty-hint" hidden>
+                        Noch keine Muskeln im Karteikasten. Füge welche aus dem Bereich unten hinzu.
+                    </div>
+                    <div class="ms-table-wrap" id="in-deck-table-wrap" hidden>
+                        <table class="ms-table" id="in-deck-table">
+                            <thead>
+                                <tr>
+                                    <th>Muskel</th>
+                                    <th>Bereich</th>
+                                    <th>Fach</th>
+                                    <th>Fällig</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="in-deck-tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══ UNTEN: Noch nicht im Karteikasten ═══════════ -->
+            <div class="ms-section">
+                <div class="ms-section-header">
+                    <h2 class="ms-section-title">Noch nicht im Karteikasten</h2>
+                    <span id="not-in-deck-count" class="ms-count-badge"></span>
+                </div>
+
+                <!-- Filter -->
+                <div class="ms-filter-row">
+                    <input type="text" id="ms-search" placeholder="Muskel suchen…" autocomplete="off">
+                    <div id="subgroup-tabs" class="ms-tabs"></div>
+                </div>
+
+                <!-- Liste mit Checkboxen -->
+                <div id="not-in-deck-list" class="ms-checklist"></div>
+
+                <!-- Aktions-Leiste -->
+                <div class="ms-add-bar">
+                    <button id="add-selected-btn" class="btn-primary" disabled>
+                        + Ausgewählte hinzufügen (<span id="selected-count">0</span>)
+                    </button>
+                    <button id="add-visible-btn" class="btn-secondary">
+                        Alle sichtbaren hinzufügen
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>© 2026 Muskelfinder</footer>
+
+    <script src="../assets/js/gamification.js"></script>
+    <script src="../assets/js/nav.js"></script>
+    <script src="../assets/js/data-loader.js"></script>
+    <script src="../assets/js/progress.js"></script>
+    <script src="../assets/js/muscle-selection.js"></script>
+</body>
+
+</html>

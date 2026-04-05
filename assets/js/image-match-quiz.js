@@ -1,124 +1,160 @@
-// Initiale Werte aus localStorage laden
 const isGitHub = window.location.hostname.includes("github.io");
 const basePath = isGitHub ? "/Muskelfinder" : "";
 
-let muscles = [];
 let currentMuscle;
+let quizMode = 'bild-name'; // 'bild-name' | 'name-bild'
 
-// JSON-Daten laden
-fetch(basePath + '/data/muscles.json')
-    .then(response => {
-        if (!response.ok) throw new Error(`HTTP Fehler! Status: ${response.status}`);
-        return response.json();
-    })
-    .then(data => {
-        muscles = data.Sheet1; // Entferne Image-Mapping
+async function initQuiz() {
+    await MuscleData.loadConfig();
+    const config = MuscleData.getConfig();
+    await MuscleData.loadSelected(config.regions.map(r => r.id));
+
+    QuizFilter.init(config, MuscleData.getAll());
+    QuizSession.init(basePath);
+    document.addEventListener('quiz-restart', loadQuiz);
+
+    // Modus-Tabs
+    document.getElementById('img-mode-tabs').addEventListener('click', e => {
+        const tab = e.target.closest('.img-mode-tab');
+        if (!tab || tab.dataset.mode === quizMode) return;
+        quizMode = tab.dataset.mode;
+        document.querySelectorAll('.img-mode-tab').forEach(t => t.classList.toggle('active', t === tab));
         loadQuiz();
-    })
-    .catch(error => {
-        console.error('Fehler beim Laden der JSON-Daten:', error);
-        document.getElementById('feedback').innerHTML = `<p>Fehler: ${error.message}. Stelle sicher, dass muscles.json im /data/ Ordner liegt.</p>`;
     });
 
-function getRandomMuscle() {
-    return muscles[Math.floor(Math.random() * muscles.length)];
+    loadQuiz();
 }
 
 function loadQuiz() {
-    currentMuscle = getRandomMuscle();
-    generateImageQuiz(currentMuscle);
+    if (QuizSession.isComplete()) { QuizSession.showSummary(); return; }
+
+    const pool      = QuizFilter.getPool();
+    const withImage = pool.filter(m => m.Image);
+
+    if (withImage.length < 4) {
+        document.getElementById('options').innerHTML =
+            '<p class="quiz-empty-hint">Zu wenige Muskeln mit Bild — bitte Auswahl auf der <a href="quiz.html">Lernseite</a> anpassen.</p>';
+        document.getElementById('quizHead').textContent = '⚠️ Zu wenige Muskeln';
+        return;
+    }
+
+    currentMuscle = withImage[Math.floor(Math.random() * withImage.length)];
+
+    if (quizMode === 'bild-name') {
+        renderBildName(currentMuscle, withImage);
+    } else {
+        renderNameBild(currentMuscle, withImage);
+    }
 }
 
-function generateImageQuiz(muscle) {
+// ── Modus A: Bild → Name ─────────────────────────────────────────
+function renderBildName(muscle, pool) {
+    document.getElementById('quizHead').textContent = 'Welcher Muskel ist abgebildet?';
+    document.getElementById('main-image-wrap').hidden = false;
+    document.getElementById('target-name-wrap').hidden = true;
+
     const img = document.getElementById('mainImage');
-const imgSrc = basePath + muscle.Image;
-console.log("Image source:", imgSrc); // Debug
-img.src = imgSrc;
-img.onerror = () => {
-    console.error(`Bild konnte nicht geladen werden: ${imgSrc}`);
-    img.src = basePath + '/assets/images/640px-Biceps_brachii_muscle06.png';
-};
+    img.src = basePath + muscle.Image;
+    img.onerror = () => { loadQuiz(); };
 
-    const options = shuffleArray([
-        muscle.Name,
-        ...getSmartDistractors(muscle, 3)
-    ]);
+    const distractors = QuizFilter.pickDistractors(muscle, pool).map(m => m.Name);
 
-    document.getElementById('options').innerHTML = options
-        .map(opt => `
-            <button class="option" 
-                    onclick="validateAnswer(event, '${opt}', '${muscle.Name}')">
-                ${opt}
-            </button>
-        `).join('');
+    const options = [muscle.Name, ...distractors].sort(() => Math.random() - 0.5);
+
+    const container = document.getElementById('options');
+    container.className = 'options-name-grid';
+    container.innerHTML = '';
+
+    options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className   = 'option';
+        btn.textContent = opt;
+        btn.addEventListener('click', () => validateAnswer(btn, opt, muscle.Name, 'name'));
+        container.appendChild(btn);
+    });
 }
 
-function getSmartDistractors(targetMuscle, count) {
-    let distractors = muscles
-        .filter(m => m.Joints === targetMuscle.Joints || m.Function === targetMuscle.Function)
-        .map(m => m.Name)
-        .filter(name => name !== targetMuscle.Name);
+// ── Modus B: Name → Bild ─────────────────────────────────────────
+function renderNameBild(muscle, pool) {
+    document.getElementById('quizHead').textContent = 'Welches Bild zeigt diesen Muskel?';
+    document.getElementById('main-image-wrap').hidden = true;
 
-    while (distractors.length < count) {
-        let randomMuscle = getRandomMuscle().Name;
-        if (!distractors.includes(randomMuscle) && randomMuscle !== targetMuscle.Name) {
-            distractors.push(randomMuscle);
+    const nameWrap = document.getElementById('target-name-wrap');
+    nameWrap.hidden = false;
+    nameWrap.textContent = muscle.Name;
+
+    const distractors = QuizFilter.pickDistractors(muscle, pool);
+
+    const options = [muscle, ...distractors].sort(() => Math.random() - 0.5);
+
+    const container = document.getElementById('options');
+    container.className = 'options-image-grid';
+    container.innerHTML = '';
+
+    options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = 'option-img';
+        btn.dataset.name = opt.Name;
+
+        const img = document.createElement('img');
+        img.src = basePath + opt.Image;
+        img.alt = opt.Name;
+
+        btn.appendChild(img);
+        btn.addEventListener('click', () => validateAnswer(btn, opt.Name, muscle.Name, 'img'));
+        container.appendChild(btn);
+    });
+}
+
+// ── Auswertung ───────────────────────────────────────────────────
+function validateAnswer(button, selected, correct, type) {
+    const feedback = document.getElementById('feedback');
+    const allBtns  = document.querySelectorAll('.option, .option-img');
+    allBtns.forEach(b => b.disabled = true);
+
+    const isCorrect = selected === correct;
+
+    if (type === 'img') {
+        button.classList.add(isCorrect ? 'correct' : 'wrong');
+        if (!isCorrect) {
+            allBtns.forEach(b => { if (b.dataset.name === correct) b.classList.add('correct'); });
+        }
+    } else {
+        button.classList.add(isCorrect ? 'correct' : 'wrong');
+        if (!isCorrect) {
+            allBtns.forEach(b => { if (b.textContent === correct) b.classList.add('correct'); });
         }
     }
 
-    return distractors.slice(0, count);
-}
-
-function shuffleArray(array) {
-    return [...array].sort(() => Math.random() - 0.5);
-}
-
-function validateAnswer(event, selectedName, correctName) {
-    const button = event.target;
-    const feedback = document.getElementById('feedback');
-
-    if (selectedName === correctName) {
-        button.classList.add("correct");
-        feedback.classList.add("success");
-        feedback.innerHTML = "✓ Richtig! Gut gemacht!";
+    if (isCorrect) {
+        feedback.className   = 'feedback success';
+        feedback.textContent = '✓ Richtig!';
         correctAnswers++;
-        updatePoints(10); // Punkte hinzufügen (wie in origin)
+        QuizSession.record(correct, true, '');
+        Gamification.awardQuizQuestion('image-match', true);
     } else {
-        button.classList.add("wrong");
-        feedback.classList.add("error");
-        feedback.innerHTML = "✗ Falsch. Versuche es nochmal!";
+        feedback.className   = 'feedback error';
+        feedback.textContent = `✗ Falsch! → ${correct}`;
         wrongAnswers++;
+        QuizSession.record(correct, false, correct);
     }
 
-    // Statusleiste aktualisieren und Werte speichern
     updateStatusBar();
-    updateAccuracy(correctAnswers, wrongAnswers); // Aus progress.js
 
     setTimeout(() => {
-        feedback.classList.remove("success", "error");
-        feedback.innerHTML = "";
+        feedback.className   = 'feedback';
+        feedback.textContent = '';
         loadQuiz();
     }, 2000);
 }
 
 function updateStatusBar() {
-    const correctCount = document.getElementById('correctCount');
-    const wrongCount = document.getElementById('wrongCount');
-    const accuracy = document.getElementById('accuracy');
-    const indicator = document.getElementById('accuracyIndicator');
-
-    const totalAnswers = correctAnswers + wrongAnswers;
-    let accuracyPercentage = totalAnswers > 0 ? Math.round((correctAnswers / totalAnswers) * 100) : 0;
-
-    correctCount.textContent = correctAnswers;
-    wrongCount.textContent = wrongAnswers;
-    accuracy.textContent = accuracyPercentage + "%";
-
-    if (accuracyPercentage >= 80) {
-        indicator.style.backgroundColor = "green";
-    } else if (accuracyPercentage >= 50) {
-        indicator.style.backgroundColor = "yellow";
-    } else {
-        indicator.style.backgroundColor = "red";
-    }
+    const total = correctAnswers + wrongAnswers;
+    const pct   = total > 0 ? Math.round((correctAnswers / total) * 100) : 0;
+    document.getElementById('correctCount').textContent = correctAnswers;
+    document.getElementById('wrongCount').textContent   = wrongAnswers;
+    document.getElementById('accuracy').textContent     = pct + '%';
+    Gamification.renderXPBar('quiz-xp-bar');
 }
+
+document.addEventListener('DOMContentLoaded', initQuiz);

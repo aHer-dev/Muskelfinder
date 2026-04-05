@@ -1,0 +1,1768 @@
+{
+  "Sheet1": [
+    {
+      "Name": "M. psoas minor",
+      "Joints": "Becken",
+      "Movements": "Beckenkippung rückwärts",
+      "Segments": "Plexus lumbalis, L1",
+      "Origin": "Wirbelkörper Th12/L1",
+      "Insertion": "Eminentia iliopubica",
+      "Function": "Kippt das Becken nach dorsal (Retroversion) und unterstützt die Stabilisierung der Lendenwirbelsäule in Streckstellung",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "beckenkipper",
+        "pelvispinal"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Dieser Muskel fehlt bei etwa 10 % der Menschen und ist dann funktionell durch den Psoas major kompensiert – klinisch meist bedeutungslos, kann jedoch bei bildgebenden Verfahren als Zufallsbefund auffallen",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Wirbelkörper Th12/L1",
+        "Insertion": "Eminentia iliopubica",
+        "Function": "Becken: Retroversion (Dorsalkippung) im Iliosakralgelenk; Stabilisierung der LWS in Streckstellung",
+        "Segments": "Plexus lumbalis, L1"
+      }
+    },
+    {
+      "Name": "M. psoas major",
+      "Joints": "Art. coxae, LWS",
+      "Movements": "Flexion, Adduktion, Außenrotation",
+      "Segments": "Plexus lumbalis, L1, L2, L3",
+      "Origin": "Wirbelkörper (BWK 12 / LWK 1–4) und Disci intervertebrales; Procc. costales LWK 1–5 (tiefer Anteil)",
+      "Insertion": "Trochanter minor des Femur",
+      "Function": "Beugt die Hüfte und adduziert den Oberschenkel; bei fixiertem Femur verstärkt er die Lendenlordose; wirkt zudem als Außenrotator im Hüftgelenk",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "beuger",
+        "spinofemoral"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Verkürzungen entstehen häufig durch langes Sitzen; klinisch relevant bei LWS-Beschwerden, Hyperlordose und dem sog. Psoassyndrom mit Leisten- und Rückenschmerzen",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Wirbelkörper (BWK 12 / LWK 1–4) und Disci intervertebrales; Procc. costales LWK 1–5 (tiefer Anteil)",
+        "Insertion": "Trochanter minor des Femur",
+        "Function": "Hüftgelenk (Art. coxae): Flexion, Adduktion, Außenrotation\nLWS (bei fixiertem Femur): Verstärkung der Lendenlordose",
+        "Segments": "Plexus lumbalis, L1, L2, L3"
+      }
+    },
+    {
+      "Name": "M. iliacus",
+      "Joints": "Art. coxae",
+      "Movements": "Flexion, Adduktion, Außenrotation",
+      "Segments": "Plexus lumbalis, L2, L3",
+      "Origin": "Fossa iliaca des Ileums und Spina iliaca anterior inferior",
+      "Insertion": "Trochanter minor des Femur",
+      "Function": "Flektiert das Hüftgelenk und rotiert den Oberschenkel nach außen; bei feststehendem Bein kippt er das Ilium nach ventral",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "beuger",
+        "pelvifemoral"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Bei prolongiertem Sitzen häufig verkürzt, was zu einer Hüftbeugekontraktur und Beckenkippung nach vorne führen kann; relevant bei Hüftgelenkserkrankungen",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Fossa iliaca des Ileums und Spina iliaca anterior inferior",
+        "Insertion": "Trochanter minor des Femur",
+        "Function": "Hüftgelenk (Art. coxae): Flexion, Außenrotation\nBecken (bei fixiertem Femur): Ventrale Beckenkippung",
+        "Segments": "Plexus lumbalis, L2, L3"
+      }
+    },
+    {
+      "Name": "M. gluteus maximus",
+      "Joints": "Art. coxae",
+      "Movements": "Extension, Außenrotation, Abduktion",
+      "Segments": "N. gluteus inferior, L5, S1, S2",
+      "Origin": [
+        {
+          "Part": "Tiefer Teil",
+          "Location": "Ala ossis ilii (Facies glutealis), Lig. sacrotuberale"
+        },
+        {
+          "Part": "Oberflächlicher Teil",
+          "Location": "Fascia thoracolumbalis, Crista iliaca, SIPS, dorsale Fläche des Sacrums, Os coccygis"
+        }
+      ],
+      "Insertion": [
+        "Tractus iliotibialis",
+        "Tuberositas glutealis femoris"
+      ],
+      "Function": "Hauptextensor des Hüftgelenks; dreht den Oberschenkel nach außen; die lateralen Anteile wirken zusätzlich als Abduktoren und spannen den Tractus iliotibialis",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "strecker",
+        "aussenrotator",
+        "gesaess"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Insuffizienz führt zu positivem Trendelenburg-Zeichen; spielt eine wichtige Rolle beim Treppensteigen, Aufstehen und beim Hingleiten ins Hohlkreuz",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Tiefer Teil: Ala ossis ilii (Facies glutealis), Lig. sacrotuberale\nOberflächlicher Teil: Fascia thoracolumbalis, Crista iliaca, SIPS, dorsale Fläche des Sacrums, Os coccygis",
+        "Insertion": "Tractus iliotibialis\nTuberositas glutealis femoris",
+        "Function": "Hüftgelenk (Art. coxae): Extension, Außenrotation\nIliotibiales Band: Abduktion (laterale Anteile)",
+        "Segments": "N. gluteus inferior, L5, S1, S2"
+      }
+    },
+    {
+      "Name": "M. gluteus medius",
+      "Joints": "Art. coxae",
+      "Movements": "Abduktion, Flexion, Innenrotation, Extension, Außenrotation",
+      "Segments": "N. gluteus superior, L4, L5, S1",
+      "Origin": "Ala ossis ilii, Facies glutealis",
+      "Insertion": "Trochanter major (lateral)",
+      "Function": "Führt das Bein seitwärts (Abduktion); vordere Fasern rotieren nach innen und beugen, hintere Fasern rotieren nach außen und strecken; essentiell für die Beckenstabilisierung im Einbeinstand",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "abduktor",
+        "stabilisator"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Insuffizienz führt zu positivem Trendelenburg-Zeichen mit Absinken des kontralateralen Beckens in der Standphase; häufige Ursache von Gangstörungen",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Ala ossis ilii, Facies glutealis",
+        "Insertion": "Trochanter major (lateral)",
+        "Function": "Hüftgelenk (Art. coxae): Abduktion\nVordere Fasern: Flexion, Innenrotation\nHintere Fasern: Extension, Außenrotation",
+        "Segments": "N. gluteus superior, L4, L5, S1"
+      }
+    },
+    {
+      "Name": "M. gluteus minimus",
+      "Joints": "Art. coxae",
+      "Movements": "Abduktion, Flexion, Innenrotation, Extension, Außenrotation",
+      "Segments": "N. gluteus superior, L4, L5, S1",
+      "Origin": "Ala ossis ilii, Facies glutealis",
+      "Insertion": "Spitze des Trochanter major",
+      "Function": "Abduziert die Hüfte und unterstützt die Innenrotation (ventrale Fasern) bzw. Außenrotation (dorsale Fasern); Funktion nahezu identisch mit Gluteus medius",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "abduktor",
+        "innenrotator"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Funktionell eng mit dem Gluteus medius verwandt; bei Insuffizienz ebenfalls Trendelenburg-Zeichen möglich; wird selten isoliert getestet",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Ala ossis ilii, Facies glutealis",
+        "Insertion": "Spitze des Trochanter major",
+        "Function": "Hüftgelenk (Art. coxae): Abduktion\nVentrale Fasern: Innenrotation\nDorsale Fasern: Außenrotation",
+        "Segments": "N. gluteus superior, L4, L5, S1"
+      }
+    },
+    {
+      "Name": "M. pectineus",
+      "Joints": "Art. coxae",
+      "Movements": "Adduktion, Flexion, Außenrotation",
+      "Segments": "N. femoralis, N. obturatorius, L2, L3",
+      "Origin": "Pecten ossis pubis",
+      "Insertion": "Linea pectinea des Femur",
+      "Function": "Adduziert den Oberschenkel und beugt ihn leicht im Hüftgelenk; eine geringe Außenrotation ist ebenfalls möglich",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "adduktor",
+        "beuger"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Adduktorenzerrungen betreffen besonders diesen Muskel, da er mechanisch stark belastet wird; als Ursprungstendinopathie am Schambein auch als Sportlerleiste bekannt",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Pecten ossis pubis",
+        "Insertion": "Linea pectinea des Femur",
+        "Function": "Hüftgelenk (Art. coxae): Adduktion, Flexion, Außenrotation",
+        "Segments": "N. femoralis, N. obturatorius, L2, L3"
+      }
+    },
+    {
+      "Name": "M. adductor longus",
+      "Joints": "Art. coxae",
+      "Movements": "Flexion, Adduktion, Außenrotation",
+      "Segments": "N. obturatorius, L2, L3, L4",
+      "Origin": "Os pubis, Ramus superior und inferior",
+      "Insertion": "Linea aspera des Femur (Mitte)",
+      "Function": "Führt den Oberschenkel zur Körpermitte (Adduktion); unterstützt zugleich die Hüftbeugung und eine leichte Außenrotation",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "adduktor"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Häufig zusammen mit anderen Adduktoren bei Zerrungen beteiligt; relativ kurzer Hebelarm und schmale Muskelmasse",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Os pubis, Ramus superior und inferior",
+        "Insertion": "Linea aspera des Femur (Mitte)",
+        "Function": "Hüftgelenk (Art. coxae): Adduktion, Flexion, Außenrotation",
+        "Segments": "N. obturatorius, L2, L3, L4"
+      }
+    },
+    {
+      "Name": "M. adductor brevis",
+      "Joints": "Art. coxae",
+      "Movements": "Adduktion, Flexion, Außenrotation",
+      "Segments": "N. obturatorius, L2, L3, L4",
+      "Origin": "Os pubis, Ramus inferior",
+      "Insertion": "Linea pectinea (distal) und Linea aspera (proximal)",
+      "Function": "Führt den Oberschenkel zur Körpermitte (Adduktion); unterstützt zugleich die Hüftbeugung und eine leichte Außenrotation",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "adduktor"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Häufig zusammen mit anderen Adduktoren bei Zerrungen beteiligt; relativ kurzer Hebelarm und schmale Muskelmasse",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Os pubis, Ramus inferior",
+        "Insertion": "Linea pectinea (distal) und Linea aspera (proximal)",
+        "Function": "Hüftgelenk (Art. coxae): Adduktion, Flexion, Außenrotation",
+        "Segments": "N. obturatorius, L2, L3, L4"
+      }
+    },
+    {
+      "Name": "M. adductor magnus",
+      "Joints": "Art. coxae",
+      "Movements": "Adduktion, Extension, Außenrotation, Innenrotation",
+      "Segments": "N. obturatorius, N. tibialis, L2, L3, L4, L5, S1",
+      "Origin": [
+        {
+          "Part": "Pars superior",
+          "Location": "Os pubis, Ramus inferior und Ramus ossis ischii"
+        },
+        {
+          "Part": "Pars media",
+          "Location": "Ramus ossis ischii"
+        },
+        {
+          "Part": "Pars inferior",
+          "Location": "Tuber ischiadicum"
+        }
+      ],
+      "Insertion": [
+        "Linea aspera (proximal)",
+        "Linea aspera (distal)",
+        "Tuberculum adductorium"
+      ],
+      "Function": "Kräftiger Adduktor des Hüftgelenks; streckt die Hüfte (insbesondere der ischiokrurale Anteil); der pubische Anteil rotiert nach außen, der ischiokrurale Anteil nach innen",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "adduktor",
+        "strecker"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Der Hiatus adductorius in diesem Muskel ist klinisch bedeutsam, da A. und V. femoralis hindurchtreten; Adduktorenzerrungen betreffen häufig die ischiale Ursprungspartie",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Pars superior: Os pubis, Ramus inferior und Ramus ossis ischii\nPars media: Ramus ossis ischii\nPars inferior: Tuber ischiadicum",
+        "Insertion": "Linea aspera (proximal)\nLinea aspera (distal)\nTuberculum adductorium",
+        "Function": "Hüftgelenk (Art. coxae): Adduktion\nPubischer Anteil: Flexion, Außenrotation\nIschiokruraler Anteil: Extension, Innenrotation",
+        "Segments": "N. obturatorius, N. tibialis, L2, L3, L4, L5, S1"
+      }
+    },
+    {
+      "Name": "M. piriformis",
+      "Joints": "Art. coxae",
+      "Movements": "Außenrotation, Abduktion",
+      "Segments": "Plexus sacralis, S1, S2",
+      "Origin": "Os sacrum, Facies pelvica",
+      "Insertion": "Trochanter major des Femur",
+      "Function": "Außenrotiert den Oberschenkel im Hüftgelenk; wirkt bei 90° Hüftbeugung zusätzlich als Abduktor",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "aussenrotator",
+        "sakrofemoral"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Gehört zur Gruppe der tiefen Außenrotatoren; bei Verletzungen oder Reizzuständen können Beschwerden die ischiadikusähnliche Symptomatik imitieren",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Os sacrum, Facies pelvica",
+        "Insertion": "Trochanter major des Femur",
+        "Function": "Hüftgelenk (Art. coxae): Außenrotation\nBei 90° Flexion: zusätzlich Abduktion",
+        "Segments": "Plexus sacralis, S1, S2"
+      }
+    },
+    {
+      "Name": "M. obturatorius internus",
+      "Joints": "Art. coxae",
+      "Movements": "Außenrotation",
+      "Segments": "Plexus sacralis, L5, S1",
+      "Origin": "Os coxae und Membrana obturatoria (Innenseite)",
+      "Insertion": "Fossa trochanterica des Femur",
+      "Function": "Dreht den Oberschenkel im Hüftgelenk nach außen",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "aussenrotator",
+        "sakrofemoral"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Teil der tiefen Außenrotatorengruppe; klinisch häufig zusammen mit Piriformis und den Gemelli beurteilt; gut zu testen im Seitenvergleich der Außenrotationskraft",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Os coxae und Membrana obturatoria (Innenseite)",
+        "Insertion": "Fossa trochanterica des Femur",
+        "Function": "Hüftgelenk (Art. coxae): Außenrotation",
+        "Segments": "Plexus sacralis, L5, S1"
+      }
+    },
+    {
+      "Name": "M. obturatorius externus",
+      "Joints": "Art. coxae",
+      "Movements": "Außenrotation",
+      "Segments": "N. obturatorius, L3, L4",
+      "Origin": "Os coxae und Membrana obturatoria (Außenseite)",
+      "Insertion": "Fossa trochanterica des Femur",
+      "Function": "Dreht den Oberschenkel im Hüftgelenk nach außen",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "aussenrotator"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Ebenfalls Teil der tiefen Außenrotatorengruppe; klinisch kaum isoliert testbar, wird funktionell immer mit dem M. obturatorius internus bewertet",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Os coxae und Membrana obturatoria (Außenseite)",
+        "Insertion": "Fossa trochanterica des Femur",
+        "Function": "Hüftgelenk (Art. coxae): Außenrotation",
+        "Segments": "N. obturatorius, L3, L4"
+      }
+    },
+    {
+      "Name": "M. gemellus superior",
+      "Joints": "Art. coxae",
+      "Movements": "Außenrotation",
+      "Segments": "Plexus sacralis, L5, S1",
+      "Origin": "Spina ischiadica",
+      "Insertion": "Fossa trochanterica des Femur",
+      "Function": "Unterstützt die Außenrotation im Hüftgelenk",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "aussenrotator",
+        "sakrofemoral"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Ebenfalls Teil der tiefen Außenrotatorengruppe; klinisch kaum isoliert testbar, wird funktionell immer mit dem M. obturatorius internus bewertet",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Spina ischiadica",
+        "Insertion": "Fossa trochanterica des Femur",
+        "Function": "Hüftgelenk (Art. coxae): Außenrotation",
+        "Segments": "Plexus sacralis, L5, S1"
+      }
+    },
+    {
+      "Name": "M. gemellus inferior",
+      "Joints": "Art. coxae",
+      "Movements": "Außenrotation",
+      "Segments": "Plexus sacralis, L5, S1",
+      "Origin": "Tuber ischiadicum",
+      "Insertion": "Fossa trochanterica des Femur",
+      "Function": "Unterstützt die Außenrotation im Hüftgelenk",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "aussenrotator",
+        "sakrofemoral"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Tiefe Außenrotatorengruppe; bei Reizung oder Verspannung kann Druckdolenz am Tuber ischiadicum auf diesen Muskel hindeuten",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Tuber ischiadicum",
+        "Insertion": "Fossa trochanterica des Femur",
+        "Function": "Hüftgelenk (Art. coxae): Außenrotation",
+        "Segments": "Plexus sacralis, L5, S1"
+      }
+    },
+    {
+      "Name": "M. quadratus femoris",
+      "Joints": "Art. coxae",
+      "Movements": "Außenrotation, Adduktion",
+      "Segments": "Plexus sacralis, L4, L5, S1",
+      "Origin": "Tuber ischiadicum (lateral)",
+      "Insertion": "Crista intertrochanterica des Femur",
+      "Function": "Dreht den Oberschenkel nach außen und zieht ihn leicht zur Körpermitte (Adduktion); liegt zwischen Tuber ischiadicum und Crista intertrochanterica",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "aussenrotator",
+        "adduktor"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Tiefe Außenrotatorengruppe; bei Reizung oder Verspannung kann Druckdolenz am Tuber ischiadicum auf diesen Muskel hindeuten",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Tuber ischiadicum (lateral)",
+        "Insertion": "Crista intertrochanterica des Femur",
+        "Function": "Hüftgelenk (Art. coxae): Außenrotation, Adduktion",
+        "Segments": "Plexus sacralis, L4, L5, S1"
+      }
+    },
+    {
+      "Name": "M. tensor fasciae latae",
+      "Joints": "Art. coxae, Art. genus",
+      "Movements": "Abduktion, Flexion, Innenrotation",
+      "Segments": "N. gluteus superior, L4, L5, S1",
+      "Origin": "Spina iliaca anterior superior",
+      "Insertion": "Tractus iliotibialis, Tuberculum von Gerdy an der Tibia",
+      "Function": "Abduziert und beugt die Hüfte, dreht den Oberschenkel nach innen; spannt den Tractus iliotibialis und entlastet damit Femurschaft und -hals",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "abduktor",
+        "innenrotator",
+        "knie"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Pes-anserinus-Syndrom (Insertion am medialen Tibiakopf); die Sehne wird zudem als autologes Transplantat bei Kreuzbandrekonstruktionen verwendet",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Spina iliaca anterior superior",
+        "Insertion": "Tractus iliotibialis, Tuberculum von Gerdy an der Tibia",
+        "Function": "Hüftgelenk (Art. coxae): Abduktion, Flexion, Innenrotation\nKniegelenk (Art. genus): Flexion, Spannung des Tractus iliotibialis",
+        "Segments": "N. gluteus superior, L4, L5, S1"
+      }
+    },
+    {
+      "Name": "M. sartorius",
+      "Joints": "Art. coxae, Art. genus",
+      "Movements": "Hüftflexion, Außenrotation, Abduktion, Knieflexion, Knie-Innenrotation",
+      "Segments": "N. femoralis, L2, L3",
+      "Origin": "Spina iliaca anterior superior",
+      "Insertion": "Tibia, Facies medialis (Pes anserinus)",
+      "Function": "Beugt und dreht die Hüfte nach außen; abduziert; im Kniegelenk bewirkt er Beugung und Innenrotation des Unterschenkels – typische Schneidersitzposition",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "beuger",
+        "aussenrotator",
+        "knie"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Pes-anserinus-Syndrom",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Spina iliaca anterior superior",
+        "Insertion": "Tibia, Facies medialis (Pes anserinus)",
+        "Function": "Hüftgelenk (Art. coxae): Flexion, Außenrotation, Abduktion\nKniegelenk (Art. genus): Flexion, Innenrotation des Unterschenkels",
+        "Segments": "N. femoralis, L2, L3"
+      }
+    },
+    {
+      "Name": "M. gracilis",
+      "Joints": "Art. coxae, Art. genus",
+      "Movements": "Hüftadduktion, Knieflexion, Knie-Innenrotation",
+      "Segments": "N. obturatorius, L2, L3",
+      "Origin": "Os pubis, Ramus inferior",
+      "Insertion": "Tibia, Facies medialis (Pes anserinus)",
+      "Function": "Adduziert das Bein im Hüftgelenk; im Kniegelenk wirkt er als Beuger und Innenrotator des Unterschenkels",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "huefte",
+      "tags": [
+        "huefte",
+        "adduktor",
+        "knie",
+        "beuger"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Pes-anserinus-Syndrom, Sehnentransplantat (Kreuzbandplastik)",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Os pubis, Ramus inferior",
+        "Insertion": "Tibia, Facies medialis (Pes anserinus)",
+        "Function": "Hüftgelenk (Art. coxae): Adduktion\nKniegelenk (Art. genus): Flexion, Innenrotation des Unterschenkels",
+        "Segments": "N. obturatorius, L2, L3"
+      }
+    },
+    {
+      "Name": "M. rectus femoris",
+      "Joints": "Art. coxae, Art. genus",
+      "Movements": "Hüftflexion, Knieextension",
+      "Segments": "N. femoralis, L2, L3, L4",
+      "Origin": "Spina iliaca anterior inferior und Azetabulum (oberer Rand)",
+      "Insertion": "Tuberositas tibiae (via Patellarsehne)",
+      "Function": "Beugt die Hüfte im Hüftgelenk (Flexion in der Art. coxae); streckt das Kniegelenk als Teil des Quadriceps (Extension in der Art. genus)",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "knie",
+      "tags": [
+        "knie",
+        "strecker",
+        "huefte",
+        "beuger",
+        "quadriceps"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Risse der Quadricepssehne oder der Patellarsehne entstehen oft durch exzentrische Überlastung; der Rectus femoris ist als einziger Quadricepsanteil zweigelenkig und damit besonders gefährdet",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Spina iliaca anterior inferior und Azetabulum (oberer Rand)",
+        "Insertion": "Tuberositas tibiae (via Patellarsehne)",
+        "Function": "Hüftgelenk (Art. coxae): Flexion\nKniegelenk (Art. genus): Extension\n(Einziger zweigelenkiger Quadricepsanteil)",
+        "Segments": "N. femoralis, L2, L3, L4"
+      }
+    },
+    {
+      "Name": "M. biceps femoris – Caput longum",
+      "Joints": "Art. coxae, Art. genus",
+      "Movements": "Hüftextension, Knieflexion, Knie-Außenrotation",
+      "Segments": "N. tibialis, L5, S1, S2",
+      "Origin": "Tuber ischiadicum",
+      "Insertion": [
+        "Caput fibulae",
+        "Condylus lateralis tibiae"
+      ],
+      "Function": "Streckt die Hüfte (Extension in der Art. coxae) und beugt das Knie (Flexion in der Art. genus); bei gebeugtem Knie Außenrotation des Unterschenkels",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "knie",
+      "tags": [
+        "knie",
+        "beuger",
+        "ischiokrural",
+        "huefte",
+        "strecker"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Ischiokrurale Zerrungen betreffen besonders die Ursprungsregion am Tuber ischiadicum; das Hamstring-Syndrom bezeichnet chronische Beschwerden durch narbige Veränderungen der Ischiokruralen",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Tuber ischiadicum",
+        "Insertion": "Caput fibulae\nCondylus lateralis tibiae",
+        "Function": "Hüftgelenk (Art. coxae): Extension\nKniegelenk (Art. genus): Flexion\nBei gebeugtem Knie: Außenrotation des Unterschenkels",
+        "Segments": "N. tibialis, L5, S1, S2"
+      }
+    },
+    {
+      "Name": "M. semitendinosus",
+      "Joints": "Art. coxae, Art. genus",
+      "Movements": "Hüftextension, Knieflexion, Knie-Innenrotation",
+      "Segments": "N. tibialis, L5, S1, S2",
+      "Origin": "Tuber ischiadicum",
+      "Insertion": "Tibia, Facies medialis (Pes anserinus)",
+      "Function": "Streckt die Hüfte (Extension in der Art. coxae) und beugt das Knie (Flexion in der Art. genus); bei gebeugtem Knie Innenrotation des Unterschenkels",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "knie",
+      "tags": [
+        "knie",
+        "beuger",
+        "ischiokrural",
+        "huefte",
+        "strecker"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Zerrungen entstehen typischerweise beim Sprint oder schnellen Antritt; die Sehne dient als autologes Transplantat (z.B. Semitendinosus-Plastik) bei vorderem Kreuzbandriss",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Tuber ischiadicum",
+        "Insertion": "Tibia, Facies medialis (Pes anserinus)",
+        "Function": "Hüftgelenk (Art. coxae): Extension\nKniegelenk (Art. genus): Flexion\nBei gebeugtem Knie: Innenrotation des Unterschenkels",
+        "Segments": "N. tibialis, L5, S1, S2"
+      }
+    },
+    {
+      "Name": "M. semimembranosus",
+      "Joints": "Art. coxae, Art. genus",
+      "Movements": "Hüftextension, Knieflexion, Knie-Innenrotation",
+      "Segments": "N. tibialis, L5, S1, S2",
+      "Origin": "Tuber ischiadicum",
+      "Insertion": [
+        "Condylus medialis tibiae",
+        "Lig. popliteum obliquum"
+      ],
+      "Function": "Streckt die Hüfte (Extension in der Art. coxae) und beugt das Knie (Flexion in der Art. genus); bei gebeugtem Knie Innenrotation des Unterschenkels; zieht den Meniscus lateralis nach dorsal",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "knie",
+      "tags": [
+        "knie",
+        "beuger",
+        "ischiokrural",
+        "huefte",
+        "strecker"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Wie Semitendinosus ischiokrural gefährdet; die semimembranosus-Sehne kann eine Baker-Zyste unterhalten, wenn sie bei Kniepathologien mechanisch reizt",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Tuber ischiadicum",
+        "Insertion": "Condylus medialis tibiae\nLig. popliteum obliquum",
+        "Function": "Hüftgelenk (Art. coxae): Extension\nKniegelenk (Art. genus): Flexion\nBei gebeugtem Knie: Innenrotation des Unterschenkels",
+        "Segments": "N. tibialis, L5, S1, S2"
+      }
+    },
+    {
+      "Name": "M. vastus medialis",
+      "Joints": "Art. genus",
+      "Movements": "Knieextension",
+      "Segments": "N. femoralis, L2, L3, L4",
+      "Origin": "Labium mediale der Linea aspera (dorsomedial)",
+      "Insertion": "Tuberositas tibiae (via Patellarsehne), Retinaculum patellae",
+      "Function": "Streckt das Knie (Extension in der Art. genus); der schräg verlaufende distale Anteil (VMO) stabilisiert die Patella nach medial",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "knie",
+      "tags": [
+        "knie",
+        "strecker",
+        "quadriceps"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "VMO-Insuffizienz (vastus medialis oblique) begründet laterale Patellainstabilität und Patellaluxation; gezieltes Training des VMO ist Bestandteil vieler Knierehabilitationsprogramme",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Labium mediale der Linea aspera (dorsomedial)",
+        "Insertion": "Tuberositas tibiae (via Patellarsehne), Retinaculum patellae",
+        "Function": "Kniegelenk (Art. genus): Extension\nPatellamediale Stabilisierung (VMO-Anteil)",
+        "Segments": "N. femoralis, L2, L3, L4"
+      }
+    },
+    {
+      "Name": "M. vastus intermedius",
+      "Joints": "Art. genus",
+      "Movements": "Knieextension",
+      "Segments": "N. femoralis, L2, L3, L4",
+      "Origin": "Corpus femoris (ventral)",
+      "Insertion": "Tuberositas tibiae (via Patellarsehne), Retinaculum patellae",
+      "Function": "Streckt das Knie (Extension in der Art. genus); bildet gemeinsam mit den anderen Quadricepsanteilen die Hauptkraft für die Knieextension",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "knie",
+      "tags": [
+        "knie",
+        "strecker",
+        "quadriceps"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Ruptur der Quadricepssehne kann alle vier Köpfe betreffen; der Vastus intermedius liegt am tiefsten und ist diagnostisch oft erst in der MRT-Bildgebung beurteilbar",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Corpus femoris (ventral)",
+        "Insertion": "Tuberositas tibiae (via Patellarsehne), Retinaculum patellae",
+        "Function": "Kniegelenk (Art. genus): Extension",
+        "Segments": "N. femoralis, L2, L3, L4"
+      }
+    },
+    {
+      "Name": "M. vastus lateralis",
+      "Joints": "Art. genus",
+      "Movements": "Knieextension",
+      "Segments": "N. femoralis, L2, L3, L4",
+      "Origin": "Trochanter major und Labium laterale der Linea aspera (dorsolateral)",
+      "Insertion": "Tuberositas tibiae (via Patellarsehne), Retinaculum patellae",
+      "Function": "Streckt das Knie (Extension in der Art. genus); beeinflusst die Patellastellung über das laterale Retinaculum",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "knie",
+      "tags": [
+        "knie",
+        "strecker",
+        "quadriceps"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Bei Tractus-iliotibialis-Syndrom kann der verdickte Tractus auf den Vastus lateralis Druck ausüben; auch bei vorderem Knieschmerz und Patelladysplasie klinisch relevant",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Trochanter major und Labium laterale der Linea aspera (dorsolateral)",
+        "Insertion": "Tuberositas tibiae (via Patellarsehne), Retinaculum patellae",
+        "Function": "Kniegelenk (Art. genus): Extension",
+        "Segments": "N. femoralis, L2, L3, L4"
+      }
+    },
+    {
+      "Name": "M. biceps femoris – Caput breve",
+      "Joints": "Art. genus",
+      "Movements": "Knieflexion, Knie-Außenrotation",
+      "Segments": "N. peroneus communis, L5, S1, S2",
+      "Origin": "Linea aspera des Femur (mittlerer Teil)",
+      "Insertion": "Caput fibulae",
+      "Function": "Beugt das Knie (Flexion in der Art. genus); dreht den Unterschenkel bei gebeugtem Knie nach außen (Außenrotation)",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "knie",
+      "tags": [
+        "knie",
+        "beuger",
+        "aussenrotator"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Klinisch selten isoliert betrachtet; gehört der ischiokruralen Gruppe an; bei N.-peroneus-communis-Läsion kann die Außenrotationsfähigkeit des Kniegelenks eingeschränkt sein",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Linea aspera des Femur (mittlerer Teil)",
+        "Insertion": "Caput fibulae",
+        "Function": "Kniegelenk (Art. genus): Flexion\nBei gebeugtem Knie: Außenrotation des Unterschenkels",
+        "Segments": "N. peroneus communis, L5, S1, S2"
+      }
+    },
+    {
+      "Name": "M. articularis genus",
+      "Joints": "Art. genus",
+      "Movements": "Kapselspannung",
+      "Segments": "N. femoralis, L3, L4",
+      "Origin": "Corpus femoris (ventral)",
+      "Insertion": "Kniegelenkkapsel (Recessus suprapatellaris)",
+      "Function": "Spannt die Kniegelenkkapsel im Recessus suprapatellaris (verhindert Einklemmen bei Kniestreckung)",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "knie",
+      "tags": [
+        "knie",
+        "kapselspanner"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Verhindert das Einklemmen des Recessus suprapatellaris bei aktiver Kniestreckung; klinisch kaum isoliert untersuchbar, aber bei rezidivierenden Kniebeschwerden relevant",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Corpus femoris (ventral)",
+        "Insertion": "Kniegelenkkapsel (Recessus suprapatellaris)",
+        "Function": "Kniegelenk (Art. genus): Spannung des Recessus suprapatellaris (verhindert Kapsel-Einklemmen bei Streckung)",
+        "Segments": "N. femoralis, L3, L4"
+      }
+    },
+    {
+      "Name": "M. popliteus",
+      "Joints": "Art. genus",
+      "Movements": "Knieflexion, Knie-Innenrotation",
+      "Segments": "N. tibialis, L4, L5, S1",
+      "Origin": "Epicondylus lateralis femoris, Hinterseite der Gelenkkapsel, Meniscus lateralis",
+      "Insertion": "Tibia, Facies posterior",
+      "Function": "Beugt das Knie (Flexion in der Art. genus) und entriegelt die Vollextension durch Innenrotation des Unterschenkels; zieht den lateralen Meniskus nach dorsal",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "knie",
+      "tags": [
+        "knie",
+        "beuger",
+        "innenrotator"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Gilt als Schlüssel zur Kniebeweglichkeit: Er ‘entriegelt’ das voll gestreckte Knie durch Innenrotation, bevor eine Flexion möglich ist; Verletzungen können Knieblockaden verursachen",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Epicondylus lateralis femoris, Hinterseite der Gelenkkapsel, Meniscus lateralis",
+        "Insertion": "Tibia, Facies posterior",
+        "Function": "Kniegelenk (Art. genus): Flexion, Innenrotation des Unterschenkels (Entriegelung aus Vollextension)",
+        "Segments": "N. tibialis, L4, L5, S1"
+      }
+    },
+    {
+      "Name": "M. gastrocnemius",
+      "Joints": "Art. genus, Art. talocruralis",
+      "Movements": "Knie: Flexion; Fuß: Plantarflexion, Supination",
+      "Segments": "N. tibialis",
+      "Origin": [
+        {
+          "Part": "Caput mediale",
+          "Location": "Femur, Facies poplitea, Condylus medialis"
+        },
+        {
+          "Part": "Caput laterale",
+          "Location": "Femur, Facies poplitea, Condylus lateralis"
+        }
+      ],
+      "Insertion": "Tuber calcanei (über Achillessehne)",
+      "Function": "Beugt das Knie und plantarflektiert den Fuß; unterstützt die Supination; sorgt als zweigelenkiger Muskel für die Kraftentfaltung beim Zehenstand und Abstoßen",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "wadenmuskeln",
+        "plantarflexion",
+        "knie",
+        "beuger"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Wadenkrämpfe entstehen häufig durch Erschöpfung oder Elektrolytmangel; Achillessehnenrupturen treffen oft den Übergang zwischen Muskel und Sehne; als Suralispumpe fördert er venoses Blut herzwärts",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Caput mediale: Femur, Facies poplitea, Condylus medialis\nCaput laterale: Femur, Facies poplitea, Condylus lateralis",
+        "Insertion": "Tuber calcanei (über Achillessehne)",
+        "Function": "Beugt das Knie und plantarflektiert den Fuß; unterstützt die Supination; sorgt als zweigelenkiger Muskel für die Kraftentfaltung beim Zehenstand und Abstoßen",
+        "Segments": "N. tibialis"
+      }
+    },
+    {
+      "Name": "M. soleus",
+      "Joints": "Art. talocruralis",
+      "Movements": "Fuß: Plantarflexion, Supination",
+      "Segments": "N. tibialis",
+      "Origin": "Dorsale Tibia, Fibula und Arcus tendineus",
+      "Insertion": "Tuber calcanei (über Achillessehne)",
+      "Function": "Plantarflektiert den Fuß unabhängig von der Kniestellung; supiniert; als stärkster Plantarflexor ist er beim Gehen, Laufen und Treppensteigen essentiell",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "wadenmuskeln",
+        "plantarflexion"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Bedeutsam als tiefe Beinvene verlaufende Muskelpumpe bei der Thromboseprophylaxe; Achillessehnenruptur und posteriores Kompartmentsyndrom betreffen auch den Soleus",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Dorsale Tibia, Fibula und Arcus tendineus",
+        "Insertion": "Tuber calcanei (über Achillessehne)",
+        "Function": "Plantarflektiert den Fuß unabhängig von der Kniestellung; supiniert; als stärkster Plantarflexor ist er beim Gehen, Laufen und Treppensteigen essentiell",
+        "Segments": "N. tibialis"
+      }
+    },
+    {
+      "Name": "M. plantaris",
+      "Joints": "Art. genus, Art. talocruralis",
+      "Movements": "Knie: Flexion; Fuß: Plantarflexion, Supination",
+      "Segments": "N. tibialis",
+      "Origin": "Femur, Facies poplitea",
+      "Insertion": "Tuber calcanei",
+      "Function": "Schwächer Plantarflexor und Kniebeuger; bei fehlendem Muskel übernehmen Gastrocnemius und Soleus vollständig seine Funktion",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "wadenmuskeln",
+        "plantarflexion",
+        "variabel"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Fehlt bei etwa 15 % der Bevölkerung; seine dünne Sehne ist als Transplantatmaterial beliebt (z.B. für Bandrekonstruktionen); klinisch selten symptomatisch",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Femur, Facies poplitea",
+        "Insertion": "Tuber calcanei",
+        "Function": "Schwächer Plantarflexor und Kniebeuger; bei fehlendem Muskel übernehmen Gastrocnemius und Soleus vollständig seine Funktion",
+        "Segments": "N. tibialis"
+      }
+    },
+    {
+      "Name": "M. tibialis anterior",
+      "Joints": "Art. talocruralis, Art. subtalaris",
+      "Movements": "Fuß: Dorsalextension, Supination; Unterstützung des Fußgewölbes",
+      "Segments": "N. peroneus profundus",
+      "Origin": "Tibia, Condylus und Facies lateralis (proximal); Membrana interossea",
+      "Insertion": "Os cuneiforme I und Os metatarsale I (Basis)",
+      "Function": "Hebt den Fuß (Dorsalextension) und supiniert; stützt das mediale Längsgewölbe; bei der Gangabwicklung verhindert er das Fußaufklappen",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "dorsalextension",
+        "supination",
+        "vorderer-unterschenkel"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Bei N.-peroneus-profundus-Parese entsteht eine Fußheberschwäche (Fallfuß); bei Kompartmentsyndrom des vorderen Loge ist dieser Muskel besonders betroffen",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Tibia, Condylus und Facies lateralis (proximal); Membrana interossea",
+        "Insertion": "Os cuneiforme I und Os metatarsale I (Basis)",
+        "Function": "Hebt den Fuß (Dorsalextension) und supiniert; stützt das mediale Längsgewölbe; bei der Gangabwicklung verhindert er das Fußaufklappen",
+        "Segments": "N. peroneus profundus"
+      }
+    },
+    {
+      "Name": "M. tibialis posterior",
+      "Joints": "Art. talocruralis, Art. subtalaris",
+      "Movements": "Fuß: Plantarflexion, Supination",
+      "Segments": "N. tibialis",
+      "Origin": "Facies posterior tibiae et fibulae und Membrana interossea",
+      "Insertion": [
+        "Os naviculare (Tuberositas), Ossa cuneiformia (plantare Seite)",
+        "Os cuboideum und Os metatarsale II–IV (Basis)"
+      ],
+      "Function": "Plantarflektiert und supiniert den Fuß; wichtigster statischer und dynamischer Stabilisator des medialen Längsgewölbes",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "plantarflexion",
+        "supination",
+        "tiefer-beugerloge"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Insuffizienz führt zum Kollaps des medialen Gewölbes und progressivem Plattfuß; Tarsaltunnelsyndrom kann den N. tibialis hinter dem Innenknöchel einklemmen",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Facies posterior tibiae et fibulae und Membrana interossea",
+        "Insertion": "Os naviculare (Tuberositas), Ossa cuneiformia (plantare Seite)\nOs cuboideum und Os metatarsale II–IV (Basis)",
+        "Function": "Plantarflektiert und supiniert den Fuß; wichtigster statischer und dynamischer Stabilisator des medialen Längsgewölbes",
+        "Segments": "N. tibialis"
+      }
+    },
+    {
+      "Name": "M. fibularis longus (M. peroneus longus)",
+      "Joints": "Art. talocruralis, Art. subtalaris",
+      "Movements": "Fuß: Plantarflexion, Pronation",
+      "Segments": "N. peroneus superficialis",
+      "Origin": "Condylus lateralis tibiae, Caput fibulae und Facies lateralis fibulae (proximal)",
+      "Insertion": "Os cuneiforme I und Os metatarsale I (Tuberositas, plantar)",
+      "Function": "Plantarflektiert und proniert den Fuß; verspannt das Quergewölbe durch seinen diagonalen Verlauf auf der Fußsohle",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "plantarflexion",
+        "pronation",
+        "lateraler-unterschenkel",
+        "peroneus"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Peronealsehnenruptur und -luxation entstehen oft durch Supinationstrauma; am lateralen Fuß kann die Sehne hinter dem Außenknöchel aus ihrem Kanal springen (Luxation)",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Condylus lateralis tibiae, Caput fibulae und Facies lateralis fibulae (proximal)",
+        "Insertion": "Os cuneiforme I und Os metatarsale I (Tuberositas, plantar)",
+        "Function": "Plantarflektiert und proniert den Fuß; verspannt das Quergewölbe durch seinen diagonalen Verlauf auf der Fußsohle",
+        "Segments": "N. peroneus superficialis"
+      }
+    },
+    {
+      "Name": "M. fibularis brevis (M. peroneus brevis)",
+      "Joints": "Art. talocruralis, Art. subtalaris",
+      "Movements": "Fuß: Plantarflexion, Pronation",
+      "Segments": "N. peroneus superficialis",
+      "Origin": "Facies lateralis fibulae (distal)",
+      "Insertion": "Os metatarsale V (Tuberositas)",
+      "Function": "Plantarflektiert und proniert den Fuß; wichtig für die seitliche Fußstabilisierung",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "plantarflexion",
+        "pronation",
+        "lateraler-unterschenkel",
+        "peroneus"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Avulsionsfraktur an der Tuberositas ossis metatarsalis V entsteht typischerweise bei Supinationstrauma durch Zug der Peroneus-brevis-Sehne; Peronealsehnenruptur ebenfalls möglich",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Facies lateralis fibulae (distal)",
+        "Insertion": "Os metatarsale V (Tuberositas)",
+        "Function": "Plantarflektiert und proniert den Fuß; wichtig für die seitliche Fußstabilisierung",
+        "Segments": "N. peroneus superficialis"
+      }
+    },
+    {
+      "Name": "M. extensor digitorum longus",
+      "Joints": "Art. talocruralis, Art. subtalaris, MTP und IP Zehen II–V",
+      "Movements": "Fuß: Dorsalextension, Pronation; Zehen II–V: Extension der MTP- und IP-Gelenke",
+      "Segments": "N. peroneus profundus",
+      "Origin": "Condylus lateralis tibiae, Facies medialis fibulae und Membrana interossea",
+      "Insertion": [
+        "Dorsalaponeurose der Zehen II–V",
+        "Os metatarsale V (dorsal)"
+      ],
+      "Function": "Dorsalextendiert den Fuß und proniert; streckt die Zehen II–V in den MTP- und IP-Gelenken; unterstützt das Anheben der Zehenspitzen beim Gehen",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "dorsalextension",
+        "pronation",
+        "zehenextension",
+        "vorderer-unterschenkel"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Bei N.-peroneus-profundus-Parese fällt die Zehenstreckung gemeinsam mit der Fußhebung aus; vorderes Kompartmentsyndrom betrifft diesen Muskel ebenfalls",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Condylus lateralis tibiae, Facies medialis fibulae und Membrana interossea",
+        "Insertion": "Dorsalaponeurose der Zehen II–V\nOs metatarsale V (dorsal)",
+        "Function": "Dorsalextendiert den Fuß und proniert; streckt die Zehen II–V in den MTP- und IP-Gelenken; unterstützt das Anheben der Zehenspitzen beim Gehen",
+        "Segments": "N. peroneus profundus"
+      }
+    },
+    {
+      "Name": "M. flexor digitorum longus",
+      "Joints": "Art. talocruralis, Art. subtalaris, MTP und IP Zehen II–V",
+      "Movements": "Fuß: Plantarflexion, Supination; Zehen II–V: Flexion der MTP- und IP-Gelenke",
+      "Segments": "N. tibialis",
+      "Origin": "Facies posterior tibiae (Mitte)",
+      "Insertion": "Zehen II–V, distale Phalanx (Basis)",
+      "Function": "Plantarflektiert den Fuß und supiniert; beugt die Zehen II–V in MTP-, PIP- und DIP-Gelenken; beim Gehen unterstützt er das Abstoßen und das Greifen der Zehenspitzen",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "plantarflexion",
+        "supination",
+        "zehenflexion",
+        "tiefer-beugerloge"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Tarsaltunnelsyndrom kann Druck auf die FDL-Sehne ausüben; chronische Überlastung führt zu Krallenzehen durch Dauerkontraktur der tiefen Zehenbeuger",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Facies posterior tibiae (Mitte)",
+        "Insertion": "Zehen II–V, distale Phalanx (Basis)",
+        "Function": "Plantarflektiert den Fuß und supiniert; beugt die Zehen II–V in MTP-, PIP- und DIP-Gelenken; beim Gehen unterstützt er das Abstoßen und das Greifen der Zehenspitzen",
+        "Segments": "N. tibialis"
+      }
+    },
+    {
+      "Name": "M. extensor hallucis longus",
+      "Joints": "Art. talocruralis, MTP und IP Zeh I",
+      "Movements": "Fuß: Dorsalextension; Zeh I: Extension des MTP- und IP-Gelenks",
+      "Segments": "N. peroneus profundus",
+      "Origin": "Facies medialis fibulae (Mitte) und Membrana interossea",
+      "Insertion": "Zeh I, dorsale distale Phalanx (Basis)",
+      "Function": "Dorsalextendiert den Fuß; streckt die Großzehe in MTP- und IP-Gelenk; hebt das mediale Gewölbe bei der Fußhebung",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "dorsalextension",
+        "grosszehenextension",
+        "vorderer-unterschenkel"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Hallux-extensus-Deformität (Hyperextension Zehe I) kann nach N.-peroneus-profundus-Parese entstehen; Kompartmentsyndrom vordere Loge betrifft auch EHL",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Facies medialis fibulae (Mitte) und Membrana interossea",
+        "Insertion": "Zeh I, dorsale distale Phalanx (Basis)",
+        "Function": "Dorsalextendiert den Fuß; streckt die Großzehe in MTP- und IP-Gelenk; hebt das mediale Gewölbe bei der Fußhebung",
+        "Segments": "N. peroneus profundus"
+      }
+    },
+    {
+      "Name": "M. flexor hallucis longus",
+      "Joints": "Art. talocruralis, Art. subtalaris, MTP und IP Zeh I",
+      "Movements": "Fuß: Plantarflexion, Supination; Zeh I: Flexion des MTP- und IP-Gelenks",
+      "Segments": "N. tibialis",
+      "Origin": "Facies posterior fibulae (distal)",
+      "Insertion": "Zeh I, plantare distale Phalanx (Basis)",
+      "Function": "Plantarflektiert den Fuß und supiniert; beugt die Großzehe in MTP- und IP-Gelenk; wichtig beim Abstoßen in der Gangabwicklung",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "plantarflexion",
+        "supination",
+        "grosszehenflexion",
+        "tiefer-beugerloge"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Hallux-flexus-Deformität durch Verkürzung; Tarsaltunnelsyndrom kann FHL-Sehne betreffen; bei Ballett-Tänzerinnen typische Überlastungstendinitis hinter dem Innenknöchel",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Facies posterior fibulae (distal)",
+        "Insertion": "Zeh I, plantare distale Phalanx (Basis)",
+        "Function": "Plantarflektiert den Fuß und supiniert; beugt die Großzehe in MTP- und IP-Gelenk; wichtig beim Abstoßen in der Gangabwicklung",
+        "Segments": "N. tibialis"
+      }
+    },
+    {
+      "Name": "M. extensor digitorum brevis",
+      "Joints": "MTP und IP Zehen II–IV",
+      "Movements": "Zeh II–IV: Extension und Lateralabduktion der MTP- und IP-Gelenke",
+      "Segments": "N. peroneus profundus",
+      "Origin": "Kalkaneus (dorsolateral) und Retinaculum extensorum inferius",
+      "Insertion": "Zeh II–IV, Dorsalaponeurosen",
+      "Function": "Streckt die Zehen II–IV in MTP- und IP-Gelenken; unterstützt den langen Zehenstrecker bei der Fußhebung",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "zehenextension",
+        "kurze-fussmuskulatur",
+        "fussruecken"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Eine deutliche Schwellung am Fußrücken kann fälschlicherweise für ein Ganglion gehalten werden, wenn der Muskelbauch des EDB besonders ausgeprägt ist",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Kalkaneus (dorsolateral) und Retinaculum extensorum inferius",
+        "Insertion": "Zeh II–IV, Dorsalaponeurosen",
+        "Function": "Streckt die Zehen II–IV in MTP- und IP-Gelenken; unterstützt den langen Zehenstrecker bei der Fußhebung",
+        "Segments": "N. peroneus profundus"
+      }
+    },
+    {
+      "Name": "M. flexor digitorum brevis",
+      "Joints": "MTP und proximale IP Zehen II–V",
+      "Movements": "Zeh II–V: Flexion der MTP- und proximalen IP-Gelenke",
+      "Segments": "N. tibialis (N. plantaris medialis)",
+      "Origin": "Kalkaneus (Proc. medialis am Tuber) und Aponeurosis plantaris",
+      "Insertion": "Zehen II–V, plantare mittlere Phalangen",
+      "Function": "Beugt die Zehen II–V in MTP- und proximalen IP-Gelenken; unterstützt das Greifen und Abrollen des Fußes beim Gehen",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "zehenflexion",
+        "kurze-fussmuskulatur",
+        "fusssohle"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Bei Plantarfasziitis ist der Ansatz am Kalkaneus (Proc. medialis) entzündet; Hammerzehen entstehen u.a. durch Imbalalanc zwischen FDB und den langen Zehenmuskeln",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Kalkaneus (Proc. medialis am Tuber) und Aponeurosis plantaris",
+        "Insertion": "Zehen II–V, plantare mittlere Phalangen",
+        "Function": "Beugt die Zehen II–V in MTP- und proximalen IP-Gelenken; unterstützt das Greifen und Abrollen des Fußes beim Gehen",
+        "Segments": "N. tibialis (N. plantaris medialis)"
+      }
+    },
+    {
+      "Name": "M. quadratus plantae",
+      "Joints": "–",
+      "Movements": "Zeh II–V: Flexion der MTP- und IP-Gelenke (unterstützt M. flexor digitorum longus)",
+      "Segments": "N. tibialis (N. plantaris lateralis)",
+      "Origin": "Tuber calcanei (plantare Seite)",
+      "Insertion": "M. flexor digitorum longus (Endsehne)",
+      "Function": "Richtet den Zugvektor des M. flexor digitorum longus auf die Zehenlängsachse aus; unterstützt die Beugung der Zehen II–V",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "zehenflexion",
+        "kurze-fussmuskulatur",
+        "fusssohle"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Korrigiert den durch den Zug des M. flexor digitorum longus entstehenden schrägen Zugvektor; erst durch ihn erfolgt eine achsengerechte Zehenflexion",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Tuber calcanei (plantare Seite)",
+        "Insertion": "M. flexor digitorum longus (Endsehne)",
+        "Function": "Richtet den Zugvektor des M. flexor digitorum longus auf die Zehenlängsachse aus; unterstützt die Beugung der Zehen II–V",
+        "Segments": "N. tibialis (N. plantaris lateralis)"
+      }
+    },
+    {
+      "Name": "Mm. interossei plantares",
+      "Joints": "MTP Zehen III–V",
+      "Movements": "Zeh III–V: Flexion und Adduktion der MTP-Gelenke (zum II. Strahl hin)",
+      "Segments": "N. tibialis (N. plantaris lateralis)",
+      "Origin": "Ossa metatarsi III–V",
+      "Insertion": "Zehen III–V, Basis der proximalen Phalangen",
+      "Function": "Adduzieren die Zehen III–V zur zweiten Zehenachse hin; beugen die MTP-Gelenke",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "zehenflexion",
+        "adduktion",
+        "interossei",
+        "fusssohle"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Bei Spreizfuß und Krallenzehen durch Schwäche der intrinsischen Fußmuskeln; enger Schuhwerk begünstigt die Ausprägung",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Ossa metatarsi III–V",
+        "Insertion": "Zehen III–V, Basis der proximalen Phalangen",
+        "Function": "Adduzieren die Zehen III–V zur zweiten Zehenachse hin; beugen die MTP-Gelenke",
+        "Segments": "N. tibialis (N. plantaris lateralis)"
+      }
+    },
+    {
+      "Name": "Mm. interossei dorsales",
+      "Joints": "MTP Zehen II–IV",
+      "Movements": "Zeh II–IV: Flexion und laterale Abduktion im MTP-Gelenk; Zeh II: mediale Abduktion",
+      "Segments": "N. tibialis (N. plantaris lateralis)",
+      "Origin": "Ossa metatarsi I–V (die einander zugewandten Seiten)",
+      "Insertion": "Zehen II–IV, Basis der proximalen Phalangen (lateral und medial)",
+      "Function": "Abduzieren die Zehen II–IV vom zweiten Strahl weg; beugen die MTP-Gelenke; Zehe II kann durch den ersten dorsalen Interosseus auch medialwärts abduziert werden",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "zehenflexion",
+        "abduktion",
+        "interossei",
+        "fusssohle"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Beim Spreizfuß sind die dorsalen Interossei durch den Druck in der Fußquere gestört; bei Krallenzehen überwiegen die extrinsischen Muskeln gegenüber den schwachen Interossei",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Ossa metatarsi I–V (die einander zugewandten Seiten)",
+        "Insertion": "Zehen II–IV, Basis der proximalen Phalangen (lateral und medial)",
+        "Function": "Abduzieren die Zehen II–IV vom zweiten Strahl weg; beugen die MTP-Gelenke; Zehe II kann durch den ersten dorsalen Interosseus auch medialwärts abduziert werden",
+        "Segments": "N. tibialis (N. plantaris lateralis)"
+      }
+    },
+    {
+      "Name": "Mm. lumbricales",
+      "Joints": "MTP Zehen II–V",
+      "Movements": "Zeh II–V: Flexion der MTP-Gelenke; Zeh III–V: Adduktion; Zeh II: Abduktion",
+      "Segments": "N. tibialis (N. plantaris medialis und lateralis)",
+      "Origin": "Sehnen des M. flexor digitorum longus",
+      "Insertion": "Zehen II–V, Basen der proximalen Phalangen (medial)",
+      "Function": "Beugen die MTP-Gelenke II–V; die Mm. lumbricales III–V adduzieren ihre Zehen zur zweiten Achse hin; Zehe II kann abgespreizt werden",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "zehenflexion",
+        "adduktion",
+        "fusssohle"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Beim Spreizfuß und bei Krallenzehen geschwächt; Ausfälle der Lumbrikalfunktion begünstigen Hyperextension in MTP und Flexion in IP (Krallenzehe)",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Sehnen des M. flexor digitorum longus",
+        "Insertion": "Zehen II–V, Basen der proximalen Phalangen (medial)",
+        "Function": "Beugen die MTP-Gelenke II–V; die Mm. lumbricales III–V adduzieren ihre Zehen zur zweiten Achse hin; Zehe II kann abgespreizt werden",
+        "Segments": "N. tibialis (N. plantaris medialis und lateralis)"
+      }
+    },
+    {
+      "Name": "M. extensor hallucis brevis",
+      "Joints": "MTP Zeh I",
+      "Movements": "Zeh I: Extension des MTP-Gelenks",
+      "Segments": "N. peroneus profundus",
+      "Origin": "Dorsalfläche des Kalkaneus (zusammen mit M. extensor digitorum brevis)",
+      "Insertion": "Zeh I, proximale Phalanx",
+      "Function": "Streckt die Großzehe im MTP-Gelenk; unterstützt den M. extensor hallucis longus bei der Großzehenstreckung",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "grosszehenextension",
+        "kurze-fussmuskulatur",
+        "fussruecken"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Teil der EDB-Gruppe; kann bei pathologischer Fußrückenschwellung klinisch prominent werden; sein Muskelbauch ist manchmal vergrößert und mit einem Tumor verwechselt worden",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Dorsalfläche des Kalkaneus (zusammen mit M. extensor digitorum brevis)",
+        "Insertion": "Zeh I, proximale Phalanx",
+        "Function": "Streckt die Großzehe im MTP-Gelenk; unterstützt den M. extensor hallucis longus bei der Großzehenstreckung",
+        "Segments": "N. peroneus profundus"
+      }
+    },
+    {
+      "Name": "M. flexor hallucis brevis",
+      "Joints": "MTP Zeh I",
+      "Movements": "Zeh I: Flexion, Abduktion und Adduktion des MTP-Gelenks",
+      "Segments": "N. tibialis (N. plantaris medialis und lateralis)",
+      "Origin": "Ossa cuneiformia II et III und Os cuboideum",
+      "Insertion": [
+        "Mediale und laterale Basis der proximalen Phalanx des I. Zehs",
+        "Mediales und laterales Sesambein"
+      ],
+      "Function": "Beugt die Großzehe im MTP-Gelenk; unterstützt Abduktion und Adduktion; hält die Sesambeine in ihrer Gleitrinne unter dem ersten Metatarsalkopf",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "grosszehenflexion",
+        "kurze-fussmuskulatur",
+        "fusssohle"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Bei Hallux valgus entgleist das Sesambein aus seiner Führungsrinne; Sesambeinf rakturen entstehen durch direkte Belastung oder Ermüdung",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Ossa cuneiformia II et III und Os cuboideum",
+        "Insertion": "Mediale und laterale Basis der proximalen Phalanx des I. Zehs\nMediales und laterales Sesambein",
+        "Function": "Beugt die Großzehe im MTP-Gelenk; unterstützt Abduktion und Adduktion; hält die Sesambeine in ihrer Gleitrinne unter dem ersten Metatarsalkopf",
+        "Segments": "N. tibialis (N. plantaris medialis und lateralis)"
+      }
+    },
+    {
+      "Name": "M. abductor hallucis",
+      "Joints": "MTP Zeh I",
+      "Movements": "Zeh I: Flexion und Abduktion (vom II. Strahl weg) des MTP-Gelenks",
+      "Segments": "N. tibialis (N. plantaris medialis)",
+      "Origin": "Proc. medialis des Tuber calcanei, Retinaculum flexorum und Aponeurosis plantaris",
+      "Insertion": "Basis der proximalen Phalanx des I. Zehs und mediales Sesambein",
+      "Function": "Abduziert die Großzehe vom zweiten Strahl weg; beugt sie im MTP-Gelenk; unterstützt das mediale Längsgewölbe",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "grosszehenabduktion",
+        "kurze-fussmuskulatur",
+        "fusssohle"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Beim Hallux valgus ist die Abduktorkraft stark geschwächt; bei Plantarfasziitis ist der Ursprung am Kalkaneus mitbetroffen",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Proc. medialis des Tuber calcanei, Retinaculum flexorum und Aponeurosis plantaris",
+        "Insertion": "Basis der proximalen Phalanx des I. Zehs und mediales Sesambein",
+        "Function": "Abduziert die Großzehe vom zweiten Strahl weg; beugt sie im MTP-Gelenk; unterstützt das mediale Längsgewölbe",
+        "Segments": "N. tibialis (N. plantaris medialis)"
+      }
+    },
+    {
+      "Name": "M. adductor hallucis",
+      "Joints": "MTP Zeh I",
+      "Movements": "Zeh I: Flexion und Adduktion (zum II. Strahl hin) des MTP-Gelenks",
+      "Segments": "N. tibialis (N. plantaris lateralis)",
+      "Origin": [
+        {
+          "Part": "Caput obliquum",
+          "Location": "Os metatarsale II–V (Basis); Os cuboideum, Os cuneiforme III und Lig. plantare longum"
+        },
+        {
+          "Part": "Caput transversum",
+          "Location": "Kapsel der Art. MTP II–V und Lig. metatarseum transversum profundum"
+        }
+      ],
+      "Insertion": "Basis der proximalen Phalanx des I. Zehs und laterales Sesambein",
+      "Function": "Adduziert die Großzehe zum zweiten Strahl; beugt das MTP-Gelenk; verspannt das Quergewölbe (Caput transversum)",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "grosszehenadduktion",
+        "kurze-fussmuskulatur",
+        "fusssohle"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Beim Hallux valgus gilt überaktive Adduktorenaktivität als mitverursachend für die mediale Deviation des ersten Strahls; enges Schuhwerk begünstigt dies",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Caput obliquum: Os metatarsale II–V (Basis); Os cuboideum, Os cuneiforme III und Lig. plantare longum\nCaput transversum: Kapsel der Art. MTP II–V und Lig. metatarseum transversum profundum",
+        "Insertion": "Basis der proximalen Phalanx des I. Zehs und laterales Sesambein",
+        "Function": "Adduziert die Großzehe zum zweiten Strahl; beugt das MTP-Gelenk; verspannt das Quergewölbe (Caput transversum)",
+        "Segments": "N. tibialis (N. plantaris lateralis)"
+      }
+    },
+    {
+      "Name": "M. flexor digiti minimi brevis",
+      "Joints": "MTP Zeh V",
+      "Movements": "Zeh V: Flexion des MTP-Gelenks",
+      "Segments": "N. tibialis (N. plantaris lateralis)",
+      "Origin": "Os metatarsale V (Basis) und Lig. plantare longum",
+      "Insertion": "Zeh V, Basis der proximalen Phalanx (plantar)",
+      "Function": "Beugt die Kleinzehe im MTP-Gelenk V; unterstützt die Stabilisierung des lateralen Fußrandes",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "kleinzehenflexion",
+        "kurze-fussmuskulatur",
+        "fusssohle"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Bei Kleinzehenschmerzen und Spreizfuß kann dieser Muskel durch Druck des Schuhwerks gereizt sein; selten isoliert klinisch beurteilbar",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Os metatarsale V (Basis) und Lig. plantare longum",
+        "Insertion": "Zeh V, Basis der proximalen Phalanx (plantar)",
+        "Function": "Beugt die Kleinzehe im MTP-Gelenk V; unterstützt die Stabilisierung des lateralen Fußrandes",
+        "Segments": "N. tibialis (N. plantaris lateralis)"
+      }
+    },
+    {
+      "Name": "M. abductor digiti minimi",
+      "Joints": "MTP Zeh V",
+      "Movements": "Zeh V: Flexion und Abduktion des MTP-Gelenks",
+      "Segments": "N. tibialis (N. plantaris lateralis)",
+      "Origin": "Tuber calcanei (Proc. lateralis) und Lig. plantare longum",
+      "Insertion": "Zeh V, Tuberositas ossis metatarsalis V und proximale Phalanx (laterale Seite)",
+      "Function": "Abduziert und beugt die Kleinzehe im MTP-Gelenk; stabilisiert den lateralen Fußrand",
+      "Image": "",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "kleinzehenabduktion",
+        "kurze-fussmuskulatur",
+        "fusssohle"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Bursitis am Tuber calcanei lateral und der sog. Tailor's bunion (Prominenz des fünften Mittelfußköpfchens) gehen häufig mit Reizung des Abductor digiti minimi einher",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Tuber calcanei (Proc. lateralis) und Lig. plantare longum",
+        "Insertion": "Zeh V, Tuberositas ossis metatarsalis V und proximale Phalanx (laterale Seite)",
+        "Function": "Abduziert und beugt die Kleinzehe im MTP-Gelenk; stabilisiert den lateralen Fußrand",
+        "Segments": "N. tibialis (N. plantaris lateralis)"
+      }
+    }
+  ]
+}

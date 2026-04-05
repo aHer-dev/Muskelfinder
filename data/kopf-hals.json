@@ -1,0 +1,862 @@
+{
+  "Sheet1": [
+    {
+      "Name": "M. masseter",
+      "Joints": "Kiefergelenk",
+      "Movements": "Mundschluss (Adduktion des Unterkiefers), Protrusion",
+      "Segments": "N. massetericus (V3, N. trigeminus)",
+      "Origin": "Arcus zygomaticus (unterer Rand und Innenfläche)",
+      "Insertion": "Tuberositas masseterica (Außenfläche des Ramus mandibulae)",
+      "Function": "Der M. masseter ist der kräftigste Kaumuskel: Er schließt den Mund und hebt den Unterkiefer an. Der oberflächliche Anteil ermöglicht zusätzlich eine Protrusion des Unterkiefers, der tiefe Anteil zieht ihn nach posterior.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "kaumuskulatur",
+      "tags": [
+        "kaumuskulatur",
+        "kiefergelenk",
+        "logopaedie",
+        "schlucken"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Der M. masseter ist der häufigste Ort für Bruxismus-bedingte Muskelhypertrophie; bei Kiefergelenks-Dysfunktionen (CMD) ist er oft druckschmerzhaft und kann zu Kopf- und Ohrschmerzen führen.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Arcus zygomaticus (unterer Rand und Innenfläche)",
+        "Insertion": "Tuberositas masseterica (Außenfläche des Ramus mandibulae)",
+        "Function": "Der M. masseter ist der kräftigste Kaumuskel: Er schließt den Mund und hebt den Unterkiefer an. Der oberflächliche Anteil ermöglicht zusätzlich eine Protrusion des Unterkiefers, der tiefe Anteil zieht ihn nach posterior.",
+        "Segments": "N. massetericus (V3, N. trigeminus)"
+      }
+    },
+    {
+      "Name": "M. temporalis",
+      "Joints": "Kiefergelenk",
+      "Movements": "Mundschluss, Retrusion des Unterkiefers",
+      "Segments": "N. temporalis profundus (V3, N. trigeminus)",
+      "Origin": "Fossa temporalis und Fascia temporalis",
+      "Insertion": "Proc. coronoideus mandibulae und Vorderkante des Ramus mandibulae",
+      "Function": "Der M. temporalis hebt den Unterkiefer und schließt damit den Mund. Die hinteren Fasern ziehen den vorgeschobenen Unterkiefer nach dorsal (Retrusion) und sind damit der wichtigste Antagonist zur Protrusion.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "kaumuskulatur",
+      "tags": [
+        "kaumuskulatur",
+        "kiefergelenk",
+        "logopaedie",
+        "schlucken"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Triggerpunkte im M. temporalis sind eine häufige Ursache für Schläfen- und Stirnkopfschmerzen sowie Zahnschmerzen; er ist bei Kiefergelenks-Dysfunktionen und Bruxismus mitbetroffen.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Fossa temporalis und Fascia temporalis",
+        "Insertion": "Proc. coronoideus mandibulae und Vorderkante des Ramus mandibulae",
+        "Function": "Der M. temporalis hebt den Unterkiefer und schließt damit den Mund. Die hinteren Fasern ziehen den vorgeschobenen Unterkiefer nach dorsal (Retrusion) und sind damit der wichtigste Antagonist zur Protrusion.",
+        "Segments": "N. temporalis profundus (V3, N. trigeminus)"
+      }
+    },
+    {
+      "Name": "M. pterygoideus medialis",
+      "Joints": "Kiefergelenk",
+      "Movements": "Mundschluss, Protrusion, Laterotrusion",
+      "Segments": "N. pterygoideus medialis (V3, N. trigeminus)",
+      "Origin": [
+        {
+          "Part": "M. pterygoideus medialis (Pars superficialis)",
+          "Location": "Fossa pterygoidea"
+        },
+        "Tuber maxillae"
+      ],
+      "Insertion": "Tuberositas pterygoidea (Innenfläche des Ramus mandibulae)",
+      "Function": "Der M. pterygoideus medialis schließt gemeinsam mit dem M. masseter den Mund und hebt den Unterkiefer an. Er ermöglicht zudem Protrusion und Mahlbewegungen des Unterkiefers (Laterotrusion zur Gegenseite).",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "kaumuskulatur",
+      "tags": [
+        "kaumuskulatur",
+        "kiefergelenk",
+        "logopaedie"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Der M. pterygoideus medialis ist bei Kiefergelenks-Dysfunktionen (CMD) oft verspannt; zusammen mit dem M. masseter bildet er die sogenannte Masseterschlinge, Spannungen können Schluckbeschwerden und Trismus auslösen.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Fossa pterygoidea (Lamina medialis proc. pterygoidei) | Tuber maxillae",
+        "Insertion": "Tuberositas pterygoidea (Innenfläche des Ramus mandibulae)",
+        "Function": "Der M. pterygoideus medialis schließt gemeinsam mit dem M. masseter den Mund und hebt den Unterkiefer an. Er ermöglicht zudem Protrusion und Mahlbewegungen des Unterkiefers (Laterotrusion zur Gegenseite).",
+        "Segments": "N. pterygoideus medialis (V3, N. trigeminus)"
+      }
+    },
+    {
+      "Name": "M. pterygoideus lateralis",
+      "Joints": "Kiefergelenk",
+      "Movements": "Mundöffnung (Abduktion), Protrusion, Laterotrusion",
+      "Segments": "N. pterygoideus lateralis (V3, N. trigeminus)",
+      "Origin": [
+        {
+          "Part": "Caput superius",
+          "Location": "Facies infratemporalis des Os sphenoidale"
+        },
+        {
+          "Part": "Caput inferius",
+          "Location": "Caput laterale des Proc. condylaris"
+        }
+      ],
+      "Insertion": [
+        "Capsula articularis und Discus articularis (Caput superius)",
+        "Proc. condylaris mandibulae (Caput inferius)"
+      ],
+      "Function": "Der M. pterygoideus lateralis öffnet bei beidseitiger Kontraktion den Mund und zieht den Unterkiefer nach vorn. Bei einseitiger Aktivität verschiebt er den Unterkiefer zur Gegenseite (Laterotrusion) und ermöglicht damit Mahlbewegungen.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "kaumuskulatur",
+      "tags": [
+        "kaumuskulatur",
+        "kiefergelenk",
+        "logopaedie"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Der M. pterygoideus lateralis ist der Schlüsselmuskel für Kieferöffnung und Mahlbewegungen; bei CMD und Kiefergelenksarthropathien ist er häufig verspannt und verursacht präaurikuläre Schmerzen und Kieferknacken.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Caput superius: Facies infratemporalis Os sphenoidale | Caput inferius: Caput laterale Proc. condylaris",
+        "Insertion": "Capsula articularis und Discus articularis | Proc. condylaris mandibulae",
+        "Function": "Der M. pterygoideus lateralis öffnet bei beidseitiger Kontraktion den Mund und zieht den Unterkiefer nach vorn. Bei einseitiger Aktivität verschiebt er den Unterkiefer zur Gegenseite (Laterotrusion) und ermöglicht damit Mahlbewegungen.",
+        "Segments": "N. pterygoideus lateralis (V3, N. trigeminus)"
+      }
+    },
+    {
+      "Name": "M. mylohyoideus",
+      "Joints": "Kiefergelenk, Zungenbein",
+      "Movements": "Mundbodenhebung, Zungenbeinanhebung, Mundöffnung",
+      "Segments": "N. mylohyoideus (V3, N. trigeminus)",
+      "Origin": "Linea mylohyoidea (Innenfläche des Corpus mandibulae)",
+      "Insertion": [
+        "Corpus ossis hyoidei",
+        "Raphe mylohyoidea"
+      ],
+      "Function": "Der M. mylohyoideus hebt den Mundboden und das Zungenbein an – ein entscheidender Schritt beim Schlucken. Bei festem Zungenbein kann er zudem den Unterkiefer absenken und unterstützt so die Mundöffnung.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "suprahyoidal",
+      "tags": [
+        "suprahyoidal",
+        "hyoid",
+        "logopaedie",
+        "schlucken",
+        "zungengrund"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Der M. mylohyoideus spielt eine zentrale Rolle beim Schluckakt; bei Läsionen des N. mylohyoideus nach Weisheitszahn-OPs oder Frakturen des Unterkiefers kann es zu Schluckstörungen und eingeschränkter Mundbodenhebung kommen.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Linea mylohyoidea (Innenfläche des Corpus mandibulae)",
+        "Insertion": "Corpus ossis hyoidei | Raphe mylohyoidea",
+        "Function": "Der M. mylohyoideus hebt den Mundboden und das Zungenbein an – ein entscheidender Schritt beim Schlucken. Bei festem Zungenbein kann er zudem den Unterkiefer absenken und unterstützt so die Mundöffnung.",
+        "Segments": "N. mylohyoideus (V3, N. trigeminus)"
+      }
+    },
+    {
+      "Name": "M. digastricus",
+      "Joints": "Kiefergelenk, Zungenbein",
+      "Movements": "Zungenbeinanhebung, Mundöffnung",
+      "Segments": "N. mylohyoideus (Vorderbauch, V3) / N. facialis (Hinterbauch, VII)",
+      "Origin": [
+        {
+          "Part": "Venter anterior",
+          "Location": "Fossa digastrica (Innenseite der Mandibula)"
+        },
+        {
+          "Part": "Venter posterior",
+          "Location": "Incisura mastoidea (Os temporale)"
+        }
+      ],
+      "Insertion": "Corpus ossis hyoidei (über Zwischensehne)",
+      "Function": "Der M. digastricus wirkt mit seinen zwei Bäuchen in entgegengesetzten Situationen: Bei fixiertem Zungenbein öffnet er den Mund; bei fixierter Mandibula hebt er das Zungenbein an, was für den oralen und pharyngealen Schluckakt unerlässlich ist.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "suprahyoidal",
+      "tags": [
+        "suprahyoidal",
+        "hyoid",
+        "logopaedie",
+        "schlucken",
+        "zweibäuchig"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Der M. digastricus ist logopädisch relevant bei Schluckstörungen; Lähmungen oder Verspannungen beeinträchtigen die Zungenbeinanhebung und damit die laryngeale Elevation beim Schlucken.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Venter anterior: Fossa digastrica (Innenseite Mandibula) | Venter posterior: Incisura mastoidea (Os temporale)",
+        "Insertion": "Corpus ossis hyoidei (über Zwischensehne)",
+        "Function": "Der M. digastricus wirkt mit seinen zwei Bäuchen in entgegengesetzten Situationen: Bei fixiertem Zungenbein öffnet er den Mund; bei fixierter Mandibula hebt er das Zungenbein an, was für den oralen und pharyngealen Schluckakt unerlässlich ist.",
+        "Segments": "N. mylohyoideus (Vorderbauch, V3) / N. facialis (Hinterbauch, VII)"
+      }
+    },
+    {
+      "Name": "M. geniohyoideus",
+      "Joints": "Zungenbein",
+      "Movements": "Zungenbeinanhebung und -vorverlagerung, Mundöffnung",
+      "Segments": "N. hypoglossus (XII) mit Fasern aus C1",
+      "Origin": "Spina mentalis (Innenseite des Corpus mandibulae)",
+      "Insertion": "Corpus ossis hyoidei",
+      "Function": "Der M. geniohyoideus zieht das Zungenbein kräftig nach ventral und kranial; damit hebt er den Kehlkopf beim Schlucken an und verkürzt den Abstand zwischen Kinn und Zungenbein. Bei festem Zungenbein wirkt er als Mundöffner.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "suprahyoidal",
+      "tags": [
+        "suprahyoidal",
+        "hyoid",
+        "logopaedie",
+        "schlucken"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Der M. geniohyoideus ist beim Schluckakt unverzichtbar; er zieht das Zungenbein nach vorn und oben und ermöglicht so die laryngeale Elevation. Schwäche führt zu pharyngealer Dysphagie.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Spina mentalis (Innenseite des Corpus mandibulae)",
+        "Insertion": "Corpus ossis hyoidei",
+        "Function": "Der M. geniohyoideus zieht das Zungenbein kräftig nach ventral und kranial; damit hebt er den Kehlkopf beim Schlucken an und verkürzt den Abstand zwischen Kinn und Zungenbein. Bei festem Zungenbein wirkt er als Mundöffner.",
+        "Segments": "N. hypoglossus (XII) mit Fasern aus C1"
+      }
+    },
+    {
+      "Name": "M. stylohyoideus",
+      "Joints": "Zungenbein",
+      "Movements": "Zungenbeinanhebung und -dorsalverlagerung",
+      "Segments": "N. facialis (VII)",
+      "Origin": "Proc. styloideus (Os temporale)",
+      "Insertion": "Corpus ossis hyoidei (Cornu majus)",
+      "Function": "Der M. stylohyoideus zieht das Zungenbein nach dorsal und kranial; er antagonisiert die ventralen suprahyoidalen Muskeln und ist an der Stabilisierung des Zungenbeins während der Schluck- und Sprechbewegungen beteiligt.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "suprahyoidal",
+      "tags": [
+        "suprahyoidal",
+        "hyoid",
+        "logopaedie",
+        "schlucken"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Der M. stylohyoideus wird vom N. facialis versorgt; bei peripherer Fazialisparese kann seine Lähmung die Zungenbeinanhebung beim Schlucken beeinträchtigen und zur neurogenen Dysphagie beitragen.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Proc. styloideus (Os temporale)",
+        "Insertion": "Corpus ossis hyoidei (Cornu majus)",
+        "Function": "Der M. stylohyoideus zieht das Zungenbein nach dorsal und kranial; er antagonisiert die ventralen suprahyoidalen Muskeln und ist an der Stabilisierung des Zungenbeins während der Schluck- und Sprechbewegungen beteiligt.",
+        "Segments": "N. facialis (VII)"
+      }
+    },
+    {
+      "Name": "M. sternohyoideus",
+      "Joints": "Zungenbein",
+      "Movements": "Zungenbeinabsenkung",
+      "Segments": "Ansa cervicalis (C1–C3)",
+      "Origin": "Manubrium sterni und Articulatio sternoclavicularis",
+      "Insertion": "Corpus ossis hyoidei",
+      "Function": "Der M. sternohyoideus senkt das Zungenbein nach dem Schluckakt wieder in die Ruhelage und zieht es nach kaudal. Er spielt zudem bei der Regulierung der Kehlkopfposition während der Phonation eine wichtige Rolle.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "infrahyoidal",
+      "tags": [
+        "infrahyoidal",
+        "hyoid",
+        "logopaedie",
+        "schlucken",
+        "stimmgebung"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Als infrahyoidaler Muskel senkt der M. sternohyoideus das Zungenbein nach dem Schlucken wieder ab; bei Zustand nach Laryngektomie oder Nackendissektionen kann er in seiner Funktion eingeschränkt sein.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Manubrium sterni und Articulatio sternoclavicularis",
+        "Insertion": "Corpus ossis hyoidei",
+        "Function": "Der M. sternohyoideus senkt das Zungenbein nach dem Schluckakt wieder in die Ruhelage und zieht es nach kaudal. Er spielt zudem bei der Regulierung der Kehlkopfposition während der Phonation eine wichtige Rolle.",
+        "Segments": "Ansa cervicalis (C1–C3)"
+      }
+    },
+    {
+      "Name": "M. sternothyroideus",
+      "Joints": "Kehlkopf",
+      "Movements": "Kehlkopfabsenkung",
+      "Segments": "Ansa cervicalis (C1–C3)",
+      "Origin": "Manubrium sterni (Innenfläche)",
+      "Insertion": "Cartilago thyroidea (Linea obliqua)",
+      "Function": "Der M. sternothyroideus zieht den Kehlkopf nach kaudal; er senkt die Stimmlippen und ermöglicht damit tiefere Tonlagen. Nach dem Schlucken führt er gemeinsam mit den anderen infrahyoidalen Muskeln den Kehlkopf in die Ausgangsposition zurück.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "infrahyoidal",
+      "tags": [
+        "infrahyoidal",
+        "kehlkopf",
+        "logopaedie",
+        "stimmgebung",
+        "phonation"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Der M. sternothyroideus senkt den Kehlkopf nach dem Schlucken wieder ab und ist für tiefe Töne bei der Phonation mitverantwortlich; nach Schilddrüsenoperationen kann er vernäht oder durchtrennt sein.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Manubrium sterni (Innenfläche)",
+        "Insertion": "Cartilago thyroidea (Linea obliqua)",
+        "Function": "Der M. sternothyroideus zieht den Kehlkopf nach kaudal; er senkt die Stimmlippen und ermöglicht damit tiefere Tonlagen. Nach dem Schlucken führt er gemeinsam mit den anderen infrahyoidalen Muskeln den Kehlkopf in die Ausgangsposition zurück.",
+        "Segments": "Ansa cervicalis (C1–C3)"
+      }
+    },
+    {
+      "Name": "M. thyrohyoideus",
+      "Joints": "Kehlkopf, Zungenbein",
+      "Movements": "Annäherung von Kehlkopf und Zungenbein, Kehlkopfhebung",
+      "Segments": "R. thyrohyoideus (aus C1 über N. hypoglossus XII)",
+      "Origin": "Linea obliqua der Cartilago thyroidea",
+      "Insertion": "Cornu majus des Os hyoideum",
+      "Function": "Der M. thyrohyoideus nähert Schildknorpel und Zungenbein an; bei fixiertem Zungenbein hebt er den Kehlkopf an, bei fixiertem Kehlkopf senkt er das Zungenbein. Er ist ein wichtiger Muskel bei der laryngealen Elevation beim Schlucken.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "infrahyoidal",
+      "tags": [
+        "infrahyoidal",
+        "hyoid",
+        "kehlkopf",
+        "logopaedie",
+        "schlucken",
+        "phonation"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Der M. thyrohyoideus nähert beim Schlucken Zungenbein und Kehlkopf einander an und erleichtert so den Verschluss des Kehlkopfeingangs; Lähmungen durch N.-hypoglossus-Läsionen (R. thyrohyoideus aus C1) können Aspirationen begünstigen.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Linea obliqua der Cartilago thyroidea",
+        "Insertion": "Cornu majus des Os hyoideum",
+        "Function": "Der M. thyrohyoideus nähert Schildknorpel und Zungenbein an; bei fixiertem Zungenbein hebt er den Kehlkopf an, bei fixiertem Kehlkopf senkt er das Zungenbein. Er ist ein wichtiger Muskel bei der laryngealen Elevation beim Schlucken.",
+        "Segments": "R. thyrohyoideus (aus C1 über N. hypoglossus XII)"
+      }
+    },
+    {
+      "Name": "M. omohyoideus",
+      "Joints": "Zungenbein",
+      "Movements": "Zungenbeinabsenkung, Spannung der Halsfaszie",
+      "Segments": "Ansa cervicalis (C1–C3)",
+      "Origin": "Margo superior scapulae (medial der Incisura scapulae)",
+      "Insertion": "Corpus ossis hyoidei (Cornu majus)",
+      "Function": "Der M. omohyoideus senkt das Zungenbein nach kaudal und spannt die mittlere Halsfaszie; durch die Spannung der Fascia cervicalis media hält er die V. jugularis interna offen und verhindert deren venösen Kollaps.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "infrahyoidal",
+      "tags": [
+        "infrahyoidal",
+        "hyoid",
+        "logopaedie",
+        "hals"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Der M. omohyoideus spannt die tiefe Halsfaszie und verhindert dadurch einen venösen Stau in der V. jugularis interna; klinisch ist er bei Nackendissektionen relevant, da er als anatomische Leitstruktur dient.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Venter inferior: Margo superior scapulae (medial Incisura scapulae)",
+        "Insertion": "Corpus ossis hyoidei (Cornu majus)",
+        "Function": "Der M. omohyoideus senkt das Zungenbein nach kaudal und spannt die mittlere Halsfaszie; durch die Spannung der Fascia cervicalis media hält er die V. jugularis interna offen und verhindert deren venösen Kollaps.",
+        "Segments": "Ansa cervicalis (C1–C3)"
+      }
+    },
+    {
+      "Name": "M. sternocleidomastoideus",
+      "Joints": "Kopfgelenke",
+      "Movements": "Rotation kontralateral, Lateralflexion ipsilateral, Inklination (bilateral)",
+      "Segments": "N. accessorius (XI), Plexus cervicalis C2–C3",
+      "Origin": [
+        {
+          "Part": "Caput sternale",
+          "Location": "Manubrium sterni"
+        },
+        {
+          "Part": "Caput claviculare",
+          "Location": "Mediales Klavikuladrittel"
+        }
+      ],
+      "Insertion": [
+        "Proc. mastoideus",
+        "Linea nuchalis superior (lateraler Anteil)"
+      ],
+      "Function": "Beidseitig zieht der M. sternocleidomastoideus den Kopf in Inklination (Nickbewegung); einseitig rotiert er den Kopf zur Gegenseite und neigt ihn zur gleichen Seite. Er ist zudem ein wichtiger Atemhilfsmuskel bei forcierter Inspiration.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "halsmuskulatur",
+      "tags": [
+        "hals",
+        "kopfrotation",
+        "logopaedie",
+        "atemhilfsmuskel",
+        "torticollis"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Der M. sternocleidomastoideus ist klinisch bedeutsam beim muskulären Schiefhals (Torticollis); er wird außerdem als Atemhilfsmuskel bei obstruktiver Lungenerkrankung aktiviert und ist ein wichtiges Leitgebilde für Halsoperationen.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Caput sternale: Manubrium sterni | Caput claviculare: Mediales Klavikuladrittel",
+        "Insertion": "Proc. mastoideus | Linea nuchalis superior (lateraler Anteil)",
+        "Function": "Beidseitig zieht der M. sternocleidomastoideus den Kopf in Inklination (Nickbewegung); einseitig rotiert er den Kopf zur Gegenseite und neigt ihn zur gleichen Seite. Er ist zudem ein wichtiger Atemhilfsmuskel bei forcierter Inspiration.",
+        "Segments": "N. accessorius (XI), Plexus cervicalis C2–C3"
+      }
+    },
+    {
+      "Name": "M. longus colli",
+      "Joints": "Halswirbelsäule",
+      "Movements": "Flexion der HWS, Lateralflexion, Rotation ipsilateral",
+      "Segments": "Rr. ventrales der Spinalnerven C2–C6",
+      "Origin": [
+        {
+          "Part": "Pars verticalis",
+          "Location": "Wirbelkörper C5–Th3"
+        },
+        {
+          "Part": "Pars obliqua superior",
+          "Location": "Procc. transversi C3–C5"
+        },
+        {
+          "Part": "Pars obliqua inferior",
+          "Location": "Wirbelkörper Th1–Th3"
+        }
+      ],
+      "Insertion": [
+        "Tuberculum anterius atlantis (Pars obliqua superior)",
+        "Wirbelkörper C2–C4 (Pars verticalis)",
+        "Procc. transversi C5–C6 (Pars obliqua inferior)"
+      ],
+      "Function": "Der M. longus colli beugt die Halswirbelsäule nach ventral (Nickbewegung) und stabilisiert sie segmental. Er ist der wichtigste tiefe Flexor der HWS und trägt durch seine permanente Aktivität zur zervikalen Haltungsstabilisation bei.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "praevertebralis",
+      "tags": [
+        "hals",
+        "praevertebralis",
+        "zervikale-stabilisation",
+        "logopaedie"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Der M. longus colli ist der wichtigste tiefe Stabilisator der Halswirbelsäule; seine Schwäche ist mit chronischem Nackenschmerz, HWS-Instabilität und nach Schleudertrauma mit Schwindel und Sehstörungen assoziiert.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Pars verticalis: Wirbelkörper C5–Th3 | Pars obliqua superior: Procc. transversi C3–C5 | Pars obliqua inferior: Wirbelkörper Th1–Th3",
+        "Insertion": "Tuberculum anterius atlantis | Wirbelkörper C2–C4 | Procc. transversi C5–C6",
+        "Function": "Der M. longus colli beugt die Halswirbelsäule nach ventral (Nickbewegung) und stabilisiert sie segmental. Er ist der wichtigste tiefe Flexor der HWS und trägt durch seine permanente Aktivität zur zervikalen Haltungsstabilisation bei.",
+        "Segments": "Rr. ventrales der Spinalnerven C2–C6"
+      }
+    },
+    {
+      "Name": "M. longus capitis",
+      "Joints": "Kopfgelenke",
+      "Movements": "Flexion des Kopfes (Inklination)",
+      "Segments": "Rr. ventrales der Spinalnerven C1–C3",
+      "Origin": "Procc. transversi C3–C6 (Tubercula anteriora)",
+      "Insertion": "Pars basilaris ossis occipitalis",
+      "Function": "Der M. longus capitis beugt den Kopf nach vorn (Inklination) und stabilisiert die obere HWS. Er arbeitet synergistisch mit dem M. longus colli und bildet gemeinsam mit ihm die tiefe zervikale Flexorenschicht.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "praevertebralis",
+      "tags": [
+        "hals",
+        "praevertebralis",
+        "kopfflexion",
+        "logopaedie"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Der M. longus capitis ist bei HWS-Dysfunktionen und nach Schleudertraumata häufig in seiner Funktion beeinträchtigt; Schwäche zeigt sich durch Verlust der tiefen Nackenstabilisation und Vorschub des Kopfes (Forward Head Posture).",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Procc. transversi C3–C6 (Tubercula anteriora)",
+        "Insertion": "Pars basilaris ossis occipitalis",
+        "Function": "Der M. longus capitis beugt den Kopf nach vorn (Inklination) und stabilisiert die obere HWS. Er arbeitet synergistisch mit dem M. longus colli und bildet gemeinsam mit ihm die tiefe zervikale Flexorenschicht.",
+        "Segments": "Rr. ventrales der Spinalnerven C1–C3"
+      }
+    },
+    {
+      "Name": "M. orbicularis oris",
+      "Joints": "Mund",
+      "Movements": "Mundschluss, Lippenformung, Pusten, Sprechen",
+      "Segments": "N. facialis (VII), Rr. buccales und marginales mandibulares",
+      "Origin": "Haut und Muskulatur der Lippen, Modiolus",
+      "Insertion": "Haut und Muskulatur der Lippen (orbitalе und marginale Faserbündel)",
+      "Function": "Schließt die Lippen und formt sie für Sprechen, Pusten und Pfeifen; tiefe und oberflächliche Faserbündel wirken zusammen.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "mimikmuskulatur",
+      "tags": [
+        "mimik",
+        "lippenschluss",
+        "fazialis",
+        "logopaedie",
+        "sprechen"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Bei peripherer Fazialisparese ist der M. orbicularis oris gelähmt; es kommt zu inkomplettem Lippenschluss (Mundsegelphänomen), Speichelfluss und beeinträchtigter Artikulation.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Haut und Muskulatur der Lippen, Modiolus",
+        "Insertion": "Haut und Muskulatur der Lippen (orbitalе und marginale Faserbündel)",
+        "Function": "Mundschluss, Lippenformung, Pusten, Sprechen",
+        "Segments": "N. facialis (VII), Rr. buccales und marginales mandibulares"
+      }
+    },
+    {
+      "Name": "M. orbicularis oculi",
+      "Joints": "Augenlid",
+      "Movements": "Lidschluss (willkürlich und reflektorisch)",
+      "Segments": "N. facialis (VII)",
+      "Origin": "Orbitarand und Tarsalregion (umgibt die Orbita ringförmig)",
+      "Insertion": "Haut um die Orbita, Tarsalregion und medialer Lidwinkel",
+      "Function": "Schließt das Auge; Pars palpebralis: spontaner Lidschluss; Pars orbitalis: festes Zusammenkneifen.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "mimikmuskulatur",
+      "tags": [
+        "mimik",
+        "lidschluss",
+        "fazialis",
+        "augenlid"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Bei peripherer Fazialisparese kommt es zum inkompletten Lidschluss (Lagophthalmus), was zu schwerer Hornhautschädigung (Expositionskeratitis) führen kann.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Orbitarand und Tarsalregion (umgibt die Orbita ringförmig)",
+        "Insertion": "Haut um die Orbita, Tarsalregion und medialer Lidwinkel",
+        "Function": "Lidschluss (willkürlich und reflektorisch)",
+        "Segments": "N. facialis (VII)"
+      }
+    },
+    {
+      "Name": "M. procerus",
+      "Joints": "Nase, Stirn",
+      "Movements": "Runzeln über Nasenwurzel, Senken des medialen Augenbrauenanteils",
+      "Segments": "N. facialis (VII)",
+      "Origin": "Nasenwurzel / Dorsalfläche der Nase (Nasenknorpel und Os nasale)",
+      "Insertion": "Haut über der Glabella und der unteren Stirn",
+      "Function": "Zieht Haut über Glabella nach kaudal; erzeugt Querfalten an der Nasenwurzel; senkt medialen Augenbrauenanteil.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "mimikmuskulatur",
+      "tags": [
+        "mimik",
+        "nasenwurzel",
+        "fazialis",
+        "augenbraue"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Hyperaktivität führt zu queren Falten an der Nasenwurzel; Zielmuskel bei Botulinum-Toxin-Therapie für Zornesfalten.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Nasenwurzel / Dorsalfläche der Nase (Nasenknorpel und Os nasale)",
+        "Insertion": "Haut über der Glabella und der unteren Stirn",
+        "Function": "Runzeln über Nasenwurzel, Senken des medialen Augenbrauenanteils",
+        "Segments": "N. facialis (VII)"
+      }
+    },
+    {
+      "Name": "M. nasalis",
+      "Joints": "Nase",
+      "Movements": "Verengt Nasenöffnung (Pars transversa)",
+      "Segments": "N. facialis (VII)",
+      "Origin": "Seitlich an der Nase (Maxilla, lateral des Nasenrückens)",
+      "Insertion": "Nasenrücken / Nasenknorpelregion",
+      "Function": "Pars transversa: Verengt die Nasenöffnung; zieht Nasenrücken nach unten und medial.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "mimikmuskulatur",
+      "tags": [
+        "mimik",
+        "nase",
+        "fazialis",
+        "nasenflügel"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Bei vollständiger Fazialisparese ist die aktive Nasenbeweglichkeit eingeschränkt, was bei forcierter Nasenatmung auffällt.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Seitlich an der Nase – Maxilla, lateral des Nasenrückens",
+        "Insertion": "Nasenrücken / Nasenknorpelregion",
+        "Function": "Verengt Nasenöffnung",
+        "Segments": "N. facialis (VII)"
+      }
+    },
+    {
+      "Name": "M. nasalis",
+      "Joints": "Nase",
+      "Movements": "Erweitert / bläht Nasenloch (Pars alaris)",
+      "Segments": "N. facialis (VII)",
+      "Origin": "An den Nasenflügeln (Ala nasi)",
+      "Insertion": "Nasenflügel (Ala nasi)",
+      "Function": "Pars alaris: Erweitert die Nasenöffnung durch Aufspreizen der Nasenflügel; aktiv bei forcierter Inspiration.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "mimikmuskulatur",
+      "tags": [
+        "mimik",
+        "nase",
+        "fazialis",
+        "nasenflügel"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Schwäche der Pars alaris → verminderte Nasenflügelerweiterung bei forciertem Einatmen; auffällig bei Fazialisparese.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "An den Nasenflügeln (Ala nasi)",
+        "Insertion": "Nasenflügel (Ala nasi)",
+        "Function": "Erweitert / bläht Nasenloch",
+        "Segments": "N. facialis (VII)"
+      }
+    },
+    {
+      "Name": "M. corrugator supercilii",
+      "Joints": "Stirn, Augenbraue",
+      "Movements": "Zieht Augenbraue medial und inferior, erzeugt vertikale Glabellafalten (Zornesfalte)",
+      "Segments": "N. facialis (VII)",
+      "Origin": "Medial unter der Augenbraue (Os frontale, Glabellabereich)",
+      "Insertion": "Haut der medialen Augenbraue",
+      "Function": "Zieht Augenbraue medial und inferior; erzeugt vertikale Glabellafalten (Zornesfalte); antagonisiert M. frontalis.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "mimikmuskulatur",
+      "tags": [
+        "mimik",
+        "augenbraue",
+        "fazialis",
+        "zornesfalte"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Zentrales Zielorgan bei Botulinum-Toxin-Behandlung von Zornesfalten (Glabellafalten); Überaktivität → tiefe vertikale Furchen.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Medial unter der Augenbraue (Os frontale, Glabellabereich)",
+        "Insertion": "Haut der medialen Augenbraue",
+        "Function": "Zieht Augenbraue medial und inferior, Zornesfalte (vertikale Glabellafalten)",
+        "Segments": "N. facialis (VII)"
+      }
+    },
+    {
+      "Name": "M. occipitofrontalis",
+      "Joints": "Stirn, Galea",
+      "Movements": "Hebt Augenbrauen, erzeugt Querfalten der Stirn",
+      "Segments": "N. facialis (VII), Rr. temporales",
+      "Origin": "Galea aponeurotica (vorderes Blatt)",
+      "Insertion": "Haut der Stirn und Augenbrauen",
+      "Function": "Hebt die Augenbrauen; erzeugt horizontale Querfalten der Stirn; verschiebt Galea nach anterior.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "mimikmuskulatur",
+      "tags": [
+        "mimik",
+        "stirn",
+        "fazialis",
+        "galea"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Venter frontalis: häufiges Zielorgan bei ästhetischer Botulinum-Toxin-Behandlung von Stirnfalten; Überaktivität kompensatorisch bei Ptosis.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Galea aponeurotica (vorderes Blatt)",
+        "Insertion": "Haut der Stirn und Augenbrauen",
+        "Function": "Hebt Augenbrauen, erzeugt Querfalten der Stirn",
+        "Segments": "N. facialis (VII), Rr. temporales"
+      }
+    },
+    {
+      "Name": "M. occipitofrontalis",
+      "Joints": "Galea, Kopfhaut",
+      "Movements": "Zieht Kopfhaut nach dorsal, fixiert Galea aponeurotica",
+      "Segments": "N. facialis (VII), R. auricularis posterior",
+      "Origin": "Linea nuchalis superior (Os occipitale) und Mastoidregion",
+      "Insertion": "Galea aponeurotica (hinteres Blatt)",
+      "Function": "Zieht Galea aponeurotica nach dorsal; Antagonist zum Venter frontalis; ermöglicht gleitende Kopfhautbewegung.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "mimikmuskulatur",
+      "tags": [
+        "mimik",
+        "hinterkopf",
+        "fazialis",
+        "galea"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Verspannungen des Venter occipitalis können zu okzipitalen Kopfschmerzen beitragen; häufig begleitend bei Nackenverspannungen.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Linea nuchalis superior (Os occipitale) und Mastoidregion",
+        "Insertion": "Galea aponeurotica (hinteres Blatt)",
+        "Function": "Zieht Kopfhaut nach dorsal, fixiert Galea aponeurotica",
+        "Segments": "N. facialis (VII), R. auricularis posterior"
+      }
+    },
+    {
+      "Name": "Platysma",
+      "Joints": "Hals, Mandibula",
+      "Movements": "Spannt Halshaut, zieht Mundwinkel nach kaudolateral, unterstützt Mandibelabsenkung",
+      "Segments": "N. facialis (VII), Ramus colli",
+      "Origin": "Faszie über M. pectoralis major und M. deltoideus (Haut der Schulter/oberen Brust)",
+      "Insertion": "Unterkiefer (Basis mandibulae), Mundwinkel, Gesichtshaut",
+      "Function": "Spannt Halshaut; zieht Mundwinkel und Unterlippe nach kaudolateral; unterstützt Mandibelabsenkung; Mimik: Anspannung/Erschrecken.",
+      "Image": "",
+      "region": "kopf-hals",
+      "subgroup": "halsmuskulatur",
+      "tags": [
+        "hals",
+        "fazialis",
+        "mimik",
+        "hautmuskel",
+        "mandibel"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Bei Fazialisparese (Ramus colli) geschwächt; abgeflachte Halskontur und eingeschränkte Mundwinkelabsenkung auf der betroffenen Seite.",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Faszie über M. pectoralis major und M. deltoideus (Haut der Schulter/oberen Brust)",
+        "Insertion": "Unterkiefer (Basis mandibulae), Mundwinkel, Gesichtshaut",
+        "Function": "Spannt Halshaut, zieht Mundwinkel nach kaudolateral, unterstützt Mandibelabsenkung",
+        "Segments": "N. facialis (VII), Ramus colli"
+      }
+    }
+  ]
+}

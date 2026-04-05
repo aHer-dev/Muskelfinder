@@ -1,0 +1,1760 @@
+{
+  "Sheet1": [
+    {
+      "Name": "M. pectoralis minor",
+      "Joints": "Schultergürtel",
+      "Movements": "Depression, Protraktion",
+      "Segments": "N. pectoralis medialis, C6, C7, C8, Th1",
+      "Origin": "Ventrale Seite der 3.–5. Rippe",
+      "Insertion": "Proc. coracoideus der Scapula",
+      "Function": "Depression und Protraktion der Skapula, Atemhilfsmuskel bei fixiertem Schultergürtel",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schulterguertel",
+        "protraktor",
+        "atemhilfsmuskel"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Verkürzung bei Rundrücken, Thoracic-Outlet-Syndrom",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Ventrale Seite der 3.–5. Rippe",
+        "Insertion": "Proc. coracoideus der Scapula",
+        "Function": "Senkung und Vorverlagerung des Schulterblatts; wirkt als Atemhilfsmuskel bei festgestelltem Schultergürtel",
+        "Segments": "N. pectoralis medialis, C6, C7, C8, Th1"
+      }
+    },
+    {
+      "Name": "M. serratus anterior",
+      "Joints": "Schultergürtel",
+      "Movements": "Protraktion, Laterorotation",
+      "Segments": "N. thoracicus longus, C5, C6, C7",
+      "Origin": [
+        {
+          "Part": "Pars superior",
+          "Location": "1.–2. Rippe"
+        },
+        {
+          "Part": "Pars intermedia",
+          "Location": "2.–3. Rippe"
+        },
+        {
+          "Part": "Pars inferior",
+          "Location": "4.–9./10. Rippe"
+        }
+      ],
+      "Insertion": [
+        "Angulus superior (Pars superior)",
+        "Margo medialis (Pars intermedia)",
+        "Angulus inferior (Pars inferior)"
+      ],
+      "Function": "Protraktion der Skapula, Fixation am Thorax, Pars inferior: Laterorotation, Atemhilfsmuskel",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schulterguertel",
+        "protraktor",
+        "skapulastabilisator"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Scapula alata bei Lähmung des N. thoracicus longus",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Pars superior: 1.–2. Rippe\nPars intermedia: 2.–3. Rippe\nPars inferior: 4.–9./10. Rippe",
+        "Insertion": "Angulus superior (Pars superior)\nMargo medialis (Pars intermedia)\nAngulus inferior (Pars inferior)",
+        "Function": "Vorverlagerung und Fixierung des Schulterblatts am Thorax; Pars inferior ermöglicht die Außenrotation der Scapula für die Armhebung; Atemhilfsmuskel",
+        "Segments": "N. thoracicus longus, C5, C6, C7"
+      }
+    },
+    {
+      "Name": "M. subclavius",
+      "Joints": "Schultergürtel",
+      "Movements": "Depression der Clavicula",
+      "Segments": "N. subclavius, C5, C6",
+      "Origin": "Oberseite der 1. Rippe",
+      "Insertion": "Unterseite der Clavicula, Extremitas acromialis",
+      "Function": "Zieht die Clavicula an das Sternum, fixiert das Sternoklavikulargelenk",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schulterguertel",
+        "gelenkstabilisator"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Schutzfunktion für subclaviale Gefäße",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Oberseite der 1. Rippe",
+        "Insertion": "Unterseite der Clavicula, Extremitas acromialis",
+        "Function": "Zieht die Clavicula nach medial und sichert das Sternoclaviculargelenk; schützt die darunter liegenden Gefäß-Nerven-Strukturen",
+        "Segments": "N. subclavius, C5, C6"
+      }
+    },
+    {
+      "Name": "M. trapezius – Pars descendens",
+      "Joints": "Schultergürtel",
+      "Movements": "Elevation, Laterorotation",
+      "Segments": "N. accessorius (XI), Plexus cervicalis, C2, C3, C4",
+      "Origin": "Linea nuchae superior, Protuberantia occipitalis externa, Lig. nuchae C1–C6",
+      "Insertion": "Laterales Drittel der Clavicula, Akromion",
+      "Function": "Elevation und Laterorotation der Skapula, bilateral: Extension der HWS, unilateral: Lateroflexion mit kontralateraler Rotation",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schulterguertel",
+        "elevator",
+        "nackenmuskulatur"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Verspannungen, Zervikalsyndrom, Triggerpunkte",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Linea nuchae superior, Protuberantia occipitalis externa, Lig. nuchae C1–C6",
+        "Insertion": "Laterales Drittel der Clavicula, Akromion",
+        "Function": "Hebt das Schulterblatt an und dreht es nach außen; beidseits kontrahiert streckt es die HWS; einseitig Seitenneigung mit Gegenrotation",
+        "Segments": "N. accessorius (XI), Plexus cervicalis, C2, C3, C4"
+      }
+    },
+    {
+      "Name": "M. trapezius – Pars transversa",
+      "Joints": "Schultergürtel",
+      "Movements": "Retraktion",
+      "Segments": "N. accessorius (XI), Plexus cervicalis, C2, C3, C4",
+      "Origin": "Unterer Teil des Lig. nuchae (C6–C7), Procc. spinosi Th1–Th3",
+      "Insertion": "Akromion, lateraler Teil der Spina scapulae",
+      "Function": "Retraktion der Skapula",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schulterguertel",
+        "retraktor"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Schwäche führt zu Skapula-Protraktion",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Unterer Teil des Lig. nuchae (C6–C7), Procc. spinosi Th1–Th3",
+        "Insertion": "Akromion, lateraler Teil der Spina scapulae",
+        "Function": "Zieht das Schulterblatt zur Wirbelsäule zurück (Retraktion)",
+        "Segments": "N. accessorius (XI), Plexus cervicalis, C2, C3, C4"
+      }
+    },
+    {
+      "Name": "M. trapezius – Pars ascendens",
+      "Joints": "Schultergürtel",
+      "Movements": "Depression, Retraktion, Laterorotation",
+      "Segments": "N. accessorius (XI), Plexus cervicalis, C2, C3, C4",
+      "Origin": "Procc. spinosi Th3–Th12",
+      "Insertion": "Laterales Drittel der Spina scapulae",
+      "Function": "Retraktion und Laterorotation der Skapula",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schulterguertel",
+        "depressor",
+        "retraktor"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Schwäche begünstigt Schulterhochstand",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Procc. spinosi Th3–Th12",
+        "Insertion": "Laterales Drittel der Spina scapulae",
+        "Function": "Zieht das Schulterblatt nach unten und zur Wirbelsäule (Retraktion und Senkung) sowie Außenrotation",
+        "Segments": "N. accessorius (XI), Plexus cervicalis, C2, C3, C4"
+      }
+    },
+    {
+      "Name": "M. levator scapulae",
+      "Joints": "Schultergürtel",
+      "Movements": "Elevation, Innenrotation",
+      "Segments": "Plexus cervicalis, N. dorsalis scapulae, C4, C5",
+      "Origin": "Procc. transversi C1–C4 (Tubercula posteriora)",
+      "Insertion": "Angulus superior und oberer Teil der Margo medialis scapulae",
+      "Function": "Elevation und Innenrotation der Skapula, zervikal: Lateroflexion und homolaterale Rotation",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schulterguertel",
+        "elevator",
+        "nackenmuskulatur"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Häufige Verspannungen, Torticollis",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Procc. transversi C1–C4 (Tubercula posteriora)",
+        "Insertion": "Angulus superior und oberer Teil der Margo medialis scapulae",
+        "Function": "Hebt den oberen Scapulawinkel an und dreht das Schulterblatt nach innen; HWS-seitig: Seitenneigung und homolaterale Rotation",
+        "Segments": "Plexus cervicalis, N. dorsalis scapulae, C4, C5"
+      }
+    },
+    {
+      "Name": "M. rhomboideus major",
+      "Joints": "Schultergürtel",
+      "Movements": "Elevation, Retraktion, Innenrotation",
+      "Segments": "N. dorsalis scapulae, C4, C5",
+      "Origin": "Procc. spinosi Th1–Th4",
+      "Insertion": "Margo medialis scapulae",
+      "Function": "Elevation, Retraktion und Innenrotation der Skapula",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schulterguertel",
+        "retraktor",
+        "elevator"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Schwäche bei Skapula-Instabilität",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Procc. spinosi Th1–Th4",
+        "Insertion": "Margo medialis scapulae",
+        "Function": "Zieht das Schulterblatt zur Wirbelsäule (Retraktion), hebt es an und dreht es einwärts",
+        "Segments": "N. dorsalis scapulae, C4, C5"
+      }
+    },
+    {
+      "Name": "M. rhomboideus minor",
+      "Joints": "Schultergürtel",
+      "Movements": "Elevation, Retraktion, Innenrotation",
+      "Segments": "N. dorsalis scapulae, C4, C5",
+      "Origin": "Procc. spinosi C6–C7 und Lig. nuchae",
+      "Insertion": "Margo medialis scapulae",
+      "Function": "Elevation, Retraktion und Innenrotation der Skapula",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schulterguertel",
+        "retraktor",
+        "elevator"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Schwäche bei Skapula-Instabilität",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Procc. spinosi C6–C7 und Lig. nuchae",
+        "Insertion": "Margo medialis scapulae",
+        "Function": "Wie Rhomboideus major: Scapula-Retraktion, Elevation und Innenrotation des Schulterblatts",
+        "Segments": "N. dorsalis scapulae, C4, C5"
+      }
+    },
+    {
+      "Name": "M. pectoralis major",
+      "Joints": "Art. humeri",
+      "Movements": "Adduktion, Innenrotation, Flexion",
+      "Segments": "Nn. pectorales mediales et laterales, C5, C6, C7, C8, Th1",
+      "Origin": [
+        {
+          "Part": "Pars clavicularis",
+          "Location": "Mediale Clavicula"
+        },
+        {
+          "Part": "Pars sternocostalis",
+          "Location": "Ventrale Sternumseite und 2.–6. Rippenknorpel"
+        },
+        {
+          "Part": "Pars abdominalis",
+          "Location": "Rektusscheide"
+        }
+      ],
+      "Insertion": "Crista tuberculi majoris humeri",
+      "Function": "Adduktion und Innenrotation des Armes, Pars clavicularis: Flexion, Atemhilfsmuskel",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schultergelenk",
+        "adduktor",
+        "innenrotator"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Pectoralis-major-Ruptur, Verkürzung bei Protraktionshaltung",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Pars clavicularis: Mediale Clavicula\nPars sternocostalis: Ventrale Sternumseite und 2.–6. Rippenknorpel\nPars abdominalis: Rektusscheide",
+        "Insertion": "Crista tuberculi majoris humeri",
+        "Function": "Adduziert und dreht den Arm nach innen; der klavikuläre Anteil hebt den Arm nach vorne (Flexion); wirkt als Atemhilfsmuskel bei festem Ansatz",
+        "Segments": "Nn. pectorales mediales et laterales, C5, C6, C7, C8, Th1"
+      }
+    },
+    {
+      "Name": "M. latissimus dorsi",
+      "Joints": "Art. humeri",
+      "Movements": "Extension, Adduktion, Innenrotation",
+      "Segments": "N. thoracodorsalis, C6, C7, C8",
+      "Origin": "Procc. spinosi Th7–Th12, Fascia thoracolumbalis, Crista iliaca (hinterer Teil), 10.–12. Rippe",
+      "Insertion": "Crista tuberculi minoris humeri",
+      "Function": "Depression und Retraktion der Schulter, Extension, Adduktion und Innenrotation des Armes, Klimmzug",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schultergelenk",
+        "adduktor",
+        "innenrotator",
+        "extensor"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Klimmzugmuskel, Verkürzung bei Rundrücken",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Procc. spinosi Th7–Th12, Fascia thoracolumbalis, Crista iliaca (hinterer Teil), 10.–12. Rippe",
+        "Insertion": "Crista tuberculi minoris humeri",
+        "Function": "Senkt und retrahiert die Schulter; führt Extension, Adduktion und Innenrotation des Humerus durch; wichtig beim Klimmzug und Rudern",
+        "Segments": "N. thoracodorsalis, C6, C7, C8"
+      }
+    },
+    {
+      "Name": "M. deltoideus",
+      "Joints": "Art. humeri",
+      "Movements": "Abduktion, Flexion, Extension, Innenrotation, Außenrotation",
+      "Segments": "N. axillaris, C5, C6",
+      "Origin": [
+        {
+          "Part": "Pars clavicularis",
+          "Location": "Extremitas acromialis der Clavicula"
+        },
+        {
+          "Part": "Pars acromialis",
+          "Location": "Akromion"
+        },
+        {
+          "Part": "Pars spinalis",
+          "Location": "Spina scapulae"
+        }
+      ],
+      "Insertion": "Tuberositas deltoidea humeri",
+      "Function": "Hauptfunktion: Abduktion. Je nach Anteil: Flexion, Extension, Endo- und Außenrotation",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schultergelenk",
+        "abduktor"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "N. axillaris-Lähmung, Schulterluxation",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Pars clavicularis: Extremitas acromialis der Clavicula\nPars acromialis: Akromion\nPars spinalis: Spina scapulae",
+        "Insertion": "Tuberositas deltoidea humeri",
+        "Function": "Hauptabduktor des Schultergelenks; je nach aktivem Anteil auch Flexion, Extension, Innen- und Außenrotation möglich",
+        "Segments": "N. axillaris, C5, C6"
+      }
+    },
+    {
+      "Name": "M. subscapularis",
+      "Joints": "Art. humeri",
+      "Movements": "Innenrotation, Adduktion",
+      "Segments": "N. subscapularis, C5, C6",
+      "Origin": "Fossa subscapularis der Scapula (ventrale Seite)",
+      "Insertion": "Crista tuberculi minoris humeri",
+      "Function": "Innenrotation und Adduktion des Armes",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "rotatorenmanschette",
+        "innenrotator"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Rotatorenmanschettenruptur, Subscapularis-Insuffizienz",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Fossa subscapularis der Scapula (ventrale Seite)",
+        "Insertion": "Crista tuberculi minoris humeri",
+        "Function": "Innenrotation und Adduktion des Humerus; hält den Humeruskopf in der Gelenkpfanne (Rotatorenmanschetten-Funktion)",
+        "Segments": "N. subscapularis, C5, C6"
+      }
+    },
+    {
+      "Name": "M. supraspinatus",
+      "Joints": "Art. humeri",
+      "Movements": "Abduktion, Außenrotation",
+      "Segments": "N. suprascapularis, C4, C5, C6",
+      "Origin": "Fossa supraspinata der Scapula",
+      "Insertion": "Kranialer Teil des Tuberculum majus, Gelenkkapsel",
+      "Function": "Initiation der Abduktion (0–15°), Außenrotation",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "rotatorenmanschette",
+        "abduktor"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Impingement-Syndrom, Rotatorenmanschettenruptur",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Fossa supraspinata der Scapula",
+        "Insertion": "Kranialer Teil des Tuberculum majus, Gelenkkapsel",
+        "Function": "Leitet die Abduktion ein (0–15°), danach Übernahme durch den Deltoideus; stabilisiert den Humeruskopf in der Pfanne",
+        "Segments": "N. suprascapularis, C4, C5, C6"
+      }
+    },
+    {
+      "Name": "M. infraspinatus",
+      "Joints": "Art. humeri",
+      "Movements": "Außenrotation, Abduktion, Adduktion",
+      "Segments": "N. suprascapularis, C4, C5, C6",
+      "Origin": "Fossa infraspinata der Scapula",
+      "Insertion": "Mittlerer Teil des Tuberculum majus, Gelenkkapsel",
+      "Function": "Außenrotation, kranialer Teil: Abduktion in Skapulaebene, kaudaler Teil: Adduktion",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "rotatorenmanschette",
+        "außenrotator"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Rotatorenmanschettenruptur",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Fossa infraspinata der Scapula",
+        "Insertion": "Mittlerer Teil des Tuberculum majus, Gelenkkapsel",
+        "Function": "Außenrotation des Humerus; der kraniale Anteil wirkt abduktorisch, der kaudale Anteil adduzierend; Stabilisierung des Humeruskopfs",
+        "Segments": "N. suprascapularis, C4, C5, C6"
+      }
+    },
+    {
+      "Name": "M. teres minor",
+      "Joints": "Art. humeri",
+      "Movements": "Außenrotation, Adduktion",
+      "Segments": "N. axillaris, C5, C6",
+      "Origin": "Margo lateralis der Scapula",
+      "Insertion": "Kaudaler Teil des Tuberculum majus, Gelenkkapsel",
+      "Function": "Außenrotation und Adduktion des Armes",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "rotatorenmanschette",
+        "außenrotator"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Rotatorenmanschettenruptur",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Margo lateralis der Scapula",
+        "Insertion": "Kaudaler Teil des Tuberculum majus, Gelenkkapsel",
+        "Function": "Außenrotation und Adduktion des Arms; kleinster Muskel der Rotatorenmanschette",
+        "Segments": "N. axillaris, C5, C6"
+      }
+    },
+    {
+      "Name": "M. teres major",
+      "Joints": "Art. humeri",
+      "Movements": "Innenrotation, Adduktion, Extension",
+      "Segments": "N. subscapularis, C5, C6, C7",
+      "Origin": "Kaudaler Teil der Margo lateralis und Angulus inferior der Scapula",
+      "Insertion": "Crista tuberculi minoris humeri",
+      "Function": "Innenrotation, Adduktion und Extension des Armes",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schultergelenk",
+        "innenrotator",
+        "adduktor",
+        "extensor"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Verkürzung bei Innenrotationskontraktur",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Kaudaler Teil der Margo lateralis und Angulus inferior der Scapula",
+        "Insertion": "Crista tuberculi minoris humeri",
+        "Function": "Innenrotation, Adduktion und Rückführung (Extension) des Arms; kein Bestandteil der Rotatorenmanschette",
+        "Segments": "N. subscapularis, C5, C6, C7"
+      }
+    },
+    {
+      "Name": "M. coracobrachialis",
+      "Joints": "Art. humeri",
+      "Movements": "Flexion, Adduktion",
+      "Segments": "N. musculocutaneus, C6, C7",
+      "Origin": "Proc. coracoideus der Scapula",
+      "Insertion": "Margo medialis humeri",
+      "Function": "Flexion und Adduktion des Armes",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "schulter",
+      "tags": [
+        "schultergelenk",
+        "flexor",
+        "adduktor"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "N. musculocutaneus-Lähmung",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Proc. coracoideus der Scapula",
+        "Insertion": "Margo medialis humeri",
+        "Function": "Flexion und Adduktion des Humerus; stabilisiert das Schultergelenk von ventromedial",
+        "Segments": "N. musculocutaneus, C6, C7"
+      }
+    },
+    {
+      "Name": "M. biceps brachii",
+      "Joints": "Art. cubiti, Art. humeri",
+      "Movements": "Flexion, Supination, Flexion",
+      "Segments": "N. musculocutaneus, C5, C6, C7",
+      "Origin": [
+        {
+          "Part": "Caput longum",
+          "Location": "Tuberculum supraglenoidale scapulae und Labrum glenoidale"
+        },
+        {
+          "Part": "Caput breve",
+          "Location": "Proc. coracoideus scapulae"
+        }
+      ],
+      "Insertion": [
+        "Tuberositas radii",
+        "Lacertus fibrosus / Fascia antebrachii"
+      ],
+      "Function": "Caput longum: Abduktion, Flexion, Innenrotation. Caput breve: Flexion, Adduktion, Innenrotation. Gemeinsam: Ellenbogenflexion und Supination",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "ellenbogen",
+      "tags": [
+        "ellenbogen",
+        "beuger",
+        "supinator"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Bizepssehnenruptur, LBS-Tendinitis",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Caput longum: Tuberculum supraglenoidale scapulae und Labrum glenoidale\nCaput breve: Proc. coracoideus scapulae",
+        "Insertion": "Tuberositas radii\nLacertus fibrosus / Fascia antebrachii",
+        "Function": "Beide Köpfe zusammen: Ellenbogenflexion und Supination. Langes Caput: auch Abduktion, Flexion, Innenrotation. Kurzes Caput: auch Flexion und Adduktion",
+        "Segments": "N. musculocutaneus, C5, C6, C7"
+      }
+    },
+    {
+      "Name": "M. triceps brachii – Caput longum",
+      "Joints": "Art. cubiti, Art. humeri",
+      "Movements": "Extension, Adduktion, Extension",
+      "Segments": "N. radialis, C6, C7, C8",
+      "Origin": "Tuberculum und Labrum infraglenoidale scapulae",
+      "Insertion": "Olecranon ulnae",
+      "Function": "Armadduktion, Extension und Ellenbogenextension",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "ellenbogen",
+      "tags": [
+        "ellenbogen",
+        "strecker",
+        "extensor"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Trizepssehnenruptur",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Tuberculum und Labrum infraglenoidale scapulae",
+        "Insertion": "Olecranon ulnae",
+        "Function": "Ellenbogenextension; langes Caput hilft zusätzlich bei Armadduktion und Rückführung (Extension)",
+        "Segments": "N. radialis, C6, C7, C8"
+      }
+    },
+    {
+      "Name": "M. triceps brachii – Caput laterale und mediale",
+      "Joints": "Art. cubiti",
+      "Movements": "Extension",
+      "Segments": "N. radialis, C6, C7, C8",
+      "Origin": [
+        {
+          "Part": "Caput laterale",
+          "Location": "Facies posterior humeri proximal des Sulcus n. radialis"
+        },
+        {
+          "Part": "Caput mediale",
+          "Location": "Facies posterior humeri distal des Sulcus n. radialis"
+        }
+      ],
+      "Insertion": "Olecranon ulnae",
+      "Function": "Ellenbogenextension",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "ellenbogen",
+      "tags": [
+        "ellenbogen",
+        "strecker"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Trizepssehnenruptur",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Caput laterale: Facies posterior humeri proximal des Sulcus n. radialis\nCaput mediale: Facies posterior humeri distal des Sulcus n. radialis",
+        "Insertion": "Olecranon ulnae",
+        "Function": "Ellenbogenextension; kein Schultergelenkanteil",
+        "Segments": "N. radialis, C6, C7, C8"
+      }
+    },
+    {
+      "Name": "M. anconeus",
+      "Joints": "Art. cubiti",
+      "Movements": "Extension",
+      "Segments": "N. radialis, C6, C7, C8",
+      "Origin": "Epicondylus lateralis humeri und Lig. collaterale radiale",
+      "Insertion": "Proximaler Bereich der Facies posterior ulnae",
+      "Function": "Ellenbogenextension (bei kräftiger Anspannung)",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "ellenbogen",
+      "tags": [
+        "ellenbogen",
+        "strecker"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Unterstützt Ellenbogenextension",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Epicondylus lateralis humeri und Lig. collaterale radiale",
+        "Insertion": "Proximaler Bereich der Facies posterior ulnae",
+        "Function": "Unterstützt die Ellenbogenextension; stabilisiert das Gelenk bei Pronationsbewegungen",
+        "Segments": "N. radialis, C6, C7, C8"
+      }
+    },
+    {
+      "Name": "M. brachialis",
+      "Joints": "Art. cubiti",
+      "Movements": "Flexion",
+      "Segments": "N. musculocutaneus, C5, C6, C7",
+      "Origin": "Ventrale Seite des Humerus, distale Hälfte",
+      "Insertion": "Tuberositas ulnae, Gelenkkapsel des Ellenbogens",
+      "Function": "Ellenbogenflexion",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "ellenbogen",
+      "tags": [
+        "ellenbogen",
+        "beuger"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Stärkster Ellenbogenbeuger",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Ventrale Seite des Humerus, distale Hälfte",
+        "Insertion": "Tuberositas ulnae, Gelenkkapsel des Ellenbogens",
+        "Function": "Reinflexor des Ellenbogens; keine Supinationsfunktion",
+        "Segments": "N. musculocutaneus, C5, C6, C7"
+      }
+    },
+    {
+      "Name": "M. pronator teres",
+      "Joints": "Art. cubiti",
+      "Movements": "Flexion, Pronation",
+      "Segments": "N. medianus, C6, C7",
+      "Origin": "Epicondylus medialis humeri, mediale Seite der Tuberositas ulnae",
+      "Insertion": "Facies lateralis radii",
+      "Function": "Ellenbogenflexion und Pronation",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "ellenbogen",
+      "tags": [
+        "ellenbogen",
+        "beuger",
+        "pronator"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Pronator-teres-Syndrom (N. medianus-Kompression)",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Epicondylus medialis humeri, mediale Seite der Tuberositas ulnae",
+        "Insertion": "Facies lateralis radii",
+        "Function": "Ellenbogenflexion und Pronation des Unterarms",
+        "Segments": "N. medianus, C6, C7"
+      }
+    },
+    {
+      "Name": "M. brachioradialis",
+      "Joints": "Art. cubiti",
+      "Movements": "Flexion, Pronation, Supination",
+      "Segments": "N. radialis, C5, C6, C7",
+      "Origin": "Margo lateralis humeri",
+      "Insertion": "Radiale Fläche des Proc. styloideus radii",
+      "Function": "Ellenbogenflexion, Pronation und Supination",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "ellenbogen",
+      "tags": [
+        "ellenbogen",
+        "beuger"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Radialisparese",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Margo lateralis humeri",
+        "Insertion": "Radiale Fläche des Proc. styloideus radii",
+        "Function": "Ellenbogenflexion; führt Pronation und Supination aus der Mittelstellung in die Neutralstellung",
+        "Segments": "N. radialis, C5, C6, C7"
+      }
+    },
+    {
+      "Name": "M. supinator",
+      "Joints": "Art. cubiti",
+      "Movements": "Supination",
+      "Segments": "N. radialis, C5, C6",
+      "Origin": "Epicondylus lateralis humeri, Crista musculi supinatoris ulnae, Lig. collaterale radiale, Lig. anulare radii",
+      "Insertion": "Proximaler Bereich der Facies lateralis radii",
+      "Function": "Supination",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "ellenbogen",
+      "tags": [
+        "ellenbogen",
+        "supinator"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Supinator-Syndrom (N. radialis profundus-Kompression)",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Epicondylus lateralis humeri, Crista musculi supinatoris ulnae, Lig. collaterale radiale, Lig. anulare radii",
+        "Insertion": "Proximaler Bereich der Facies lateralis radii",
+        "Function": "Supination des Unterarms; übernimmt die Supination bei gestrecktem Ellenbogen (wenn Bizeps gering aktiv)",
+        "Segments": "N. radialis, C5, C6"
+      }
+    },
+    {
+      "Name": "M. pronator quadratus",
+      "Joints": "Art. cubiti",
+      "Movements": "Pronation",
+      "Segments": "N. medianus, C8, Th1",
+      "Origin": "Distales Viertel der Facies anterior ulnae",
+      "Insertion": "Distales Viertel der Facies anterior radii",
+      "Function": "Pronation",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "ellenbogen",
+      "tags": [
+        "ellenbogen",
+        "pronator"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Distale Unterarmfraktur",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "",
+        "Insertion": "",
+        "Function": "",
+        "Segments": ""
+      }
+    },
+    {
+      "Name": "M. flexor carpi radialis",
+      "Joints": "Art. cubiti, Art. manus",
+      "Movements": "Palmarflexion, Radialabduktion, Pronation",
+      "Segments": "N. medianus, C6, C7, C8",
+      "Origin": "Epicondylus medialis humeri",
+      "Insertion": "Basis Os metacarpale II (manchmal auch III)",
+      "Function": "Ellenbogen: Pronation. Handgelenk: Palmarflexion und Radialabduktion",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "handgelenk",
+        "beuger",
+        "radialabduktor"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Karpaltunnelsyndrom, Epicondylitis medialis",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Epicondylus medialis humeri",
+        "Insertion": "Basis Os metacarpale II (manchmal auch III)",
+        "Function": "Palmarflexion und Radialabduktion des Handgelenks; Pronation des Unterarms",
+        "Segments": "N. medianus, C6, C7, C8"
+      }
+    },
+    {
+      "Name": "M. flexor carpi ulnaris",
+      "Joints": "Art. cubiti, Art. manus",
+      "Movements": "Palmarflexion, Ulnarabduktion",
+      "Segments": "N. ulnaris, C7, C8, Th1",
+      "Origin": "Epicondylus medialis humeri, medialer Olekranon und Margo posterior ulnae",
+      "Insertion": "Os pisiforme, Hamulus ossis hamati, Basis Os metacarpale V",
+      "Function": "Handgelenk: Palmarflexion und Ulnarabduktion",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "handgelenk",
+        "beuger",
+        "ulnarabduktor"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Ulnarisrinnensyndrom",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Epicondylus medialis humeri, medialer Olekranon und Margo posterior ulnae",
+        "Insertion": "Os pisiforme, Hamulus ossis hamati, Basis Os metacarpale V",
+        "Function": "Palmarflexion und Ulnarabduktion des Handgelenks",
+        "Segments": "N. ulnaris, C7, C8, Th1"
+      }
+    },
+    {
+      "Name": "M. extensor carpi radialis brevis",
+      "Joints": "Art. cubiti, Art. manus",
+      "Movements": "Dorsalextension, Radialabduktion",
+      "Segments": "N. radialis, C6, C7",
+      "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Lig. anulare radii",
+      "Insertion": "Basis Os metacarpale III",
+      "Function": "Ellenbogen: Pro- und Supination. Handgelenk: Dorsalextension und Radialabduktion",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "handgelenk",
+        "strecker",
+        "radialabduktor"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Epicondylitis lateralis (Tennisellenbogen)",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Lig. anulare radii",
+        "Insertion": "Basis Os metacarpale III",
+        "Function": "Dorsalextension und Radialabduktion des Handgelenks; Pro- und Supination des Unterarms",
+        "Segments": "N. radialis, C6, C7"
+      }
+    },
+    {
+      "Name": "M. extensor carpi radialis longus",
+      "Joints": "Art. cubiti, Art. manus",
+      "Movements": "Dorsalextension, Radialabduktion",
+      "Segments": "N. radialis, C6, C7",
+      "Origin": "Margo lateralis humeri",
+      "Insertion": "Basis Os metacarpale II",
+      "Function": "Ellenbogen: Pro- und Supination. Handgelenk: Dorsalextension und Radialabduktion",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "handgelenk",
+        "strecker",
+        "radialabduktor"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Epicondylitis lateralis (Tennisellenbogen)",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Margo lateralis humeri",
+        "Insertion": "Basis Os metacarpale II",
+        "Function": "Dorsalextension und Radialabduktion des Handgelenks; Pro- und Supination des Unterarms",
+        "Segments": "N. radialis, C6, C7"
+      }
+    },
+    {
+      "Name": "M. extensor carpi ulnaris",
+      "Joints": "Art. cubiti, Art. manus",
+      "Movements": "Ulnarabduktion",
+      "Segments": "N. radialis, C6, C7, C8",
+      "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Margo posterior ulnae",
+      "Insertion": "Basis Os metacarpale V",
+      "Function": "Handgelenk: Ulnarabduktion",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "handgelenk",
+        "ulnarabduktor"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Epicondylitis lateralis",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Margo posterior ulnae",
+        "Insertion": "Basis Os metacarpale V",
+        "Function": "Ulnarabduktion des Handgelenks",
+        "Segments": "N. radialis, C6, C7, C8"
+      }
+    },
+    {
+      "Name": "M. palmaris longus",
+      "Joints": "Art. cubiti, Art. manus",
+      "Movements": "Palmarflexion",
+      "Segments": "N. medianus, C8, Th1",
+      "Origin": "Epicondylus medialis humeri",
+      "Insertion": "Aponeurosis palmaris",
+      "Function": "Handgelenk: Palmarflexion, spannt die Palmaraponeurose",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "handgelenk",
+        "beuger"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Fehlt bei ca. 14% der Menschen, Sehnentransplantat-Spender",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Epicondylus medialis humeri",
+        "Insertion": "Aponeurosis palmaris",
+        "Function": "Palmarflexion des Handgelenks; spannt die Palmaraponeurose",
+        "Segments": "N. medianus, C8, Th1"
+      }
+    },
+    {
+      "Name": "M. flexor digitorum superficialis",
+      "Joints": "Art. cubiti, Art. manus, MCP, PIP",
+      "Movements": "Palmarflexion, MCP-Flexion, PIP-Flexion",
+      "Segments": "N. medianus, C7, C8, Th1",
+      "Origin": "Epicondylus medialis humeri, Facies medialis ulnae, proximaler Margo anterior radii",
+      "Insertion": "Mittelphalangen des II.–V. Fingers",
+      "Function": "Handgelenk: Palmarflexion. Fingergelenke: MCP- und PIP-Flexion des II.–V. Fingers",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "finger",
+        "beuger"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Karpaltunnelsyndrom, Schnappfinger",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Epicondylus medialis humeri, Facies medialis ulnae, proximaler Margo anterior radii",
+        "Insertion": "Mittelphalangen des II.–V. Fingers",
+        "Function": "Palmarflexion des Handgelenks; Flexion der Grund- (MCP) und Mittelgelenke (PIP) der Finger II–V",
+        "Segments": "N. medianus, C7, C8, Th1"
+      }
+    },
+    {
+      "Name": "M. extensor digitorum",
+      "Joints": "Art. cubiti, Art. manus, MCP, PIP, DIP",
+      "Movements": "Dorsalextension, MCP-Extension, IP-Extension",
+      "Segments": "N. radialis, C6, C7, C8",
+      "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Lig. anulare radii",
+      "Insertion": "Dorsalaponeurosen des II.–V. Fingers, Basen der Grundphalangen II–V",
+      "Function": "Handgelenk: Dorsalextension, Ulnarabduktion. Fingergelenke: MCP- und IP-Extension und Abduktion des II.–V. Fingers",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "finger",
+        "strecker"
+      ],
+      "difficulty": 1,
+      "clinicalNote": "Strecksehnenruptur, Epicondylitis lateralis",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Lig. anulare radii",
+        "Insertion": "Dorsalaponeurosen des II.–V. Fingers, Basen der Grundphalangen II–V",
+        "Function": "Dorsalextension des Handgelenks; Streckung der Finger II–V in MCP-, PIP- und DIP-Gelenken; Fingerabspreizung",
+        "Segments": "N. radialis, C6, C7, C8"
+      }
+    },
+    {
+      "Name": "M. extensor digiti minimi",
+      "Joints": "Art. manus, MCP, PIP, DIP",
+      "Movements": "Dorsalextension, Extension des V. Fingers",
+      "Segments": "N. radialis, C6, C7, C8",
+      "Origin": "Epicondylus lateralis humeri",
+      "Insertion": "Dorsalaponeurose des kleinen Fingers",
+      "Function": "Handgelenk: Dorsalextension, Ulnarabduktion. Extension des V. Fingers",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "finger",
+        "strecker",
+        "kleinfinger"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Eigenständige Extension des Kleinfingers",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Epicondylus lateralis humeri",
+        "Insertion": "Dorsalaponeurose des kleinen Fingers",
+        "Function": "Dorsalextension des Handgelenks; Extension des V. Fingers in MCP-, PIP- und DIP-Gelenken",
+        "Segments": "N. radialis, C6, C7, C8"
+      }
+    },
+    {
+      "Name": "M. flexor pollicis longus",
+      "Joints": "Art. manus, Daumensattelgelenk, MCP, IP",
+      "Movements": "Palmarflexion, Daumenflexion",
+      "Segments": "N. medianus, C6, C7, C8",
+      "Origin": "Epicondylus medialis humeri, ventrale Seite des Radius und Membrana interossea",
+      "Insertion": "Basis der Endphalanx des Daumens",
+      "Function": "Handgelenk: Palmarflexion, Radialabduktion. Daumen: Flexion in allen Gelenken, CMC-Adduktion",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "daumen",
+        "beuger"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Karpaltunnelsyndrom",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Epicondylus medialis humeri, ventrale Seite des Radius und Membrana interossea",
+        "Insertion": "Basis der Endphalanx des Daumens",
+        "Function": "Palmarflexion des Handgelenks; Beugung aller Daumengelenke; CMC-Adduktion des Daumens",
+        "Segments": "N. medianus, C6, C7, C8"
+      }
+    },
+    {
+      "Name": "M. flexor digitorum profundus",
+      "Joints": "Art. manus, MCP, PIP, DIP",
+      "Movements": "Palmarflexion, MCP-Flexion, PIP-Flexion, DIP-Flexion",
+      "Segments": "N. medianus (II, III), N. ulnaris (IV, V), C7, C8, Th1",
+      "Origin": "Facies anterior und medialis ulnae und Membrana interossea",
+      "Insertion": "Basis der distalen Fingerphalangen II–V",
+      "Function": "Handgelenk: Palmarflexion. Fingergelenke: MCP- und IP-Flexion des II.–V. Fingers",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "finger",
+        "beuger"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "DIP-Flexion nur durch FDP möglich, Jerseyfingerruptur",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Facies anterior und medialis ulnae und Membrana interossea",
+        "Insertion": "Basis der distalen Fingerphalangen II–V",
+        "Function": "Palmarflexion des Handgelenks; Flexion der MCP-, PIP- und DIP-Gelenke der Finger II–V",
+        "Segments": "N. medianus (II, III), N. ulnaris (IV, V), C7, C8, Th1"
+      }
+    },
+    {
+      "Name": "M. extensor indicis",
+      "Joints": "Art. manus, MCP, PIP, DIP",
+      "Movements": "Dorsalextension, Extension des Zeigefingers",
+      "Segments": "N. radialis, C6, C7, C8",
+      "Origin": "Distaler Teil der Facies posterior ulnae und Membrana interossea",
+      "Insertion": "Dorsalaponeurose des Zeigefingers",
+      "Function": "Handgelenk: Dorsalextension. Zeigefinger: MCP- und IP-Extension",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "finger",
+        "strecker",
+        "zeigefinger"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Eigenständige Extension des Zeigefingers",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Distaler Teil der Facies posterior ulnae und Membrana interossea",
+        "Insertion": "Dorsalaponeurose des Zeigefingers",
+        "Function": "Dorsalextension des Handgelenks; Extension des Zeigefingers in MCP-, PIP- und DIP-Gelenken",
+        "Segments": "N. radialis, C6, C7, C8"
+      }
+    },
+    {
+      "Name": "M. abductor pollicis longus",
+      "Joints": "Art. manus, Daumensattelgelenk",
+      "Movements": "Radialabduktion, CMC-Extension, CMC-Abduktion",
+      "Segments": "N. radialis, C6, C7, C8",
+      "Origin": "Facies posterior von Ulna und Radius und Membrana interossea",
+      "Insertion": "Basis der radialen Seite des Os metacarpale I",
+      "Function": "Handgelenk: Palmarflexion, Radialabduktion. Daumen: CMC-Extension und Abduktion",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "daumen",
+        "abduktor"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Tendovaginitis de Quervain",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Facies posterior von Ulna und Radius und Membrana interossea",
+        "Insertion": "Basis der radialen Seite des Os metacarpale I",
+        "Function": "Radialabduktion des Handgelenks; CMC-Extension und Abduktion des Daumens (Sattelgelenkbewegung)",
+        "Segments": "N. radialis, C6, C7, C8"
+      }
+    },
+    {
+      "Name": "M. extensor pollicis brevis",
+      "Joints": "Art. manus, Daumensattelgelenk, MCP",
+      "Movements": "CMC-Extension, MCP-Extension",
+      "Segments": "N. radialis, C6, C7, C8",
+      "Origin": "Facies posterior des Radius und Membrana interossea",
+      "Insertion": "Basis der Grundphalanx des Daumens",
+      "Function": "Handgelenk: Palmarflexion, Radialabduktion. Daumen: CMC-Extension, Abduktion, Reposition, MCP-Extension",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "daumen",
+        "strecker"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Tendovaginitis de Quervain",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Facies posterior des Radius und Membrana interossea",
+        "Insertion": "Basis der Grundphalanx des Daumens",
+        "Function": "CMC-Extension, Abduktion und Reposition des Daumens; MCP-Extension des Daumens",
+        "Segments": "N. radialis, C6, C7, C8"
+      }
+    },
+    {
+      "Name": "M. extensor pollicis longus",
+      "Joints": "Art. manus, Daumensattelgelenk, MCP, IP",
+      "Movements": "Dorsalextension, CMC-Extension, MCP-Extension, IP-Extension",
+      "Segments": "N. radialis, C6, C7, C8",
+      "Origin": "Facies posterior ulnae und Membrana interossea",
+      "Insertion": "Basis der Endphalanx des Daumens",
+      "Function": "Handgelenk: Dorsalextension, Radialabduktion. Daumen: CMC-Extension, Abduktion, Reposition, MCP- und IP-Extension",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "daumen",
+        "strecker"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Ruptur nach distaler Radiusfraktur",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Facies posterior ulnae und Membrana interossea",
+        "Insertion": "Basis der Endphalanx des Daumens",
+        "Function": "Dorsalextension des Handgelenks; CMC-Extension, Abduktion, Reposition; MCP- und IP-Extension des Daumens",
+        "Segments": "N. radialis, C6, C7, C8"
+      }
+    },
+    {
+      "Name": "Mm. interossei palmares I–III",
+      "Joints": "MCP, PIP, DIP",
+      "Movements": "MCP-Flexion, IP-Extension, Adduktion",
+      "Segments": "N. ulnaris, C8, Th1",
+      "Origin": "Ulnare Seite des Os metacarpale II, radiale Seite der Ossa metacarpi IV und V",
+      "Insertion": "Dorsalaponeurosen der Finger II, IV und V",
+      "Function": "MCP-Flexion, IP-Extension und Adduktion (zum III. Strahl hin)",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "finger",
+        "hand",
+        "intrinsisch"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Ulnarisparese – Krallenhand",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Ulnare Seite des Os metacarpale II, radiale Seite der Ossa metacarpi IV und V",
+        "Insertion": "Dorsalaponeurosen der Finger II, IV und V",
+        "Function": "MCP-Flexion und PIP/DIP-Extension; Adduktion der Finger II, IV, V zum Mittelfinger (III. Strahl)",
+        "Segments": "N. ulnaris, C8, Th1"
+      }
+    },
+    {
+      "Name": "Mm. interossei dorsales I–IV",
+      "Joints": "MCP, PIP, DIP",
+      "Movements": "MCP-Flexion, IP-Extension, Abduktion",
+      "Segments": "N. ulnaris, C8, Th1",
+      "Origin": "Einander zugekehrte Seiten der Ossa metacarpi I–V",
+      "Insertion": "Dorsalaponeurosen der Finger II–IV",
+      "Function": "MCP-Flexion, IP-Extension und Abduktion (vom III. Strahl weg)",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "finger",
+        "hand",
+        "intrinsisch"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Ulnarisparese – Atrophie der Interossei",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Einander zugekehrte Seiten der Ossa metacarpi I–V",
+        "Insertion": "Dorsalaponeurosen der Finger II–IV",
+        "Function": "MCP-Flexion und PIP/DIP-Extension; Abduktion der Finger II–IV vom Mittelfinger (III. Strahl) weg",
+        "Segments": "N. ulnaris, C8, Th1"
+      }
+    },
+    {
+      "Name": "Mm. lumbricales I–IV",
+      "Joints": "MCP, PIP, DIP",
+      "Movements": "MCP-Flexion, IP-Extension, Radialabduktion",
+      "Segments": "N. medianus (I, II), N. ulnaris (III, IV), C8, Th1",
+      "Origin": "Sehnen des M. flexor digitorum profundus",
+      "Insertion": "Dorsalaponeurosen der Finger II–V",
+      "Function": "MCP-Flexion, Radialabduktion, IP-Extension",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "finger",
+        "hand",
+        "intrinsisch"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Lumbrikale-Plus-Phänomen",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Sehnen des M. flexor digitorum profundus",
+        "Insertion": "Dorsalaponeurosen der Finger II–V",
+        "Function": "MCP-Flexion, IP-Extension (PIP+DIP) und Radialabduktion der Finger II–V",
+        "Segments": "N. medianus (I, II), N. ulnaris (III, IV), C8, Th1"
+      }
+    },
+    {
+      "Name": "M. flexor digiti minimi brevis",
+      "Joints": "MCP",
+      "Movements": "MCP-Flexion, Abduktion",
+      "Segments": "N. ulnaris, C8, Th1",
+      "Origin": "Hamulus ossis hamati und Retinaculum flexorum",
+      "Insertion": "Basis der Grundphalanx des V. Fingers, ulnares Sesambein",
+      "Function": "MCP-Flexion und Abduktion des V. Fingers",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "kleinfinger",
+        "hypothenar",
+        "beuger"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Ulnarisparese",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Hamulus ossis hamati und Retinaculum flexorum",
+        "Insertion": "Basis der Grundphalanx des V. Fingers, ulnares Sesambein",
+        "Function": "MCP-Flexion und Ulnarabduktion des V. Fingers",
+        "Segments": "N. ulnaris, C8, Th1"
+      }
+    },
+    {
+      "Name": "M. abductor digiti minimi",
+      "Joints": "MCP",
+      "Movements": "Ulnarabduktion, Extension",
+      "Segments": "N. ulnaris, C8, Th1",
+      "Origin": "Os pisiforme",
+      "Insertion": "Basis der Grundphalanx des V. Fingers, ulnares Sesambein",
+      "Function": "Ulnarabduktion und Extension des V. Fingers",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "kleinfinger",
+        "hypothenar",
+        "abduktor"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Ulnarisparese",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Os pisiforme",
+        "Insertion": "Basis der Grundphalanx des V. Fingers, ulnares Sesambein",
+        "Function": "Ulnarabduktion und Extension des V. Fingers im MCP-Gelenk",
+        "Segments": "N. ulnaris, C8, Th1"
+      }
+    },
+    {
+      "Name": "M. opponens digiti minimi",
+      "Joints": "CMC",
+      "Movements": "CMC-Opposition",
+      "Segments": "N. ulnaris, C8, Th1",
+      "Origin": "Hamulus ossis hamati und Retinaculum flexorum",
+      "Insertion": "Os metacarpale V",
+      "Function": "CMC-Opposition des V. Fingers",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "kleinfinger",
+        "hypothenar"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Ulnarisparese",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Hamulus ossis hamati und Retinaculum flexorum",
+        "Insertion": "Os metacarpale V",
+        "Function": "CMC-Opposition des V. Fingers (dreht und beugt den Kleinfinger dem Daumen entgegen)",
+        "Segments": "N. ulnaris, C8, Th1"
+      }
+    },
+    {
+      "Name": "M. palmaris brevis",
+      "Joints": "",
+      "Movements": "Spannt die Haut des Kleinfingerballens",
+      "Segments": "N. ulnaris, C8, Th1",
+      "Origin": "Aponeurosis palmaris",
+      "Insertion": "Haut der ulnaren Handseite",
+      "Function": "Spannt die Haut des Kleinfingerballens während der Ulnarabduktion der Hand",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "kleinfinger",
+        "hypothenar",
+        "hautmuskel"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Ulnarisparese",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Aponeurosis palmaris",
+        "Insertion": "Haut der ulnaren Handseite",
+        "Function": "Spannt die Palmaraponeurose auf der ulnaren Seite; unterstützt den Griff",
+        "Segments": "N. ulnaris, C8, Th1"
+      }
+    },
+    {
+      "Name": "M. flexor pollicis brevis",
+      "Joints": "Daumensattelgelenk, MCP",
+      "Movements": "CMC-Flexion, Adduktion, Opposition, MCP-Flexion",
+      "Segments": "N. medianus, N. ulnaris, C8, Th1",
+      "Origin": [
+        {
+          "Part": "Caput superficiale",
+          "Location": "Tuberculum ossis trapezii und Retinaculum flexorum"
+        },
+        {
+          "Part": "Caput profundum",
+          "Location": "Os trapezoideum, Os capitatum, Ligg. metacarpalia palmaria"
+        }
+      ],
+      "Insertion": "Basis der Daumengrundphalanx, radiales Sesambein",
+      "Function": "CMC-Flexion, Adduktion und Opposition, MCP-Flexion des Daumens",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "daumen",
+        "thenar",
+        "beuger"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Medianusparese (Caput superficiale), Ulnarisparese (Caput profundum)",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Caput superficiale: Tuberculum ossis trapezii und Retinaculum flexorum\nCaput profundum: Os trapezoideum, Os capitatum, Ligg. metacarpalia palmaria",
+        "Insertion": "Basis der Daumengrundphalanx, radiales Sesambein",
+        "Function": "CMC-Flexion, Adduktion und Opposition des Daumens; MCP-Flexion",
+        "Segments": "N. medianus, N. ulnaris, C8, Th1"
+      }
+    },
+    {
+      "Name": "M. abductor pollicis brevis",
+      "Joints": "Daumensattelgelenk, MCP",
+      "Movements": "CMC-Flexion, Abduktion, Opposition",
+      "Segments": "N. medianus, C6, C7",
+      "Origin": "Tuberculum ossis scaphoidei und Retinaculum flexorum",
+      "Insertion": "Basis der Grundphalanx des Daumens, radiales Sesambein",
+      "Function": "CMC-Flexion, Abduktion und Opposition des Daumens",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "daumen",
+        "thenar",
+        "abduktor"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Medianusparese – Daumenballenatrophie",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Tuberculum ossis scaphoidei und Retinaculum flexorum",
+        "Insertion": "Basis der Grundphalanx des Daumens, radiales Sesambein",
+        "Function": "CMC-Abduktion, Flexion und Opposition des Daumens",
+        "Segments": "N. medianus, C6, C7"
+      }
+    },
+    {
+      "Name": "M. adductor pollicis",
+      "Joints": "Daumensattelgelenk, MCP",
+      "Movements": "CMC-Flexion, Adduktion, Reposition",
+      "Segments": "N. ulnaris, C8, Th1",
+      "Origin": [
+        {
+          "Part": "Caput obliquum",
+          "Location": "Os trapezoideum, Os capitatum, Basis Os metacarpale II, Ligg. metacarpalia palmaria"
+        },
+        {
+          "Part": "Caput transversum",
+          "Location": "Palmare Seite des Os metacarpale III"
+        }
+      ],
+      "Insertion": "Basis der Grundphalanx des Daumens, ulnares Sesambein",
+      "Function": "CMC-Flexion, Adduktion und Reposition des Daumens",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "daumen",
+        "thenar",
+        "adduktor"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Froment-Zeichen bei Ulnarisparese",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Caput obliquum: Os trapezoideum, Os capitatum, Basis Os metacarpale II, Ligg. metacarpalia palmaria\nCaput transversum: Palmare Seite des Os metacarpale III",
+        "Insertion": "Basis der Grundphalanx des Daumens, ulnares Sesambein",
+        "Function": "CMC-Adduktion, Flexion und Reposition des Daumens",
+        "Segments": "N. ulnaris, C8, Th1"
+      }
+    },
+    {
+      "Name": "M. opponens pollicis",
+      "Joints": "Daumensattelgelenk",
+      "Movements": "CMC-Adduktion, Opposition",
+      "Segments": "N. medianus, C6, C7",
+      "Origin": "Os trapezium und Retinaculum flexorum",
+      "Insertion": "Os metacarpale I",
+      "Function": "CMC-Adduktion und Opposition des Daumens",
+      "Image": "",
+      "region": "obere-extremitaet",
+      "subgroup": "hand",
+      "tags": [
+        "daumen",
+        "thenar"
+      ],
+      "difficulty": 2,
+      "clinicalNote": "Medianusparese – Verlust der Daumenopposition",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "License": "CC BY 4.0",
+        "Source": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "ImageSource": "",
+      "easy": {
+        "Origin": "Os trapezium und Retinaculum flexorum",
+        "Insertion": "Os metacarpale I",
+        "Function": "CMC-Adduktion und Opposition des Daumens (rotiert das Os metacarpale I dem Kleinfinger entgegen)",
+        "Segments": "N. medianus, C6, C7"
+      }
+    }
+  ]
+}

@@ -1,87 +1,79 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Muskelfinder</title>
     <script>
-  if (location.hostname.includes("github.io")) {
-    const base = document.createElement('base');
-    base.href = '/Muskelfinder/';
-    document.head.appendChild(base);
-  }
-</script>
-   <link rel="stylesheet" href="assets/css/styles.css">
+        if (location.hostname.includes("github.io")) {
+            const base = document.createElement('base');
+            base.href = '/Muskelfinder/';
+            document.head.appendChild(base);
+        }
+    </script>
+    <link rel="icon" type="image/png" href="assets/icons/muskelfinder-icon.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Muskelfinder</h1>
-        <p>Finde Muskeln, ihre Funktionen und Innervationen!</p>
-        <a href="quizzes/quiz.html" class="back-button">Quiz</a>
+        <h1><img src="assets/icons/muskelfinder-icon.png" class="header-logo" alt="">Muskelfinder</h1>
+        <p>Finde Muskeln, ihre Funktionen und Innervationen</p>
+        <a href="quizzes/flashcards.html" class="back-button">Lernen</a>
     </header>
 
     <main>
         <div id="loading">Lade Muskeldaten...</div>
 
-        <section id="search">
-            <h2>Muskel suchen</h2>
-            <input type="text" id="search-bar" 
-                   placeholder="Muskelname eingeben..."
-                   aria-label="Suchfeld für Muskelnamen">
+        <section id="search-section">
+            <input type="text" id="search-bar" placeholder="Muskelname suchen..." aria-label="Suchfeld für Muskelnamen" autocomplete="off">
         </section>
-        <section id="filters">
-            <h2>Filteroptionen</h2>
 
-            <div class="filter-group">
-                <label for="joint-filter" id="joint-label">Gelenk:</label>
-                <select id="joint-filter" aria-labelledby="joint-label">
-                    <option value="">Alle Gelenke</option>
-                    <option value="Obere Extremitäten">Obere Extremitäten</option>
-                    <option value="Schultergürtel">Schultergürtel</option>
-                    <option value="Art. humeri">Art. humeri</option>
-                    <option value="Art. cubiti">Art. cubiti</option>
-                    <option value="Art. manus">Art. manus</option>
-                    <option value="Fingergelenke">Fingergelenke</option>
-                </select>
+        <section id="filters-section">
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label for="region-filter">Region</label>
+                    <select id="region-filter" aria-label="Nach Region filtern">
+                        <option value="">Alle Regionen</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="joint-filter">Gelenk</label>
+                    <select id="joint-filter" aria-label="Nach Gelenk filtern">
+                        <option value="">Alle Gelenke</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="movement-filter">Bewegung</label>
+                    <select id="movement-filter" aria-label="Nach Bewegung filtern">
+                        <option value="">Alle Bewegungen</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="nerve-filter">Innervation</label>
+                    <select id="nerve-filter" aria-label="Nach Innervation filtern">
+                        <option value="">Alle Innervationen</option>
+                    </select>
+                </div>
             </div>
-
-            <div class="filter-group">
-                <label for="movement-filter" id="movement-label">Bewegung:</label>
-                <select id="movement-filter" aria-labelledby="movement-label">
-                    <option value="">Alle Bewegungen</option>
-                    <option value="Flexion">Flexion</option>
-                    <option value="Extension">Extension</option>
-                    <option value="Abduktion">Abduktion</option>
-                    <option value="Adduktion">Adduktion</option>
-                    <option value="Innenrotation">Innenrotation</option>
-                    <option value="Außenrotation">Außenrotation</option>
-                    <option value="Supination">Supination</option>
-                    <option value="Pronation">Pronation</option>
-                    <option value="Elevation">Elevation</option>
-                    <option value="Depression">Depression</option>
-                    <option value="Protraktion">Protraktion</option>
-                    <option value="Retraktion">Retraktion</option>
-                    <option value="Ulnarduktion">Ulnarduktion</option>
-                    <option value="Radialduktion">Radialduktion</option>
-                    <option value="Opposition">Opposition</option>
-                </select>
-            </div>
-
-            <div class="filter-group">
-                <label for="nerve-filter" id="nerve-label">Innervation:</label>
-                <select id="nerve-filter" aria-labelledby="nerve-label"></select>
+            <div class="filter-actions">
+                <span id="result-count"></span>
+                <button id="reset-filters" type="button">Filter zurücksetzen</button>
             </div>
         </section>
 
-        <section id="results">
-            <h2>Suchergebnisse</h2>
+        <section id="results-section">
             <ul id="result-list"></ul>
-</section>
-</main>
+        </section>
+    </main>
 
-<footer>© 2025</footer>
+    <footer>© 2026 Muskelfinder</footer>
 
-<script src="assets/js/app.js"></script>
-<script src="assets/js/progress.js"></script>
+    <script src="assets/js/gamification.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/data-loader.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>
