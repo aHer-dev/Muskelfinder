@@ -2221,31 +2221,84 @@ html.light-mode #main-menu {
     border-color: var(--accent);
 }
 
-/* Tastaturkürzel-Hinweis (Desktop) */
-.keyboard-hint {
-    text-align: center;
+/* ── Steuerungs-Dropdown ─────────────────────────────────────────── */
+.controls-hint-wrap {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.controls-hint-btn {
     font-size: 11px;
     color: var(--text-muted);
-    margin-top: 10px;
-    letter-spacing: 0.02em;
-    word-break: break-word;
-    overflow-wrap: anywhere;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-sm);
+    padding: 5px 12px;
+    min-height: 32px;
+    gap: 5px;
+    cursor: pointer;
+    transition: background var(--transition), border-color var(--transition), color var(--transition);
 }
 
-/* Swipe-Hinweis (Mobile) */
-.swipe-hint {
-    display: none;
-    text-align: center;
+.controls-hint-btn:hover {
+    background: var(--glass-hover);
+    border-color: var(--text-muted);
+    color: var(--text-primary);
+}
+
+.controls-dropdown {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    right: 0;
+    background: var(--bg-elevated);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    padding: 10px 14px;
+    min-width: 190px;
+    box-shadow: var(--shadow-md);
+    z-index: 200;
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.controls-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px 0;
     font-size: 12px;
-    color: var(--text-muted);
-    margin-top: 10px;
-    letter-spacing: 0.02em;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--glass-border);
+}
+.controls-row:last-child { border-bottom: none; }
+
+/* Wisch-Geste: gleicher Stil wie kbd */
+.ctrl-gesture {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-elevated);
+    border: 1px solid var(--glass-border);
+    border-radius: 4px;
+    padding: 2px 7px;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: inherit;
+    color: var(--text-secondary);
+    white-space: nowrap;
 }
 
-/* Auf Touch-Geräten: Tastatur-Hinweis ausblenden, Swipe-Hinweis zeigen */
+/* Desktop: Mobile-Sektion ausblenden */
+@media (hover: hover) {
+    .controls-section--mobile { display: none; }
+}
+
+/* Mobile: Desktop-Sektion ausblenden */
 @media (hover: none) and (pointer: coarse) {
-    .keyboard-hint { display: none; }
-    .swipe-hint    { display: block; }
+    .controls-section--desktop { display: none; }
 }
 
 kbd {
@@ -3052,6 +3105,13 @@ kbd {
     flex-shrink: 0;
     width: 150px;
     padding-right: 6px;
+}
+
+/* Header-Elemente auf Mobile komprimieren, damit Chrome nicht reinzoomt */
+@media (max-width: 520px) {
+    header p          { display: none; }       /* Subtext weg → spart ~100px */
+    #nav-xp-bar       { width: 90px; }         /* XP-Bar schmaler */
+    .xp-track         { max-width: 50px; }
 }
 
 .xp-widget {

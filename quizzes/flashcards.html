@@ -141,8 +141,28 @@
                     <span class="answer-sub">Fach +1</span>
                 </button>
             </div>
-            <div class="keyboard-hint">Tastatur: <kbd>1</kbd> Falsch · <kbd>2</kbd> Unsicher · <kbd>3</kbd> Richtig · <kbd>Space</kbd> Aufdecken · <kbd>F</kbd> Schwierig</div>
-            <div class="swipe-hint">Wischen: ← Falsch &nbsp;·&nbsp; → Richtig &nbsp;·&nbsp; Tippen: Aufdecken</div>
+            <div class="controls-hint-wrap">
+                <button class="controls-hint-btn" id="controls-hint-btn" aria-label="Steuerung anzeigen">⌨ Steuerung</button>
+                <div class="controls-dropdown" id="controls-dropdown" hidden>
+
+                    <!-- Desktop: Tastatur -->
+                    <div class="controls-section controls-section--desktop">
+                        <div class="controls-row"><kbd>Space</kbd><span>Aufdecken</span></div>
+                        <div class="controls-row"><kbd>1</kbd><span>Falsch</span></div>
+                        <div class="controls-row"><kbd>2</kbd><span>Unsicher</span></div>
+                        <div class="controls-row"><kbd>3</kbd><span>Richtig</span></div>
+                        <div class="controls-row"><kbd>F</kbd><span>Schwierig markieren</span></div>
+                    </div>
+
+                    <!-- Mobile: Wischen -->
+                    <div class="controls-section controls-section--mobile">
+                        <div class="controls-row"><span class="ctrl-gesture">Tippen</span><span>Aufdecken</span></div>
+                        <div class="controls-row"><span class="ctrl-gesture">← Wischen</span><span>Falsch</span></div>
+                        <div class="controls-row"><span class="ctrl-gesture">→ Wischen</span><span>Richtig</span></div>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
 

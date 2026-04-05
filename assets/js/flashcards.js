@@ -398,6 +398,17 @@ function bindEvents() {
         el.cardDifficultBadge.hidden = !isDiff;
     });
 
+    // ── Steuerungs-Dropdown ───────────────────────────────────────
+    const controlsBtn  = document.getElementById('controls-hint-btn');
+    const controlsDrop = document.getElementById('controls-dropdown');
+    if (controlsBtn && controlsDrop) {
+        controlsBtn.addEventListener('click', e => {
+            e.stopPropagation();
+            controlsDrop.hidden = !controlsDrop.hidden;
+        });
+        document.addEventListener('click', () => { controlsDrop.hidden = true; });
+    }
+
     // ── Klinischer Bezug Toggle (mit Höhen-Update) ────────────────
     el.cardBack.addEventListener('click', e => {
         const toggle = e.target.closest('.card-clinical-toggle');
