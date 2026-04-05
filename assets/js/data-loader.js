@@ -1,19 +1,26 @@
 const REGION_LABELS = {
     'obere-extremitaet':  'Obere Extremität',
     'untere-extremitaet': 'Untere Extremität',
-    'wirbelsaeule':       'Wirbelsäule & Rumpf'
+    'wirbelsaeule':       'Wirbelsäule & Rumpf',
+    'kopf-hals':          'Kopf & Hals'
 };
 
 const SUBGROUP_LABELS = {
-    'schulter':    'Schulter',
-    'ellenbogen':  'Ellenbogen',
-    'hand':        'Hand & Finger',
-    'huefte':      'Hüfte',
-    'knie':        'Knie',
-    'fuss':        'Fuß & Sprunggelenk',
-    'ruecken':     'Rücken',
-    'bauch':       'Bauch',
-    'beckenboden': 'Beckenboden'
+    'schulter':          'Schulter',
+    'ellenbogen':        'Ellenbogen',
+    'hand':              'Hand & Finger',
+    'huefte':            'Hüfte',
+    'knie':              'Knie',
+    'fuss':              'Fuß & Sprunggelenk',
+    'ruecken':           'Rücken',
+    'bauch':             'Bauch',
+    'beckenboden':       'Beckenboden',
+    'mimikmuskulatur':   'Mimikmuskulatur',
+    'kaumuskulatur':     'Kaumuskulatur',
+    'suprahyoidal':      'Suprahyoidal',
+    'infrahyoidal':      'Infrahyoidal',
+    'halsmuskulatur':    'Halsmuskulatur',
+    'praevertebralis':   'Prävertebral'
 };
 
 const MuscleData = (() => {
