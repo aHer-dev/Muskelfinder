@@ -60,7 +60,8 @@ const el = {
     summaryStats:    document.getElementById('summary-stats'),
     summaryLeitner:  document.getElementById('summary-leitner'),
     continueBtn:     document.getElementById('continue-btn'),
-    backToSetup:     document.getElementById('back-to-setup')
+    backToSetup:     document.getElementById('back-to-setup'),
+    progressBar:     document.getElementById('session-progress-bar')
 };
 
 // ── Init ─────────────────────────────────────────────────────────
@@ -224,6 +225,7 @@ function nextCard() {
     const total     = done + session.queue.length + 1;
 
     el.sessionProgress.textContent = `${done + 1} / ${total} · Fach ${cardState.fach}`;
+    updateProgressBar(done, total);
     el.cardName.textContent    = muscle.Name;
     el.cardSubgroup.textContent = [REGION_LABELS[muscle.region], SUBGROUP_LABELS[muscle.subgroup]].filter(Boolean).join(' · ');
     el.cardFach.textContent    = `Fach ${cardState.fach}`;
@@ -236,6 +238,7 @@ function nextCard() {
     el.cardDifficultBadge.hidden = !isDiff;
 
     el.cardInner.classList.remove('flipped');
+    el.cardInner.style.minHeight = '';
     el.cardButtons.hidden = true;
     el.flipBtn.hidden     = false;
 }
@@ -274,11 +277,26 @@ function formatField(origin) {
     return String(origin);
 }
 
+function updateProgressBar(done, total) {
+    if (!el.progressBar) return;
+    const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+    el.progressBar.style.width = pct + '%';
+}
+
 function flipCard() {
     session.flipped = true;
     el.cardInner.classList.add('flipped');
     el.flipBtn.hidden     = true;
     el.cardButtons.hidden = false;
+
+    // Karte wächst auf die Höhe der Rückseite
+    requestAnimationFrame(() => {
+        const back = el.cardInner.querySelector('.flashcard-back');
+        if (back) {
+            const h = back.scrollHeight;
+            el.cardInner.style.minHeight = h + 'px';
+        }
+    });
 }
 
 function handleCorrect() {
@@ -402,21 +420,37 @@ function bindEvents() {
 
     // ── Swipe-Gesten ──────────────────────────────────────────────
     let touchStartX = 0, touchStartY = 0;
+
     el.flashcard.addEventListener('touchstart', e => {
         touchStartX = e.touches[0].clientX;
         touchStartY = e.touches[0].clientY;
+        el.flashcard.style.transition = 'none';
     }, { passive: true });
+
+    el.flashcard.addEventListener('touchmove', e => {
+        if (!session.flipped) return;
+        const dx = e.touches[0].clientX - touchStartX;
+        const dy = e.touches[0].clientY - touchStartY;
+        if (Math.abs(dx) < Math.abs(dy)) return;
+        e.preventDefault();
+        const rotate = dx * 0.06;
+        el.flashcard.style.transform = `translateX(${dx * 0.4}px) rotate(${rotate}deg)`;
+        el.flashcard.classList.toggle('swipe-right', dx > 40);
+        el.flashcard.classList.toggle('swipe-left',  dx < -40);
+    }, { passive: false });
+
     el.flashcard.addEventListener('touchend', e => {
+        el.flashcard.style.transition = '';
+        el.flashcard.style.transform  = '';
+        el.flashcard.classList.remove('swipe-right', 'swipe-left');
         const dx = e.changedTouches[0].clientX - touchStartX;
         const dy = e.changedTouches[0].clientY - touchStartY;
-        // Nur horizontaler Swipe (mindestens 50px, weniger als 80px vertikal)
-        if (Math.abs(dx) > 50 && Math.abs(dy) < 80) {
-            e.preventDefault();
+        if (Math.abs(dx) > 60 && Math.abs(dy) < 80) {
             if (!session.flipped) { flipCard(); return; }
             if (dx < 0) handleWrong();
             else        handleCorrect();
         }
-    }, { passive: false });
+    }, { passive: true });
 
     // ── Alle / Keine Subgruppen ───────────────────────────────────
     let allSelected = true;

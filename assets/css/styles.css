@@ -185,7 +185,7 @@ header nav {
 main {
     flex: 1;
     width: 100%;
-    max-width: 940px;
+    max-width: clamp(320px, 90vw, 1200px);
     margin: 28px auto;
     padding: 0 20px 40px;
     display: flex;
@@ -563,10 +563,11 @@ select option {
 }
 
 .image-container img {
-    max-height: 280px;
+    max-height: 420px;
     max-width: 100%;
     width: auto;
     height: auto;
+    object-fit: contain;
     border-radius: var(--radius-md);
     cursor: zoom-in;
     transition: transform var(--transition);
@@ -1003,7 +1004,7 @@ footer a:hover,
 
     /* Subgruppen-Baum */
     .tree-subgroups { padding: 6px 10px 10px 24px; gap: 5px; }
-    .sg-item { font-size: 12px; padding: 4px 8px; }
+    .sg-item { font-size: 12px; padding: 8px 12px; min-height: 44px; }
 
     /* Speicherstand */
     .save-actions { flex-direction: column; }
@@ -1014,7 +1015,7 @@ footer a:hover,
     .ms-check-name { font-size: 13px; }
     .ms-add-bar { flex-direction: column; }
     .ms-tabs { gap: 4px; }
-    .ms-tab { font-size: 12px; padding: 5px 10px; }
+    .ms-tab { font-size: 12px; padding: 8px 12px; min-height: 44px; }
     .ms-checklist { max-height: 50vh; }
 
     /* Summary */
@@ -1301,6 +1302,37 @@ footer a:hover,
 }
 
 /* ── Session Header ─────────────────────────────────────────────── */
+/* ── Swipe-Feedback ─────────────────────────────────────────────── */
+.flashcard {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.flashcard.swipe-right {
+    box-shadow: 4px 0 24px color-mix(in srgb, #22c55e 40%, transparent);
+}
+
+.flashcard.swipe-left {
+    box-shadow: -4px 0 24px color-mix(in srgb, #ef4444 40%, transparent);
+}
+
+/* ── Fortschrittsbalken ─────────────────────────────────────────── */
+.session-progress-bar-wrap {
+    width: 100%;
+    height: 4px;
+    background: var(--glass-border);
+    border-radius: 99px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.session-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: var(--accent);
+    border-radius: 99px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .session-header {
     text-align: center;
     margin-bottom: 16px;
@@ -1407,7 +1439,6 @@ footer a:hover,
 .flashcard-back {
     transform: rotateY(180deg);
     min-height: 260px;
-    overflow-y: auto;
     gap: 0;
 }
 
@@ -1954,6 +1985,16 @@ html.light-mode #main-menu {
     border: 1px solid color-mix(in srgb, #f59e0b 35%, transparent);
 }
 
+.mode-badge-btn {
+    cursor: pointer;
+    transition: opacity var(--transition), transform var(--transition);
+}
+
+.mode-badge-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.04);
+}
+
 
 /* ════════════════════════════════════════════════════════════════
    FLASHCARDS — Subgruppen-Baum + Session Back + Manage Link
@@ -2059,7 +2100,8 @@ html.light-mode #main-menu {
     display: flex;
     align-items: center;
     gap: 6px;
-    padding: 5px 10px;
+    padding: 8px 14px;
+    min-height: 44px;
     background: var(--bg-surface);
     border: 1px solid var(--glass-border);
     border-radius: 20px;
@@ -2435,6 +2477,46 @@ kbd {
     transform: none;
 }
 
+/* Tabelle → Card-Layout auf Mobile */
+@media (max-width: 640px) {
+    .ms-table-wrap { border: none; overflow-x: visible; }
+    .ms-table thead { display: none; }
+    .ms-table, .ms-table tbody { display: block; }
+
+    .ms-table tbody tr {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
+        padding: 12px;
+        margin-bottom: 8px;
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-md);
+        background: var(--glass-bg);
+    }
+
+    .ms-table td {
+        padding: 0;
+        border: none;
+    }
+
+    .ms-muscle-name {
+        flex: 1 1 100%;
+        font-size: 14px;
+    }
+
+    .ms-subgroup {
+        font-size: 12px;
+    }
+
+    .ms-due { font-size: 12px; }
+
+    /* Entfernen-Button ganz rechts */
+    .ms-table td:last-child {
+        margin-left: auto;
+    }
+}
+
 /* Filter-Zeile: Noch nicht im Karteikasten */
 .ms-filter-row {
     display: flex;
@@ -2454,7 +2536,8 @@ kbd {
 }
 
 .ms-tab {
-    padding: 5px 12px;
+    padding: 10px 14px;
+    min-height: 44px;
     font-size: 13px;
     font-weight: 500;
     background: var(--glass-bg);
@@ -2688,7 +2771,7 @@ kbd {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    padding: 6px 12px;
+    padding: 10px 14px;
     font-size: 13px;
     font-weight: 500;
     background: var(--glass-bg);
@@ -2697,7 +2780,7 @@ kbd {
     color: var(--text-secondary);
     cursor: pointer;
     transition: background var(--transition), border-color var(--transition), color var(--transition);
-    min-height: 34px;
+    min-height: 44px;
 }
 
 .qf-chip:hover {
@@ -2930,7 +3013,7 @@ kbd {
 
 /* Responsive */
 @media (max-width: 480px) {
-    .qf-chip { font-size: 12px; padding: 5px 10px; }
+    .qf-chip { font-size: 12px; padding: 8px 12px; min-height: 44px; }
     .quiz-filter-panel { padding: 12px; gap: 10px; }
     .oi-mode-btn, .mv-mode-btn { font-size: 12px; padding: 5px 12px; }
 }
@@ -3072,4 +3155,115 @@ html.light-mode .xp-nums   { color: #6b7280; }
 #app-dialog-actions button {
     flex: 1;
     max-width: 140px;
+}
+
+
+/* ════════════════════════════════════════════════════════════════
+   DESKTOP LAYOUT  @media (min-width: 1024px)
+   ════════════════════════════════════════════════════════════════ */
+
+/* ── #6 Suchseite: Filter-Sidebar ──────────────────────────────── */
+@media (min-width: 1024px) {
+    body.page-search main {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        grid-template-rows: auto auto 1fr;
+        column-gap: 28px;
+        align-items: start;
+    }
+
+    body.page-search #search-section {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    body.page-search #filters-section {
+        grid-column: 1;
+        grid-row: 1 / 4;
+        position: sticky;
+        top: 24px;
+    }
+
+    body.page-search #filters-section .filter-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    body.page-search #filters-section .filter-group {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    body.page-search #filters-section .filter-group select {
+        width: 100%;
+    }
+
+    body.page-search .filter-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    body.page-search #results-section {
+        grid-column: 2;
+        grid-row: 2 / 4;
+    }
+}
+
+/* ── #7 Detailseite: Bild + Info nebeneinander ──────────────────── */
+@media (min-width: 1024px) {
+    body.page-detail .details-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 28px;
+        align-items: start;
+    }
+
+    body.page-detail .mode-badge {
+        grid-column: 1 / -1;
+    }
+
+    body.page-detail .image-container {
+        grid-column: 1;
+        position: sticky;
+        top: 24px;
+    }
+
+    body.page-detail .info-container {
+        grid-column: 2;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── #8 Lernkarten: Karte links, Leitner rechts ─────────────────── */
+@media (min-width: 1024px) {
+    body.page-flashcards #setup-screen {
+        display: grid;
+        grid-template-columns: 1fr 340px;
+        column-gap: 28px;
+        align-items: start;
+    }
+
+    /* Muskeln-Link + Heutige Wiederholung + Kartenlimit/Start → linke Spalte */
+    body.page-flashcards .manage-deck-link,
+    body.page-flashcards .fc-section:nth-child(2),
+    body.page-flashcards .fc-section:nth-child(3) {
+        grid-column: 1;
+    }
+
+    /* Fächer-Übersicht + Bereich einschränken + Speicher → rechte Spalte */
+    body.page-flashcards .fc-section:nth-child(4),
+    body.page-flashcards .fc-section:nth-child(5),
+    body.page-flashcards .fc-section:nth-child(6) {
+        grid-column: 2;
+        grid-row: span 1;
+    }
+
+    /* Leitner-Balken auf Desktop breiter */
+    body.page-flashcards .leitner-box {
+        min-width: 32px;
+    }
 }

@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     buildSubgroupTabs(config.regions);
     render();
     bindEvents();
+    initInDeckCollapsed();
 
     loading.style.display = 'none';
     content.hidden = false;
@@ -177,7 +178,7 @@ function addMusclesAndRefresh(names) {
 }
 
 // ── Toggle "Im Karteikasten" ──────────────────────────────────────
-let inDeckCollapsed = false;
+let inDeckCollapsed = true;
 
 function toggleInDeck() {
     inDeckCollapsed = !inDeckCollapsed;
@@ -185,6 +186,13 @@ function toggleInDeck() {
     const body   = document.getElementById('in-deck-body');
     header.setAttribute('aria-expanded', String(!inDeckCollapsed));
     body.classList.toggle('ms-collapsed', inDeckCollapsed);
+}
+
+function initInDeckCollapsed() {
+    const header = document.getElementById('in-deck-toggle');
+    const body   = document.getElementById('in-deck-body');
+    header.setAttribute('aria-expanded', 'false');
+    body.classList.add('ms-collapsed');
 }
 
 // ── Events ────────────────────────────────────────────────────────

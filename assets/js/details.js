@@ -81,16 +81,11 @@ function renderMuscle(muscle) {
     const func       = expert ? muscle.Function  : (easy.Function  || muscle.Function);
     const segments   = expert ? muscle.Segments  : (easy.Segments  || muscle.Segments);
 
-    const modeBadge = `<div class="mode-badge ${expert ? 'mode-expert' : 'mode-easy'}">
-        ${expert ? '🎓 Expert Modus' : '📖 Easy Modus'}
-    </div>`;
-
     elements.muscleDetailsContainer.innerHTML = `
         <section class="details-section">
-            ${modeBadge}
             <div class="image-container">
                 <img src="${imageSrc}" alt="${muscle.Name}"
-                     class="zoomable-image" style="max-width: 400px;">
+                     class="zoomable-image" loading="lazy">
             </div>
             <div class="info-container">
                 ${infoBox('Ursprung', expert ? formatOrigin(origin) : formatText(origin))}
@@ -128,11 +123,12 @@ function infoBox(title, content) {
 function formatOrigin(origin) {
     if (typeof origin === 'string') return `<p>${origin}</p>`;
     if (!Array.isArray(origin)) return "<p>Keine Daten verfügbar</p>";
-    return origin.map(item =>
-        item.Part?.trim()
+    return origin.map(item => {
+        if (typeof item === 'string') return `<p>${item}</p>`;
+        return item.Part?.trim()
             ? `<p><strong>${item.Part}:</strong> ${item.Location}</p>`
-            : `<p>${item.Location}</p>`
-    ).join('');
+            : `<p>${item.Location}</p>`;
+    }).join('');
 }
 
 function formatText(text) {

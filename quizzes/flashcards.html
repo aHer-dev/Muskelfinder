@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
-<body>
+<body class="page-flashcards">
     <header>
         <h1><img src="../assets/icons/muskelfinder-icon.png" class="header-logo" alt="">Lernkarten</h1>
         <p>Leitner · 7 Fächer</p>
@@ -88,6 +88,11 @@
 
         <!-- ══ Card-Screen ════════════════════════════════════════ -->
         <div id="card-screen" hidden>
+
+            <!-- Fortschrittsbalken -->
+            <div class="session-progress-bar-wrap">
+                <div id="session-progress-bar" class="session-progress-bar"></div>
+            </div>
 
             <div class="session-header">
                 <button id="back-to-overview" class="session-back-btn" title="Zur Übersicht">
