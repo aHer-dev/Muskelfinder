@@ -97,7 +97,7 @@
       "Origin": "Oberseite der 1. Rippe",
       "Insertion": "Unterseite der Clavicula, Extremitas acromialis",
       "Function": "Zieht die Clavicula an das Sternum, fixiert das Sternoklavikulargelenk",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_subclavius_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -112,14 +112,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_subclavius_ventral_1.jpg",
       "easy": {
         "Origin": "Oberseite der 1. Rippe",
         "Insertion": "Unterseite der Clavicula, Extremitas acromialis",
         "Function": "Zieht die Clavicula nach medial und sichert das Sternoclaviculargelenk; schützt die darunter liegenden Gefäß-Nerven-Strukturen",
         "Segments": "N. subclavius, C5, C6"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_subclavius_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. trapezius – Pars descendens",
@@ -392,7 +394,7 @@
       "Origin": "Procc. spinosi Th7–Th12, Fascia thoracolumbalis, Crista iliaca (hinterer Teil), 10.–12. Rippe",
       "Insertion": "Crista tuberculi minoris humeri",
       "Function": "Depression und Retraktion der Schulter, Extension, Adduktion und Innenrotation des Armes, Klimmzug",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_latissimus_dorsi_dorsal_1.png",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -409,14 +411,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_latissimus_dorsi_dorsal_1.png",
       "easy": {
         "Origin": "Procc. spinosi Th7–Th12, Fascia thoracolumbalis, Crista iliaca (hinterer Teil), 10.–12. Rippe",
         "Insertion": "Crista tuberculi minoris humeri",
         "Function": "Senkt und retrahiert die Schulter; führt Extension, Adduktion und Innenrotation des Humerus durch; wichtig beim Klimmzug und Rudern",
         "Segments": "N. thoracodorsalis, C6, C7, C8"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_latissimus_dorsi_dorsal_1.png"
+      ]
     },
     {
       "Name": "M. deltoideus",
@@ -820,7 +824,7 @@
       "Origin": "Epicondylus lateralis humeri und Lig. collaterale radiale",
       "Insertion": "Proximaler Bereich der Facies posterior ulnae",
       "Function": "Ellenbogenextension (bei kräftiger Anspannung)",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_anconeus_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "ellenbogen",
       "tags": [
@@ -835,14 +839,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_anconeus_dorsal_1.jpg",
       "easy": {
         "Origin": "Epicondylus lateralis humeri und Lig. collaterale radiale",
         "Insertion": "Proximaler Bereich der Facies posterior ulnae",
         "Function": "Unterstützt die Ellenbogenextension; stabilisiert das Gelenk bei Pronationsbewegungen",
         "Segments": "N. radialis, C6, C7, C8"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_anconeus_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. brachialis",
@@ -888,7 +894,7 @@
       "Origin": "Epicondylus medialis humeri, mediale Seite der Tuberositas ulnae",
       "Insertion": "Facies lateralis radii",
       "Function": "Ellenbogenflexion und Pronation",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_pronator_teres_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "ellenbogen",
       "tags": [
@@ -904,14 +910,18 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_pronator_teres_ventral_1.jpg",
       "easy": {
         "Origin": "Epicondylus medialis humeri, mediale Seite der Tuberositas ulnae",
         "Insertion": "Facies lateralis radii",
         "Function": "Ellenbogenflexion und Pronation des Unterarms",
         "Segments": "N. medianus, C6, C7"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_pronator_teres_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_pronator_teres_caudal_2.jpg",
+        "/assets/images/obere-ext/muscle_pronator_teres_lateral_2.jpg"
+      ]
     },
     {
       "Name": "M. brachioradialis",
@@ -921,7 +931,7 @@
       "Origin": "Margo lateralis humeri",
       "Insertion": "Radiale Fläche des Proc. styloideus radii",
       "Function": "Ellenbogenflexion, Pronation und Supination",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_brachioradialis_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "ellenbogen",
       "tags": [
@@ -936,14 +946,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_brachioradialis_ventral_1.jpg",
       "easy": {
         "Origin": "Margo lateralis humeri",
         "Insertion": "Radiale Fläche des Proc. styloideus radii",
         "Function": "Ellenbogenflexion; führt Pronation und Supination aus der Mittelstellung in die Neutralstellung",
         "Segments": "N. radialis, C5, C6, C7"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_brachioradialis_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_brachioradialis_lateral_2.jpg"
+      ]
     },
     {
       "Name": "M. supinator",
@@ -953,7 +966,7 @@
       "Origin": "Epicondylus lateralis humeri, Crista musculi supinatoris ulnae, Lig. collaterale radiale, Lig. anulare radii",
       "Insertion": "Proximaler Bereich der Facies lateralis radii",
       "Function": "Supination",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_supinator_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "ellenbogen",
       "tags": [
@@ -968,14 +981,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_supinator_dorsal_1.jpg",
       "easy": {
         "Origin": "Epicondylus lateralis humeri, Crista musculi supinatoris ulnae, Lig. collaterale radiale, Lig. anulare radii",
         "Insertion": "Proximaler Bereich der Facies lateralis radii",
         "Function": "Supination des Unterarms; übernimmt die Supination bei gestrecktem Ellenbogen (wenn Bizeps gering aktiv)",
         "Segments": "N. radialis, C5, C6"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_supinator_dorsal_1.jpg",
+        "/assets/images/obere-ext/muscle_supinator_ventral_2.jpg"
+      ]
     },
     {
       "Name": "M. pronator quadratus",
@@ -985,7 +1001,7 @@
       "Origin": "Distales Viertel der Facies anterior ulnae",
       "Insertion": "Distales Viertel der Facies anterior radii",
       "Function": "Pronation",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_pronator_quadratus_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "ellenbogen",
       "tags": [
@@ -1000,14 +1016,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_pronator_quadratus_ventral_1.jpg",
       "easy": {
         "Origin": "",
         "Insertion": "",
         "Function": "",
         "Segments": ""
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_pronator_quadratus_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. flexor carpi radialis",
@@ -1017,7 +1035,7 @@
       "Origin": "Epicondylus medialis humeri",
       "Insertion": "Basis Os metacarpale II (manchmal auch III)",
       "Function": "Ellenbogen: Pronation. Handgelenk: Palmarflexion und Radialabduktion",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_flexor_carpi_radialis_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1033,14 +1051,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_flexor_carpi_radialis_ventral_1.jpg",
       "easy": {
         "Origin": "Epicondylus medialis humeri",
         "Insertion": "Basis Os metacarpale II (manchmal auch III)",
         "Function": "Palmarflexion und Radialabduktion des Handgelenks; Pronation des Unterarms",
         "Segments": "N. medianus, C6, C7, C8"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_flexor_carpi_radialis_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_flexor_carpi_radialis_lateral_2.jpg"
+      ]
     },
     {
       "Name": "M. flexor carpi ulnaris",
@@ -1050,7 +1071,7 @@
       "Origin": "Epicondylus medialis humeri, medialer Olekranon und Margo posterior ulnae",
       "Insertion": "Os pisiforme, Hamulus ossis hamati, Basis Os metacarpale V",
       "Function": "Handgelenk: Palmarflexion und Ulnarabduktion",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_flexor_carpi_ulnaris_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1066,14 +1087,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_flexor_carpi_ulnaris_ventral_1.jpg",
       "easy": {
         "Origin": "Epicondylus medialis humeri, medialer Olekranon und Margo posterior ulnae",
         "Insertion": "Os pisiforme, Hamulus ossis hamati, Basis Os metacarpale V",
         "Function": "Palmarflexion und Ulnarabduktion des Handgelenks",
         "Segments": "N. ulnaris, C7, C8, Th1"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_flexor_carpi_ulnaris_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. extensor carpi radialis brevis",
@@ -1083,7 +1106,7 @@
       "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Lig. anulare radii",
       "Insertion": "Basis Os metacarpale III",
       "Function": "Ellenbogen: Pro- und Supination. Handgelenk: Dorsalextension und Radialabduktion",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_extensor_carpi_radialis_brevis_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1099,14 +1122,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_extensor_carpi_radialis_brevis_dorsal_1.jpg",
       "easy": {
         "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Lig. anulare radii",
         "Insertion": "Basis Os metacarpale III",
         "Function": "Dorsalextension und Radialabduktion des Handgelenks; Pro- und Supination des Unterarms",
         "Segments": "N. radialis, C6, C7"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_extensor_carpi_radialis_brevis_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. extensor carpi radialis longus",
@@ -1116,7 +1141,7 @@
       "Origin": "Margo lateralis humeri",
       "Insertion": "Basis Os metacarpale II",
       "Function": "Ellenbogen: Pro- und Supination. Handgelenk: Dorsalextension und Radialabduktion",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_extensor_carpi_radialis_longus_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1132,14 +1157,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_extensor_carpi_radialis_longus_dorsal_1.jpg",
       "easy": {
         "Origin": "Margo lateralis humeri",
         "Insertion": "Basis Os metacarpale II",
         "Function": "Dorsalextension und Radialabduktion des Handgelenks; Pro- und Supination des Unterarms",
         "Segments": "N. radialis, C6, C7"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_extensor_carpi_radialis_longus_dorsal_1.jpg",
+        "/assets/images/obere-ext/muscle_extensor_carpi_radialis_longus_dorsal_2.jpg"
+      ]
     },
     {
       "Name": "M. extensor carpi ulnaris",
@@ -1149,7 +1177,7 @@
       "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Margo posterior ulnae",
       "Insertion": "Basis Os metacarpale V",
       "Function": "Handgelenk: Ulnarabduktion",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_extensor_carpi_ulnaris_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1164,14 +1192,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_extensor_carpi_ulnaris_dorsal_1.jpg",
       "easy": {
         "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Margo posterior ulnae",
         "Insertion": "Basis Os metacarpale V",
         "Function": "Ulnarabduktion des Handgelenks",
         "Segments": "N. radialis, C6, C7, C8"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_extensor_carpi_ulnaris_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. palmaris longus",
@@ -1181,7 +1211,7 @@
       "Origin": "Epicondylus medialis humeri",
       "Insertion": "Aponeurosis palmaris",
       "Function": "Handgelenk: Palmarflexion, spannt die Palmaraponeurose",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_palmaris_longus_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1196,14 +1226,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_palmaris_longus_ventral_1.jpg",
       "easy": {
         "Origin": "Epicondylus medialis humeri",
         "Insertion": "Aponeurosis palmaris",
         "Function": "Palmarflexion des Handgelenks; spannt die Palmaraponeurose",
         "Segments": "N. medianus, C8, Th1"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_palmaris_longus_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. flexor digitorum superficialis",
@@ -1213,7 +1245,7 @@
       "Origin": "Epicondylus medialis humeri, Facies medialis ulnae, proximaler Margo anterior radii",
       "Insertion": "Mittelphalangen des II.–V. Fingers",
       "Function": "Handgelenk: Palmarflexion. Fingergelenke: MCP- und PIP-Flexion des II.–V. Fingers",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_flexor_digitorum_superficialis_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1228,14 +1260,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_flexor_digitorum_superficialis_ventral_1.jpg",
       "easy": {
         "Origin": "Epicondylus medialis humeri, Facies medialis ulnae, proximaler Margo anterior radii",
         "Insertion": "Mittelphalangen des II.–V. Fingers",
         "Function": "Palmarflexion des Handgelenks; Flexion der Grund- (MCP) und Mittelgelenke (PIP) der Finger II–V",
         "Segments": "N. medianus, C7, C8, Th1"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_flexor_digitorum_superficialis_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. extensor digitorum",
@@ -1245,7 +1279,7 @@
       "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Lig. anulare radii",
       "Insertion": "Dorsalaponeurosen des II.–V. Fingers, Basen der Grundphalangen II–V",
       "Function": "Handgelenk: Dorsalextension, Ulnarabduktion. Fingergelenke: MCP- und IP-Extension und Abduktion des II.–V. Fingers",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_extensor_digitorum_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1260,14 +1294,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_extensor_digitorum_dorsal_1.jpg",
       "easy": {
         "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Lig. anulare radii",
         "Insertion": "Dorsalaponeurosen des II.–V. Fingers, Basen der Grundphalangen II–V",
         "Function": "Dorsalextension des Handgelenks; Streckung der Finger II–V in MCP-, PIP- und DIP-Gelenken; Fingerabspreizung",
         "Segments": "N. radialis, C6, C7, C8"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_extensor_digitorum_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. extensor digiti minimi",
@@ -1277,7 +1313,7 @@
       "Origin": "Epicondylus lateralis humeri",
       "Insertion": "Dorsalaponeurose des kleinen Fingers",
       "Function": "Handgelenk: Dorsalextension, Ulnarabduktion. Extension des V. Fingers",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_extensor_digiti_minimi_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1293,14 +1329,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_extensor_digiti_minimi_dorsal_1.jpg",
       "easy": {
         "Origin": "Epicondylus lateralis humeri",
         "Insertion": "Dorsalaponeurose des kleinen Fingers",
         "Function": "Dorsalextension des Handgelenks; Extension des V. Fingers in MCP-, PIP- und DIP-Gelenken",
         "Segments": "N. radialis, C6, C7, C8"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_extensor_digiti_minimi_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. flexor pollicis longus",
@@ -1310,7 +1348,7 @@
       "Origin": "Epicondylus medialis humeri, ventrale Seite des Radius und Membrana interossea",
       "Insertion": "Basis der Endphalanx des Daumens",
       "Function": "Handgelenk: Palmarflexion, Radialabduktion. Daumen: Flexion in allen Gelenken, CMC-Adduktion",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_flexor_pollicis_longus_ventral_1.jpg.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1325,14 +1363,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_flexor_pollicis_longus_ventral_1.jpg.jpg",
       "easy": {
         "Origin": "Epicondylus medialis humeri, ventrale Seite des Radius und Membrana interossea",
         "Insertion": "Basis der Endphalanx des Daumens",
         "Function": "Palmarflexion des Handgelenks; Beugung aller Daumengelenke; CMC-Adduktion des Daumens",
         "Segments": "N. medianus, C6, C7, C8"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_flexor_pollicis_longus_ventral_1.jpg.jpg"
+      ]
     },
     {
       "Name": "M. flexor digitorum profundus",
@@ -1342,7 +1382,7 @@
       "Origin": "Facies anterior und medialis ulnae und Membrana interossea",
       "Insertion": "Basis der distalen Fingerphalangen II–V",
       "Function": "Handgelenk: Palmarflexion. Fingergelenke: MCP- und IP-Flexion des II.–V. Fingers",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_flexor_digitorum_profundus_ventral_1.jpg.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1357,14 +1397,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_flexor_digitorum_profundus_ventral_1.jpg.jpg",
       "easy": {
         "Origin": "Facies anterior und medialis ulnae und Membrana interossea",
         "Insertion": "Basis der distalen Fingerphalangen II–V",
         "Function": "Palmarflexion des Handgelenks; Flexion der MCP-, PIP- und DIP-Gelenke der Finger II–V",
         "Segments": "N. medianus (II, III), N. ulnaris (IV, V), C7, C8, Th1"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_flexor_digitorum_profundus_ventral_1.jpg.jpg"
+      ]
     },
     {
       "Name": "M. extensor indicis",
@@ -1374,7 +1416,7 @@
       "Origin": "Distaler Teil der Facies posterior ulnae und Membrana interossea",
       "Insertion": "Dorsalaponeurose des Zeigefingers",
       "Function": "Handgelenk: Dorsalextension. Zeigefinger: MCP- und IP-Extension",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_extensor_indicis_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1390,14 +1432,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_extensor_indicis_dorsal_1.jpg",
       "easy": {
         "Origin": "Distaler Teil der Facies posterior ulnae und Membrana interossea",
         "Insertion": "Dorsalaponeurose des Zeigefingers",
         "Function": "Dorsalextension des Handgelenks; Extension des Zeigefingers in MCP-, PIP- und DIP-Gelenken",
         "Segments": "N. radialis, C6, C7, C8"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_extensor_indicis_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. abductor pollicis longus",
@@ -1407,7 +1451,7 @@
       "Origin": "Facies posterior von Ulna und Radius und Membrana interossea",
       "Insertion": "Basis der radialen Seite des Os metacarpale I",
       "Function": "Handgelenk: Palmarflexion, Radialabduktion. Daumen: CMC-Extension und Abduktion",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_abductor_pollicis_longus_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1422,14 +1466,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_abductor_pollicis_longus_dorsal_1.jpg",
       "easy": {
         "Origin": "Facies posterior von Ulna und Radius und Membrana interossea",
         "Insertion": "Basis der radialen Seite des Os metacarpale I",
         "Function": "Radialabduktion des Handgelenks; CMC-Extension und Abduktion des Daumens (Sattelgelenkbewegung)",
         "Segments": "N. radialis, C6, C7, C8"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_abductor_pollicis_longus_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. extensor pollicis brevis",
@@ -1439,7 +1485,7 @@
       "Origin": "Facies posterior des Radius und Membrana interossea",
       "Insertion": "Basis der Grundphalanx des Daumens",
       "Function": "Handgelenk: Palmarflexion, Radialabduktion. Daumen: CMC-Extension, Abduktion, Reposition, MCP-Extension",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_extensor_pollicis_brevis_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1454,14 +1500,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_extensor_pollicis_brevis_dorsal_1.jpg",
       "easy": {
         "Origin": "Facies posterior des Radius und Membrana interossea",
         "Insertion": "Basis der Grundphalanx des Daumens",
         "Function": "CMC-Extension, Abduktion und Reposition des Daumens; MCP-Extension des Daumens",
         "Segments": "N. radialis, C6, C7, C8"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_extensor_pollicis_brevis_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. extensor pollicis longus",
@@ -1471,7 +1519,7 @@
       "Origin": "Facies posterior ulnae und Membrana interossea",
       "Insertion": "Basis der Endphalanx des Daumens",
       "Function": "Handgelenk: Dorsalextension, Radialabduktion. Daumen: CMC-Extension, Abduktion, Reposition, MCP- und IP-Extension",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_extensor_pollicis_longus_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1486,14 +1534,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_extensor_pollicis_longus_dorsal_1.jpg",
       "easy": {
         "Origin": "Facies posterior ulnae und Membrana interossea",
         "Insertion": "Basis der Endphalanx des Daumens",
         "Function": "Dorsalextension des Handgelenks; CMC-Extension, Abduktion, Reposition; MCP- und IP-Extension des Daumens",
         "Segments": "N. radialis, C6, C7, C8"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_extensor_pollicis_longus_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "Mm. interossei palmares I–III",
@@ -1503,7 +1553,7 @@
       "Origin": "Ulnare Seite des Os metacarpale II, radiale Seite der Ossa metacarpi IV und V",
       "Insertion": "Dorsalaponeurosen der Finger II, IV und V",
       "Function": "MCP-Flexion, IP-Extension und Adduktion (zum III. Strahl hin)",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_interossei_palmares_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1519,14 +1569,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_interossei_palmares_ventral_1.jpg",
       "easy": {
         "Origin": "Ulnare Seite des Os metacarpale II, radiale Seite der Ossa metacarpi IV und V",
         "Insertion": "Dorsalaponeurosen der Finger II, IV und V",
         "Function": "MCP-Flexion und PIP/DIP-Extension; Adduktion der Finger II, IV, V zum Mittelfinger (III. Strahl)",
         "Segments": "N. ulnaris, C8, Th1"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_interossei_palmares_ventral_1.jpg"
+      ]
     },
     {
       "Name": "Mm. interossei dorsales I–IV",
@@ -1536,7 +1588,7 @@
       "Origin": "Einander zugekehrte Seiten der Ossa metacarpi I–V",
       "Insertion": "Dorsalaponeurosen der Finger II–IV",
       "Function": "MCP-Flexion, IP-Extension und Abduktion (vom III. Strahl weg)",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_interossei_dorsales_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1552,14 +1604,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_interossei_dorsales_dorsal_1.jpg",
       "easy": {
         "Origin": "Einander zugekehrte Seiten der Ossa metacarpi I–V",
         "Insertion": "Dorsalaponeurosen der Finger II–IV",
         "Function": "MCP-Flexion und PIP/DIP-Extension; Abduktion der Finger II–IV vom Mittelfinger (III. Strahl) weg",
         "Segments": "N. ulnaris, C8, Th1"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_interossei_dorsales_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "Mm. lumbricales I–IV",
@@ -1569,7 +1623,7 @@
       "Origin": "Sehnen des M. flexor digitorum profundus",
       "Insertion": "Dorsalaponeurosen der Finger II–V",
       "Function": "MCP-Flexion, Radialabduktion, IP-Extension",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_lumbricales_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1585,14 +1639,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_lumbricales_ventral_1.jpg",
       "easy": {
         "Origin": "Sehnen des M. flexor digitorum profundus",
         "Insertion": "Dorsalaponeurosen der Finger II–V",
         "Function": "MCP-Flexion, IP-Extension (PIP+DIP) und Radialabduktion der Finger II–V",
         "Segments": "N. medianus (I, II), N. ulnaris (III, IV), C8, Th1"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_lumbricales_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. flexor digiti minimi brevis",
@@ -1602,7 +1658,7 @@
       "Origin": "Hamulus ossis hamati und Retinaculum flexorum",
       "Insertion": "Basis der Grundphalanx des V. Fingers, ulnares Sesambein",
       "Function": "MCP-Flexion und Abduktion des V. Fingers",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_flexor_digiti_minimi_brevis_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1618,14 +1674,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_flexor_digiti_minimi_brevis_ventral_1.jpg",
       "easy": {
         "Origin": "Hamulus ossis hamati und Retinaculum flexorum",
         "Insertion": "Basis der Grundphalanx des V. Fingers, ulnares Sesambein",
         "Function": "MCP-Flexion und Ulnarabduktion des V. Fingers",
         "Segments": "N. ulnaris, C8, Th1"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_flexor_digiti_minimi_brevis_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. abductor digiti minimi",
@@ -1635,7 +1693,7 @@
       "Origin": "Os pisiforme",
       "Insertion": "Basis der Grundphalanx des V. Fingers, ulnares Sesambein",
       "Function": "Ulnarabduktion und Extension des V. Fingers",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_abductor_digiti_minimi_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1651,14 +1709,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_abductor_digiti_minimi_ventral_1.jpg",
       "easy": {
         "Origin": "Os pisiforme",
         "Insertion": "Basis der Grundphalanx des V. Fingers, ulnares Sesambein",
         "Function": "Ulnarabduktion und Extension des V. Fingers im MCP-Gelenk",
         "Segments": "N. ulnaris, C8, Th1"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_abductor_digiti_minimi_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. opponens digiti minimi",
@@ -1668,7 +1728,7 @@
       "Origin": "Hamulus ossis hamati und Retinaculum flexorum",
       "Insertion": "Os metacarpale V",
       "Function": "CMC-Opposition des V. Fingers",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_opponens_digiti_minimi_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1683,14 +1743,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_opponens_digiti_minimi_ventral_1.jpg",
       "easy": {
         "Origin": "Hamulus ossis hamati und Retinaculum flexorum",
         "Insertion": "Os metacarpale V",
         "Function": "CMC-Opposition des V. Fingers (dreht und beugt den Kleinfinger dem Daumen entgegen)",
         "Segments": "N. ulnaris, C8, Th1"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_opponens_digiti_minimi_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. palmaris brevis",
@@ -1700,7 +1762,7 @@
       "Origin": "Aponeurosis palmaris",
       "Insertion": "Haut der ulnaren Handseite",
       "Function": "Spannt die Haut des Kleinfingerballens während der Ulnarabduktion der Hand",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_palmaris_brevis_ventral_1.png",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1716,14 +1778,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_palmaris_brevis_ventral_1.png",
       "easy": {
         "Origin": "Aponeurosis palmaris",
         "Insertion": "Haut der ulnaren Handseite",
         "Function": "Spannt die Palmaraponeurose auf der ulnaren Seite; unterstützt den Griff",
         "Segments": "N. ulnaris, C8, Th1"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_palmaris_brevis_ventral_1.png"
+      ]
     },
     {
       "Name": "M. flexor pollicis brevis",
@@ -1742,7 +1806,7 @@
       ],
       "Insertion": "Basis der Daumengrundphalanx, radiales Sesambein",
       "Function": "CMC-Flexion, Adduktion und Opposition, MCP-Flexion des Daumens",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_flexor_pollicis_brevis_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1758,14 +1822,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_flexor_pollicis_brevis_ventral_1.jpg",
       "easy": {
         "Origin": "Caput superficiale: Tuberculum ossis trapezii und Retinaculum flexorum\nCaput profundum: Os trapezoideum, Os capitatum, Ligg. metacarpalia palmaria",
         "Insertion": "Basis der Daumengrundphalanx, radiales Sesambein",
         "Function": "CMC-Flexion, Adduktion und Opposition des Daumens; MCP-Flexion",
         "Segments": "N. medianus, N. ulnaris, C8, Th1"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_flexor_pollicis_brevis_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_flexor_pollicis_brevis_ventral_2.jpg"
+      ]
     },
     {
       "Name": "M. abductor pollicis brevis",
@@ -1775,7 +1842,7 @@
       "Origin": "Tuberculum ossis scaphoidei und Retinaculum flexorum",
       "Insertion": "Basis der Grundphalanx des Daumens, radiales Sesambein",
       "Function": "CMC-Flexion, Abduktion und Opposition des Daumens",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_abductor_pollicis_brevis_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1791,14 +1858,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_abductor_pollicis_brevis_dorsal_1.jpg",
       "easy": {
         "Origin": "Tuberculum ossis scaphoidei und Retinaculum flexorum",
         "Insertion": "Basis der Grundphalanx des Daumens, radiales Sesambein",
         "Function": "CMC-Abduktion, Flexion und Opposition des Daumens",
         "Segments": "N. medianus, C6, C7"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_abductor_pollicis_brevis_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. adductor pollicis",
@@ -1817,7 +1886,7 @@
       ],
       "Insertion": "Basis der Grundphalanx des Daumens, ulnares Sesambein",
       "Function": "CMC-Flexion, Adduktion und Reposition des Daumens",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_adductor_pollicis_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1833,14 +1902,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_adductor_pollicis_ventral_1.jpg",
       "easy": {
         "Origin": "Caput obliquum: Os trapezoideum, Os capitatum, Basis Os metacarpale II, Ligg. metacarpalia palmaria\nCaput transversum: Palmare Seite des Os metacarpale III",
         "Insertion": "Basis der Grundphalanx des Daumens, ulnares Sesambein",
         "Function": "CMC-Adduktion, Flexion und Reposition des Daumens",
         "Segments": "N. ulnaris, C8, Th1"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_adductor_pollicis_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_adductor_pollicis_ventral_2.jpg"
+      ]
     },
     {
       "Name": "M. opponens pollicis",
@@ -1850,7 +1922,7 @@
       "Origin": "Os trapezium und Retinaculum flexorum",
       "Insertion": "Os metacarpale I",
       "Function": "CMC-Adduktion und Opposition des Daumens",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_opponens_pollicis_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1865,14 +1937,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_opponens_pollicis_ventral_1.jpg",
       "easy": {
         "Origin": "Os trapezium und Retinaculum flexorum",
         "Insertion": "Os metacarpale I",
         "Function": "CMC-Adduktion und Opposition des Daumens (rotiert das Os metacarpale I dem Kleinfinger entgegen)",
         "Segments": "N. medianus, C6, C7"
       },
-      "Images": []
+      "Images": [
+        "/assets/images/obere-ext/muscle_opponens_pollicis_ventral_1.jpg"
+      ]
     }
   ]
 }
