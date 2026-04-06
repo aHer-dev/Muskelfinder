@@ -1842,7 +1842,7 @@
       "Origin": "Tuberculum ossis scaphoidei und Retinaculum flexorum",
       "Insertion": "Basis der Grundphalanx des Daumens, radiales Sesambein",
       "Function": "CMC-Flexion, Abduktion und Opposition des Daumens",
-      "Image": "/assets/images/obere-ext/muscle_abductor_pollicis_brevis_dorsal_1.jpg",
+      "Image": "/assets/images/obere-ext/muscle_abductor_pollicis_brevis_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1858,7 +1858,7 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_abductor_pollicis_brevis_dorsal_1.jpg",
+      "ImageSource": "/assets/images/obere-ext/muscle_abductor_pollicis_brevis_ventral_1.jpg",
       "easy": {
         "Origin": "Tuberculum ossis scaphoidei und Retinaculum flexorum",
         "Insertion": "Basis der Grundphalanx des Daumens, radiales Sesambein",
@@ -1866,7 +1866,7 @@
         "Segments": "N. medianus, C6, C7"
       },
       "Images": [
-        "/assets/images/obere-ext/muscle_abductor_pollicis_brevis_dorsal_1.jpg"
+        "/assets/images/obere-ext/muscle_abductor_pollicis_brevis_ventral_1.jpg"
       ]
     },
     {
