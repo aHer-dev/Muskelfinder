@@ -21,7 +21,8 @@ let session = {
     unsureQueue: [],
     current:     null,
     stats:       { correct: 0, wrong: 0, unsure: 0 },
-    flipped:     false
+    flipped:     false,
+    isExtraRound: false
 };
 
 // ── DOM ──────────────────────────────────────────────────────────
@@ -195,8 +196,9 @@ function startSession() {
     if (selected.length === 0) return;
 
     const due = ProgressManager.getDueCards(selected);
+    const isExtraRound = due.length === 0;
     // Wenn keine fälligen Karten: alle ausgewählten Deck-Karten als Extra-Runde
-    let cards = due.length > 0 ? due : selected;
+    let cards = isExtraRound ? selected : due;
 
     const limit = parseInt(el.sessionGoal.value, 10);
     if (limit > 0) cards = cards.slice(0, limit);
@@ -204,6 +206,7 @@ function startSession() {
     session.queue       = shuffle([...cards]);
     session.unsureQueue = [];
     session.stats       = { correct: 0, wrong: 0, unsure: 0, streak: 0 };
+    session.isExtraRound = isExtraRound;
 
     showScreen('card');
     nextCard();
@@ -224,7 +227,9 @@ function nextCard() {
     const done      = session.stats.correct + session.stats.wrong + session.stats.unsure;
     const total     = done + session.queue.length + 1;
 
-    el.sessionProgress.textContent = `${done + 1} / ${total} · Fach ${cardState.fach}`;
+    el.sessionProgress.textContent = session.isExtraRound
+        ? `${done + 1} / ${total} · Extra-Runde`
+        : `${done + 1} / ${total} · Fach ${cardState.fach}`;
     updateProgressBar(done, total);
     el.cardName.textContent    = muscle.Name;
     el.cardSubgroup.textContent = [REGION_LABELS[muscle.region], SUBGROUP_LABELS[muscle.subgroup]].filter(Boolean).join(' · ');
@@ -304,7 +309,9 @@ function flipCard() {
 
 function handleCorrect() {
     const fach = (ProgressManager.getCardState(session.current) || {}).fach || 1;
-    ProgressManager.markCorrect(session.current);
+    if (!session.isExtraRound) {
+        ProgressManager.markCorrect(session.current);
+    }
     session.stats.correct++;
     session.stats.streak++;
     // Streak-Boni bei Meilensteinen (jeder genau einmal pro Sitzung)
@@ -316,7 +323,9 @@ function handleCorrect() {
 }
 function handleWrong() {
     const fach = (ProgressManager.getCardState(session.current) || {}).fach || 1;
-    ProgressManager.markWrong(session.current);
+    if (!session.isExtraRound) {
+        ProgressManager.markWrong(session.current);
+    }
     session.stats.wrong++;
     session.stats.streak = 0;
     Gamification.awardFlashcard('falsch', fach);
@@ -324,7 +333,9 @@ function handleWrong() {
 }
 function handleUnsure() {
     const fach = (ProgressManager.getCardState(session.current) || {}).fach || 1;
-    ProgressManager.markUnsure(session.current);
+    if (!session.isExtraRound) {
+        ProgressManager.markUnsure(session.current);
+    }
     session.stats.unsure++;
     session.stats.streak = 0;
     session.unsureQueue.push(session.current);
