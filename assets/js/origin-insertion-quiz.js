@@ -4,6 +4,11 @@ const basePath = isGitHub ? "/Muskelfinder" : "";
 const MODE_KEY = 'muskelfinder_oi_mode';
 let _mode = localStorage.getItem(MODE_KEY) || 'ursprung-ansatz';
 let currentMuscle;
+const modalElements = {
+    modal: document.getElementById('imageModal'),
+    modalImage: document.getElementById('modalImage'),
+    closeButton: document.querySelector('.closeButton')
+};
 
 async function initQuiz() {
     await MuscleData.loadConfig();
@@ -13,6 +18,7 @@ async function initQuiz() {
     QuizFilter.init(config, MuscleData.getAll());
     QuizSession.init(basePath);
     document.addEventListener('quiz-restart', loadQuiz);
+    initImageModal();
     loadQuiz();
 }
 
@@ -42,8 +48,9 @@ function renderQuiz(muscle) {
         : _mode;
 
     const img = document.getElementById('mainImage');
-    img.src = basePath + (muscle.Image || '');
+    img.src = basePath + MuscleData.getPrimaryImage(muscle);
     img.onerror = () => { img.src = ''; };
+    img.onclick = () => openImageModal(MuscleData.getPrimaryImage(muscle), muscle.Name);
 
     if (effectiveMode === 'ursprung-ansatz') {
         document.getElementById('quizHead').textContent    = 'Welcher Ansatz passt zum Ursprung?';
@@ -147,6 +154,39 @@ function updateStatusBar() {
     document.getElementById('wrongCount').textContent   = wrongAnswers;
     document.getElementById('accuracy').textContent     = pct + '%';
     Gamification.renderXPBar('quiz-xp-bar');
+}
+
+function initImageModal() {
+    if (modalElements.closeButton) {
+        modalElements.closeButton.addEventListener('click', closeImageModal);
+    }
+
+    if (modalElements.modal) {
+        modalElements.modal.addEventListener('click', e => {
+            if (e.target === modalElements.modal) closeImageModal();
+        });
+    }
+
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && isImageModalOpen()) {
+            closeImageModal();
+        }
+    });
+}
+
+function openImageModal(imagePath, altText) {
+    if (!imagePath || !modalElements.modal || !modalElements.modalImage) return;
+    modalElements.modalImage.src = basePath + imagePath;
+    modalElements.modalImage.alt = altText || 'Vergrößertes Muskelbild';
+    modalElements.modal.style.display = 'block';
+}
+
+function closeImageModal() {
+    if (modalElements.modal) modalElements.modal.style.display = 'none';
+}
+
+function isImageModalOpen() {
+    return modalElements.modal?.style.display === 'block';
 }
 
 document.addEventListener('DOMContentLoaded', initQuiz);

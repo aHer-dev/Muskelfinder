@@ -8,7 +8,7 @@
       "Origin": "Ventrale Seite der 3.–5. Rippe",
       "Insertion": "Proc. coracoideus der Scapula",
       "Function": "Depression und Protraktion der Skapula, Atemhilfsmuskel bei fixiertem Schultergürtel",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_pectoralis_minor_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -24,13 +24,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_pectoralis_minor_ventral_1.jpg",
       "easy": {
         "Origin": "Ventrale Seite der 3.–5. Rippe",
         "Insertion": "Proc. coracoideus der Scapula",
         "Function": "Senkung und Vorverlagerung des Schulterblatts; wirkt als Atemhilfsmuskel bei festgestelltem Schultergürtel",
         "Segments": "N. pectoralis medialis, C6, C7, C8, Th1"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_pectoralis_minor_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_pectoralis_minor_lateral_2.jpg"
+      ]
     },
     {
       "Name": "M. serratus anterior",
@@ -57,7 +61,7 @@
         "Angulus inferior (Pars inferior)"
       ],
       "Function": "Protraktion der Skapula, Fixation am Thorax, Pars inferior: Laterorotation, Atemhilfsmuskel",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_serratus_anterior_lateral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -73,13 +77,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_serratus_anterior_lateral_1.jpg",
       "easy": {
         "Origin": "Pars superior: 1.–2. Rippe\nPars intermedia: 2.–3. Rippe\nPars inferior: 4.–9./10. Rippe",
         "Insertion": "Angulus superior (Pars superior)\nMargo medialis (Pars intermedia)\nAngulus inferior (Pars inferior)",
         "Function": "Vorverlagerung und Fixierung des Schulterblatts am Thorax; Pars inferior ermöglicht die Außenrotation der Scapula für die Armhebung; Atemhilfsmuskel",
         "Segments": "N. thoracicus longus, C5, C6, C7"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_serratus_anterior_lateral_1.jpg",
+        "/assets/images/obere-ext/muscle_serratus_anterior_dorsal_2.jpg"
+      ]
     },
     {
       "Name": "M. subclavius",
@@ -110,7 +118,8 @@
         "Insertion": "Unterseite der Clavicula, Extremitas acromialis",
         "Function": "Zieht die Clavicula nach medial und sichert das Sternoclaviculargelenk; schützt die darunter liegenden Gefäß-Nerven-Strukturen",
         "Segments": "N. subclavius, C5, C6"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. trapezius – Pars descendens",
@@ -120,7 +129,7 @@
       "Origin": "Linea nuchae superior, Protuberantia occipitalis externa, Lig. nuchae C1–C6",
       "Insertion": "Laterales Drittel der Clavicula, Akromion",
       "Function": "Elevation und Laterorotation der Skapula, bilateral: Extension der HWS, unilateral: Lateroflexion mit kontralateraler Rotation",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_trapezius_pars_descendens_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -136,13 +145,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_trapezius_pars_descendens_dorsal_1.jpg",
       "easy": {
         "Origin": "Linea nuchae superior, Protuberantia occipitalis externa, Lig. nuchae C1–C6",
         "Insertion": "Laterales Drittel der Clavicula, Akromion",
         "Function": "Hebt das Schulterblatt an und dreht es nach außen; beidseits kontrahiert streckt es die HWS; einseitig Seitenneigung mit Gegenrotation",
         "Segments": "N. accessorius (XI), Plexus cervicalis, C2, C3, C4"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_trapezius_pars_descendens_dorsal_1.jpg",
+        "/assets/images/obere-ext/muscle_trapezius__cranial_all_2.jpg"
+      ]
     },
     {
       "Name": "M. trapezius – Pars transversa",
@@ -152,7 +165,7 @@
       "Origin": "Unterer Teil des Lig. nuchae (C6–C7), Procc. spinosi Th1–Th3",
       "Insertion": "Akromion, lateraler Teil der Spina scapulae",
       "Function": "Retraktion der Skapula",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_trapezius_pars_transversa_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -167,13 +180,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_trapezius_pars_transversa_dorsal_1.jpg",
       "easy": {
         "Origin": "Unterer Teil des Lig. nuchae (C6–C7), Procc. spinosi Th1–Th3",
         "Insertion": "Akromion, lateraler Teil der Spina scapulae",
         "Function": "Zieht das Schulterblatt zur Wirbelsäule zurück (Retraktion)",
         "Segments": "N. accessorius (XI), Plexus cervicalis, C2, C3, C4"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_trapezius_pars_transversa_dorsal_1.jpg",
+        "/assets/images/obere-ext/muscle_trapezius__cranial_all_2.jpg"
+      ]
     },
     {
       "Name": "M. trapezius – Pars ascendens",
@@ -183,7 +200,7 @@
       "Origin": "Procc. spinosi Th3–Th12",
       "Insertion": "Laterales Drittel der Spina scapulae",
       "Function": "Retraktion und Laterorotation der Skapula",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_trapezius_pars_ascendens_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -199,13 +216,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_trapezius_pars_ascendens_dorsal_1.jpg",
       "easy": {
         "Origin": "Procc. spinosi Th3–Th12",
         "Insertion": "Laterales Drittel der Spina scapulae",
         "Function": "Zieht das Schulterblatt nach unten und zur Wirbelsäule (Retraktion und Senkung) sowie Außenrotation",
         "Segments": "N. accessorius (XI), Plexus cervicalis, C2, C3, C4"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_trapezius_pars_ascendens_dorsal_1.jpg",
+        "/assets/images/obere-ext/muscle_trapezius__cranial_all_2.jpg"
+      ]
     },
     {
       "Name": "M. levator scapulae",
@@ -215,7 +236,7 @@
       "Origin": "Procc. transversi C1–C4 (Tubercula posteriora)",
       "Insertion": "Angulus superior und oberer Teil der Margo medialis scapulae",
       "Function": "Elevation und Innenrotation der Skapula, zervikal: Lateroflexion und homolaterale Rotation",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_levator_scapulae_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -231,13 +252,18 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_levator_scapulae_dorsal_1.jpg",
       "easy": {
         "Origin": "Procc. transversi C1–C4 (Tubercula posteriora)",
         "Insertion": "Angulus superior und oberer Teil der Margo medialis scapulae",
         "Function": "Hebt den oberen Scapulawinkel an und dreht das Schulterblatt nach innen; HWS-seitig: Seitenneigung und homolaterale Rotation",
         "Segments": "Plexus cervicalis, N. dorsalis scapulae, C4, C5"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_levator_scapulae_dorsal_1.jpg",
+        "/assets/images/obere-ext/muscle_levator_scapulae_lateral_2.jpg",
+        "/assets/images/obere-ext/muscle_levator_scapulae_ventral_3.jpg"
+      ]
     },
     {
       "Name": "M. rhomboideus major",
@@ -247,7 +273,7 @@
       "Origin": "Procc. spinosi Th1–Th4",
       "Insertion": "Margo medialis scapulae",
       "Function": "Elevation, Retraktion und Innenrotation der Skapula",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -263,13 +289,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg.jpg",
       "easy": {
         "Origin": "Procc. spinosi Th1–Th4",
         "Insertion": "Margo medialis scapulae",
         "Function": "Zieht das Schulterblatt zur Wirbelsäule (Retraktion), hebt es an und dreht es einwärts",
         "Segments": "N. dorsalis scapulae, C4, C5"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg.jpg"
+      ]
     },
     {
       "Name": "M. rhomboideus minor",
@@ -279,7 +308,7 @@
       "Origin": "Procc. spinosi C6–C7 und Lig. nuchae",
       "Insertion": "Margo medialis scapulae",
       "Function": "Elevation, Retraktion und Innenrotation der Skapula",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -295,13 +324,16 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg.jpg",
       "easy": {
         "Origin": "Procc. spinosi C6–C7 und Lig. nuchae",
         "Insertion": "Margo medialis scapulae",
         "Function": "Wie Rhomboideus major: Scapula-Retraktion, Elevation und Innenrotation des Schulterblatts",
         "Segments": "N. dorsalis scapulae, C4, C5"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg.jpg"
+      ]
     },
     {
       "Name": "M. pectoralis major",
@@ -324,7 +356,7 @@
       ],
       "Insertion": "Crista tuberculi majoris humeri",
       "Function": "Adduktion und Innenrotation des Armes, Pars clavicularis: Flexion, Atemhilfsmuskel",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_pectoralis major_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -340,13 +372,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_pectoralis major_ventral_1.jpg",
       "easy": {
         "Origin": "Pars clavicularis: Mediale Clavicula\nPars sternocostalis: Ventrale Sternumseite und 2.–6. Rippenknorpel\nPars abdominalis: Rektusscheide",
         "Insertion": "Crista tuberculi majoris humeri",
         "Function": "Adduziert und dreht den Arm nach innen; der klavikuläre Anteil hebt den Arm nach vorne (Flexion); wirkt als Atemhilfsmuskel bei festem Ansatz",
         "Segments": "Nn. pectorales mediales et laterales, C5, C6, C7, C8, Th1"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_pectoralis major_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_pectoralis_major_lateral_2.jpg"
+      ]
     },
     {
       "Name": "M. latissimus dorsi",
@@ -379,7 +415,8 @@
         "Insertion": "Crista tuberculi minoris humeri",
         "Function": "Senkt und retrahiert die Schulter; führt Extension, Adduktion und Innenrotation des Humerus durch; wichtig beim Klimmzug und Rudern",
         "Segments": "N. thoracodorsalis, C6, C7, C8"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. deltoideus",
@@ -402,7 +439,7 @@
       ],
       "Insertion": "Tuberositas deltoidea humeri",
       "Function": "Hauptfunktion: Abduktion. Je nach Anteil: Flexion, Extension, Endo- und Außenrotation",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_deltoideus_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -417,13 +454,18 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_deltoideus_ventral_1.jpg",
       "easy": {
         "Origin": "Pars clavicularis: Extremitas acromialis der Clavicula\nPars acromialis: Akromion\nPars spinalis: Spina scapulae",
         "Insertion": "Tuberositas deltoidea humeri",
         "Function": "Hauptabduktor des Schultergelenks; je nach aktivem Anteil auch Flexion, Extension, Innen- und Außenrotation möglich",
         "Segments": "N. axillaris, C5, C6"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_deltoideus_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_deltoideus_lateral_2.jpg",
+        "/assets/images/obere-ext/muscle_deltoideus_dorsal_3.jpg"
+      ]
     },
     {
       "Name": "M. subscapularis",
@@ -433,7 +475,7 @@
       "Origin": "Fossa subscapularis der Scapula (ventrale Seite)",
       "Insertion": "Crista tuberculi minoris humeri",
       "Function": "Innenrotation und Adduktion des Armes",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_subscapularis_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -448,13 +490,18 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_subscapularis_ventral_1.jpg",
       "easy": {
         "Origin": "Fossa subscapularis der Scapula (ventrale Seite)",
         "Insertion": "Crista tuberculi minoris humeri",
         "Function": "Innenrotation und Adduktion des Humerus; hält den Humeruskopf in der Gelenkpfanne (Rotatorenmanschetten-Funktion)",
         "Segments": "N. subscapularis, C5, C6"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_subscapularis_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_subscapularis_ventral_2.jpg",
+        "/assets/images/obere-ext/muscle_subscapularis_laterall_3.jpg"
+      ]
     },
     {
       "Name": "M. supraspinatus",
@@ -464,7 +511,7 @@
       "Origin": "Fossa supraspinata der Scapula",
       "Insertion": "Kranialer Teil des Tuberculum majus, Gelenkkapsel",
       "Function": "Initiation der Abduktion (0–15°), Außenrotation",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_supraspinatus_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -479,13 +526,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_supraspinatus_dorsal_1.jpg",
       "easy": {
         "Origin": "Fossa supraspinata der Scapula",
         "Insertion": "Kranialer Teil des Tuberculum majus, Gelenkkapsel",
         "Function": "Leitet die Abduktion ein (0–15°), danach Übernahme durch den Deltoideus; stabilisiert den Humeruskopf in der Pfanne",
         "Segments": "N. suprascapularis, C4, C5, C6"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_supraspinatus_dorsal_1.jpg",
+        "/assets/images/obere-ext/muscle_supraspinatus_cranial_2.jpg"
+      ]
     },
     {
       "Name": "M. infraspinatus",
@@ -495,7 +546,7 @@
       "Origin": "Fossa infraspinata der Scapula",
       "Insertion": "Mittlerer Teil des Tuberculum majus, Gelenkkapsel",
       "Function": "Außenrotation, kranialer Teil: Abduktion in Skapulaebene, kaudaler Teil: Adduktion",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_infraspinatus_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -510,13 +561,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_infraspinatus_dorsal_1.jpg",
       "easy": {
         "Origin": "Fossa infraspinata der Scapula",
         "Insertion": "Mittlerer Teil des Tuberculum majus, Gelenkkapsel",
         "Function": "Außenrotation des Humerus; der kraniale Anteil wirkt abduktorisch, der kaudale Anteil adduzierend; Stabilisierung des Humeruskopfs",
         "Segments": "N. suprascapularis, C4, C5, C6"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_infraspinatus_dorsal_1.jpg",
+        "/assets/images/obere-ext/muscle_infraspinatus_lateral_2.jpg"
+      ]
     },
     {
       "Name": "M. teres minor",
@@ -526,7 +581,7 @@
       "Origin": "Margo lateralis der Scapula",
       "Insertion": "Kaudaler Teil des Tuberculum majus, Gelenkkapsel",
       "Function": "Außenrotation und Adduktion des Armes",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_teres_minor_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -541,13 +596,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_teres_minor_dorsal_1.jpg",
       "easy": {
         "Origin": "Margo lateralis der Scapula",
         "Insertion": "Kaudaler Teil des Tuberculum majus, Gelenkkapsel",
         "Function": "Außenrotation und Adduktion des Arms; kleinster Muskel der Rotatorenmanschette",
         "Segments": "N. axillaris, C5, C6"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_teres_minor_dorsal_1.jpg",
+        "/assets/images/obere-ext/muscle_teres_minor_lateral_2.jpg"
+      ]
     },
     {
       "Name": "M. teres major",
@@ -557,7 +616,7 @@
       "Origin": "Kaudaler Teil der Margo lateralis und Angulus inferior der Scapula",
       "Insertion": "Crista tuberculi minoris humeri",
       "Function": "Innenrotation, Adduktion und Extension des Armes",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_teres_major_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -574,13 +633,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_teres_major_dorsal_1.jpg",
       "easy": {
         "Origin": "Kaudaler Teil der Margo lateralis und Angulus inferior der Scapula",
         "Insertion": "Crista tuberculi minoris humeri",
         "Function": "Innenrotation, Adduktion und Rückführung (Extension) des Arms; kein Bestandteil der Rotatorenmanschette",
         "Segments": "N. subscapularis, C5, C6, C7"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_teres_major_dorsal_1.jpg",
+        "/assets/images/obere-ext/muscle_teres_major_ventral_2.jpg"
+      ]
     },
     {
       "Name": "M. coracobrachialis",
@@ -590,7 +653,7 @@
       "Origin": "Proc. coracoideus der Scapula",
       "Insertion": "Margo medialis humeri",
       "Function": "Flexion und Adduktion des Armes",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_corcacubrachialis_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -606,13 +669,17 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_corcacubrachialis_ventral_1.jpg",
       "easy": {
         "Origin": "Proc. coracoideus der Scapula",
         "Insertion": "Margo medialis humeri",
         "Function": "Flexion und Adduktion des Humerus; stabilisiert das Schultergelenk von ventromedial",
         "Segments": "N. musculocutaneus, C6, C7"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_corcacubrachialis_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_corcacubrachialis_lateral_2.jpg"
+      ]
     },
     {
       "Name": "M. biceps brachii",
@@ -634,7 +701,7 @@
         "Lacertus fibrosus / Fascia antebrachii"
       ],
       "Function": "Caput longum: Abduktion, Flexion, Innenrotation. Caput breve: Flexion, Adduktion, Innenrotation. Gemeinsam: Ellenbogenflexion und Supination",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_biceps_brachii_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "ellenbogen",
       "tags": [
@@ -650,13 +717,18 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_biceps_brachii_ventral_1.jpg",
       "easy": {
         "Origin": "Caput longum: Tuberculum supraglenoidale scapulae und Labrum glenoidale\nCaput breve: Proc. coracoideus scapulae",
         "Insertion": "Tuberositas radii\nLacertus fibrosus / Fascia antebrachii",
         "Function": "Beide Köpfe zusammen: Ellenbogenflexion und Supination. Langes Caput: auch Abduktion, Flexion, Innenrotation. Kurzes Caput: auch Flexion und Adduktion",
         "Segments": "N. musculocutaneus, C5, C6, C7"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_biceps_brachii_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_biceps_brachii_lateral_2.jpg",
+        "/assets/images/obere-ext/muscle_biceps_brachii_ventral_3.jpg"
+      ]
     },
     {
       "Name": "M. triceps brachii – Caput longum",
@@ -666,7 +738,7 @@
       "Origin": "Tuberculum und Labrum infraglenoidale scapulae",
       "Insertion": "Olecranon ulnae",
       "Function": "Armadduktion, Extension und Ellenbogenextension",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_triceps_brachii_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "ellenbogen",
       "tags": [
@@ -682,13 +754,18 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_triceps_brachii_dorsal_1.jpg",
       "easy": {
         "Origin": "Tuberculum und Labrum infraglenoidale scapulae",
         "Insertion": "Olecranon ulnae",
         "Function": "Ellenbogenextension; langes Caput hilft zusätzlich bei Armadduktion und Rückführung (Extension)",
         "Segments": "N. radialis, C6, C7, C8"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_triceps_brachii_dorsal_1.jpg",
+        "/assets/images/obere-ext/muscle_triceps_brachii_lateral_2.jpg",
+        "/assets/images/obere-ext/muscle_triceps_brachii_ventral_3.jpg"
+      ]
     },
     {
       "Name": "M. triceps brachii – Caput laterale und mediale",
@@ -707,7 +784,7 @@
       ],
       "Insertion": "Olecranon ulnae",
       "Function": "Ellenbogenextension",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_triceps_brachii_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "ellenbogen",
       "tags": [
@@ -722,13 +799,18 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_triceps_brachii_dorsal_1.jpg",
       "easy": {
         "Origin": "Caput laterale: Facies posterior humeri proximal des Sulcus n. radialis\nCaput mediale: Facies posterior humeri distal des Sulcus n. radialis",
         "Insertion": "Olecranon ulnae",
         "Function": "Ellenbogenextension; kein Schultergelenkanteil",
         "Segments": "N. radialis, C6, C7, C8"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_triceps_brachii_dorsal_1.jpg",
+        "/assets/images/obere-ext/muscle_triceps_brachii_lateral_2.jpg",
+        "/assets/images/obere-ext/muscle_triceps_brachii_ventral_3.jpg"
+      ]
     },
     {
       "Name": "M. anconeus",
@@ -759,7 +841,8 @@
         "Insertion": "Proximaler Bereich der Facies posterior ulnae",
         "Function": "Unterstützt die Ellenbogenextension; stabilisiert das Gelenk bei Pronationsbewegungen",
         "Segments": "N. radialis, C6, C7, C8"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. brachialis",
@@ -769,7 +852,7 @@
       "Origin": "Ventrale Seite des Humerus, distale Hälfte",
       "Insertion": "Tuberositas ulnae, Gelenkkapsel des Ellenbogens",
       "Function": "Ellenbogenflexion",
-      "Image": "",
+      "Image": "/assets/images/obere-ext/muscle_brachialis_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "ellenbogen",
       "tags": [
@@ -784,13 +867,18 @@
         "License": "CC BY 4.0",
         "Source": "https://creativecommons.org/licenses/by/4.0/"
       },
-      "ImageSource": "",
+      "ImageSource": "/assets/images/obere-ext/muscle_brachialis_ventral_1.jpg",
       "easy": {
         "Origin": "Ventrale Seite des Humerus, distale Hälfte",
         "Insertion": "Tuberositas ulnae, Gelenkkapsel des Ellenbogens",
         "Function": "Reinflexor des Ellenbogens; keine Supinationsfunktion",
         "Segments": "N. musculocutaneus, C5, C6, C7"
-      }
+      },
+      "Images": [
+        "/assets/images/obere-ext/muscle_brachialis_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_brachialis_lateral_2.jpg",
+        "/assets/images/obere-ext/muscle_brachialis_ventral_3.jpg"
+      ]
     },
     {
       "Name": "M. pronator teres",
@@ -822,7 +910,8 @@
         "Insertion": "Facies lateralis radii",
         "Function": "Ellenbogenflexion und Pronation des Unterarms",
         "Segments": "N. medianus, C6, C7"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. brachioradialis",
@@ -853,7 +942,8 @@
         "Insertion": "Radiale Fläche des Proc. styloideus radii",
         "Function": "Ellenbogenflexion; führt Pronation und Supination aus der Mittelstellung in die Neutralstellung",
         "Segments": "N. radialis, C5, C6, C7"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. supinator",
@@ -884,7 +974,8 @@
         "Insertion": "Proximaler Bereich der Facies lateralis radii",
         "Function": "Supination des Unterarms; übernimmt die Supination bei gestrecktem Ellenbogen (wenn Bizeps gering aktiv)",
         "Segments": "N. radialis, C5, C6"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. pronator quadratus",
@@ -915,7 +1006,8 @@
         "Insertion": "",
         "Function": "",
         "Segments": ""
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. flexor carpi radialis",
@@ -947,7 +1039,8 @@
         "Insertion": "Basis Os metacarpale II (manchmal auch III)",
         "Function": "Palmarflexion und Radialabduktion des Handgelenks; Pronation des Unterarms",
         "Segments": "N. medianus, C6, C7, C8"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. flexor carpi ulnaris",
@@ -979,7 +1072,8 @@
         "Insertion": "Os pisiforme, Hamulus ossis hamati, Basis Os metacarpale V",
         "Function": "Palmarflexion und Ulnarabduktion des Handgelenks",
         "Segments": "N. ulnaris, C7, C8, Th1"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. extensor carpi radialis brevis",
@@ -1011,7 +1105,8 @@
         "Insertion": "Basis Os metacarpale III",
         "Function": "Dorsalextension und Radialabduktion des Handgelenks; Pro- und Supination des Unterarms",
         "Segments": "N. radialis, C6, C7"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. extensor carpi radialis longus",
@@ -1043,7 +1138,8 @@
         "Insertion": "Basis Os metacarpale II",
         "Function": "Dorsalextension und Radialabduktion des Handgelenks; Pro- und Supination des Unterarms",
         "Segments": "N. radialis, C6, C7"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. extensor carpi ulnaris",
@@ -1074,7 +1170,8 @@
         "Insertion": "Basis Os metacarpale V",
         "Function": "Ulnarabduktion des Handgelenks",
         "Segments": "N. radialis, C6, C7, C8"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. palmaris longus",
@@ -1105,7 +1202,8 @@
         "Insertion": "Aponeurosis palmaris",
         "Function": "Palmarflexion des Handgelenks; spannt die Palmaraponeurose",
         "Segments": "N. medianus, C8, Th1"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. flexor digitorum superficialis",
@@ -1136,7 +1234,8 @@
         "Insertion": "Mittelphalangen des II.–V. Fingers",
         "Function": "Palmarflexion des Handgelenks; Flexion der Grund- (MCP) und Mittelgelenke (PIP) der Finger II–V",
         "Segments": "N. medianus, C7, C8, Th1"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. extensor digitorum",
@@ -1167,7 +1266,8 @@
         "Insertion": "Dorsalaponeurosen des II.–V. Fingers, Basen der Grundphalangen II–V",
         "Function": "Dorsalextension des Handgelenks; Streckung der Finger II–V in MCP-, PIP- und DIP-Gelenken; Fingerabspreizung",
         "Segments": "N. radialis, C6, C7, C8"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. extensor digiti minimi",
@@ -1199,7 +1299,8 @@
         "Insertion": "Dorsalaponeurose des kleinen Fingers",
         "Function": "Dorsalextension des Handgelenks; Extension des V. Fingers in MCP-, PIP- und DIP-Gelenken",
         "Segments": "N. radialis, C6, C7, C8"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. flexor pollicis longus",
@@ -1230,7 +1331,8 @@
         "Insertion": "Basis der Endphalanx des Daumens",
         "Function": "Palmarflexion des Handgelenks; Beugung aller Daumengelenke; CMC-Adduktion des Daumens",
         "Segments": "N. medianus, C6, C7, C8"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. flexor digitorum profundus",
@@ -1261,7 +1363,8 @@
         "Insertion": "Basis der distalen Fingerphalangen II–V",
         "Function": "Palmarflexion des Handgelenks; Flexion der MCP-, PIP- und DIP-Gelenke der Finger II–V",
         "Segments": "N. medianus (II, III), N. ulnaris (IV, V), C7, C8, Th1"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. extensor indicis",
@@ -1293,7 +1396,8 @@
         "Insertion": "Dorsalaponeurose des Zeigefingers",
         "Function": "Dorsalextension des Handgelenks; Extension des Zeigefingers in MCP-, PIP- und DIP-Gelenken",
         "Segments": "N. radialis, C6, C7, C8"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. abductor pollicis longus",
@@ -1324,7 +1428,8 @@
         "Insertion": "Basis der radialen Seite des Os metacarpale I",
         "Function": "Radialabduktion des Handgelenks; CMC-Extension und Abduktion des Daumens (Sattelgelenkbewegung)",
         "Segments": "N. radialis, C6, C7, C8"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. extensor pollicis brevis",
@@ -1355,7 +1460,8 @@
         "Insertion": "Basis der Grundphalanx des Daumens",
         "Function": "CMC-Extension, Abduktion und Reposition des Daumens; MCP-Extension des Daumens",
         "Segments": "N. radialis, C6, C7, C8"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. extensor pollicis longus",
@@ -1386,7 +1492,8 @@
         "Insertion": "Basis der Endphalanx des Daumens",
         "Function": "Dorsalextension des Handgelenks; CMC-Extension, Abduktion, Reposition; MCP- und IP-Extension des Daumens",
         "Segments": "N. radialis, C6, C7, C8"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "Mm. interossei palmares I–III",
@@ -1418,7 +1525,8 @@
         "Insertion": "Dorsalaponeurosen der Finger II, IV und V",
         "Function": "MCP-Flexion und PIP/DIP-Extension; Adduktion der Finger II, IV, V zum Mittelfinger (III. Strahl)",
         "Segments": "N. ulnaris, C8, Th1"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "Mm. interossei dorsales I–IV",
@@ -1450,7 +1558,8 @@
         "Insertion": "Dorsalaponeurosen der Finger II–IV",
         "Function": "MCP-Flexion und PIP/DIP-Extension; Abduktion der Finger II–IV vom Mittelfinger (III. Strahl) weg",
         "Segments": "N. ulnaris, C8, Th1"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "Mm. lumbricales I–IV",
@@ -1482,7 +1591,8 @@
         "Insertion": "Dorsalaponeurosen der Finger II–V",
         "Function": "MCP-Flexion, IP-Extension (PIP+DIP) und Radialabduktion der Finger II–V",
         "Segments": "N. medianus (I, II), N. ulnaris (III, IV), C8, Th1"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. flexor digiti minimi brevis",
@@ -1514,7 +1624,8 @@
         "Insertion": "Basis der Grundphalanx des V. Fingers, ulnares Sesambein",
         "Function": "MCP-Flexion und Ulnarabduktion des V. Fingers",
         "Segments": "N. ulnaris, C8, Th1"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. abductor digiti minimi",
@@ -1546,7 +1657,8 @@
         "Insertion": "Basis der Grundphalanx des V. Fingers, ulnares Sesambein",
         "Function": "Ulnarabduktion und Extension des V. Fingers im MCP-Gelenk",
         "Segments": "N. ulnaris, C8, Th1"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. opponens digiti minimi",
@@ -1577,7 +1689,8 @@
         "Insertion": "Os metacarpale V",
         "Function": "CMC-Opposition des V. Fingers (dreht und beugt den Kleinfinger dem Daumen entgegen)",
         "Segments": "N. ulnaris, C8, Th1"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. palmaris brevis",
@@ -1609,7 +1722,8 @@
         "Insertion": "Haut der ulnaren Handseite",
         "Function": "Spannt die Palmaraponeurose auf der ulnaren Seite; unterstützt den Griff",
         "Segments": "N. ulnaris, C8, Th1"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. flexor pollicis brevis",
@@ -1650,7 +1764,8 @@
         "Insertion": "Basis der Daumengrundphalanx, radiales Sesambein",
         "Function": "CMC-Flexion, Adduktion und Opposition des Daumens; MCP-Flexion",
         "Segments": "N. medianus, N. ulnaris, C8, Th1"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. abductor pollicis brevis",
@@ -1682,7 +1797,8 @@
         "Insertion": "Basis der Grundphalanx des Daumens, radiales Sesambein",
         "Function": "CMC-Abduktion, Flexion und Opposition des Daumens",
         "Segments": "N. medianus, C6, C7"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. adductor pollicis",
@@ -1723,7 +1839,8 @@
         "Insertion": "Basis der Grundphalanx des Daumens, ulnares Sesambein",
         "Function": "CMC-Adduktion, Flexion und Reposition des Daumens",
         "Segments": "N. ulnaris, C8, Th1"
-      }
+      },
+      "Images": []
     },
     {
       "Name": "M. opponens pollicis",
@@ -1754,7 +1871,8 @@
         "Insertion": "Os metacarpale I",
         "Function": "CMC-Adduktion und Opposition des Daumens (rotiert das Os metacarpale I dem Kleinfinger entgegen)",
         "Segments": "N. medianus, C6, C7"
-      }
+      },
+      "Images": []
     }
   ]
 }

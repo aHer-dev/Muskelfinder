@@ -29,6 +29,31 @@ const MuscleData = (() => {
     const isGitHub = window.location.hostname.includes("github.io");
     const basePath = isGitHub ? "/Muskelfinder" : "";
 
+    function getImageSortOrder(imagePath) {
+        const match = imagePath.match(/_(\d+)(?=\.[^.]+$)/);
+        return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER;
+    }
+
+    function getImages(muscle) {
+        const rawImages = Array.isArray(muscle?.Images)
+            ? muscle.Images.filter(Boolean)
+            : (muscle?.Image ? [muscle.Image] : []);
+
+        return [...new Set(rawImages)].sort((a, b) => {
+            const orderDiff = getImageSortOrder(a) - getImageSortOrder(b);
+            return orderDiff || a.localeCompare(b);
+        });
+    }
+
+    function normalizeMuscle(muscle) {
+        const images = getImages(muscle);
+        return {
+            ...muscle,
+            Images: images,
+            Image: images[0] || ""
+        };
+    }
+
     async function loadConfig() {
         const response = await fetch(basePath + '/data/config.json');
         config = await response.json();
@@ -40,7 +65,7 @@ const MuscleData = (() => {
             const response = await fetch(basePath + '/data/' + dataFile);
             if (!response.ok) return [];
             const data = await response.json();
-            return data.Sheet1 || [];
+            return (data.Sheet1 || []).map(normalizeMuscle);
         } catch (e) {
             console.warn('Datei nicht gefunden, wird übersprungen:', dataFile);
             return [];
@@ -75,5 +100,18 @@ const MuscleData = (() => {
         return config;
     }
 
-    return { loadConfig, loadSelected, getAll, getByRegion, getBySubgroup, getConfig };
+    function getPrimaryImage(muscle) {
+        return getImages(muscle)[0] || "";
+    }
+
+    return {
+        loadConfig,
+        loadSelected,
+        getAll,
+        getByRegion,
+        getBySubgroup,
+        getConfig,
+        getImages,
+        getPrimaryImage
+    };
 })();

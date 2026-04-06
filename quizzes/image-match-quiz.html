@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
-<body>
+<body class="page-quiz-image">
   <header>
     <h1><img src="../assets/icons/muskelfinder-icon.png" class="header-logo" alt="">Bild-Quiz</h1>
     <nav>
@@ -48,6 +48,10 @@
       <div id="quiz-xp-bar"></div>
     </div>
     <div id="quiz-summary" hidden></div>
+    <div id="imageModal" class="modal" style="display: none;">
+      <span class="closeButton">×</span>
+      <img id="modalImage" class="modalContent" alt="Vergrößertes Muskelbild">
+    </div>
   </main>
   <script src="../assets/js/gamification.js"></script>
   <script src="../assets/js/nav.js"></script>
