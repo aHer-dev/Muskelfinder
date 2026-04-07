@@ -83,7 +83,7 @@ function initBackButton() {
         if (!hasSearchState) return;
 
         event.preventDefault();
-        window.history.back();
+        window.location.href = `${basePath}/index.html`;
     });
 }
 
