@@ -3256,10 +3256,26 @@ kbd {
     text-align: center;
 }
 
+.qs-summary-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.qs-summary-block + .qs-summary-block {
+    padding-top: 4px;
+    border-top: 1px solid var(--glass-border);
+}
+
 .qs-stats-row {
     display: flex;
     justify-content: center;
     gap: 16px;
+    flex-wrap: wrap;
+}
+
+.qs-stats-row-series .qs-stat {
+    max-width: none;
 }
 
 .qs-stat {
@@ -3344,6 +3360,29 @@ kbd {
     padding: 8px 0;
 }
 
+.qs-series-history-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.qs-series-history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.qs-history-chip {
+    background: rgba(59,130,246,0.12);
+    border: 1px solid rgba(59,130,246,0.2);
+    border-radius: 999px;
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 10px;
+}
+
 .qs-actions {
     display: flex;
     gap: 10px;
@@ -3356,6 +3395,24 @@ kbd {
     flex: 1;
     max-width: 180px;
     text-align: center;
+}
+
+.qs-subtle-action {
+    align-self: center;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color var(--transition);
+}
+
+.qs-subtle-action:hover {
+    color: var(--accent);
 }
 
 .quiz-empty-hint {
@@ -3396,7 +3453,8 @@ kbd {
 }
 
 .oi-mode-btn,
-.mv-mode-btn {
+.mv-mode-btn,
+.img-mode-btn {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: 20px;
@@ -3409,13 +3467,15 @@ kbd {
 }
 
 .oi-mode-btn:hover,
-.mv-mode-btn:hover {
+.mv-mode-btn:hover,
+.img-mode-btn:hover {
     border-color: var(--accent);
     color: var(--text-primary);
 }
 
 .oi-mode-btn.oi-mode-active,
-.mv-mode-btn.oi-mode-active {
+.mv-mode-btn.oi-mode-active,
+.img-mode-btn.oi-mode-active {
     background: var(--accent-light);
     border-color: var(--accent);
     color: var(--accent);
@@ -3425,7 +3485,7 @@ kbd {
 @media (max-width: 480px) {
     .qf-chip { font-size: 12px; padding: 8px 12px; min-height: 44px; }
     .quiz-filter-panel { padding: 12px; gap: 10px; }
-    .oi-mode-btn, .mv-mode-btn { font-size: 12px; padding: 5px 12px; }
+    .oi-mode-btn, .mv-mode-btn, .img-mode-btn { font-size: 12px; padding: 5px 12px; }
 }
 
 /* ── Gamification: XP-Bar ────────────────────────────────────── */

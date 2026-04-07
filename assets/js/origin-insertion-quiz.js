@@ -16,7 +16,7 @@ async function initQuiz() {
     await MuscleData.loadSelected(config.regions.map(r => r.id));
 
     QuizFilter.init(config, MuscleData.getAll());
-    QuizSession.init(basePath);
+    QuizSession.init(basePath, 'origin-insertion');
     document.addEventListener('quiz-restart', loadQuiz);
     initImageModal();
     loadQuiz();

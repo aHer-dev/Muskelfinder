@@ -18,7 +18,7 @@ async function initQuiz() {
     const config = MuscleData.getConfig();
     await MuscleData.loadSelected(config.regions.map(r => r.id));
     QuizFilter.init(config, MuscleData.getAll());
-    QuizSession.init(basePath);
+    QuizSession.init(basePath, 'movement');
     document.addEventListener('quiz-restart', loadQuiz);
     loadQuiz();
 }

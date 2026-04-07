@@ -224,5 +224,13 @@ const QuizFilter = (() => {
         _render();
     }
 
-    return { init, getPool, pickDistractors };
+    function getSeriesSignature() {
+        return JSON.stringify({
+            deckOnly: !!_state.deckOnly,
+            regions: [..._state.regions].sort(),
+            subgroups: [..._state.subgroups].sort()
+        });
+    }
+
+    return { init, getPool, pickDistractors, getSeriesSignature };
 })();

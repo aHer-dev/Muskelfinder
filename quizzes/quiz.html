@@ -34,6 +34,11 @@
                 <div class="quiz-card">
                     <h3>🖼 Bildzuordnung</h3>
                     <p>Erkenne den Muskel anhand eines anatomischen Bildes.</p>
+                    <div class="oi-mode-row">
+                        <button class="img-mode-btn" data-mode="bild-name">Bild → Name</button>
+                        <button class="img-mode-btn" data-mode="name-bild">Name → Bild</button>
+                        <button class="img-mode-btn" data-mode="gemischt">Gemischt</button>
+                    </div>
                     <a href="image-match-quiz.html" class="quiz-button">Starten</a>
                 </div>
 
@@ -101,6 +106,7 @@
             }
             bindModeButtons('.oi-mode-btn', 'muskelfinder_oi_mode', 'ursprung-ansatz');
             bindModeButtons('.mv-mode-btn', 'muskelfinder_mv_mode', 'funktion-muskel');
+            bindModeButtons('.img-mode-btn', 'muskelfinder_img_mode', 'bild-name');
 
             loading.style.display = 'none';
             content.hidden = false;

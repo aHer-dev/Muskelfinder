@@ -282,7 +282,7 @@
       "Origin": "Procc. spinosi Th1–Th4",
       "Insertion": "Margo medialis scapulae",
       "Function": "Elevation, Retraktion und Innenrotation der Skapula",
-      "Image": "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg",
+      "Image": "/assets/images/obere-ext/muscle_rhomboideus_major_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -307,7 +307,7 @@
         "Segments": "N. dorsalis scapulae, C4, C5"
       },
       "Images": [
-        "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg"
+        "/assets/images/obere-ext/muscle_rhomboideus_major_dorsal_1.jpg"
       ]
     },
     {
@@ -318,7 +318,7 @@
       "Origin": "Procc. spinosi C6–C7 und Lig. nuchae",
       "Insertion": "Margo medialis scapulae",
       "Function": "Elevation, Retraktion und Innenrotation der Skapula",
-      "Image": "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg",
+      "Image": "/assets/images/obere-ext/muscle_rhomboideus_minor_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -343,7 +343,7 @@
         "Segments": "N. dorsalis scapulae, C4, C5"
       },
       "Images": [
-        "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg"
+        "/assets/images/obere-ext/muscle_rhomboideus_minor_dorsal_1.jpg"
       ]
     },
     {

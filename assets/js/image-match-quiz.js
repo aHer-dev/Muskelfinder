@@ -1,8 +1,9 @@
 const isGitHub = window.location.hostname.includes("github.io");
 const basePath = isGitHub ? "/Muskelfinder" : "";
+const MODE_KEY = 'muskelfinder_img_mode';
 
 let currentMuscle;
-let quizMode = 'bild-name'; // 'bild-name' | 'name-bild'
+let quizMode = localStorage.getItem(MODE_KEY) || 'bild-name'; // 'bild-name' | 'name-bild' | 'gemischt'
 const modalElements = {
     modal: document.getElementById('imageModal'),
     modalImage: document.getElementById('modalImage'),
@@ -15,18 +16,9 @@ async function initQuiz() {
     await MuscleData.loadSelected(config.regions.map(r => r.id));
 
     QuizFilter.init(config, MuscleData.getAll());
-    QuizSession.init(basePath);
+    QuizSession.init(basePath, 'image-match');
     document.addEventListener('quiz-restart', loadQuiz);
     initImageModal();
-
-    // Modus-Tabs
-    document.getElementById('img-mode-tabs').addEventListener('click', e => {
-        const tab = e.target.closest('.img-mode-tab');
-        if (!tab || tab.dataset.mode === quizMode) return;
-        quizMode = tab.dataset.mode;
-        document.querySelectorAll('.img-mode-tab').forEach(t => t.classList.toggle('active', t === tab));
-        loadQuiz();
-    });
 
     loadQuiz();
 }
@@ -45,8 +37,11 @@ function loadQuiz() {
     }
 
     currentMuscle = withImage[Math.floor(Math.random() * withImage.length)];
+    const effectiveMode = quizMode === 'gemischt'
+        ? (Math.random() < 0.5 ? 'bild-name' : 'name-bild')
+        : quizMode;
 
-    if (quizMode === 'bild-name') {
+    if (effectiveMode === 'bild-name') {
         renderBildName(currentMuscle, withImage);
     } else {
         renderNameBild(currentMuscle, withImage);
