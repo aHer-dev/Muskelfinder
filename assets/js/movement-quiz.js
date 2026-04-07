@@ -7,8 +7,20 @@
  *   gemischt         Zufällig pro Frage
  */
 
-const isGitHub = window.location.hostname.includes("github.io");
-const basePath = isGitHub ? "/Muskelfinder" : "";
+function getBasePath() {
+    if (!window.location.hostname.includes('github.io')) return '';
+    const parts = window.location.pathname.split('/').filter(Boolean);
+    if (parts.length === 0) return '';
+
+    const first = parts[0];
+    if (first.endsWith('.html') || ['quizzes', 'assets', 'data'].includes(first)) {
+        return '';
+    }
+
+    return `/${first}`;
+}
+
+const basePath = getBasePath();
 
 const MODE_KEY = 'muskelfinder_mv_mode';
 let _mode = localStorage.getItem(MODE_KEY) || 'funktion-muskel';

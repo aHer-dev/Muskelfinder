@@ -48,6 +48,19 @@ const AppDialog = (() => {
     return { alert, confirm };
 })();
 (function () {
+    function getBasePath() {
+        if (!window.location.hostname.includes('github.io')) return '';
+        const parts = window.location.pathname.split('/').filter(Boolean);
+        if (parts.length === 0) return '';
+
+        const first = parts[0];
+        if (first.endsWith('.html') || ['quizzes', 'assets', 'data'].includes(first)) {
+            return '';
+        }
+
+        return `/${first}`;
+    }
+
     // Theme sofort anwenden (vor DOMContentLoaded = kein Flash)
     const _saved = localStorage.getItem('muskelfinder_theme') || 'dark';
     if (_saved === 'light') document.documentElement.classList.add('light-mode');
@@ -58,9 +71,9 @@ const AppDialog = (() => {
     document.documentElement.dataset.expertMode = _expertOn ? 'true' : 'false';
 
     // Pfade relativ zur aktuellen Seite
-    const _isGH  = window.location.hostname.includes('github.io');
     const _inSub = window.location.pathname.includes('/quizzes/');
-    const _root  = _isGH ? '/Muskelfinder/' : (_inSub ? '../' : './');
+    const _basePath = getBasePath();
+    const _root  = _basePath ? `${_basePath}/` : (_inSub ? '../' : './');
 
     document.addEventListener('DOMContentLoaded', function () {
         const header = document.querySelector('header');

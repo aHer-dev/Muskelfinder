@@ -7,8 +7,20 @@
  *  Summary → Auswertung + Leitner-Stand
  */
 
-const isGitHub = window.location.hostname.includes("github.io");
-const basePath = isGitHub ? "/Muskelfinder" : "";
+function getBasePath() {
+    if (!window.location.hostname.includes('github.io')) return '';
+    const parts = window.location.pathname.split('/').filter(Boolean);
+    if (parts.length === 0) return '';
+
+    const first = parts[0];
+    if (first.endsWith('.html') || ['quizzes', 'assets', 'data'].includes(first)) {
+        return '';
+    }
+
+    return `/${first}`;
+}
+
+const basePath = getBasePath();
 
 
 const FACH_COLORS = ['', '#ef4444', '#f97316', '#eab308', '#22c55e', '#3b82f6', '#8b5cf6', '#06b6d4'];

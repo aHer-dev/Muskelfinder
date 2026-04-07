@@ -26,8 +26,21 @@ const SUBGROUP_LABELS = {
 const MuscleData = (() => {
     let loadedMuscles = [];
     let config = null;
-    const isGitHub = window.location.hostname.includes("github.io");
-    const basePath = isGitHub ? "/Muskelfinder" : "";
+
+    function getBasePath() {
+        if (!window.location.hostname.includes('github.io')) return '';
+        const parts = window.location.pathname.split('/').filter(Boolean);
+        if (parts.length === 0) return '';
+
+        const first = parts[0];
+        if (first.endsWith('.html') || ['quizzes', 'assets', 'data'].includes(first)) {
+            return '';
+        }
+
+        return `/${first}`;
+    }
+
+    const basePath = getBasePath();
 
     function getImageSortOrder(imagePath) {
         const match = imagePath.match(/_(\d+)(?=\.[^.]+$)/);
