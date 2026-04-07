@@ -1,5 +1,4 @@
 function getBasePath() {
-    if (!window.location.hostname.includes('github.io')) return '';
     const parts = window.location.pathname.split('/').filter(Boolean);
     if (parts.length === 0) return '';
 
@@ -13,6 +12,8 @@ function getBasePath() {
 
 const basePath = getBasePath();
 const SEARCH_STATE_KEY = 'muskelfinder_search_state';
+const THREE_ANATOMY_PROD_URL = 'https://aher-dev.github.io/3DAnatomy/';
+let supported3DMuscleKeysPromise = null;
 
 const elements = {
     licenseInfo: document.getElementById("licenseInfo"),
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const name = params.get("name");
         const muscle = MuscleData.getAll().find(m => m.Name === name);
         if (muscle) {
-            renderMuscle(muscle);
+            await renderMuscle(muscle);
         } else {
             elements.muscleDetailsContainer.innerHTML = "<p>Muskel nicht gefunden.</p>";
         }
@@ -129,10 +130,110 @@ function rerenderMuscleDetails() {
     if (_currentMuscle) renderMuscle(_currentMuscle);
 }
 
-function renderMuscle(muscle) {
+function buildMuscleKey(name = '') {
+    const normalized = String(name)
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .replace(/^m\.\s*/, '')
+        .replace(/^musculus\s+/, '')
+        .replace(/[^a-z0-9]+/g, '_')
+        .replace(/^_+|_+$/g, '')
+        .replace(/_+/g, '_');
+
+    return normalized ? `m_${normalized}` : '';
+}
+
+function get3DAnatomyBaseUrl() {
+    if (window.location.hostname.includes('github.io')) {
+        return THREE_ANATOMY_PROD_URL;
+    }
+
+    try {
+        return new URL('../3DAnatomy/index.html', window.location.href).href;
+    } catch (error) {
+        return THREE_ANATOMY_PROD_URL;
+    }
+}
+
+function build3DAnatomyUrl(muscleName) {
+    const url = new URL(get3DAnatomyBaseUrl(), window.location.href);
+    const muscleKey = buildMuscleKey(muscleName);
+
+    if (muscleKey) {
+        url.searchParams.set('muscleKey', muscleKey);
+    }
+    if (muscleName) {
+        url.searchParams.set('muscle', muscleName);
+    }
+    url.searchParams.set('source', 'muskelfinder');
+    url.searchParams.set('returnTo', window.location.href);
+
+    return url.toString();
+}
+
+function get3DMappingUrl() {
+    return new URL('data/muskelfinder-map.json', get3DAnatomyBaseUrl()).toString();
+}
+
+async function getSupported3DMuscleKeys() {
+    if (!supported3DMuscleKeysPromise) {
+        supported3DMuscleKeysPromise = fetch(get3DMappingUrl())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Mapping konnte nicht geladen werden (${response.status})`);
+                }
+                return response.json();
+            })
+            .then(mapping => {
+                const entries = Array.isArray(mapping?.entries) ? mapping.entries : [];
+                return new Set(entries.map(entry => entry?.muscleKey).filter(Boolean));
+            })
+            .catch(error => {
+                console.warn('3D-Mapping nicht verfügbar:', error);
+                return new Set();
+            });
+    }
+
+    return supported3DMuscleKeysPromise;
+}
+
+async function isMuscleSupportedIn3D(muscleName) {
+    const muscleKey = buildMuscleKey(muscleName);
+    if (!muscleKey) return false;
+
+    const supportedKeys = await getSupported3DMuscleKeys();
+    return supportedKeys.has(muscleKey);
+}
+
+function renderDetailsActions(muscle, is3DSupported) {
+    const muscleName = muscle?.Name || '';
+    if (!muscleName || !is3DSupported) {
+        return '';
+    }
+
+    const url = build3DAnatomyUrl(muscleName);
+    return `
+        <div class="details-actions" aria-label="Aktionen zur Muskelansicht">
+        <a href="${url}"
+           class="quiz-button detail-3d-link"
+           aria-label="${muscleName} in 3D ansehen">
+            In 3D ansehen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+        </a>
+        </div>
+    `;
+}
+
+async function renderMuscle(muscle) {
     _currentMuscle = muscle;
     _currentImages = MuscleData.getImages(muscle);
     _currentImageIndex = 0;
+    const is3DSupported = await isMuscleSupportedIn3D(muscle.Name);
 
     if (elements.muscleTitleName) {
         elements.muscleTitleName.textContent = muscle.Name;
@@ -149,6 +250,7 @@ function renderMuscle(muscle) {
         <section class="details-section">
             <div class="image-container${_currentImages.length === 0 ? ' image-container-empty' : ''}">
                 ${renderImageBlock(muscle.Name)}
+                ${renderDetailsActions(muscle, is3DSupported)}
             </div>
             <div class="info-container">
                 ${infoBox('Ursprung', expert ? formatOrigin(origin) : formatText(origin))}

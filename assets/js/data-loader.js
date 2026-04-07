@@ -26,14 +26,19 @@ const SUBGROUP_LABELS = {
 const MuscleData = (() => {
     const CONFIG_CACHE_KEY = 'muskelfinder_config_cache_v1';
     const PACKAGE_CACHE_PREFIX = 'muskelfinder_data_cache_v1::';
+    const PROJECT_NAME = 'Muskelfinder';
     let loadedMuscles = [];
     let config = null;
     const imageLoadCache = new Map();
 
     function getBasePath() {
-        if (!window.location.hostname.includes('github.io')) return '';
         const parts = window.location.pathname.split('/').filter(Boolean);
         if (parts.length === 0) return '';
+
+        const projectIndex = parts.indexOf(PROJECT_NAME);
+        if (projectIndex >= 0) {
+            return `/${parts.slice(0, projectIndex + 1).join('/')}`;
+        }
 
         const first = parts[0];
         if (first.endsWith('.html') || ['quizzes', 'assets', 'data'].includes(first)) {
@@ -44,6 +49,45 @@ const MuscleData = (() => {
     }
 
     const basePath = getBasePath();
+
+    function getPageRelativePrefix() {
+        return window.location.pathname.includes('/quizzes/') ? '../' : './';
+    }
+
+    function getPathCandidates(relativePath) {
+        const trimmed = String(relativePath || '').replace(/^\/+/, '');
+        if (!trimmed) return [];
+
+        const candidates = [
+            basePath ? `${basePath}/${trimmed}` : '',
+            `${getPageRelativePrefix()}${trimmed}`,
+            `/${trimmed}`,
+            `/${PROJECT_NAME}/${trimmed}`
+        ];
+
+        return [...new Set(candidates.filter(Boolean))];
+    }
+
+    async function fetchJsonWithFallback(relativePath) {
+        const candidates = getPathCandidates(relativePath);
+        let lastError = null;
+
+        for (const url of candidates) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    lastError = new Error(`HTTP ${response.status} for ${url}`);
+                    continue;
+                }
+
+                return await response.json();
+            } catch (error) {
+                lastError = error;
+            }
+        }
+
+        throw lastError || new Error(`Konnte keine Daten laden: ${relativePath}`);
+    }
 
     function resolveAssetPath(assetPath) {
         return assetPath ? `${basePath}${assetPath}` : '';
@@ -162,8 +206,7 @@ const MuscleData = (() => {
             return config;
         }
 
-        const response = await fetch(basePath + '/data/config.json');
-        config = await response.json();
+        config = await fetchJsonWithFallback('data/config.json');
         writeCache(CONFIG_CACHE_KEY, config);
         return config;
     }
@@ -176,9 +219,7 @@ const MuscleData = (() => {
                 return (cachedData.Sheet1 || []).map(normalizeMuscle);
             }
 
-            const response = await fetch(basePath + '/data/' + dataFile);
-            if (!response.ok) return [];
-            const data = await response.json();
+            const data = await fetchJsonWithFallback(`data/${dataFile}`);
             writeCache(cacheKey, data);
             return (data.Sheet1 || []).map(normalizeMuscle);
         } catch (e) {
