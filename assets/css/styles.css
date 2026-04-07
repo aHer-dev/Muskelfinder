@@ -851,6 +851,24 @@ select option {
     text-align: center;
 }
 
+.details-actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.detail-3d-link {
+    width: 100%;
+    max-width: 280px;
+}
+
+.detail-3d-link svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
 /* ── Quiz Pages ─────────────────────────────────────────────── */
 .quiz-container {
     display: flex;

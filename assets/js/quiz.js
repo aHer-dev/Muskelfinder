@@ -1,6 +1,5 @@
 // Füge basePath am Anfang hinzu
 function getBasePath() {
-    if (!window.location.hostname.includes('github.io')) return '';
     const parts = window.location.pathname.split('/').filter(Boolean);
     if (parts.length === 0) return '';
 
