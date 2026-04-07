@@ -70,7 +70,7 @@ const AppDialog = (() => {
         const h1 = header.querySelector('h1');
         if (h1) {
             const a = document.createElement('a');
-            a.href = _root + 'index.html';
+            a.href = _root + 'index.html?resetSearch=1';
             a.className = 'header-title-link';
             a.setAttribute('aria-label', 'Zur Startseite');
             while (h1.firstChild) a.appendChild(h1.firstChild);

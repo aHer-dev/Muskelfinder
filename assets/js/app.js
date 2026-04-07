@@ -1,5 +1,6 @@
 const isGitHub = window.location.hostname.includes("github.io");
 const basePath = isGitHub ? "/Muskelfinder" : "";
+const SEARCH_STATE_KEY = 'muskelfinder_search_state';
 
 
 const el = {
@@ -17,22 +18,25 @@ const el = {
 document.addEventListener('DOMContentLoaded', async () => {
     el.loading.style.display = 'block';
 
+    handleResetRequest();
+
     const config = await MuscleData.loadConfig();
     const allRegionIds = config.regions.map(r => r.id);
     await MuscleData.loadSelected(allRegionIds);
 
     el.loading.style.display = 'none';
 
-    updateFiltersAndResults();
+    const restoredFilters = restoreFilters();
+    updateFiltersAndResults(restoredFilters);
     setupEventListeners();
 });
 
 function setupEventListeners() {
-    el.searchBar.addEventListener('input', updateFiltersAndResults);
-    el.regionFilter.addEventListener('change', updateFiltersAndResults);
-    el.jointFilter.addEventListener('change', updateFiltersAndResults);
-    el.movementFilter.addEventListener('change', updateFiltersAndResults);
-    el.nerveFilter.addEventListener('change', updateFiltersAndResults);
+    el.searchBar.addEventListener('input', () => updateFiltersAndResults());
+    el.regionFilter.addEventListener('change', () => updateFiltersAndResults());
+    el.jointFilter.addEventListener('change', () => updateFiltersAndResults());
+    el.movementFilter.addEventListener('change', () => updateFiltersAndResults());
+    el.nerveFilter.addEventListener('change', () => updateFiltersAndResults());
     el.resetButton.addEventListener('click', resetFilters);
 }
 
@@ -42,7 +46,55 @@ function resetFilters() {
     el.jointFilter.value = '';
     el.movementFilter.value = '';
     el.nerveFilter.value = '';
+    clearSavedFilters();
     updateFiltersAndResults();
+}
+
+function handleResetRequest() {
+    const url = new URL(window.location.href);
+    if (url.searchParams.get('resetSearch') !== '1') return;
+
+    clearSavedFilters();
+    url.searchParams.delete('resetSearch');
+    const query = url.searchParams.toString();
+    window.history.replaceState({}, '', url.pathname + (query ? `?${query}` : '') + url.hash);
+}
+
+function restoreFilters() {
+    try {
+        const raw = sessionStorage.getItem(SEARCH_STATE_KEY);
+        if (!raw) return null;
+
+        const saved = JSON.parse(raw);
+        el.searchBar.value = saved.search || '';
+        return {
+            searchInput: saved.search || '',
+            search: (saved.search || '').trim().toLowerCase(),
+            region: saved.region || '',
+            joint: saved.joint || '',
+            movement: saved.movement || '',
+            nerve: saved.nerve || ''
+        };
+    } catch (error) {
+        console.warn('Gespeicherte Suchfilter konnten nicht geladen werden:', error);
+        clearSavedFilters();
+        return null;
+    }
+}
+
+function saveFilters() {
+    const state = {
+        search: el.searchBar.value.trim(),
+        region: el.regionFilter.value,
+        joint: el.jointFilter.value,
+        movement: el.movementFilter.value,
+        nerve: el.nerveFilter.value
+    };
+    sessionStorage.setItem(SEARCH_STATE_KEY, JSON.stringify(state));
+}
+
+function clearSavedFilters() {
+    sessionStorage.removeItem(SEARCH_STATE_KEY);
 }
 
 function getActiveFilters() {
@@ -67,8 +119,8 @@ function applyFilters({ search, region, joint, movement, nerve }) {
 }
 
 // Returns muscles matching all filters except the one named in `exclude`
-function getMusclesWithout(exclude) {
-    const f = getActiveFilters();
+function getMusclesWithout(exclude, filters = getActiveFilters()) {
+    const f = filters;
     return applyFilters({
         search: f.search,
         region: exclude === 'region' ? '' : f.region,
@@ -82,36 +134,44 @@ function splitTrim(str) {
     return (str || '').split(',').map(s => s.trim()).filter(Boolean);
 }
 
-function updateFiltersAndResults() {
-    const f = getActiveFilters();
+function updateFiltersAndResults(restoredFilters = null) {
+    const hasOverride = restoredFilters
+        && typeof restoredFilters === 'object'
+        && !('target' in restoredFilters)
+        && ['search', 'region', 'joint', 'movement', 'nerve'].some(key => key in restoredFilters);
+    const f = hasOverride ? restoredFilters : getActiveFilters();
     const filtered = applyFilters(f);
 
     // Rebuild each dropdown: options come from muscles filtered by everything *except* that dropdown
     rebuildSelect(
         el.regionFilter, 'Alle Regionen',
-        [...new Set(getMusclesWithout('region').map(m => m.region))].sort(),
+        [...new Set(getMusclesWithout('region', f).map(m => m.region))].sort(),
         v => REGION_LABELS[v] || v,
         f.region
     );
     rebuildSelect(
         el.jointFilter, 'Alle Gelenke',
-        [...new Set(getMusclesWithout('joint').flatMap(m => splitTrim(m.Joints)))].sort(),
+        [...new Set(getMusclesWithout('joint', f).flatMap(m => splitTrim(m.Joints)))].sort(),
         v => v,
         f.joint
     );
     rebuildSelect(
         el.movementFilter, 'Alle Bewegungen',
-        [...new Set(getMusclesWithout('movement').flatMap(m => splitTrim(m.Movements)))].sort(),
+        [...new Set(getMusclesWithout('movement', f).flatMap(m => splitTrim(m.Movements)))].sort(),
         v => v,
         f.movement
     );
     rebuildSelect(
         el.nerveFilter, 'Alle Innervationen',
-        [...new Set(getMusclesWithout('nerve').flatMap(m => splitTrim(m.Segments)))].sort(),
+        [...new Set(getMusclesWithout('nerve', f).flatMap(m => splitTrim(m.Segments)))].sort(),
         v => v,
         f.nerve
     );
 
+    if (hasOverride) {
+        el.searchBar.value = restoredFilters.searchInput || '';
+    }
+    saveFilters();
     displayResults(filtered);
 }
 

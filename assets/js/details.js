@@ -1,5 +1,6 @@
 const isGitHub = window.location.hostname.includes("github.io");
 const basePath = isGitHub ? "/Muskelfinder" : "";
+const SEARCH_STATE_KEY = 'muskelfinder_search_state';
 
 const elements = {
     licenseInfo: document.getElementById("licenseInfo"),
@@ -16,6 +17,7 @@ const elements = {
 document.addEventListener('DOMContentLoaded', async () => {
     if (elements.modal) elements.modal.style.display = "none";
     initModal();
+    initBackButton();
 
     try {
         await MuscleData.loadConfig();
@@ -58,6 +60,18 @@ function initModal() {
         });
     }
     document.addEventListener('keydown', handleModalKeydown);
+}
+
+function initBackButton() {
+    if (!elements.backButton) return;
+
+    elements.backButton.addEventListener('click', event => {
+        const hasSearchState = sessionStorage.getItem(SEARCH_STATE_KEY);
+        if (!hasSearchState) return;
+
+        event.preventDefault();
+        window.history.back();
+    });
 }
 
 function closeModal() {
