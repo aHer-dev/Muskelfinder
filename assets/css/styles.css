@@ -537,6 +537,7 @@ select option {
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
+    position: relative;
 }
 
 .option-img-select:hover {
@@ -549,6 +550,29 @@ select option {
     max-height: 100%;
     object-fit: contain;
     border-radius: 4px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 180ms ease;
+}
+
+.option-img-select img.is-ready {
+    opacity: 1;
+}
+
+.option-img-select.is-loading::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(148, 163, 184, 0.08) 0%,
+            rgba(148, 163, 184, 0.2) 50%,
+            rgba(148, 163, 184, 0.08) 100%
+        );
+    background-size: 200% 100%;
+    animation: imageShimmer 1.2s ease-in-out infinite;
     pointer-events: none;
 }
 
@@ -600,6 +624,25 @@ select option {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: clamp(240px, 42vh, 420px);
+    position: relative;
+}
+
+.image-stage.is-loading::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-md);
+    background:
+        linear-gradient(
+            90deg,
+            rgba(148, 163, 184, 0.08) 0%,
+            rgba(148, 163, 184, 0.2) 50%,
+            rgba(148, 163, 184, 0.08) 100%
+        );
+    background-size: 200% 100%;
+    animation: imageShimmer 1.2s ease-in-out infinite;
+    pointer-events: none;
 }
 
 .zoomable-image {
@@ -610,7 +653,12 @@ select option {
     object-fit: contain;
     border-radius: var(--radius-md);
     cursor: zoom-in;
-    transition: transform var(--transition);
+    opacity: 0;
+    transition: transform var(--transition), opacity 180ms ease;
+}
+
+.zoomable-image.is-ready {
+    opacity: 1;
 }
 
 .zoomable-image:hover {
@@ -1175,11 +1223,37 @@ select option {
     max-width: 100%;
     height: auto;
     border-radius: var(--radius-md);
+    opacity: 0;
+    transition: opacity 180ms ease;
+}
+
+#mainImage.is-ready {
+    opacity: 1;
 }
 
 body.page-quiz-image .image-container,
 body.page-quiz-origin .image-container {
     padding: 14px 18px;
+    min-height: clamp(180px, 28vh, 280px);
+    position: relative;
+}
+
+body.page-quiz-image .image-container.is-loading::after,
+body.page-quiz-origin .image-container.is-loading::after {
+    content: "";
+    position: absolute;
+    inset: 14px 18px;
+    border-radius: var(--radius-md);
+    background:
+        linear-gradient(
+            90deg,
+            rgba(148, 163, 184, 0.08) 0%,
+            rgba(148, 163, 184, 0.2) 50%,
+            rgba(148, 163, 184, 0.08) 100%
+        );
+    background-size: 200% 100%;
+    animation: imageShimmer 1.2s ease-in-out infinite;
+    pointer-events: none;
 }
 
 body.page-quiz-image #mainImage,
@@ -1189,6 +1263,11 @@ body.page-quiz-origin #mainImage {
     max-height: min(32vh, 300px);
     object-fit: contain;
     cursor: zoom-in;
+}
+
+@keyframes imageShimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
 }
 
 @media (min-width: 1024px) {

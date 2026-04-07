@@ -90,8 +90,11 @@ function closeModal() {
     if (elements.modal) elements.modal.style.display = "none";
 }
 
-function openModal(imageSrc) {
-    if (elements.modalImage) elements.modalImage.src = imageSrc;
+function openModal(imageSrc, altText = 'Vergrößertes Muskelbild') {
+    if (elements.modalImage) {
+        elements.modalImage.src = imageSrc;
+        elements.modalImage.alt = altText;
+    }
     if (elements.modal) elements.modal.style.display = "block";
     updateModalControls();
 }
@@ -115,6 +118,7 @@ function handleModalKeydown(event) {
 let _currentMuscle = null;
 let _currentImages = [];
 let _currentImageIndex = 0;
+let _imageLoadToken = 0;
 
 function isExpertMode() {
     return document.documentElement.dataset.expertMode === 'true';
@@ -136,8 +140,6 @@ function renderMuscle(muscle) {
 
     const expert = isExpertMode();
     const easy = muscle.easy || {};
-    const imageSrc = _currentImages[0] ? basePath + _currentImages[0] : "";
-
     const origin     = expert ? muscle.Origin    : (easy.Origin    || muscle.Origin);
     const insertion  = expert ? muscle.Insertion : (easy.Insertion || muscle.Insertion);
     const func       = expert ? muscle.Function  : (easy.Function  || muscle.Function);
@@ -146,7 +148,7 @@ function renderMuscle(muscle) {
     elements.muscleDetailsContainer.innerHTML = `
         <section class="details-section">
             <div class="image-container${_currentImages.length === 0 ? ' image-container-empty' : ''}">
-                ${renderImageBlock(muscle.Name, imageSrc)}
+                ${renderImageBlock(muscle.Name)}
             </div>
             <div class="info-container">
                 ${infoBox('Ursprung', expert ? formatOrigin(origin) : formatText(origin))}
@@ -160,6 +162,8 @@ function renderMuscle(muscle) {
     `;
 
     bindImageGallery();
+    void renderActiveImage({ fetchPriority: 'high' });
+    void MuscleData.preloadImages(_currentImages.slice(1));
 
     if (elements.licenseInfo) {
         const attribution = muscle.Attribution;
@@ -193,7 +197,7 @@ function infoBox(title, content) {
     `;
 }
 
-function renderImageBlock(muscleName, imageSrc) {
+function renderImageBlock(muscleName) {
     if (_currentImages.length === 0) {
         return `
             <div class="image-placeholder">
@@ -234,9 +238,11 @@ function renderImageBlock(muscleName, imageSrc) {
         : '';
 
     return `
-        <div class="image-stage">
-            <img src="${imageSrc}" alt="${muscleName}"
-                 class="zoomable-image" loading="lazy">
+        <div class="image-stage is-loading">
+            <img alt="${muscleName}"
+                 class="zoomable-image"
+                 decoding="async"
+                 fetchpriority="high">
         </div>
         ${controls}
     `;
@@ -245,7 +251,9 @@ function renderImageBlock(muscleName, imageSrc) {
 function bindImageGallery() {
     const img = document.querySelector('.zoomable-image');
     if (img) {
-        img.addEventListener('click', () => openModal(img.src));
+        img.addEventListener('click', () => {
+            if (img.src) openModal(img.src, _currentMuscle?.Name || 'Vergrößertes Muskelbild');
+        });
     }
 
     document.querySelectorAll('[data-image-index]').forEach(button => {
@@ -302,17 +310,40 @@ function updateModalControls() {
 function setActiveImage(index) {
     if (!_currentImages[index]) return;
     _currentImageIndex = index;
-
-    const img = document.querySelector('.zoomable-image');
-    if (img) {
-        img.src = basePath + _currentImages[_currentImageIndex];
-    }
-
-    if (elements.modalImage && isModalOpen()) {
-        elements.modalImage.src = basePath + _currentImages[_currentImageIndex];
-    }
-
     updateGalleryControls();
+    void renderActiveImage();
+}
+
+async function renderActiveImage(options = {}) {
+    const imagePath = _currentImages[_currentImageIndex];
+    const img = document.querySelector('.zoomable-image');
+    const stage = img?.closest('.image-stage');
+    if (!imagePath || !img) return;
+
+    const token = ++_imageLoadToken;
+    img.dataset.imagePath = imagePath;
+    img.classList.remove('is-ready');
+    stage?.classList.add('is-loading');
+
+    try {
+        const resolvedPath = await MuscleData.preloadImage(imagePath, options);
+        if (token !== _imageLoadToken || img.dataset.imagePath !== imagePath) return;
+
+        img.src = resolvedPath;
+        img.alt = _currentMuscle?.Name || 'Muskelbild';
+        img.classList.add('is-ready');
+
+        if (elements.modalImage && isModalOpen()) {
+            elements.modalImage.src = resolvedPath;
+            elements.modalImage.alt = _currentMuscle?.Name || 'Vergrößertes Muskelbild';
+        }
+    } catch (error) {
+        console.warn('Bild konnte nicht geladen werden:', imagePath, error);
+    } finally {
+        if (token === _imageLoadToken) {
+            stage?.classList.remove('is-loading');
+        }
+    }
 }
 
 function formatOrigin(origin) {

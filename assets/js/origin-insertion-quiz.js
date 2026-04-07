@@ -16,6 +16,7 @@ const basePath = getBasePath();
 const MODE_KEY = 'muskelfinder_oi_mode';
 let _mode = localStorage.getItem(MODE_KEY) || 'ursprung-ansatz';
 let currentMuscle;
+let _previewImageLoadToken = 0;
 const modalElements = {
     modal: document.getElementById('imageModal'),
     modalImage: document.getElementById('modalImage'),
@@ -65,16 +66,15 @@ function renderQuiz(muscle) {
 
     if (previewImage) {
         if (imageContainer) imageContainer.hidden = false;
-        img.src = basePath + previewImage;
-        img.onerror = () => {
-            img.src = '';
-            if (imageContainer) imageContainer.hidden = true;
-        };
+        img.src = '';
+        img.classList.remove('is-ready');
         img.onclick = () => openImageModal(previewImage, muscle.Name);
+        void loadPreviewImage(previewImage, { fetchPriority: 'high' });
     } else {
         img.src = '';
         img.onerror = null;
         img.onclick = null;
+        img.classList.remove('is-ready');
         if (imageContainer) imageContainer.hidden = true;
     }
 
@@ -200,11 +200,16 @@ function initImageModal() {
     });
 }
 
-function openImageModal(imagePath, altText) {
+async function openImageModal(imagePath, altText) {
     if (!imagePath || !modalElements.modal || !modalElements.modalImage) return;
-    modalElements.modalImage.src = basePath + imagePath;
-    modalElements.modalImage.alt = altText || 'Vergrößertes Muskelbild';
-    modalElements.modal.style.display = 'block';
+    try {
+        const resolvedPath = await MuscleData.preloadImage(imagePath, { fetchPriority: 'high' });
+        modalElements.modalImage.src = resolvedPath;
+        modalElements.modalImage.alt = altText || 'Vergrößertes Muskelbild';
+        modalElements.modal.style.display = 'block';
+    } catch (error) {
+        console.warn('Bild konnte nicht geladen werden:', imagePath, error);
+    }
 }
 
 function closeImageModal() {
@@ -213,6 +218,33 @@ function closeImageModal() {
 
 function isImageModalOpen() {
     return modalElements.modal?.style.display === 'block';
+}
+
+async function loadPreviewImage(imagePath, options = {}) {
+    const img = document.getElementById('mainImage');
+    const imageContainer = img?.closest('.image-container');
+    if (!img || !imageContainer || !imagePath) return;
+
+    const token = ++_previewImageLoadToken;
+    img.dataset.imagePath = imagePath;
+    img.classList.remove('is-ready');
+    imageContainer.classList.add('is-loading');
+
+    try {
+        const resolvedPath = await MuscleData.preloadImage(imagePath, options);
+        if (token !== _previewImageLoadToken || img.dataset.imagePath !== imagePath) return;
+        img.src = resolvedPath;
+        img.classList.add('is-ready');
+    } catch (error) {
+        if (token !== _previewImageLoadToken) return;
+        img.src = '';
+        imageContainer.hidden = true;
+        console.warn('Vorschaubild konnte nicht geladen werden:', imagePath, error);
+    } finally {
+        if (token === _previewImageLoadToken) {
+            imageContainer.classList.remove('is-loading');
+        }
+    }
 }
 
 document.addEventListener('DOMContentLoaded', initQuiz);

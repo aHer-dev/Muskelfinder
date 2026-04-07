@@ -16,6 +16,7 @@ const MODE_KEY = 'muskelfinder_img_mode';
 
 let currentMuscle;
 let quizMode = localStorage.getItem(MODE_KEY) || 'bild-name'; // 'bild-name' | 'name-bild' | 'gemischt'
+let _mainImageLoadToken = 0;
 const modalElements = {
     modal: document.getElementById('imageModal'),
     modalImage: document.getElementById('modalImage'),
@@ -67,9 +68,10 @@ function renderBildName(muscle, pool) {
     document.getElementById('target-name-wrap').hidden = true;
 
     const img = document.getElementById('mainImage');
-    img.src = basePath + MuscleData.getPrimaryImage(muscle);
-    img.onerror = () => { loadQuiz(); };
+    img.src = '';
+    img.classList.remove('is-ready');
     img.onclick = () => openImageModal(MuscleData.getPrimaryImage(muscle), muscle.Name);
+    void loadMainQuizImage(MuscleData.getPrimaryImage(muscle), { fetchPriority: 'high' });
 
     const distractors = QuizFilter.pickDistractors(muscle, pool).map(m => m.Name);
 
@@ -100,6 +102,7 @@ function renderNameBild(muscle, pool) {
     const distractors = QuizFilter.pickDistractors(muscle, pool);
 
     const options = [muscle, ...distractors].sort(() => Math.random() - 0.5);
+    void MuscleData.preloadImages(options.map(opt => MuscleData.getPrimaryImage(opt)));
 
     const container = document.getElementById('options');
     container.className = 'options-image-grid';
@@ -117,11 +120,12 @@ function renderNameBild(muscle, pool) {
 
         const img = document.createElement('img');
         const imagePath = MuscleData.getPrimaryImage(opt);
-        img.src = basePath + imagePath;
         img.alt = opt.Name;
+        img.dataset.imagePath = imagePath;
 
         btn.appendChild(img);
         btn.addEventListener('click', () => validateAnswer(card, opt.Name, muscle.Name, 'img'));
+        void loadOptionImage(img, imagePath, btn);
 
         const zoomButton = document.createElement('button');
         zoomButton.type = 'button';
@@ -208,11 +212,16 @@ function initImageModal() {
     });
 }
 
-function openImageModal(imagePath, altText) {
+async function openImageModal(imagePath, altText) {
     if (!imagePath || !modalElements.modal || !modalElements.modalImage) return;
-    modalElements.modalImage.src = basePath + imagePath;
-    modalElements.modalImage.alt = altText || 'Vergrößertes Muskelbild';
-    modalElements.modal.style.display = 'block';
+    try {
+        const resolvedPath = await MuscleData.preloadImage(imagePath, { fetchPriority: 'high' });
+        modalElements.modalImage.src = resolvedPath;
+        modalElements.modalImage.alt = altText || 'Vergrößertes Muskelbild';
+        modalElements.modal.style.display = 'block';
+    } catch (error) {
+        console.warn('Bild konnte nicht geladen werden:', imagePath, error);
+    }
 }
 
 function closeImageModal() {
@@ -221,6 +230,53 @@ function closeImageModal() {
 
 function isImageModalOpen() {
     return modalElements.modal?.style.display === 'block';
+}
+
+async function loadMainQuizImage(imagePath, options = {}) {
+    const img = document.getElementById('mainImage');
+    const wrap = document.getElementById('main-image-wrap');
+    if (!img || !wrap || !imagePath) return;
+
+    const token = ++_mainImageLoadToken;
+    img.dataset.imagePath = imagePath;
+    img.classList.remove('is-ready');
+    wrap.classList.add('is-loading');
+
+    try {
+        const resolvedPath = await MuscleData.preloadImage(imagePath, options);
+        if (token !== _mainImageLoadToken || img.dataset.imagePath !== imagePath) return;
+        img.src = resolvedPath;
+        img.classList.add('is-ready');
+    } catch (error) {
+        if (token !== _mainImageLoadToken) return;
+        wrap.hidden = true;
+        console.warn('Quizbild konnte nicht geladen werden:', imagePath, error);
+        loadQuiz();
+    } finally {
+        if (token === _mainImageLoadToken) {
+            wrap.classList.remove('is-loading');
+        }
+    }
+}
+
+async function loadOptionImage(img, imagePath, button) {
+    if (!img || !imagePath) return;
+
+    img.classList.remove('is-ready');
+    button?.classList.add('is-loading');
+
+    try {
+        const resolvedPath = await MuscleData.preloadImage(imagePath);
+        if (img.dataset.imagePath !== imagePath) return;
+        img.src = resolvedPath;
+        img.classList.add('is-ready');
+    } catch (error) {
+        console.warn('Antwortbild konnte nicht geladen werden:', imagePath, error);
+    } finally {
+        if (img.dataset.imagePath === imagePath) {
+            button?.classList.remove('is-loading');
+        }
+    }
 }
 
 document.addEventListener('DOMContentLoaded', initQuiz);
