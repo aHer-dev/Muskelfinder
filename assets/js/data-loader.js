@@ -35,14 +35,24 @@ const MuscleData = (() => {
     }
 
     function getImages(muscle) {
-        const rawImages = Array.isArray(muscle?.Images)
+        const primaryImage = muscle?.Image || "";
+        const additionalImages = Array.isArray(muscle?.Images)
             ? muscle.Images.filter(Boolean)
-            : (muscle?.Image ? [muscle.Image] : []);
+            : [];
+        const dedupedImages = [...new Set([primaryImage, ...additionalImages].filter(Boolean))];
 
-        return [...new Set(rawImages)].sort((a, b) => {
-            const orderDiff = getImageSortOrder(a) - getImageSortOrder(b);
-            return orderDiff || a.localeCompare(b);
-        });
+        if (dedupedImages.length <= 1) {
+            return dedupedImages;
+        }
+
+        const [firstImage, ...remainingImages] = dedupedImages;
+        return [
+            firstImage,
+            ...remainingImages.sort((a, b) => {
+                const orderDiff = getImageSortOrder(a) - getImageSortOrder(b);
+                return orderDiff || a.localeCompare(b);
+            })
+        ];
     }
 
     function normalizeMuscle(muscle) {
@@ -50,7 +60,7 @@ const MuscleData = (() => {
         return {
             ...muscle,
             Images: images,
-            Image: images[0] || ""
+            Image: muscle?.Image || ""
         };
     }
 
@@ -101,7 +111,7 @@ const MuscleData = (() => {
     }
 
     function getPrimaryImage(muscle) {
-        return getImages(muscle)[0] || "";
+        return muscle?.Image || "";
     }
 
     return {

@@ -48,9 +48,23 @@ function renderQuiz(muscle) {
         : _mode;
 
     const img = document.getElementById('mainImage');
-    img.src = basePath + MuscleData.getPrimaryImage(muscle);
-    img.onerror = () => { img.src = ''; };
-    img.onclick = () => openImageModal(MuscleData.getPrimaryImage(muscle), muscle.Name);
+    const imageContainer = img.closest('.image-container');
+    const previewImage = MuscleData.getImages(muscle)[0] || '';
+
+    if (previewImage) {
+        if (imageContainer) imageContainer.hidden = false;
+        img.src = basePath + previewImage;
+        img.onerror = () => {
+            img.src = '';
+            if (imageContainer) imageContainer.hidden = true;
+        };
+        img.onclick = () => openImageModal(previewImage, muscle.Name);
+    } else {
+        img.src = '';
+        img.onerror = null;
+        img.onclick = null;
+        if (imageContainer) imageContainer.hidden = true;
+    }
 
     if (effectiveMode === 'ursprung-ansatz') {
         document.getElementById('quizHead').textContent    = 'Welcher Ansatz passt zum Ursprung?';

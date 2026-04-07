@@ -1,2 +1,4 @@
 .DS_Store
 *.Zone.Identifier
+.codex
+*:Zone.Identifier

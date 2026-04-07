@@ -129,10 +129,11 @@ def parse_full_row_with_easy(row):
         "functionalChain": "",
         "Attribution": {
             "Author": attr_author,
+            "AuthorUrl": "",
             "License": attr_license,
-            "Source": attr_source,
+            "LicenseUrl": attr_source,
+            "SourceUrl": image_source,
         },
-        "ImageSource": image_source,
         "easy": easy,
     }
     return entry
@@ -181,10 +182,11 @@ def parse_full_row_no_easy(row):
         "functionalChain": "",
         "Attribution": {
             "Author": attr_author,
+            "AuthorUrl": "",
             "License": attr_license,
-            "Source": attr_source,
+            "LicenseUrl": attr_source,
+            "SourceUrl": image_source,
         },
-        "ImageSource": image_source,
     }
 
 

@@ -21,10 +21,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Wirbelkörper Th12/L1",
         "Insertion": "Eminentia iliopubica",
@@ -40,7 +41,7 @@
       "Origin": "Wirbelkörper (BWK 12 / LWK 1–4) und Disci intervertebrales; Procc. costales LWK 1–5 (tiefer Anteil)",
       "Insertion": "Trochanter minor des Femur",
       "Function": "Beugt die Hüfte und adduziert den Oberschenkel; bei fixiertem Femur verstärkt er die Lendenlordose; wirkt zudem als Außenrotator im Hüftgelenk",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_psoas_ventral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -53,16 +54,22 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Wirbelkörper (BWK 12 / LWK 1–4) und Disci intervertebrales; Procc. costales LWK 1–5 (tiefer Anteil)",
         "Insertion": "Trochanter minor des Femur",
         "Function": "Hüftgelenk (Art. coxae): Flexion, Adduktion, Außenrotation\nLWS (bei fixiertem Femur): Verstärkung der Lendenlordose",
         "Segments": "Plexus lumbalis, L1, L2, L3"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_psoas_ventral_1.jpg",
+        "/assets/images/untere-ext/muscle_psoas_lateral_2.jpg",
+        "/assets/images/untere-ext/muscle_iliopsoas_all_lateral.jpg"
+      ]
     },
     {
       "Name": "M. iliacus",
@@ -72,7 +79,7 @@
       "Origin": "Fossa iliaca des Ileums und Spina iliaca anterior inferior",
       "Insertion": "Trochanter minor des Femur",
       "Function": "Flektiert das Hüftgelenk und rotiert den Oberschenkel nach außen; bei feststehendem Bein kippt er das Ilium nach ventral",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_iliacus_ventral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -85,16 +92,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Fossa iliaca des Ileums und Spina iliaca anterior inferior",
         "Insertion": "Trochanter minor des Femur",
         "Function": "Hüftgelenk (Art. coxae): Flexion, Außenrotation\nBecken (bei fixiertem Femur): Ventrale Beckenkippung",
         "Segments": "Plexus lumbalis, L2, L3"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_iliacus_ventral_1.jpg",
+        "/assets/images/untere-ext/muscle_iliopsoas_all_lateral.jpg"
+      ]
     },
     {
       "Name": "M. gluteus maximus",
@@ -116,7 +128,7 @@
         "Tuberositas glutealis femoris"
       ],
       "Function": "Hauptextensor des Hüftgelenks; dreht den Oberschenkel nach außen; die lateralen Anteile wirken zusätzlich als Abduktoren und spannen den Tractus iliotibialis",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_gluteus_maximus_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -130,16 +142,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Tiefer Teil: Ala ossis ilii (Facies glutealis), Lig. sacrotuberale\nOberflächlicher Teil: Fascia thoracolumbalis, Crista iliaca, SIPS, dorsale Fläche des Sacrums, Os coccygis",
         "Insertion": "Tractus iliotibialis\nTuberositas glutealis femoris",
         "Function": "Hüftgelenk (Art. coxae): Extension, Außenrotation\nIliotibiales Band: Abduktion (laterale Anteile)",
         "Segments": "N. gluteus inferior, L5, S1, S2"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_gluteus_maximus_dorsal_1.jpg",
+        "/assets/images/untere-ext/muscle_gluteus_maximus_lateral_2.jpg"
+      ]
     },
     {
       "Name": "M. gluteus medius",
@@ -149,7 +166,7 @@
       "Origin": "Ala ossis ilii, Facies glutealis",
       "Insertion": "Trochanter major (lateral)",
       "Function": "Führt das Bein seitwärts (Abduktion); vordere Fasern rotieren nach innen und beugen, hintere Fasern rotieren nach außen und strecken; essentiell für die Beckenstabilisierung im Einbeinstand",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_gluteus_medius_lateral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -162,16 +179,22 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Ala ossis ilii, Facies glutealis",
         "Insertion": "Trochanter major (lateral)",
         "Function": "Hüftgelenk (Art. coxae): Abduktion\nVordere Fasern: Flexion, Innenrotation\nHintere Fasern: Extension, Außenrotation",
         "Segments": "N. gluteus superior, L4, L5, S1"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_gluteus_medius_lateral_1.jpg",
+        "/assets/images/untere-ext/muscle_gluteus_medius_dorsal_2.jpg",
+        "/assets/images/untere-ext/muscle_gluteus_medius_ventral_3.jpg"
+      ]
     },
     {
       "Name": "M. gluteus minimus",
@@ -181,7 +204,7 @@
       "Origin": "Ala ossis ilii, Facies glutealis",
       "Insertion": "Spitze des Trochanter major",
       "Function": "Abduziert die Hüfte und unterstützt die Innenrotation (ventrale Fasern) bzw. Außenrotation (dorsale Fasern); Funktion nahezu identisch mit Gluteus medius",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_gluteus_minimus_lateral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -194,16 +217,22 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Ala ossis ilii, Facies glutealis",
         "Insertion": "Spitze des Trochanter major",
         "Function": "Hüftgelenk (Art. coxae): Abduktion\nVentrale Fasern: Innenrotation\nDorsale Fasern: Außenrotation",
         "Segments": "N. gluteus superior, L4, L5, S1"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_gluteus_minimus_lateral_1.jpg",
+        "/assets/images/untere-ext/muscle_gluteus_minimus_dorsal_2.jpg",
+        "/assets/images/untere-ext/muscle_gluteus_minimus_ventral_3.jpg"
+      ]
     },
     {
       "Name": "M. pectineus",
@@ -213,7 +242,7 @@
       "Origin": "Pecten ossis pubis",
       "Insertion": "Linea pectinea des Femur",
       "Function": "Adduziert den Oberschenkel und beugt ihn leicht im Hüftgelenk; eine geringe Außenrotation ist ebenfalls möglich",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_pectineus_ventral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -226,16 +255,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Pecten ossis pubis",
         "Insertion": "Linea pectinea des Femur",
         "Function": "Hüftgelenk (Art. coxae): Adduktion, Flexion, Außenrotation",
         "Segments": "N. femoralis, N. obturatorius, L2, L3"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_pectineus_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. adductor longus",
@@ -245,7 +278,7 @@
       "Origin": "Os pubis, Ramus superior und inferior",
       "Insertion": "Linea aspera des Femur (Mitte)",
       "Function": "Führt den Oberschenkel zur Körpermitte (Adduktion); unterstützt zugleich die Hüftbeugung und eine leichte Außenrotation",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_adductor_longus_ventral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -257,16 +290,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Os pubis, Ramus superior und inferior",
         "Insertion": "Linea aspera des Femur (Mitte)",
         "Function": "Hüftgelenk (Art. coxae): Adduktion, Flexion, Außenrotation",
         "Segments": "N. obturatorius, L2, L3, L4"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_adductor_longus_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. adductor brevis",
@@ -276,7 +313,7 @@
       "Origin": "Os pubis, Ramus inferior",
       "Insertion": "Linea pectinea (distal) und Linea aspera (proximal)",
       "Function": "Führt den Oberschenkel zur Körpermitte (Adduktion); unterstützt zugleich die Hüftbeugung und eine leichte Außenrotation",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_adductor_brevis_ventral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -288,16 +325,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Os pubis, Ramus inferior",
         "Insertion": "Linea pectinea (distal) und Linea aspera (proximal)",
         "Function": "Hüftgelenk (Art. coxae): Adduktion, Flexion, Außenrotation",
         "Segments": "N. obturatorius, L2, L3, L4"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_adductor_brevis_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. adductor magnus",
@@ -324,7 +365,7 @@
         "Tuberculum adductorium"
       ],
       "Function": "Kräftiger Adduktor des Hüftgelenks; streckt die Hüfte (insbesondere der ischiokrurale Anteil); der pubische Anteil rotiert nach außen, der ischiokrurale Anteil nach innen",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_adductor_magnus_ventral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -337,16 +378,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Pars superior: Os pubis, Ramus inferior und Ramus ossis ischii\nPars media: Ramus ossis ischii\nPars inferior: Tuber ischiadicum",
         "Insertion": "Linea aspera (proximal)\nLinea aspera (distal)\nTuberculum adductorium",
         "Function": "Hüftgelenk (Art. coxae): Adduktion\nPubischer Anteil: Flexion, Außenrotation\nIschiokruraler Anteil: Extension, Innenrotation",
         "Segments": "N. obturatorius, N. tibialis, L2, L3, L4, L5, S1"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_adductor_magnus_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. piriformis",
@@ -356,7 +401,7 @@
       "Origin": "Os sacrum, Facies pelvica",
       "Insertion": "Trochanter major des Femur",
       "Function": "Außenrotiert den Oberschenkel im Hüftgelenk; wirkt bei 90° Hüftbeugung zusätzlich als Abduktor",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_piriformis_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -369,16 +414,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Os sacrum, Facies pelvica",
         "Insertion": "Trochanter major des Femur",
         "Function": "Hüftgelenk (Art. coxae): Außenrotation\nBei 90° Flexion: zusätzlich Abduktion",
         "Segments": "Plexus sacralis, S1, S2"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_piriformis_dorsal_1.jpg",
+        "/assets/images/untere-ext/muscle_piriformis_lateral_2.jpg"
+      ]
     },
     {
       "Name": "M. obturatorius internus",
@@ -388,7 +438,7 @@
       "Origin": "Os coxae und Membrana obturatoria (Innenseite)",
       "Insertion": "Fossa trochanterica des Femur",
       "Function": "Dreht den Oberschenkel im Hüftgelenk nach außen",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_obturatorius_internus_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -401,16 +451,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Os coxae und Membrana obturatoria (Innenseite)",
         "Insertion": "Fossa trochanterica des Femur",
         "Function": "Hüftgelenk (Art. coxae): Außenrotation",
         "Segments": "Plexus sacralis, L5, S1"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_obturatorius_internus_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. obturatorius externus",
@@ -420,7 +474,7 @@
       "Origin": "Os coxae und Membrana obturatoria (Außenseite)",
       "Insertion": "Fossa trochanterica des Femur",
       "Function": "Dreht den Oberschenkel im Hüftgelenk nach außen",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_obturatorius_externus_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -432,16 +486,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Os coxae und Membrana obturatoria (Außenseite)",
         "Insertion": "Fossa trochanterica des Femur",
         "Function": "Hüftgelenk (Art. coxae): Außenrotation",
         "Segments": "N. obturatorius, L3, L4"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_obturatorius_externus_dorsal_1.jpg",
+        "/assets/images/untere-ext/muscle_obturatorius_externus_caudal_2.jpg"
+      ]
     },
     {
       "Name": "M. gemellus superior",
@@ -451,7 +510,7 @@
       "Origin": "Spina ischiadica",
       "Insertion": "Fossa trochanterica des Femur",
       "Function": "Unterstützt die Außenrotation im Hüftgelenk",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_gemellus_superior_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -464,16 +523,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Spina ischiadica",
         "Insertion": "Fossa trochanterica des Femur",
         "Function": "Hüftgelenk (Art. coxae): Außenrotation",
         "Segments": "Plexus sacralis, L5, S1"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_gemellus_superior_dorsal_1.jpg",
+        "/assets/images/untere-ext/muscle_gemellus_all_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. gemellus inferior",
@@ -483,7 +547,7 @@
       "Origin": "Tuber ischiadicum",
       "Insertion": "Fossa trochanterica des Femur",
       "Function": "Unterstützt die Außenrotation im Hüftgelenk",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_gemellus_inferior_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -496,16 +560,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Tuber ischiadicum",
         "Insertion": "Fossa trochanterica des Femur",
         "Function": "Hüftgelenk (Art. coxae): Außenrotation",
         "Segments": "Plexus sacralis, L5, S1"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_gemellus_inferior_dorsal_1.jpg",
+        "/assets/images/untere-ext/muscle_gemellus_all_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. quadratus femoris",
@@ -515,7 +584,7 @@
       "Origin": "Tuber ischiadicum (lateral)",
       "Insertion": "Crista intertrochanterica des Femur",
       "Function": "Dreht den Oberschenkel nach außen und zieht ihn leicht zur Körpermitte (Adduktion); liegt zwischen Tuber ischiadicum und Crista intertrochanterica",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_quadratus_femoris_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -528,16 +597,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Tuber ischiadicum (lateral)",
         "Insertion": "Crista intertrochanterica des Femur",
         "Function": "Hüftgelenk (Art. coxae): Außenrotation, Adduktion",
         "Segments": "Plexus sacralis, L4, L5, S1"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_quadratus_femoris_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. tensor fasciae latae",
@@ -547,7 +620,7 @@
       "Origin": "Spina iliaca anterior superior",
       "Insertion": "Tractus iliotibialis, Tuberculum von Gerdy an der Tibia",
       "Function": "Abduziert und beugt die Hüfte, dreht den Oberschenkel nach innen; spannt den Tractus iliotibialis und entlastet damit Femurschaft und -hals",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_tensor_fasciae_latae_lateral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -561,16 +634,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Spina iliaca anterior superior",
         "Insertion": "Tractus iliotibialis, Tuberculum von Gerdy an der Tibia",
         "Function": "Hüftgelenk (Art. coxae): Abduktion, Flexion, Innenrotation\nKniegelenk (Art. genus): Flexion, Spannung des Tractus iliotibialis",
         "Segments": "N. gluteus superior, L4, L5, S1"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_tensor_fasciae_latae_lateral_1.jpg",
+        "/assets/images/untere-ext/muscle_tensor_fasciae_latae_ventral_2.jpg"
+      ]
     },
     {
       "Name": "M. sartorius",
@@ -580,7 +658,7 @@
       "Origin": "Spina iliaca anterior superior",
       "Insertion": "Tibia, Facies medialis (Pes anserinus)",
       "Function": "Beugt und dreht die Hüfte nach außen; abduziert; im Kniegelenk bewirkt er Beugung und Innenrotation des Unterschenkels – typische Schneidersitzposition",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_sartorius_ventral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -594,16 +672,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Spina iliaca anterior superior",
         "Insertion": "Tibia, Facies medialis (Pes anserinus)",
         "Function": "Hüftgelenk (Art. coxae): Flexion, Außenrotation, Abduktion\nKniegelenk (Art. genus): Flexion, Innenrotation des Unterschenkels",
         "Segments": "N. femoralis, L2, L3"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_sartorius_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. gracilis",
@@ -613,7 +695,7 @@
       "Origin": "Os pubis, Ramus inferior",
       "Insertion": "Tibia, Facies medialis (Pes anserinus)",
       "Function": "Adduziert das Bein im Hüftgelenk; im Kniegelenk wirkt er als Beuger und Innenrotator des Unterschenkels",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_gracilis_ventral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "huefte",
       "tags": [
@@ -627,16 +709,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Os pubis, Ramus inferior",
         "Insertion": "Tibia, Facies medialis (Pes anserinus)",
         "Function": "Hüftgelenk (Art. coxae): Adduktion\nKniegelenk (Art. genus): Flexion, Innenrotation des Unterschenkels",
         "Segments": "N. obturatorius, L2, L3"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_gracilis_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. rectus femoris",
@@ -661,16 +747,22 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Spina iliaca anterior inferior und Azetabulum (oberer Rand)",
         "Insertion": "Tuberositas tibiae (via Patellarsehne)",
         "Function": "Hüftgelenk (Art. coxae): Flexion\nKniegelenk (Art. genus): Extension\n(Einziger zweigelenkiger Quadricepsanteil)",
         "Segments": "N. femoralis, L2, L3, L4"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_quadriceps_ventral_1.jpg",
+        "/assets/images/untere-ext/muscle_quadriceps_ventral_all.jpg",
+        "/assets/images/untere-ext/muscle_quadriceps_dorsal_all.jpg"
+      ]
     },
     {
       "Name": "M. biceps femoris – Caput longum",
@@ -683,7 +775,7 @@
         "Condylus lateralis tibiae"
       ],
       "Function": "Streckt die Hüfte (Extension in der Art. coxae) und beugt das Knie (Flexion in der Art. genus); bei gebeugtem Knie Außenrotation des Unterschenkels",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_biceps_femoris_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "knie",
       "tags": [
@@ -698,16 +790,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Tuber ischiadicum",
         "Insertion": "Caput fibulae\nCondylus lateralis tibiae",
         "Function": "Hüftgelenk (Art. coxae): Extension\nKniegelenk (Art. genus): Flexion\nBei gebeugtem Knie: Außenrotation des Unterschenkels",
         "Segments": "N. tibialis, L5, S1, S2"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_biceps_femoris_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. semitendinosus",
@@ -717,7 +813,7 @@
       "Origin": "Tuber ischiadicum",
       "Insertion": "Tibia, Facies medialis (Pes anserinus)",
       "Function": "Streckt die Hüfte (Extension in der Art. coxae) und beugt das Knie (Flexion in der Art. genus); bei gebeugtem Knie Innenrotation des Unterschenkels",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_semitendinosus_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "knie",
       "tags": [
@@ -732,16 +828,22 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Tuber ischiadicum",
         "Insertion": "Tibia, Facies medialis (Pes anserinus)",
         "Function": "Hüftgelenk (Art. coxae): Extension\nKniegelenk (Art. genus): Flexion\nBei gebeugtem Knie: Innenrotation des Unterschenkels",
         "Segments": "N. tibialis, L5, S1, S2"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_semitendinosus_dorsal_1.jpg",
+        "/assets/images/untere-ext/muscle_semitendinosus_ventral_2.jpg",
+        "/assets/images/untere-ext/muscle_semitendinosus_ventral_3.jpg"
+      ]
     },
     {
       "Name": "M. semimembranosus",
@@ -754,7 +856,7 @@
         "Lig. popliteum obliquum"
       ],
       "Function": "Streckt die Hüfte (Extension in der Art. coxae) und beugt das Knie (Flexion in der Art. genus); bei gebeugtem Knie Innenrotation des Unterschenkels; zieht den Meniscus lateralis nach dorsal",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_semimembranosus_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "knie",
       "tags": [
@@ -769,16 +871,22 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Tuber ischiadicum",
         "Insertion": "Condylus medialis tibiae\nLig. popliteum obliquum",
         "Function": "Hüftgelenk (Art. coxae): Extension\nKniegelenk (Art. genus): Flexion\nBei gebeugtem Knie: Innenrotation des Unterschenkels",
         "Segments": "N. tibialis, L5, S1, S2"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_semimembranosus_dorsal_1.jpg",
+        "/assets/images/untere-ext/muscle_semimembranosus_ventral_2.jpg",
+        "/assets/images/untere-ext/muscle_semimembranosus_ventral_3.jpg"
+      ]
     },
     {
       "Name": "M. vastus medialis",
@@ -801,16 +909,22 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Labium mediale der Linea aspera (dorsomedial)",
         "Insertion": "Tuberositas tibiae (via Patellarsehne), Retinaculum patellae",
         "Function": "Kniegelenk (Art. genus): Extension\nPatellamediale Stabilisierung (VMO-Anteil)",
         "Segments": "N. femoralis, L2, L3, L4"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_quadriceps_ventral_1.jpg",
+        "/assets/images/untere-ext/muscle_quadriceps_ventral_all.jpg",
+        "/assets/images/untere-ext/muscle_quadriceps_dorsal_all.jpg"
+      ]
     },
     {
       "Name": "M. vastus intermedius",
@@ -833,16 +947,22 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Corpus femoris (ventral)",
         "Insertion": "Tuberositas tibiae (via Patellarsehne), Retinaculum patellae",
         "Function": "Kniegelenk (Art. genus): Extension",
         "Segments": "N. femoralis, L2, L3, L4"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_quadriceps_ventral_1.jpg",
+        "/assets/images/untere-ext/muscle_quadriceps_ventral_all.jpg",
+        "/assets/images/untere-ext/muscle_quadriceps_dorsal_all.jpg"
+      ]
     },
     {
       "Name": "M. vastus lateralis",
@@ -865,16 +985,22 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Trochanter major und Labium laterale der Linea aspera (dorsolateral)",
         "Insertion": "Tuberositas tibiae (via Patellarsehne), Retinaculum patellae",
         "Function": "Kniegelenk (Art. genus): Extension",
         "Segments": "N. femoralis, L2, L3, L4"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_quadriceps_ventral_1.jpg",
+        "/assets/images/untere-ext/muscle_quadriceps_ventral_all.jpg",
+        "/assets/images/untere-ext/muscle_quadriceps_dorsal_all.jpg"
+      ]
     },
     {
       "Name": "M. biceps femoris – Caput breve",
@@ -884,7 +1010,7 @@
       "Origin": "Linea aspera des Femur (mittlerer Teil)",
       "Insertion": "Caput fibulae",
       "Function": "Beugt das Knie (Flexion in der Art. genus); dreht den Unterschenkel bei gebeugtem Knie nach außen (Außenrotation)",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_biceps_femoris_dorsal_2.jpg",
       "region": "untere-extremitaet",
       "subgroup": "knie",
       "tags": [
@@ -897,16 +1023,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Linea aspera des Femur (mittlerer Teil)",
         "Insertion": "Caput fibulae",
         "Function": "Kniegelenk (Art. genus): Flexion\nBei gebeugtem Knie: Außenrotation des Unterschenkels",
         "Segments": "N. peroneus communis, L5, S1, S2"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_biceps_femoris_dorsal_2.jpg"
+      ]
     },
     {
       "Name": "M. articularis genus",
@@ -928,10 +1058,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Corpus femoris (ventral)",
         "Insertion": "Kniegelenkkapsel (Recessus suprapatellaris)",
@@ -947,7 +1078,7 @@
       "Origin": "Epicondylus lateralis femoris, Hinterseite der Gelenkkapsel, Meniscus lateralis",
       "Insertion": "Tibia, Facies posterior",
       "Function": "Beugt das Knie (Flexion in der Art. genus) und entriegelt die Vollextension durch Innenrotation des Unterschenkels; zieht den lateralen Meniskus nach dorsal",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_popliteus_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "knie",
       "tags": [
@@ -960,16 +1091,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Epicondylus lateralis femoris, Hinterseite der Gelenkkapsel, Meniscus lateralis",
         "Insertion": "Tibia, Facies posterior",
         "Function": "Kniegelenk (Art. genus): Flexion, Innenrotation des Unterschenkels (Entriegelung aus Vollextension)",
         "Segments": "N. tibialis, L4, L5, S1"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_popliteus_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. gastrocnemius",
@@ -988,7 +1123,7 @@
       ],
       "Insertion": "Tuber calcanei (über Achillessehne)",
       "Function": "Beugt das Knie und plantarflektiert den Fuß; unterstützt die Supination; sorgt als zweigelenkiger Muskel für die Kraftentfaltung beim Zehenstand und Abstoßen",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_gastrocnemius_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1003,16 +1138,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Caput mediale: Femur, Facies poplitea, Condylus medialis\nCaput laterale: Femur, Facies poplitea, Condylus lateralis",
         "Insertion": "Tuber calcanei (über Achillessehne)",
         "Function": "Beugt das Knie und plantarflektiert den Fuß; unterstützt die Supination; sorgt als zweigelenkiger Muskel für die Kraftentfaltung beim Zehenstand und Abstoßen",
         "Segments": "N. tibialis"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_gastrocnemius_dorsal_1.jpg",
+        "/assets/images/untere-ext/muscle_gastrocnemius_lateral_2.jpg"
+      ]
     },
     {
       "Name": "M. soleus",
@@ -1022,7 +1162,7 @@
       "Origin": "Dorsale Tibia, Fibula und Arcus tendineus",
       "Insertion": "Tuber calcanei (über Achillessehne)",
       "Function": "Plantarflektiert den Fuß unabhängig von der Kniestellung; supiniert; als stärkster Plantarflexor ist er beim Gehen, Laufen und Treppensteigen essentiell",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_soleus_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1035,16 +1175,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Dorsale Tibia, Fibula und Arcus tendineus",
         "Insertion": "Tuber calcanei (über Achillessehne)",
         "Function": "Plantarflektiert den Fuß unabhängig von der Kniestellung; supiniert; als stärkster Plantarflexor ist er beim Gehen, Laufen und Treppensteigen essentiell",
         "Segments": "N. tibialis"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_soleus_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. plantaris",
@@ -1054,7 +1198,7 @@
       "Origin": "Femur, Facies poplitea",
       "Insertion": "Tuber calcanei",
       "Function": "Schwächer Plantarflexor und Kniebeuger; bei fehlendem Muskel übernehmen Gastrocnemius und Soleus vollständig seine Funktion",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_plantaris_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1068,16 +1212,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Femur, Facies poplitea",
         "Insertion": "Tuber calcanei",
         "Function": "Schwächer Plantarflexor und Kniebeuger; bei fehlendem Muskel übernehmen Gastrocnemius und Soleus vollständig seine Funktion",
         "Segments": "N. tibialis"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_plantaris_dorsal_1.jpg"
+      ]
     },
     {
       "Name": "M. tibialis anterior",
@@ -1087,7 +1235,7 @@
       "Origin": "Tibia, Condylus und Facies lateralis (proximal); Membrana interossea",
       "Insertion": "Os cuneiforme I und Os metatarsale I (Basis)",
       "Function": "Hebt den Fuß (Dorsalextension) und supiniert; stützt das mediale Längsgewölbe; bei der Gangabwicklung verhindert er das Fußaufklappen",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_tibialis_anterior_ventral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1101,16 +1249,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Tibia, Condylus und Facies lateralis (proximal); Membrana interossea",
         "Insertion": "Os cuneiforme I und Os metatarsale I (Basis)",
         "Function": "Hebt den Fuß (Dorsalextension) und supiniert; stützt das mediale Längsgewölbe; bei der Gangabwicklung verhindert er das Fußaufklappen",
         "Segments": "N. peroneus profundus"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_tibialis_anterior_ventral_1.jpg",
+        "/assets/images/untere-ext/muscle_tibialis_anterior_lateral_2.jpg"
+      ]
     },
     {
       "Name": "M. tibialis posterior",
@@ -1123,7 +1276,7 @@
         "Os cuboideum und Os metatarsale II–IV (Basis)"
       ],
       "Function": "Plantarflektiert und supiniert den Fuß; wichtigster statischer und dynamischer Stabilisator des medialen Längsgewölbes",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_tibialis_posterior_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1137,16 +1290,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Facies posterior tibiae et fibulae und Membrana interossea",
         "Insertion": "Os naviculare (Tuberositas), Ossa cuneiformia (plantare Seite)\nOs cuboideum und Os metatarsale II–IV (Basis)",
         "Function": "Plantarflektiert und supiniert den Fuß; wichtigster statischer und dynamischer Stabilisator des medialen Längsgewölbes",
         "Segments": "N. tibialis"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_tibialis_posterior_dorsal_1.jpg",
+        "/assets/images/untere-ext/muscle_tibialis_posterior_lateral_2.jpg"
+      ]
     },
     {
       "Name": "M. fibularis longus (M. peroneus longus)",
@@ -1156,7 +1314,7 @@
       "Origin": "Condylus lateralis tibiae, Caput fibulae und Facies lateralis fibulae (proximal)",
       "Insertion": "Os cuneiforme I und Os metatarsale I (Tuberositas, plantar)",
       "Function": "Plantarflektiert und proniert den Fuß; verspannt das Quergewölbe durch seinen diagonalen Verlauf auf der Fußsohle",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_fibularis_longus_lateral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1171,16 +1329,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Condylus lateralis tibiae, Caput fibulae und Facies lateralis fibulae (proximal)",
         "Insertion": "Os cuneiforme I und Os metatarsale I (Tuberositas, plantar)",
         "Function": "Plantarflektiert und proniert den Fuß; verspannt das Quergewölbe durch seinen diagonalen Verlauf auf der Fußsohle",
         "Segments": "N. peroneus superficialis"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_fibularis_longus_lateral_1.jpg",
+        "/assets/images/untere-ext/muscle_fibularis_longus_caudal_2.jpg"
+      ]
     },
     {
       "Name": "M. fibularis brevis (M. peroneus brevis)",
@@ -1190,7 +1353,7 @@
       "Origin": "Facies lateralis fibulae (distal)",
       "Insertion": "Os metatarsale V (Tuberositas)",
       "Function": "Plantarflektiert und proniert den Fuß; wichtig für die seitliche Fußstabilisierung",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_fibularis_brevis_lateral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1205,16 +1368,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Facies lateralis fibulae (distal)",
         "Insertion": "Os metatarsale V (Tuberositas)",
         "Function": "Plantarflektiert und proniert den Fuß; wichtig für die seitliche Fußstabilisierung",
         "Segments": "N. peroneus superficialis"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_fibularis_brevis_lateral_1.jpg",
+        "/assets/images/untere-ext/muscle_fibularis_brevis_plantar_2.jpg"
+      ]
     },
     {
       "Name": "M. extensor digitorum longus",
@@ -1227,7 +1395,7 @@
         "Os metatarsale V (dorsal)"
       ],
       "Function": "Dorsalextendiert den Fuß und proniert; streckt die Zehen II–V in den MTP- und IP-Gelenken; unterstützt das Anheben der Zehenspitzen beim Gehen",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_extensor_digitorum_longus_ventral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1242,16 +1410,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Condylus lateralis tibiae, Facies medialis fibulae und Membrana interossea",
         "Insertion": "Dorsalaponeurose der Zehen II–V\nOs metatarsale V (dorsal)",
         "Function": "Dorsalextendiert den Fuß und proniert; streckt die Zehen II–V in den MTP- und IP-Gelenken; unterstützt das Anheben der Zehenspitzen beim Gehen",
         "Segments": "N. peroneus profundus"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_extensor_digitorum_longus_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. flexor digitorum longus",
@@ -1261,7 +1433,7 @@
       "Origin": "Facies posterior tibiae (Mitte)",
       "Insertion": "Zehen II–V, distale Phalanx (Basis)",
       "Function": "Plantarflektiert den Fuß und supiniert; beugt die Zehen II–V in MTP-, PIP- und DIP-Gelenken; beim Gehen unterstützt er das Abstoßen und das Greifen der Zehenspitzen",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_flexor_digitorum_longus_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1276,16 +1448,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Facies posterior tibiae (Mitte)",
         "Insertion": "Zehen II–V, distale Phalanx (Basis)",
         "Function": "Plantarflektiert den Fuß und supiniert; beugt die Zehen II–V in MTP-, PIP- und DIP-Gelenken; beim Gehen unterstützt er das Abstoßen und das Greifen der Zehenspitzen",
         "Segments": "N. tibialis"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_flexor_digitorum_longus_dorsal_1.jpg",
+        "/assets/images/untere-ext/muscle_flexor_digitorum_longus_caudal_2.jpg"
+      ]
     },
     {
       "Name": "M. extensor hallucis longus",
@@ -1295,7 +1472,7 @@
       "Origin": "Facies medialis fibulae (Mitte) und Membrana interossea",
       "Insertion": "Zeh I, dorsale distale Phalanx (Basis)",
       "Function": "Dorsalextendiert den Fuß; streckt die Großzehe in MTP- und IP-Gelenk; hebt das mediale Gewölbe bei der Fußhebung",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_extensor_hallucis_longus_ventral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1309,16 +1486,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Facies medialis fibulae (Mitte) und Membrana interossea",
         "Insertion": "Zeh I, dorsale distale Phalanx (Basis)",
         "Function": "Dorsalextendiert den Fuß; streckt die Großzehe in MTP- und IP-Gelenk; hebt das mediale Gewölbe bei der Fußhebung",
         "Segments": "N. peroneus profundus"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_extensor_hallucis_longus_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. flexor hallucis longus",
@@ -1328,7 +1509,7 @@
       "Origin": "Facies posterior fibulae (distal)",
       "Insertion": "Zeh I, plantare distale Phalanx (Basis)",
       "Function": "Plantarflektiert den Fuß und supiniert; beugt die Großzehe in MTP- und IP-Gelenk; wichtig beim Abstoßen in der Gangabwicklung",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_flexor_hallucis_longus_dorsal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1343,16 +1524,21 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Facies posterior fibulae (distal)",
         "Insertion": "Zeh I, plantare distale Phalanx (Basis)",
         "Function": "Plantarflektiert den Fuß und supiniert; beugt die Großzehe in MTP- und IP-Gelenk; wichtig beim Abstoßen in der Gangabwicklung",
         "Segments": "N. tibialis"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_flexor_hallucis_longus_dorsal_1.jpg",
+        "/assets/images/untere-ext/muscle_flexor_hallucis_longus_caudal_2.jpg"
+      ]
     },
     {
       "Name": "M. extensor digitorum brevis",
@@ -1376,10 +1562,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Kalkaneus (dorsolateral) und Retinaculum extensorum inferius",
         "Insertion": "Zeh II–IV, Dorsalaponeurosen",
@@ -1395,7 +1582,7 @@
       "Origin": "Kalkaneus (Proc. medialis am Tuber) und Aponeurosis plantaris",
       "Insertion": "Zehen II–V, plantare mittlere Phalangen",
       "Function": "Beugt die Zehen II–V in MTP- und proximalen IP-Gelenken; unterstützt das Greifen und Abrollen des Fußes beim Gehen",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_flexor_digitorum_brevis_caudal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1409,16 +1596,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Kalkaneus (Proc. medialis am Tuber) und Aponeurosis plantaris",
         "Insertion": "Zehen II–V, plantare mittlere Phalangen",
         "Function": "Beugt die Zehen II–V in MTP- und proximalen IP-Gelenken; unterstützt das Greifen und Abrollen des Fußes beim Gehen",
         "Segments": "N. tibialis (N. plantaris medialis)"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_flexor_digitorum_brevis_caudal_1.jpg"
+      ]
     },
     {
       "Name": "M. quadratus plantae",
@@ -1428,7 +1619,7 @@
       "Origin": "Tuber calcanei (plantare Seite)",
       "Insertion": "M. flexor digitorum longus (Endsehne)",
       "Function": "Richtet den Zugvektor des M. flexor digitorum longus auf die Zehenlängsachse aus; unterstützt die Beugung der Zehen II–V",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_quadratus_plantae_caudal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1442,16 +1633,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Tuber calcanei (plantare Seite)",
         "Insertion": "M. flexor digitorum longus (Endsehne)",
         "Function": "Richtet den Zugvektor des M. flexor digitorum longus auf die Zehenlängsachse aus; unterstützt die Beugung der Zehen II–V",
         "Segments": "N. tibialis (N. plantaris lateralis)"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_quadratus_plantae_caudal_1.jpg"
+      ]
     },
     {
       "Name": "Mm. interossei plantares",
@@ -1461,7 +1656,7 @@
       "Origin": "Ossa metatarsi III–V",
       "Insertion": "Zehen III–V, Basis der proximalen Phalangen",
       "Function": "Adduzieren die Zehen III–V zur zweiten Zehenachse hin; beugen die MTP-Gelenke",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_interossei_plantares_caudal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1476,16 +1671,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Ossa metatarsi III–V",
         "Insertion": "Zehen III–V, Basis der proximalen Phalangen",
         "Function": "Adduzieren die Zehen III–V zur zweiten Zehenachse hin; beugen die MTP-Gelenke",
         "Segments": "N. tibialis (N. plantaris lateralis)"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_interossei_plantares_caudal_1.jpg"
+      ]
     },
     {
       "Name": "Mm. interossei dorsales",
@@ -1495,7 +1694,7 @@
       "Origin": "Ossa metatarsi I–V (die einander zugewandten Seiten)",
       "Insertion": "Zehen II–IV, Basis der proximalen Phalangen (lateral und medial)",
       "Function": "Abduzieren die Zehen II–IV vom zweiten Strahl weg; beugen die MTP-Gelenke; Zehe II kann durch den ersten dorsalen Interosseus auch medialwärts abduziert werden",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_interossei_dorsales_cranial_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1510,16 +1709,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Ossa metatarsi I–V (die einander zugewandten Seiten)",
         "Insertion": "Zehen II–IV, Basis der proximalen Phalangen (lateral und medial)",
         "Function": "Abduzieren die Zehen II–IV vom zweiten Strahl weg; beugen die MTP-Gelenke; Zehe II kann durch den ersten dorsalen Interosseus auch medialwärts abduziert werden",
         "Segments": "N. tibialis (N. plantaris lateralis)"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_interossei_dorsales_cranial_1.jpg"
+      ]
     },
     {
       "Name": "Mm. lumbricales",
@@ -1529,7 +1732,7 @@
       "Origin": "Sehnen des M. flexor digitorum longus",
       "Insertion": "Zehen II–V, Basen der proximalen Phalangen (medial)",
       "Function": "Beugen die MTP-Gelenke II–V; die Mm. lumbricales III–V adduzieren ihre Zehen zur zweiten Achse hin; Zehe II kann abgespreizt werden",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_lumbricales_caudal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1543,16 +1746,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Sehnen des M. flexor digitorum longus",
         "Insertion": "Zehen II–V, Basen der proximalen Phalangen (medial)",
         "Function": "Beugen die MTP-Gelenke II–V; die Mm. lumbricales III–V adduzieren ihre Zehen zur zweiten Achse hin; Zehe II kann abgespreizt werden",
         "Segments": "N. tibialis (N. plantaris medialis und lateralis)"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_lumbricales_caudal_1.jpg"
+      ]
     },
     {
       "Name": "M. extensor hallucis brevis",
@@ -1562,7 +1769,7 @@
       "Origin": "Dorsalfläche des Kalkaneus (zusammen mit M. extensor digitorum brevis)",
       "Insertion": "Zeh I, proximale Phalanx",
       "Function": "Streckt die Großzehe im MTP-Gelenk; unterstützt den M. extensor hallucis longus bei der Großzehenstreckung",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_extensor_hallucis_brevis_ventral_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1576,16 +1783,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Dorsalfläche des Kalkaneus (zusammen mit M. extensor digitorum brevis)",
         "Insertion": "Zeh I, proximale Phalanx",
         "Function": "Streckt die Großzehe im MTP-Gelenk; unterstützt den M. extensor hallucis longus bei der Großzehenstreckung",
         "Segments": "N. peroneus profundus"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_extensor_hallucis_brevis_ventral_1.jpg"
+      ]
     },
     {
       "Name": "M. flexor hallucis brevis",
@@ -1598,7 +1809,7 @@
         "Mediales und laterales Sesambein"
       ],
       "Function": "Beugt die Großzehe im MTP-Gelenk; unterstützt Abduktion und Adduktion; hält die Sesambeine in ihrer Gleitrinne unter dem ersten Metatarsalkopf",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_flexor_hallucis_brevis_caudal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1612,16 +1823,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Ossa cuneiformia II et III und Os cuboideum",
         "Insertion": "Mediale und laterale Basis der proximalen Phalanx des I. Zehs\nMediales und laterales Sesambein",
         "Function": "Beugt die Großzehe im MTP-Gelenk; unterstützt Abduktion und Adduktion; hält die Sesambeine in ihrer Gleitrinne unter dem ersten Metatarsalkopf",
         "Segments": "N. tibialis (N. plantaris medialis und lateralis)"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_flexor_hallucis_brevis_caudal_1.jpg"
+      ]
     },
     {
       "Name": "M. abductor hallucis",
@@ -1631,7 +1846,7 @@
       "Origin": "Proc. medialis des Tuber calcanei, Retinaculum flexorum und Aponeurosis plantaris",
       "Insertion": "Basis der proximalen Phalanx des I. Zehs und mediales Sesambein",
       "Function": "Abduziert die Großzehe vom zweiten Strahl weg; beugt sie im MTP-Gelenk; unterstützt das mediale Längsgewölbe",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_abductor_hallucis_caudal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1645,16 +1860,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Proc. medialis des Tuber calcanei, Retinaculum flexorum und Aponeurosis plantaris",
         "Insertion": "Basis der proximalen Phalanx des I. Zehs und mediales Sesambein",
         "Function": "Abduziert die Großzehe vom zweiten Strahl weg; beugt sie im MTP-Gelenk; unterstützt das mediale Längsgewölbe",
         "Segments": "N. tibialis (N. plantaris medialis)"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_abductor_hallucis_caudal_1.jpg"
+      ]
     },
     {
       "Name": "M. adductor hallucis",
@@ -1673,7 +1892,7 @@
       ],
       "Insertion": "Basis der proximalen Phalanx des I. Zehs und laterales Sesambein",
       "Function": "Adduziert die Großzehe zum zweiten Strahl; beugt das MTP-Gelenk; verspannt das Quergewölbe (Caput transversum)",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_adductor_hallucis_caudal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1687,16 +1906,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Caput obliquum: Os metatarsale II–V (Basis); Os cuboideum, Os cuneiforme III und Lig. plantare longum\nCaput transversum: Kapsel der Art. MTP II–V und Lig. metatarseum transversum profundum",
         "Insertion": "Basis der proximalen Phalanx des I. Zehs und laterales Sesambein",
         "Function": "Adduziert die Großzehe zum zweiten Strahl; beugt das MTP-Gelenk; verspannt das Quergewölbe (Caput transversum)",
         "Segments": "N. tibialis (N. plantaris lateralis)"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_adductor_hallucis_caudal_1.jpg"
+      ]
     },
     {
       "Name": "M. flexor digiti minimi brevis",
@@ -1706,7 +1929,7 @@
       "Origin": "Os metatarsale V (Basis) und Lig. plantare longum",
       "Insertion": "Zeh V, Basis der proximalen Phalanx (plantar)",
       "Function": "Beugt die Kleinzehe im MTP-Gelenk V; unterstützt die Stabilisierung des lateralen Fußrandes",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_flexor_digiti_minimi_brevis_caudal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1720,16 +1943,62 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Os metatarsale V (Basis) und Lig. plantare longum",
         "Insertion": "Zeh V, Basis der proximalen Phalanx (plantar)",
         "Function": "Beugt die Kleinzehe im MTP-Gelenk V; unterstützt die Stabilisierung des lateralen Fußrandes",
         "Segments": "N. tibialis (N. plantaris lateralis)"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_flexor_digiti_minimi_brevis_caudal_1.jpg"
+      ]
+    },
+    {
+      "Name": "M. opponens digiti minimi",
+      "Joints": "MTP Zeh V",
+      "Movements": "Zeh V: Flexion und Abduktion des MTP-Gelenks",
+      "Segments": "N. tibialis (N. plantaris lateralis), S2, S3",
+      "Origin": [
+        "Lig. plantare longum",
+        "Basis des Os metatarsale V",
+        "Sehnenscheide des M. fibularis longus"
+      ],
+      "Insertion": "Lateraler Rand des Os metatarsale V",
+      "Function": "Unterstützt Flexion und Abduktion der Kleinzehe und stabilisiert das laterale Längsgewölbe des Fußes",
+      "Image": "/assets/images/untere-ext/muscle_opponens_digiti_minimi_caudal_1.jpg",
+      "region": "untere-extremitaet",
+      "subgroup": "fuss",
+      "tags": [
+        "fuss",
+        "kleinzehenabduktion",
+        "kleinzehenflexion",
+        "kurze-fussmuskulatur",
+        "fusssohle"
+      ],
+      "difficulty": 3,
+      "clinicalNote": "Wird oft nur als tiefer Anteil des M. flexor digiti minimi brevis beschrieben und daher in Lehrwerken nicht immer separat aufgeführt; funktionell trägt er zur Stabilisierung des lateralen Fußrandes bei",
+      "functionalChain": "",
+      "Attribution": {
+        "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
+        "License": "CC BY 4.0",
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
+      },
+      "easy": {
+        "Origin": "Lig. plantare longum, Basis des Os metatarsale V und Sehnenscheide des M. fibularis longus",
+        "Insertion": "Lateraler Rand des Os metatarsale V",
+        "Function": "Unterstützt Flexion und Abduktion der Kleinzehe und stabilisiert das laterale Längsgewölbe des Fußes",
+        "Segments": "N. tibialis (N. plantaris lateralis), S2, S3"
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_opponens_digiti_minimi_caudal_1.jpg"
+      ]
     },
     {
       "Name": "M. abductor digiti minimi",
@@ -1739,7 +2008,7 @@
       "Origin": "Tuber calcanei (Proc. lateralis) und Lig. plantare longum",
       "Insertion": "Zeh V, Tuberositas ossis metatarsalis V und proximale Phalanx (laterale Seite)",
       "Function": "Abduziert und beugt die Kleinzehe im MTP-Gelenk; stabilisiert den lateralen Fußrand",
-      "Image": "",
+      "Image": "/assets/images/untere-ext/muscle_abductor_digiti_minimi_caudal_1.jpg",
       "region": "untere-extremitaet",
       "subgroup": "fuss",
       "tags": [
@@ -1753,16 +2022,20 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Tuber calcanei (Proc. lateralis) und Lig. plantare longum",
         "Insertion": "Zeh V, Tuberositas ossis metatarsalis V und proximale Phalanx (laterale Seite)",
         "Function": "Abduziert und beugt die Kleinzehe im MTP-Gelenk; stabilisiert den lateralen Fußrand",
         "Segments": "N. tibialis (N. plantaris lateralis)"
-      }
+      },
+      "Images": [
+        "/assets/images/untere-ext/muscle_abductor_digiti_minimi_caudal_1.jpg"
+      ]
     }
   ]
 }

@@ -136,11 +136,24 @@ function renderMuscle(muscle) {
     bindImageGallery();
 
     if (elements.licenseInfo) {
-        elements.licenseInfo.innerHTML = muscle.Attribution
-            ? `Bild von <a href="${muscle.ImageSource}" target="_blank" class="license-link">
-               ${muscle.Attribution.Author}</a>, lizenziert unter
-               <a href="${muscle.Attribution.Source}" target="_blank" class="license-link">
-               ${muscle.Attribution.License}</a>`
+        const attribution = muscle.Attribution;
+        const authorLabel = attribution?.Author || 'Unbekannt';
+        const licenseLabel = attribution?.License || 'Lizenz unbekannt';
+        const authorHref = attribution?.AuthorUrl || '';
+        const licenseHref = attribution?.LicenseUrl || '';
+        const sourceHref = attribution?.SourceUrl || '';
+        const authorMarkup = authorHref
+            ? `<a href="${authorHref}" target="_blank" class="license-link">${authorLabel}</a>`
+            : authorLabel;
+        const licenseMarkup = licenseHref
+            ? `<a href="${licenseHref}" target="_blank" class="license-link">${licenseLabel}</a>`
+            : licenseLabel;
+        const sourceMarkup = sourceHref
+            ? ` · <a href="${sourceHref}" target="_blank" class="license-link">Quelle</a>`
+            : '';
+
+        elements.licenseInfo.innerHTML = attribution
+            ? `Bild von ${authorMarkup}, lizenziert unter ${licenseMarkup}${sourceMarkup}`
             : "Keine Lizenzinformationen verfügbar";
     }
 }

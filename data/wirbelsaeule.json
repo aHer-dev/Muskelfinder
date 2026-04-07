@@ -21,10 +21,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Procc. spinosi (zervikal, thorakal, lumbal)",
         "Insertion": "Nächsthöhere Procc. spinosi",
@@ -53,10 +54,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "M. spinalis thoracis: Procc. spinosi L3–Th10",
         "Insertion": "Procc. spinosi Th8–Th2 (M. spinalis thoracis)",
@@ -85,10 +87,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Procc. transversi (zervikal und lumbal)",
         "Insertion": "Nächsthöhere Procc. transversi",
@@ -117,10 +120,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Procc. transversi (zervikal, thorakal, lumbal)",
         "Insertion": "Procc. spinosi 1–2 Wirbel höher",
@@ -166,10 +170,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "M. semispinalis capitis: Procc. transversi der hochthorakalen Wirbel und C3–C6 | M. semispinalis cervicis: Procc. transversi der thorakalen Wirbel und C7 | M. semispinalis thoracis: Procc. transversi Th7–Th12",
         "Insertion": "Linea nuchalis superior/inferior (capitis) | Procc. spinosi C2–Th1 (cervicis) | Procc. spinosi Th1–Th6, C6–C7 (thoracis)",
@@ -199,10 +204,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Os sacrum (S4) bis C2, Procc. transversi",
         "Insertion": "Procc. spinosi 2–4 Wirbel höher",
@@ -245,10 +251,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Pars lumbalis: Sakrum und Crista iliaca | Pars thoracalis: 7.–12. Rippe",
         "Insertion": "Anguli costae Rippen 7–12 (Pars lumbalis) | 1.–6. Rippe (Pars thoracalis) | Procc. transversi C4–C6 (Pars cervicalis)",
@@ -291,10 +298,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "M. longissimus thoracis: Procc. accessorii und Procc. transversi L1–L5 | M. longissimus capitis/cervicis: Procc. transversi der thorakalen und zervikalen Wirbel",
         "Insertion": "Crista iliaca, Sakrum (lumbal) | 1.–12. Rippe (thorakal) | Proc. mastoideus (capitis)",
@@ -335,10 +343,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "M. splenius capitis: Lig. nuchae, Procc. spinosi C7–Th3 | M. splenius cervicis: Procc. spinosi Th3–Th6",
         "Insertion": "Proc. mastoideus, Linea nuchalis superior (capitis) | Procc. transversi C1–C3 (cervicis)",
@@ -367,10 +376,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Procc. spinosi C6–Th2, Lig. nuchae",
         "Insertion": "2.–5. Rippe (lateral der Anguli costae)",
@@ -399,10 +409,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Procc. spinosi Th11–L2, Fascia thoracolumbalis",
         "Insertion": "9.–12. Rippe (lateral der Anguli costae)",
@@ -431,10 +442,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Proc. xiphoideus, Rippenknorpel 5–7",
         "Insertion": "Symphysis pubica, Os pubis",
@@ -463,10 +475,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Außenfläche der 5.–12. Rippe",
         "Insertion": "Crista iliaca, Lig. inguinale, Linea alba, Rektusscheide",
@@ -495,10 +508,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Fascia thoracolumbalis, Crista iliaca, Lig. inguinale",
         "Insertion": "Rippenknorpel 10–12, Linea alba, Rektusscheide",
@@ -527,10 +541,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Innenfläche der 7.–12. Rippenknorpel, Fascia thoracolumbalis, Crista iliaca, Lig. inguinale",
         "Insertion": "Linea alba, Rektusscheide",
@@ -559,10 +574,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Crista iliaca, Lig. iliolumbale",
         "Insertion": "12. Rippe, Procc. costarii L1–L4",
@@ -590,10 +606,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Spina ischiadica",
         "Insertion": "Lateraler Rand des Os sacrum und Os coccygis (oberer Teil)",
@@ -638,10 +655,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "M. puborectalis: Corpus ossis pubis | M. pubococcygeus: Arcus tendineus m. levatoris ani | M. iliococcygeus: Spina ischiadica",
         "Insertion": "Os coccygis | Lig. anococcygeum",
@@ -669,10 +687,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Rami der Ossa ischii",
         "Insertion": "Rami der Ossa ischii (Gegenseite)",
@@ -700,10 +719,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "",
       "easy": {
         "Origin": "Tuber ischiadicum",
         "Insertion": "Corpus perineale",

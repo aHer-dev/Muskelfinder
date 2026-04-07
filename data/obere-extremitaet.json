@@ -21,10 +21,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_pectoralis_minor_ventral_1.jpg",
       "easy": {
         "Origin": "Ventrale Seite der 3.–5. Rippe",
         "Insertion": "Proc. coracoideus der Scapula",
@@ -74,10 +75,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_serratus_anterior_lateral_1.jpg",
       "easy": {
         "Origin": "Pars superior: 1.–2. Rippe\nPars intermedia: 2.–3. Rippe\nPars inferior: 4.–9./10. Rippe",
         "Insertion": "Angulus superior (Pars superior)\nMargo medialis (Pars intermedia)\nAngulus inferior (Pars inferior)",
@@ -109,10 +111,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_subclavius_ventral_1.jpg",
       "easy": {
         "Origin": "Oberseite der 1. Rippe",
         "Insertion": "Unterseite der Clavicula, Extremitas acromialis",
@@ -144,10 +147,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_trapezius_pars_descendens_dorsal_1.jpg",
       "easy": {
         "Origin": "Linea nuchae superior, Protuberantia occipitalis externa, Lig. nuchae C1–C6",
         "Insertion": "Laterales Drittel der Clavicula, Akromion",
@@ -156,7 +160,7 @@
       },
       "Images": [
         "/assets/images/obere-ext/muscle_trapezius_pars_descendens_dorsal_1.jpg",
-        "/assets/images/obere-ext/muscle_trapezius__cranial_all_2.jpg"
+        "/assets/images/obere-ext/muscle_trapezius_cranial_all_2.jpg"
       ]
     },
     {
@@ -179,10 +183,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_trapezius_pars_transversa_dorsal_1.jpg",
       "easy": {
         "Origin": "Unterer Teil des Lig. nuchae (C6–C7), Procc. spinosi Th1–Th3",
         "Insertion": "Akromion, lateraler Teil der Spina scapulae",
@@ -191,7 +196,7 @@
       },
       "Images": [
         "/assets/images/obere-ext/muscle_trapezius_pars_transversa_dorsal_1.jpg",
-        "/assets/images/obere-ext/muscle_trapezius__cranial_all_2.jpg"
+        "/assets/images/obere-ext/muscle_trapezius_cranial_all_2.jpg"
       ]
     },
     {
@@ -215,10 +220,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_trapezius_pars_ascendens_dorsal_1.jpg",
       "easy": {
         "Origin": "Procc. spinosi Th3–Th12",
         "Insertion": "Laterales Drittel der Spina scapulae",
@@ -227,7 +233,7 @@
       },
       "Images": [
         "/assets/images/obere-ext/muscle_trapezius_pars_ascendens_dorsal_1.jpg",
-        "/assets/images/obere-ext/muscle_trapezius__cranial_all_2.jpg"
+        "/assets/images/obere-ext/muscle_trapezius_cranial_all_2.jpg"
       ]
     },
     {
@@ -251,10 +257,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_levator_scapulae_dorsal_1.jpg",
       "easy": {
         "Origin": "Procc. transversi C1–C4 (Tubercula posteriora)",
         "Insertion": "Angulus superior und oberer Teil der Margo medialis scapulae",
@@ -275,7 +282,7 @@
       "Origin": "Procc. spinosi Th1–Th4",
       "Insertion": "Margo medialis scapulae",
       "Function": "Elevation, Retraktion und Innenrotation der Skapula",
-      "Image": "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg.jpg",
+      "Image": "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -288,10 +295,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg.jpg",
       "easy": {
         "Origin": "Procc. spinosi Th1–Th4",
         "Insertion": "Margo medialis scapulae",
@@ -299,7 +307,7 @@
         "Segments": "N. dorsalis scapulae, C4, C5"
       },
       "Images": [
-        "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg.jpg"
+        "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg"
       ]
     },
     {
@@ -310,7 +318,7 @@
       "Origin": "Procc. spinosi C6–C7 und Lig. nuchae",
       "Insertion": "Margo medialis scapulae",
       "Function": "Elevation, Retraktion und Innenrotation der Skapula",
-      "Image": "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg.jpg",
+      "Image": "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -323,10 +331,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg.jpg",
       "easy": {
         "Origin": "Procc. spinosi C6–C7 und Lig. nuchae",
         "Insertion": "Margo medialis scapulae",
@@ -334,7 +343,7 @@
         "Segments": "N. dorsalis scapulae, C4, C5"
       },
       "Images": [
-        "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg.jpg"
+        "/assets/images/obere-ext/muscle_rhomboideus_minor_major_dorsal_1.jpg"
       ]
     },
     {
@@ -358,7 +367,7 @@
       ],
       "Insertion": "Crista tuberculi majoris humeri",
       "Function": "Adduktion und Innenrotation des Armes, Pars clavicularis: Flexion, Atemhilfsmuskel",
-      "Image": "/assets/images/obere-ext/muscle_pectoralis major_ventral_1.jpg",
+      "Image": "/assets/images/obere-ext/muscle_pectoralis_major_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -371,10 +380,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_pectoralis major_ventral_1.jpg",
       "easy": {
         "Origin": "Pars clavicularis: Mediale Clavicula\nPars sternocostalis: Ventrale Sternumseite und 2.–6. Rippenknorpel\nPars abdominalis: Rektusscheide",
         "Insertion": "Crista tuberculi majoris humeri",
@@ -382,7 +392,7 @@
         "Segments": "Nn. pectorales mediales et laterales, C5, C6, C7, C8, Th1"
       },
       "Images": [
-        "/assets/images/obere-ext/muscle_pectoralis major_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_pectoralis_major_ventral_1.jpg",
         "/assets/images/obere-ext/muscle_pectoralis_major_lateral_2.jpg"
       ]
     },
@@ -408,10 +418,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_latissimus_dorsi_dorsal_1.png",
       "easy": {
         "Origin": "Procc. spinosi Th7–Th12, Fascia thoracolumbalis, Crista iliaca (hinterer Teil), 10.–12. Rippe",
         "Insertion": "Crista tuberculi minoris humeri",
@@ -455,10 +466,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_deltoideus_ventral_1.jpg",
       "easy": {
         "Origin": "Pars clavicularis: Extremitas acromialis der Clavicula\nPars acromialis: Akromion\nPars spinalis: Spina scapulae",
         "Insertion": "Tuberositas deltoidea humeri",
@@ -491,10 +503,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_subscapularis_ventral_1.jpg",
       "easy": {
         "Origin": "Fossa subscapularis der Scapula (ventrale Seite)",
         "Insertion": "Crista tuberculi minoris humeri",
@@ -504,7 +517,7 @@
       "Images": [
         "/assets/images/obere-ext/muscle_subscapularis_ventral_1.jpg",
         "/assets/images/obere-ext/muscle_subscapularis_ventral_2.jpg",
-        "/assets/images/obere-ext/muscle_subscapularis_laterall_3.jpg"
+        "/assets/images/obere-ext/muscle_subscapularis_lateral_3.jpg"
       ]
     },
     {
@@ -527,10 +540,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_supraspinatus_dorsal_1.jpg",
       "easy": {
         "Origin": "Fossa supraspinata der Scapula",
         "Insertion": "Kranialer Teil des Tuberculum majus, Gelenkkapsel",
@@ -562,10 +576,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_infraspinatus_dorsal_1.jpg",
       "easy": {
         "Origin": "Fossa infraspinata der Scapula",
         "Insertion": "Mittlerer Teil des Tuberculum majus, Gelenkkapsel",
@@ -597,10 +612,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_teres_minor_dorsal_1.jpg",
       "easy": {
         "Origin": "Margo lateralis der Scapula",
         "Insertion": "Kaudaler Teil des Tuberculum majus, Gelenkkapsel",
@@ -634,10 +650,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_teres_major_dorsal_1.jpg",
       "easy": {
         "Origin": "Kaudaler Teil der Margo lateralis und Angulus inferior der Scapula",
         "Insertion": "Crista tuberculi minoris humeri",
@@ -657,7 +674,7 @@
       "Origin": "Proc. coracoideus der Scapula",
       "Insertion": "Margo medialis humeri",
       "Function": "Flexion und Adduktion des Armes",
-      "Image": "/assets/images/obere-ext/muscle_corcacubrachialis_ventral_1.jpg",
+      "Image": "/assets/images/obere-ext/muscle_coracobrachialis_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "schulter",
       "tags": [
@@ -670,10 +687,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_corcacubrachialis_ventral_1.jpg",
       "easy": {
         "Origin": "Proc. coracoideus der Scapula",
         "Insertion": "Margo medialis humeri",
@@ -681,8 +699,8 @@
         "Segments": "N. musculocutaneus, C6, C7"
       },
       "Images": [
-        "/assets/images/obere-ext/muscle_corcacubrachialis_ventral_1.jpg",
-        "/assets/images/obere-ext/muscle_corcacubrachialis_lateral_2.jpg"
+        "/assets/images/obere-ext/muscle_coracobrachialis_ventral_1.jpg",
+        "/assets/images/obere-ext/muscle_coracobrachialis_lateral_2.jpg"
       ]
     },
     {
@@ -718,10 +736,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_biceps_brachii_ventral_1.jpg",
       "easy": {
         "Origin": "Caput longum: Tuberculum supraglenoidale scapulae und Labrum glenoidale\nCaput breve: Proc. coracoideus scapulae",
         "Insertion": "Tuberositas radii\nLacertus fibrosus / Fascia antebrachii",
@@ -755,10 +774,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_triceps_brachii_dorsal_1.jpg",
       "easy": {
         "Origin": "Tuberculum und Labrum infraglenoidale scapulae",
         "Insertion": "Olecranon ulnae",
@@ -800,10 +820,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_triceps_brachii_dorsal_1.jpg",
       "easy": {
         "Origin": "Caput laterale: Facies posterior humeri proximal des Sulcus n. radialis\nCaput mediale: Facies posterior humeri distal des Sulcus n. radialis",
         "Insertion": "Olecranon ulnae",
@@ -836,10 +857,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_anconeus_dorsal_1.jpg",
       "easy": {
         "Origin": "Epicondylus lateralis humeri und Lig. collaterale radiale",
         "Insertion": "Proximaler Bereich der Facies posterior ulnae",
@@ -870,10 +892,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_brachialis_ventral_1.jpg",
       "easy": {
         "Origin": "Ventrale Seite des Humerus, distale Hälfte",
         "Insertion": "Tuberositas ulnae, Gelenkkapsel des Ellenbogens",
@@ -907,10 +930,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_pronator_teres_ventral_1.jpg",
       "easy": {
         "Origin": "Epicondylus medialis humeri, mediale Seite der Tuberositas ulnae",
         "Insertion": "Facies lateralis radii",
@@ -943,10 +967,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_brachioradialis_ventral_1.jpg",
       "easy": {
         "Origin": "Margo lateralis humeri",
         "Insertion": "Radiale Fläche des Proc. styloideus radii",
@@ -978,10 +1003,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_supinator_dorsal_1.jpg",
       "easy": {
         "Origin": "Epicondylus lateralis humeri, Crista musculi supinatoris ulnae, Lig. collaterale radiale, Lig. anulare radii",
         "Insertion": "Proximaler Bereich der Facies lateralis radii",
@@ -1013,10 +1039,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_pronator_quadratus_ventral_1.jpg",
       "easy": {
         "Origin": "",
         "Insertion": "",
@@ -1048,10 +1075,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_flexor_carpi_radialis_ventral_1.jpg",
       "easy": {
         "Origin": "Epicondylus medialis humeri",
         "Insertion": "Basis Os metacarpale II (manchmal auch III)",
@@ -1084,10 +1112,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_flexor_carpi_ulnaris_ventral_1.jpg",
       "easy": {
         "Origin": "Epicondylus medialis humeri, medialer Olekranon und Margo posterior ulnae",
         "Insertion": "Os pisiforme, Hamulus ossis hamati, Basis Os metacarpale V",
@@ -1119,10 +1148,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_extensor_carpi_radialis_brevis_dorsal_1.jpg",
       "easy": {
         "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Lig. anulare radii",
         "Insertion": "Basis Os metacarpale III",
@@ -1154,10 +1184,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_extensor_carpi_radialis_longus_dorsal_1.jpg",
       "easy": {
         "Origin": "Margo lateralis humeri",
         "Insertion": "Basis Os metacarpale II",
@@ -1189,10 +1220,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_extensor_carpi_ulnaris_dorsal_1.jpg",
       "easy": {
         "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Margo posterior ulnae",
         "Insertion": "Basis Os metacarpale V",
@@ -1223,10 +1255,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_palmaris_longus_ventral_1.jpg",
       "easy": {
         "Origin": "Epicondylus medialis humeri",
         "Insertion": "Aponeurosis palmaris",
@@ -1257,10 +1290,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_flexor_digitorum_superficialis_ventral_1.jpg",
       "easy": {
         "Origin": "Epicondylus medialis humeri, Facies medialis ulnae, proximaler Margo anterior radii",
         "Insertion": "Mittelphalangen des II.–V. Fingers",
@@ -1291,10 +1325,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_extensor_digitorum_dorsal_1.jpg",
       "easy": {
         "Origin": "Epicondylus lateralis humeri, Lig. collaterale radiale, Lig. anulare radii",
         "Insertion": "Dorsalaponeurosen des II.–V. Fingers, Basen der Grundphalangen II–V",
@@ -1326,10 +1361,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_extensor_digiti_minimi_dorsal_1.jpg",
       "easy": {
         "Origin": "Epicondylus lateralis humeri",
         "Insertion": "Dorsalaponeurose des kleinen Fingers",
@@ -1348,7 +1384,7 @@
       "Origin": "Epicondylus medialis humeri, ventrale Seite des Radius und Membrana interossea",
       "Insertion": "Basis der Endphalanx des Daumens",
       "Function": "Handgelenk: Palmarflexion, Radialabduktion. Daumen: Flexion in allen Gelenken, CMC-Adduktion",
-      "Image": "/assets/images/obere-ext/muscle_flexor_pollicis_longus_ventral_1.jpg.jpg",
+      "Image": "/assets/images/obere-ext/muscle_flexor_pollicis_longus_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1360,10 +1396,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_flexor_pollicis_longus_ventral_1.jpg.jpg",
       "easy": {
         "Origin": "Epicondylus medialis humeri, ventrale Seite des Radius und Membrana interossea",
         "Insertion": "Basis der Endphalanx des Daumens",
@@ -1371,7 +1408,7 @@
         "Segments": "N. medianus, C6, C7, C8"
       },
       "Images": [
-        "/assets/images/obere-ext/muscle_flexor_pollicis_longus_ventral_1.jpg.jpg"
+        "/assets/images/obere-ext/muscle_flexor_pollicis_longus_ventral_1.jpg"
       ]
     },
     {
@@ -1382,7 +1419,7 @@
       "Origin": "Facies anterior und medialis ulnae und Membrana interossea",
       "Insertion": "Basis der distalen Fingerphalangen II–V",
       "Function": "Handgelenk: Palmarflexion. Fingergelenke: MCP- und IP-Flexion des II.–V. Fingers",
-      "Image": "/assets/images/obere-ext/muscle_flexor_digitorum_profundus_ventral_1.jpg.jpg",
+      "Image": "/assets/images/obere-ext/muscle_flexor_digitorum_profundus_ventral_1.jpg",
       "region": "obere-extremitaet",
       "subgroup": "hand",
       "tags": [
@@ -1394,10 +1431,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_flexor_digitorum_profundus_ventral_1.jpg.jpg",
       "easy": {
         "Origin": "Facies anterior und medialis ulnae und Membrana interossea",
         "Insertion": "Basis der distalen Fingerphalangen II–V",
@@ -1405,7 +1443,7 @@
         "Segments": "N. medianus (II, III), N. ulnaris (IV, V), C7, C8, Th1"
       },
       "Images": [
-        "/assets/images/obere-ext/muscle_flexor_digitorum_profundus_ventral_1.jpg.jpg"
+        "/assets/images/obere-ext/muscle_flexor_digitorum_profundus_ventral_1.jpg"
       ]
     },
     {
@@ -1429,10 +1467,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_extensor_indicis_dorsal_1.jpg",
       "easy": {
         "Origin": "Distaler Teil der Facies posterior ulnae und Membrana interossea",
         "Insertion": "Dorsalaponeurose des Zeigefingers",
@@ -1463,10 +1502,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_abductor_pollicis_longus_dorsal_1.jpg",
       "easy": {
         "Origin": "Facies posterior von Ulna und Radius und Membrana interossea",
         "Insertion": "Basis der radialen Seite des Os metacarpale I",
@@ -1497,10 +1537,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_extensor_pollicis_brevis_dorsal_1.jpg",
       "easy": {
         "Origin": "Facies posterior des Radius und Membrana interossea",
         "Insertion": "Basis der Grundphalanx des Daumens",
@@ -1531,10 +1572,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_extensor_pollicis_longus_dorsal_1.jpg",
       "easy": {
         "Origin": "Facies posterior ulnae und Membrana interossea",
         "Insertion": "Basis der Endphalanx des Daumens",
@@ -1566,10 +1608,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_interossei_palmares_ventral_1.jpg",
       "easy": {
         "Origin": "Ulnare Seite des Os metacarpale II, radiale Seite der Ossa metacarpi IV und V",
         "Insertion": "Dorsalaponeurosen der Finger II, IV und V",
@@ -1601,10 +1644,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_interossei_dorsales_dorsal_1.jpg",
       "easy": {
         "Origin": "Einander zugekehrte Seiten der Ossa metacarpi I–V",
         "Insertion": "Dorsalaponeurosen der Finger II–IV",
@@ -1636,10 +1680,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_lumbricales_ventral_1.jpg",
       "easy": {
         "Origin": "Sehnen des M. flexor digitorum profundus",
         "Insertion": "Dorsalaponeurosen der Finger II–V",
@@ -1671,10 +1716,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_flexor_digiti_minimi_brevis_ventral_1.jpg",
       "easy": {
         "Origin": "Hamulus ossis hamati und Retinaculum flexorum",
         "Insertion": "Basis der Grundphalanx des V. Fingers, ulnares Sesambein",
@@ -1706,10 +1752,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_abductor_digiti_minimi_ventral_1.jpg",
       "easy": {
         "Origin": "Os pisiforme",
         "Insertion": "Basis der Grundphalanx des V. Fingers, ulnares Sesambein",
@@ -1740,10 +1787,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_opponens_digiti_minimi_ventral_1.jpg",
       "easy": {
         "Origin": "Hamulus ossis hamati und Retinaculum flexorum",
         "Insertion": "Os metacarpale V",
@@ -1775,10 +1823,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_palmaris_brevis_ventral_1.png",
       "easy": {
         "Origin": "Aponeurosis palmaris",
         "Insertion": "Haut der ulnaren Handseite",
@@ -1819,10 +1868,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_flexor_pollicis_brevis_ventral_1.jpg",
       "easy": {
         "Origin": "Caput superficiale: Tuberculum ossis trapezii und Retinaculum flexorum\nCaput profundum: Os trapezoideum, Os capitatum, Ligg. metacarpalia palmaria",
         "Insertion": "Basis der Daumengrundphalanx, radiales Sesambein",
@@ -1855,10 +1905,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_abductor_pollicis_brevis_ventral_1.jpg",
       "easy": {
         "Origin": "Tuberculum ossis scaphoidei und Retinaculum flexorum",
         "Insertion": "Basis der Grundphalanx des Daumens, radiales Sesambein",
@@ -1899,10 +1950,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_adductor_pollicis_ventral_1.jpg",
       "easy": {
         "Origin": "Caput obliquum: Os trapezoideum, Os capitatum, Basis Os metacarpale II, Ligg. metacarpalia palmaria\nCaput transversum: Palmare Seite des Os metacarpale III",
         "Insertion": "Basis der Grundphalanx des Daumens, ulnares Sesambein",
@@ -1934,10 +1986,11 @@
       "functionalChain": "",
       "Attribution": {
         "Author": "BodyParts3D, © DBCLS",
+        "AuthorUrl": "",
         "License": "CC BY 4.0",
-        "Source": "https://creativecommons.org/licenses/by/4.0/"
+        "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "SourceUrl": ""
       },
-      "ImageSource": "/assets/images/obere-ext/muscle_opponens_pollicis_ventral_1.jpg",
       "easy": {
         "Origin": "Os trapezium und Retinaculum flexorum",
         "Insertion": "Os metacarpale I",
