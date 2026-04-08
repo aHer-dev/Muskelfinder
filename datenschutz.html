@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Datenschutz</title>
+    <script>
+        if (location.hostname.includes("github.io")) {
+            const parts = location.pathname.split('/').filter(Boolean);
+            const first = parts[0] || '';
+            const base = document.createElement('base');
+            base.href = first && !first.endsWith('.html') ? `/${first}/` : '/';
+            document.head.appendChild(base);
+        }
+    </script>
+    <link rel="icon" type="image/png" href="assets/icons/muskelfinder-icon.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="page-legal">
+    <header>
+        <h1><img src="assets/icons/muskelfinder-icon.png" class="header-logo" alt="">Datenschutz</h1>
+        <p>Hinweise zur Nutzung des Muskelfinders als statische Web-App</p>
+        <a href="index.html" class="back-button">Zurück zur Suche</a>
+    </header>
+
+    <main class="legal-main">
+        <section class="legal-card">
+            <h2>Über diese Seite</h2>
+            <p>
+                Der Muskelfinder ist als statische Web-Anwendung aufgebaut. Es gibt aktuell keinen Login, kein Nutzerkonto
+                und keine integrierte Analyse- oder Werbetracking-Funktion.
+            </p>
+        </section>
+
+        <section class="legal-card">
+            <h2>Funktionale Speicherungen im Browser</h2>
+            <p>
+                Die App nutzt lokale Speichermechanismen des Browsers, um die Bedienung angenehmer zu machen. Dazu gehören
+                insbesondere Anzeigeeinstellungen, Filterzustände, Lernfortschritte und Quizmodi.
+            </p>
+            <ul class="legal-list">
+                <li><strong>localStorage</strong> für z. B. Theme, Quizmodi, Fortschritt und ausgewählte Muskelpakete</li>
+                <li><strong>sessionStorage</strong> für z. B. Such- und Filterzustände innerhalb einer Sitzung</li>
+            </ul>
+            <p>
+                Diese Speicherungen dienen nur der Funktion der App auf dem jeweiligen Gerät und werden nach aktuellem
+                Projektstand nicht an einen eigenen Server des Projekts übertragen.
+            </p>
+        </section>
+
+        <section class="legal-card">
+            <h2>Öffentliche Bereitstellung über GitHub Pages</h2>
+            <p>
+                Wenn der Muskelfinder öffentlich über GitHub Pages bereitgestellt wird, erfolgt das Hosting über GitHub.
+                Dabei können technisch notwendige Verbindungsdaten wie IP-Adressen durch den Hosting-Anbieter verarbeitet
+                werden. Maßgeblich sind in diesem Fall zusätzlich die Datenschutzinformationen von GitHub.
+            </p>
+            <ul class="legal-list">
+                <li><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages" target="_blank" rel="noopener noreferrer">GitHub Pages</a></li>
+                <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a></li>
+            </ul>
+        </section>
+
+        <section class="legal-card">
+            <h2>Optionale Verlinkung zur 3D-Anatomie-App</h2>
+            <p>
+                Der Muskelfinder kann optional auf eine separate 3D-Anatomie-App verlinken. Erst beim Wechsel dorthin
+                gelten zusätzlich deren Datenschutz- und Lizenzhinweise. Die 3D-App kann weitere technisch notwendige
+                externe Abrufe verwenden.
+            </p>
+        </section>
+
+        <section class="legal-card">
+            <h2>Hinweis zum Rechtsstand</h2>
+            <p>
+                Diese Seite dient der transparenten Projektinformation und ersetzt keine individuelle Rechtsberatung. Für
+                einen öffentlichen schulischen oder institutionellen Einsatz sollten Impressum, Verantwortlichenangaben und
+                die tatsächlichen Hosting-Umstände zusätzlich geprüft und ergänzt werden.
+            </p>
+        </section>
+    </main>
+
+    <footer>© 2026 Muskelfinder</footer>
+
+    <script src="assets/js/nav.js"></script>
+</body>
+
+</html>

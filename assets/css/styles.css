@@ -1334,9 +1334,48 @@ footer {
     border-top: 1px solid var(--glass-border);
     color: var(--text-muted);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
     padding: 16px max(20px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
     font-size: 13px;
     margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+#licenseInfo {
+    max-width: min(760px, 100%);
+    line-height: 1.55;
+}
+
+.footer-links {
+    margin: 2px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4px 8px;
+    font-size: 11px;
+    opacity: 0.88;
+}
+
+.footer-links span {
+    color: var(--text-muted);
+    opacity: 0.4;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--text-secondary);
+    text-decoration-color: transparent;
 }
 
 footer a,
@@ -1357,6 +1396,56 @@ footer a:hover,
     color: var(--text-secondary);
 }
 
+.legal-main {
+    width: min(980px, calc(100% - 32px));
+    margin: 0 auto 40px;
+    display: grid;
+    gap: 18px;
+}
+
+.legal-card {
+    background: var(--surface-elevated);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: var(--shadow-soft);
+}
+
+.legal-card h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+}
+
+.legal-card p {
+    margin: 0 0 14px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+}
+
+.legal-card p:last-child {
+    margin-bottom: 0;
+}
+
+.legal-list {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+}
+
+.legal-warning {
+    border-color: rgba(255, 184, 77, 0.42);
+    box-shadow: 0 24px 60px rgba(255, 184, 77, 0.08);
+}
+
+.legal-warning h2 {
+    color: #ffcf7a;
+}
+
+.legal-list li + li {
+    margin-top: 8px;
+}
+
 /* ── Responsive ─────────────────────────────────────────────── */
 
 /* Tablet (≤ 768 px) */
@@ -1366,10 +1455,30 @@ footer a:hover,
     header h1 { font-size: 19px; }
 
     main { padding: 0 12px 32px; margin-top: 14px; }
+    footer {
+        gap: 6px;
+        padding: 12px max(14px, env(safe-area-inset-right)) max(14px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left));
+        font-size: 12px;
+    }
+    #licenseInfo {
+        max-width: min(100%, 34rem);
+        font-size: 11.5px;
+        line-height: 1.5;
+    }
+    .footer-links {
+        display: none;
+    }
+    footer a:hover,
+    .license-link:hover {
+        text-decoration-color: transparent;
+    }
 
     .filter-row { grid-template-columns: repeat(2, 1fr); }
     .info-container { grid-template-columns: 1fr; }
     #muscleTitlename { font-size: 21px; }
+    .legal-main { width: min(100%, calc(100% - 24px)); }
+    .legal-card { padding: 18px; border-radius: 20px; }
+    .legal-card h2 { font-size: 19px; }
 
     .quiz-container { max-width: 100%; }
     .quiz-card { padding: 16px 18px; }
@@ -2137,6 +2246,14 @@ html.light-mode footer {
     background: rgba(228, 221, 210, 0.95);
     border-top-color: rgba(0,0,0,0.10);
     color: #78716c;
+}
+
+html.light-mode .footer-links span {
+    color: #a8a29e;
+}
+
+html.light-mode .footer-links a {
+    color: #8c847c;
 }
 
 html.light-mode select option {

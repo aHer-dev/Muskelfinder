@@ -283,9 +283,10 @@ async function renderMuscle(muscle) {
         const sourceMarkup = sourceHref
             ? ` · <a href="${sourceHref}" target="_blank" class="license-link">Quelle</a>`
             : '';
+        const overviewMarkup = ` · <a href="${basePath}/quellen-lizenzen.html" class="license-link">Mehr zu Quellen & Lizenzen</a>`;
 
         elements.licenseInfo.innerHTML = attribution
-            ? `Bild von ${authorMarkup}, lizenziert unter ${licenseMarkup}${sourceMarkup}`
+            ? `Bild von ${authorMarkup}, lizenziert unter ${licenseMarkup}${sourceMarkup}${overviewMarkup}`
             : "Keine Lizenzinformationen verfügbar";
     }
 }

@@ -68,6 +68,10 @@ const AppDialog = (() => {
         return `${window.location.origin}/3DAnatomy/index.html`;
     }
 
+    function getLegalPageUrl(pageName) {
+        return `${_root}${pageName}`;
+    }
+
     // Theme sofort anwenden (vor DOMContentLoaded = kein Flash)
     const _saved = localStorage.getItem('muskelfinder_theme') || 'dark';
     if (_saved === 'light') document.documentElement.classList.add('light-mode');
@@ -142,6 +146,9 @@ const AppDialog = (() => {
                         ${isLight ? '🌙 Dark Mode' : '☀️ Light Mode'}
                     </button>
                 </li>
+                <li class="menu-divider"></li>
+                <li><a href="${getLegalPageUrl('quellen-lizenzen.html')}" class="menu-link">© Quellen & Lizenzen</a></li>
+                <li><a href="${getLegalPageUrl('datenschutz.html')}"      class="menu-link">🛡️ Datenschutz</a></li>
             </ul>
         `;
         document.body.appendChild(menu);
@@ -251,5 +258,17 @@ const AppDialog = (() => {
             localStorage.setItem('muskelfinder_theme', nowLight ? 'light' : 'dark');
             this.textContent = nowLight ? '🌙 Dark Mode' : '☀️ Light Mode';
         });
+
+        const footer = document.querySelector('footer');
+        if (footer && !footer.querySelector('.footer-links')) {
+            const links = document.createElement('p');
+            links.className = 'footer-links';
+            links.innerHTML = `
+                <a href="${getLegalPageUrl('quellen-lizenzen.html')}">Quellen & Lizenzen</a>
+                <span aria-hidden="true">·</span>
+                <a href="${getLegalPageUrl('datenschutz.html')}">Datenschutz</a>
+            `;
+            footer.appendChild(links);
+        }
     });
 })();
