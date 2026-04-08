@@ -47,6 +47,112 @@ const AppDialog = (() => {
 
     return { alert, confirm };
 })();
+
+const BackupManager = (() => {
+    const STORAGE_KEYS = {
+        flashcards: 'muskelfinder_progress_v1',
+        xp: 'muskelfinder_xp_v1',
+        quizSeries: 'muskelfinder_quiz_series_v1',
+    };
+
+    function isPlainObject(value) {
+        return !!value && typeof value === 'object' && !Array.isArray(value);
+    }
+
+    function readJSON(key, fallback) {
+        try {
+            const raw = localStorage.getItem(key);
+            return raw ? JSON.parse(raw) : fallback;
+        } catch (error) {
+            return fallback;
+        }
+    }
+
+    function sanitizeFlashcards(data) {
+        if (!isPlainObject(data) || data.version !== 1 || !isPlainObject(data.cards)) {
+            throw new Error('Ungültiges Lernkarten-Backup');
+        }
+
+        return {
+            version: 1,
+            cards: data.cards
+        };
+    }
+
+    function sanitizeXP(data) {
+        if (!isPlainObject(data)) {
+            return { totalXP: 0, lastDailyBonus: null };
+        }
+
+        return {
+            totalXP: Number.isFinite(data.totalXP) && data.totalXP >= 0 ? data.totalXP : 0,
+            lastDailyBonus: typeof data.lastDailyBonus === 'string' ? data.lastDailyBonus : null,
+        };
+    }
+
+    function sanitizeQuizSeries(data) {
+        return isPlainObject(data) ? data : {};
+    }
+
+    function buildBackupPayload() {
+        return {
+            backupType: 'muskelfinder-backup',
+            version: 1,
+            exportedAt: new Date().toISOString(),
+            flashcards: sanitizeFlashcards(readJSON(STORAGE_KEYS.flashcards, { version: 1, cards: {} })),
+            xp: sanitizeXP(readJSON(STORAGE_KEYS.xp, { totalXP: 0, lastDailyBonus: null })),
+            quizSeries: sanitizeQuizSeries(readJSON(STORAGE_KEYS.quizSeries, {})),
+        };
+    }
+
+    function downloadBackup() {
+        const data = buildBackupPayload();
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `muskelfinder-backup-${new Date().toISOString().slice(0, 10)}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+
+    function importBackup(jsonString) {
+        const parsed = JSON.parse(jsonString);
+
+        // Alte reine Lernkarten-Backups weiter unterstützen
+        if (isPlainObject(parsed) && parsed.version === 1 && isPlainObject(parsed.cards) && !parsed.backupType) {
+            localStorage.setItem(STORAGE_KEYS.flashcards, JSON.stringify(sanitizeFlashcards(parsed)));
+            return { type: 'legacy-flashcards' };
+        }
+
+        if (!isPlainObject(parsed) || parsed.backupType !== 'muskelfinder-backup') {
+            throw new Error('Unbekanntes Backup-Format');
+        }
+
+        localStorage.setItem(STORAGE_KEYS.flashcards, JSON.stringify(sanitizeFlashcards(
+            isPlainObject(parsed.flashcards) ? parsed.flashcards : { version: 1, cards: {} }
+        )));
+        localStorage.setItem(STORAGE_KEYS.xp, JSON.stringify(sanitizeXP(parsed.xp)));
+        localStorage.setItem(STORAGE_KEYS.quizSeries, JSON.stringify(sanitizeQuizSeries(parsed.quizSeries)));
+
+        return { type: 'full-backup' };
+    }
+
+    function resetAllProgress() {
+        localStorage.removeItem(STORAGE_KEYS.flashcards);
+        localStorage.removeItem(STORAGE_KEYS.xp);
+        localStorage.removeItem(STORAGE_KEYS.quizSeries);
+    }
+
+    return {
+        downloadBackup,
+        importBackup,
+        resetAllProgress
+    };
+})();
+
 (function () {
     function getBasePath() {
         const parts = window.location.pathname.split('/').filter(Boolean);
@@ -132,6 +238,8 @@ const AppDialog = (() => {
                 <li><a href="${_root}quizzes/flashcards.html"          class="menu-link">🃏 Lernkarten</a></li>
                 <li><a href="${_root}quizzes/muscle-selection.html"    class="menu-link">📋 Muskeln verwalten</a></li>
                 <li><a href="${_root}quizzes/quiz.html"                class="menu-link">📝 Quiz</a></li>
+                <li><a href="${_root}quizzes/stats.html"               class="menu-link">📊 Gesamtstatistik</a></li>
+                <li><button id="backup-btn" class="menu-theme-btn">💾 Import / Export</button></li>
                 <li class="menu-divider"></li>
                 <li>
                     <button id="anleitung-btn" class="menu-theme-btn">❓ Anleitung</button>
@@ -226,19 +334,98 @@ const AppDialog = (() => {
         `;
         document.body.appendChild(anleitungModal);
 
+        const backupModal = document.createElement('div');
+        backupModal.id = 'backup-modal';
+        backupModal.innerHTML = `
+            <div id="backup-box">
+                <button id="backup-close" aria-label="Schließen">✕</button>
+                <h2>💾 Import / Export</h2>
+                <p class="backup-intro">
+                    Dein Lernstand wird automatisch in diesem Browser gespeichert. Zur Sicherheit kannst du hier eine Backup-Datei exportieren und später wieder importieren.
+                </p>
+                <div class="backup-warning">
+                    Der Fortschritt kann verloren gehen, wenn Browserdaten gelöscht werden, du auf ein anderes Gerät oder einen anderen Browser wechselst oder in seltenen Fällen nach Updates bzw. Profilproblemen gespeicherte Websitedaten fehlen.
+                </div>
+                <div class="backup-section">
+                    <strong>Im Export enthalten:</strong>
+                    <ul class="backup-list">
+                        <li>Lernkarten inkl. Fächer, Wiederholungen, Schwierigkeit und Statistik</li>
+                        <li>Quiz-Serienstatistiken</li>
+                        <li>XP, Level und Tagesbonus</li>
+                    </ul>
+                </div>
+                <p class="backup-hint">
+                    Ein Import überschreibt den aktuell gespeicherten Lernstand auf diesem Gerät.
+                </p>
+                <div class="backup-actions">
+                    <button id="backup-export-btn" class="btn-primary" type="button">↓ Alles exportieren</button>
+                    <label class="btn-secondary btn-file-label" for="backup-import-file">↑ Backup importieren</label>
+                    <input type="file" id="backup-import-file" accept=".json" hidden>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(backupModal);
+
         function openAnleitung()  { anleitungModal.classList.add('open'); }
         function closeAnleitung() { anleitungModal.classList.remove('open'); }
+        function openBackup()     { backupModal.classList.add('open'); }
+        function closeBackup() {
+            backupModal.classList.remove('open');
+            const input = document.getElementById('backup-import-file');
+            if (input) input.value = '';
+        }
 
         document.getElementById('anleitung-btn').addEventListener('click', function () {
             closeMenu();
             openAnleitung();
         });
+        document.getElementById('backup-btn').addEventListener('click', function () {
+            closeMenu();
+            openBackup();
+        });
         document.getElementById('anleitung-close').addEventListener('click', closeAnleitung);
+        document.getElementById('backup-close').addEventListener('click', closeBackup);
         anleitungModal.addEventListener('click', function (e) {
             if (e.target === anleitungModal) closeAnleitung();
         });
+        backupModal.addEventListener('click', function (e) {
+            if (e.target === backupModal) closeBackup();
+        });
         document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape') closeAnleitung();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeBackup();
+        });
+
+        document.getElementById('backup-export-btn').addEventListener('click', function () {
+            BackupManager.downloadBackup();
+        });
+
+        document.getElementById('backup-import-file').addEventListener('change', async function (event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const confirmed = await AppDialog.confirm('Backup importieren und den aktuellen gespeicherten Lernstand überschreiben?');
+            if (!confirmed) {
+                event.target.value = '';
+                return;
+            }
+
+            try {
+                const result = BackupManager.importBackup(await file.text());
+                closeBackup();
+                await AppDialog.alert(
+                    result.type === 'legacy-flashcards'
+                        ? 'Älteres Lernkarten-Backup geladen. Die Seite wird jetzt neu geladen.'
+                        : 'Backup erfolgreich geladen. Die Seite wird jetzt neu geladen.'
+                );
+                window.location.reload();
+            } catch (error) {
+                console.error('Backup-Import fehlgeschlagen.', error);
+                await AppDialog.alert('Fehler: Die Datei konnte nicht importiert werden.');
+                event.target.value = '';
+            }
         });
 
         // ── Expert-Modus Toggle ───────────────────────────────

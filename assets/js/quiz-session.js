@@ -68,9 +68,7 @@ const QuizSession = (() => {
         localStorage.setItem(SERIES_STORAGE_KEY, JSON.stringify(store));
     }
 
-    function loadSeriesStats() {
-        const store = getSeriesStore();
-        const stats = store[_seriesKey];
+    function normalizeSeriesStats(stats) {
         if (!stats || typeof stats !== 'object') return createEmptySeriesStats();
 
         return {
@@ -87,6 +85,54 @@ const QuizSession = (() => {
                     .slice(-HISTORY_LIMIT)
                 : []
         };
+    }
+
+    function getAllSeriesStats() {
+        const store = getSeriesStore();
+
+        return Object.entries(store).map(([key, stats]) => {
+            const separator = key.indexOf('::');
+            const quizType = separator >= 0 ? key.slice(0, separator) : key;
+            const filterSignature = separator >= 0 ? key.slice(separator + 2) : '';
+            const normalized = normalizeSeriesStats(stats);
+
+            return {
+                key,
+                quizType,
+                filterSignature,
+                ...normalized,
+                accuracy: normalized.answers > 0 ? Math.round((normalized.correct / normalized.answers) * 100) : 0
+            };
+        });
+    }
+
+    function getAggregatedStatsByQuizType() {
+        const grouped = new Map();
+
+        for (const entry of getAllSeriesStats()) {
+            const current = grouped.get(entry.quizType) || {
+                quizType: entry.quizType,
+                rounds: 0,
+                answers: 0,
+                correct: 0
+            };
+
+            current.rounds += entry.rounds;
+            current.answers += entry.answers;
+            current.correct += entry.correct;
+            grouped.set(entry.quizType, current);
+        }
+
+        return [...grouped.values()].map(entry => ({
+            ...entry,
+            accuracy: entry.answers > 0 ? Math.round((entry.correct / entry.answers) * 100) : 0
+        }));
+    }
+
+    function loadSeriesStats() {
+        const store = getSeriesStore();
+        const stats = store[_seriesKey];
+        return normalizeSeriesStats(stats);
     }
 
     function persistSeriesStats() {
@@ -300,5 +346,13 @@ const QuizSession = (() => {
         summary.hidden = false;
     }
 
-    return { init, record, isComplete, showSummary, updateProgress };
+    return {
+        init,
+        record,
+        isComplete,
+        showSummary,
+        updateProgress,
+        getAllSeriesStats,
+        getAggregatedStatsByQuizType
+    };
 })();

@@ -51,8 +51,6 @@ const el = {
     startBtn:        document.getElementById('start-session'),
     sessionGoal:     document.getElementById('session-goal'),
     toggleAllBtn:    document.getElementById('toggle-all-btn'),
-    exportBtn:       document.getElementById('export-btn'),
-    importFile:      document.getElementById('import-file'),
     resetBtn:        document.getElementById('reset-progress'),
     sessionProgress: document.getElementById('session-progress'),
     backToOverview:  document.getElementById('back-to-overview'),
@@ -512,23 +510,10 @@ function bindEvents() {
         refreshSetupScreen();
     });
 
-    el.exportBtn.addEventListener('click', () => ProgressManager.exportJSON());
-    el.importFile.addEventListener('change', e => {
-        const file = e.target.files[0];
-        if (!file) return;
-        const reader = new FileReader();
-        reader.onload = ev => {
-            const ok = ProgressManager.importJSON(ev.target.result);
-            if (ok) { refreshSetupScreen(); AppDialog.alert('Fortschritt erfolgreich geladen!'); }
-            else    { AppDialog.alert('Fehler: Die Datei konnte nicht gelesen werden.'); }
-            el.importFile.value = '';
-        };
-        reader.readAsText(file);
-    });
     el.resetBtn.addEventListener('click', async () => {
-        const ok = await AppDialog.confirm('Gesamten Fortschritt löschen? Das kann nicht rückgängig gemacht werden.');
+        const ok = await AppDialog.confirm('Alle Lernkarten auf den Anfang zurücksetzen? Fortschritt und Fächer werden auf Start gesetzt.');
         if (ok) {
-            ProgressManager.resetAll();
+            ProgressManager.resetProgress();
             refreshSetupScreen();
         }
     });

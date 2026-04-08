@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Gesamtstatistik - Muskelfinder</title>
+    <link rel="icon" type="image/png" href="../assets/icons/muskelfinder-icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body class="page-stats">
+    <header>
+        <h1><img src="../assets/icons/muskelfinder-icon.png" class="header-logo" alt="">Gesamtstatistik</h1>
+        <p>XP, Level, Quiz und Lernkarten</p>
+        <nav>
+            <a href="quiz.html" class="back-button">← Quiz</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="stats-hero" class="stats-hero"></section>
+
+        <section class="fc-section">
+            <div id="stats-metrics" class="stats-metrics-grid"></div>
+        </section>
+
+        <section class="fc-section">
+            <div class="stats-section-heading">
+                <h2 class="fc-title">Quiz-Gesamtstatistik</h2>
+                <p class="stats-section-copy">Alle bisherigen Quiz-Runden zusammengefasst.</p>
+            </div>
+            <div id="stats-quiz-overview" class="stats-overview-card"></div>
+            <div id="stats-quiz-grid" class="stats-cards-grid"></div>
+        </section>
+
+        <section class="fc-section">
+            <div class="stats-section-heading">
+                <h2 class="fc-title">Lernkarten-Gesamtstatistik</h2>
+                <p class="stats-section-copy">Deck, Leitner-Fächer und Lernfortschritt auf einen Blick.</p>
+            </div>
+            <div id="stats-flashcards-grid" class="stats-cards-grid"></div>
+            <div class="stats-leitner-card">
+                <div class="stats-card-header">
+                    <h3>Leitner-Verteilung</h3>
+                    <p>So verteilen sich deine Karten gerade auf die 7 Fächer.</p>
+                </div>
+                <div id="stats-leitner" class="leitner-boxes"></div>
+            </div>
+        </section>
+
+        <section class="fc-section">
+            <div class="stats-section-heading">
+                <h2 class="fc-title">Nächste Ziele</h2>
+                <p class="stats-section-copy">Kleine Meilensteine, damit der Gamification-Aspekt spürbarer wird.</p>
+            </div>
+            <div id="stats-goals" class="stats-goals-grid"></div>
+        </section>
+
+        <section class="fc-section">
+            <div class="stats-danger-zone">
+                <div class="stats-card-header">
+                    <h3>XP & Gesamtfortschritt zurücksetzen</h3>
+                    <p>Setzt XP, Quiz-Serienstatistiken und den kompletten Lernkarten-Fortschritt auf einen frischen Start zurück.</p>
+                </div>
+                <button id="reset-total-progress-btn" class="btn-danger" type="button">Alles zurücksetzen</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>© 2026 Muskelfinder</footer>
+
+    <script src="../assets/js/gamification.js"></script>
+    <script src="../assets/js/nav.js"></script>
+    <script src="../assets/js/progress.js"></script>
+    <script src="../assets/js/quiz-session.js"></script>
+    <script src="../assets/js/stats-dashboard.js"></script>
+</body>
+
+</html>

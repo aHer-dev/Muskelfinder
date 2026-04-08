@@ -6,7 +6,7 @@
  *    Nur hinzugefügte Karten erscheinen in Sessions und Stats.
  *
  *
- * Speicher: localStorage (automatisch) + JSON Export/Import (portabel)
+ * Speicher: localStorage (automatisch) + zentrales Backup im Menü
  *
  * Fach-Intervalle:
  *   1 →  1 Tag  |  2 →  3 Tage  |  3 →  7 Tage  |  4 → 14 Tage
@@ -163,36 +163,67 @@ const ProgressManager = (() => {
         return { total: names.length, dueToday, byFach };
     }
 
-    // ── Export / Import ──────────────────────────────────────
+    /** Gesamtüberblick für Dashboard/Statistik */
+    function getOverview(muscleNames) {
+        const eod = _endOfDay();
+        const names = muscleNames
+            ? muscleNames.filter(n => isInDeck(n))
+            : getAddedCardNames();
 
-    function exportJSON() {
-        const data = { ...state, exportedAt: new Date().toISOString() };
-        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-        const url  = URL.createObjectURL(blob);
-        const a    = document.createElement('a');
-        a.href     = url;
-        a.download = `muskelfinder-${new Date().toISOString().slice(0, 10)}.json`;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-    }
+        const byFach = Array(8).fill(0);
+        let dueToday = 0;
+        let difficultCount = 0;
+        let masteredCount = 0;
+        let totalCorrect = 0;
+        let totalWrong = 0;
+        let reviewedCards = 0;
+        let totalFach = 0;
+        let lastReviewedAt = null;
 
-    function importJSON(jsonString) {
-        try {
-            const imp = JSON.parse(jsonString);
-            if (imp.version !== 1 || typeof imp.cards !== 'object') throw new Error('Unbekanntes Format');
-            state = { version: 1, cards: imp.cards };
-            _persist();
-            return true;
-        } catch (e) {
-            console.error('ProgressManager: Import fehlgeschlagen.', e);
-            return false;
+        for (const name of names) {
+            const card = state.cards[name];
+            if (!card) continue;
+
+            byFach[card.fach]++;
+            totalFach += card.fach;
+            totalCorrect += Number.isFinite(card.totalCorrect) ? card.totalCorrect : 0;
+            totalWrong += Number.isFinite(card.totalWrong) ? card.totalWrong : 0;
+
+            if (new Date(card.nextDue) <= eod) dueToday++;
+            if (card.difficult) difficultCount++;
+            if (card.fach >= 5) masteredCount++;
+
+            if (card.lastSeen) {
+                reviewedCards++;
+                if (!lastReviewedAt || card.lastSeen > lastReviewedAt) {
+                    lastReviewedAt = card.lastSeen;
+                }
+            }
         }
+
+        return {
+            total: names.length,
+            dueToday,
+            difficultCount,
+            masteredCount,
+            totalCorrect,
+            totalWrong,
+            totalAnswers: totalCorrect + totalWrong,
+            reviewedCards,
+            averageFach: names.length > 0 ? totalFach / names.length : 0,
+            lastReviewedAt,
+            byFach
+        };
     }
 
-    function resetAll() {
-        state = { version: 1, cards: {} };
+    function resetProgress() {
+        const resetCards = {};
+
+        for (const name of Object.keys(state.cards)) {
+            resetCards[name] = _newCard();
+        }
+
+        state = { version: 1, cards: resetCards };
         _persist();
     }
 
@@ -202,8 +233,8 @@ const ProgressManager = (() => {
         addCard, addCards, removeCard, isInDeck, getAddedCardNames,
         markCorrect, markWrong, markUnsure,
         toggleDifficult, isDifficult,
-        getDueCards, getCardState, getStats,
-        exportJSON, importJSON, resetAll,
+        getDueCards, getCardState, getStats, getOverview,
+        resetProgress,
         FACH_INTERVALS
     };
 })();
