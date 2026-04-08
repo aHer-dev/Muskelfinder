@@ -378,6 +378,13 @@ function bindImageGallery() {
     updateGalleryControls();
 }
 
+function normalizeImageIndex(index) {
+    const imageCount = _currentImages.length;
+    if (imageCount === 0) return -1;
+
+    return ((index % imageCount) + imageCount) % imageCount;
+}
+
 function updateGalleryControls() {
     document.querySelectorAll('[data-image-index]').forEach(button => {
         const isActive = Number(button.dataset.imageIndex) === _currentImageIndex;
@@ -387,32 +394,31 @@ function updateGalleryControls() {
 
     const prevButton = document.querySelector('[data-nav-direction="prev"]');
     const nextButton = document.querySelector('[data-nav-direction="next"]');
-    const isFirst = _currentImageIndex === 0;
-    const isLast = _currentImageIndex === _currentImages.length - 1;
+    const hasMultipleImages = _currentImages.length > 1;
 
-    if (prevButton) prevButton.disabled = isFirst;
-    if (nextButton) nextButton.disabled = isLast;
+    if (prevButton) prevButton.disabled = !hasMultipleImages;
+    if (nextButton) nextButton.disabled = !hasMultipleImages;
     updateModalControls();
 }
 
 function updateModalControls() {
-    const isFirst = _currentImageIndex === 0;
-    const isLast = _currentImageIndex === _currentImages.length - 1;
     const hasMultipleImages = _currentImages.length > 1;
 
     if (elements.modalPrevButton) {
-        elements.modalPrevButton.disabled = !hasMultipleImages || isFirst;
+        elements.modalPrevButton.disabled = !hasMultipleImages;
         elements.modalPrevButton.hidden = !hasMultipleImages;
     }
     if (elements.modalNextButton) {
-        elements.modalNextButton.disabled = !hasMultipleImages || isLast;
+        elements.modalNextButton.disabled = !hasMultipleImages;
         elements.modalNextButton.hidden = !hasMultipleImages;
     }
 }
 
 function setActiveImage(index) {
-    if (!_currentImages[index]) return;
-    _currentImageIndex = index;
+    const normalizedIndex = normalizeImageIndex(index);
+    if (normalizedIndex < 0 || !_currentImages[normalizedIndex]) return;
+
+    _currentImageIndex = normalizedIndex;
     updateGalleryControls();
     void renderActiveImage();
 }
