@@ -1770,6 +1770,33 @@ footer a:hover,
     font-size: 17px;
 }
 
+body.page-flashcards #start-session:not(:disabled) {
+    background:
+        linear-gradient(
+            180deg,
+            color-mix(in srgb, var(--accent) 90%, white 10%) 0%,
+            var(--accent) 100%
+        ) !important;
+    border: 1px solid color-mix(in srgb, var(--accent) 42%, transparent);
+    color: #fff !important;
+    box-shadow:
+        0 0 0 1px color-mix(in srgb, var(--accent) 18%, transparent) inset,
+        0 0 24px color-mix(in srgb, var(--accent) 34%, transparent);
+}
+
+body.page-flashcards #start-session:hover:not(:disabled),
+body.page-flashcards #start-session:focus-visible:not(:disabled) {
+    background:
+        linear-gradient(
+            180deg,
+            color-mix(in srgb, var(--accent-hover) 88%, white 12%) 0%,
+            var(--accent-hover) 100%
+        ) !important;
+    box-shadow:
+        0 0 0 1px color-mix(in srgb, var(--accent) 24%, transparent) inset,
+        0 0 30px color-mix(in srgb, var(--accent) 42%, transparent);
+}
+
 .btn-secondary {
     background: var(--glass-bg);
     color: var(--text-secondary);
