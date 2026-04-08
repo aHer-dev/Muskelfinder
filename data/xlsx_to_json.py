@@ -24,6 +24,7 @@ FILES = [
         "easy_sheet": "Leicht-Modus",   # nur easy (0-6)
         "main_sheet": "Untere Extremität",  # nur voll (0-26)
         "region": "untere-extremitaet",
+        "preserve_missing_from_existing": True,
     },
     {
         "xlsx": "wirbelsaeule-rumpf - + easy + umgewandelt.xlsx",
@@ -211,6 +212,72 @@ def is_section_header(name):
     return name.startswith("──") or name.startswith("─")
 
 
+def load_existing_entries(json_name):
+    """Lädt vorhandene JSON-Einträge, um App-spezifische Felder zu bewahren."""
+    path = DATA_DIR / json_name
+    if not path.exists():
+        return {}
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+    return {
+        str(entry.get("Name")): entry
+        for entry in data.get("Sheet1", [])
+        if entry.get("Name")
+    }
+
+
+def merge_existing_entry(entry, existing):
+    """Behält Bildpfade, Galerien und leere Metadaten aus bestehenden JSONs bei."""
+    if not existing:
+        return entry
+
+    if not entry.get("Image") and existing.get("Image"):
+        entry["Image"] = existing["Image"]
+
+    if not entry.get("Images"):
+        if existing.get("Images"):
+            entry["Images"] = existing["Images"]
+        elif entry.get("Image"):
+            entry["Images"] = [entry["Image"]]
+    elif entry.get("Image") and entry["Image"] not in entry["Images"]:
+        entry["Images"] = [entry["Image"], *entry["Images"]]
+
+    old_attr = existing.get("Attribution") or {}
+    new_attr = entry.get("Attribution") or {}
+    for key in ("AuthorUrl", "SourceUrl", "LicenseUrl"):
+        if not new_attr.get(key) and old_attr.get(key):
+            new_attr[key] = old_attr[key]
+    entry["Attribution"] = new_attr
+
+    return entry
+
+
+def prepare_output_entries(json_name, muscles, preserve_missing=False):
+    """Mergt bestehende App-Felder in neu erzeugte Einträge und bewahrt optional fehlende Alt-Einträge."""
+    existing_map = load_existing_entries(json_name)
+    prepared = []
+    seen_names = set()
+
+    for muscle in muscles:
+        name = str(muscle.get("Name") or "").strip()
+        if not name:
+            continue
+        prepared.append(merge_existing_entry(muscle, existing_map.get(name)))
+        seen_names.add(name)
+
+    if preserve_missing:
+        for name, existing in existing_map.items():
+            if name not in seen_names:
+                prepared.append(existing)
+
+    return prepared
+
+
 def convert(cfg):
     xlsx_path = DATA_DIR / cfg["xlsx"]
     wb = openpyxl.load_workbook(xlsx_path)
@@ -268,12 +335,18 @@ def convert(cfg):
         main_muscles  = [m for m in muscles if m.get("subgroup","") not in split["subgroups"]]
         for m in split_muscles:
             m["region"] = split["region"]
+        split_muscles = prepare_output_entries(split["json"], split_muscles)
         with open(DATA_DIR / split["json"], "w", encoding="utf-8") as f:
             json.dump({"Sheet1": split_muscles}, f, ensure_ascii=False, indent=2)
         print(f"  ✓ {split['json']}  ({len(split_muscles)} Muskeln)")
         muscles = main_muscles
 
     # In JSON schreiben
+    muscles = prepare_output_entries(
+        cfg["json"],
+        muscles,
+        preserve_missing=cfg.get("preserve_missing_from_existing", False),
+    )
     out_path = DATA_DIR / cfg["json"]
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump({"Sheet1": muscles}, f, ensure_ascii=False, indent=2)

@@ -25,7 +25,7 @@ const SUBGROUP_LABELS = {
 
 const MuscleData = (() => {
     const CONFIG_CACHE_KEY = 'muskelfinder_config_cache_v1';
-    const PACKAGE_CACHE_PREFIX = 'muskelfinder_data_cache_v1::';
+    const PACKAGE_CACHE_PREFIX = 'muskelfinder_data_cache_v2::';
     const PROJECT_NAME = 'Muskelfinder';
     let loadedMuscles = [];
     let config = null;

@@ -581,7 +581,7 @@
       "Segments": "N. facialis (VII), Rr. buccales und marginales mandibulares",
       "Origin": "Haut und Muskulatur der Lippen, Modiolus",
       "Insertion": "Haut und Muskulatur der Lippen (orbitalе und marginale Faserbündel)",
-      "Function": "Schließt die Lippen und formt sie für Sprechen, Pusten und Pfeifen; tiefe und oberflächliche Faserbündel wirken zusammen.",
+      "Function": "Der M. orbicularis oris schließt die Lippen und formt sie für Sprechen, Pusten und Pfeifen; seine oberflächlichen und tiefen Faserbündel wirken zusammen, um Mund und Lippen präzise zu steuern.",
       "Image": "",
       "region": "kopf-hals",
       "subgroup": "mimikmuskulatur",
@@ -605,7 +605,7 @@
       "easy": {
         "Origin": "Haut und Muskulatur der Lippen, Modiolus",
         "Insertion": "Haut und Muskulatur der Lippen (orbitalе und marginale Faserbündel)",
-        "Function": "Mundschluss, Lippenformung, Pusten, Sprechen",
+        "Function": "Der M. orbicularis oris schließt die Lippen und formt sie für Sprechen, Pusten und Pfeifen; seine oberflächlichen und tiefen Faserbündel wirken zusammen, um Mund und Lippen präzise zu steuern.",
         "Segments": "N. facialis (VII), Rr. buccales und marginales mandibulares"
       }
     },
@@ -616,7 +616,7 @@
       "Segments": "N. facialis (VII)",
       "Origin": "Orbitarand und Tarsalregion (umgibt die Orbita ringförmig)",
       "Insertion": "Haut um die Orbita, Tarsalregion und medialer Lidwinkel",
-      "Function": "Schließt das Auge; Pars palpebralis: spontaner Lidschluss; Pars orbitalis: festes Zusammenkneifen.",
+      "Function": "Der M. orbicularis oculi schließt das Auge. Die Pars palpebralis sorgt für spontanen Lidschluss, die Pars orbitalis für festes Zusammenkneifen.",
       "Image": "",
       "region": "kopf-hals",
       "subgroup": "mimikmuskulatur",
@@ -639,7 +639,7 @@
       "easy": {
         "Origin": "Orbitarand und Tarsalregion (umgibt die Orbita ringförmig)",
         "Insertion": "Haut um die Orbita, Tarsalregion und medialer Lidwinkel",
-        "Function": "Lidschluss (willkürlich und reflektorisch)",
+        "Function": "Der M. orbicularis oculi schließt das Auge. Die Pars palpebralis sorgt für spontanen Lidschluss, die Pars orbitalis für festes Zusammenkneifen.",
         "Segments": "N. facialis (VII)"
       }
     },
@@ -650,7 +650,7 @@
       "Segments": "N. facialis (VII)",
       "Origin": "Nasenwurzel / Dorsalfläche der Nase (Nasenknorpel und Os nasale)",
       "Insertion": "Haut über der Glabella und der unteren Stirn",
-      "Function": "Zieht Haut über Glabella nach kaudal; erzeugt Querfalten an der Nasenwurzel; senkt medialen Augenbrauenanteil.",
+      "Function": "Der M. procerus zieht die Haut über der Glabella nach kaudal und erzeugt Querfalten an der Nasenwurzel; er senkt den medialen Augenbrauenanteil und antagonisiert den M. frontalis.",
       "Image": "",
       "region": "kopf-hals",
       "subgroup": "mimikmuskulatur",
@@ -673,7 +673,7 @@
       "easy": {
         "Origin": "Nasenwurzel / Dorsalfläche der Nase (Nasenknorpel und Os nasale)",
         "Insertion": "Haut über der Glabella und der unteren Stirn",
-        "Function": "Runzeln über Nasenwurzel, Senken des medialen Augenbrauenanteils",
+        "Function": "Der M. procerus zieht die Haut über der Glabella nach kaudal und erzeugt Querfalten an der Nasenwurzel; er senkt den medialen Augenbrauenanteil und antagonisiert den M. frontalis.",
         "Segments": "N. facialis (VII)"
       }
     },
@@ -752,7 +752,7 @@
       "Segments": "N. facialis (VII)",
       "Origin": "Medial unter der Augenbraue (Os frontale, Glabellabereich)",
       "Insertion": "Haut der medialen Augenbraue",
-      "Function": "Zieht Augenbraue medial und inferior; erzeugt vertikale Glabellafalten (Zornesfalte); antagonisiert M. frontalis.",
+      "Function": "Der M. corrugator supercilii zieht die Augenbraue nach medial und inferior und erzeugt senkrechte Falten an der Glabella (Zornesfalte); er drückt Anspannung und Missbilligung aus und antagonisiert den M. frontalis.",
       "Image": "",
       "region": "kopf-hals",
       "subgroup": "mimikmuskulatur",
@@ -775,7 +775,7 @@
       "easy": {
         "Origin": "Medial unter der Augenbraue (Os frontale, Glabellabereich)",
         "Insertion": "Haut der medialen Augenbraue",
-        "Function": "Zieht Augenbraue medial und inferior, Zornesfalte (vertikale Glabellafalten)",
+        "Function": "Der M. corrugator supercilii zieht die Augenbraue nach medial und inferior und erzeugt senkrechte Falten an der Glabella (Zornesfalte); er drückt Anspannung und Missbilligung aus und antagonisiert den M. frontalis.",
         "Segments": "N. facialis (VII)"
       }
     },
@@ -854,7 +854,7 @@
       "Segments": "N. facialis (VII), Ramus colli",
       "Origin": "Faszie über M. pectoralis major und M. deltoideus (Haut der Schulter/oberen Brust)",
       "Insertion": "Unterkiefer (Basis mandibulae), Mundwinkel, Gesichtshaut",
-      "Function": "Spannt Halshaut; zieht Mundwinkel und Unterlippe nach kaudolateral; unterstützt Mandibelabsenkung; Mimik: Anspannung/Erschrecken.",
+      "Function": "Das Platysma spannt die Halshaut und zieht Mundwinkel sowie Unterlippe nach kaudolateral; es unterstützt die Mandibelabsenkung bei weit geöffnetem Mund und drückt Anspannung oder Erschrecken mimisch aus.",
       "Image": "",
       "region": "kopf-hals",
       "subgroup": "halsmuskulatur",
@@ -878,7 +878,7 @@
       "easy": {
         "Origin": "Faszie über M. pectoralis major und M. deltoideus (Haut der Schulter/oberen Brust)",
         "Insertion": "Unterkiefer (Basis mandibulae), Mundwinkel, Gesichtshaut",
-        "Function": "Spannt Halshaut, zieht Mundwinkel nach kaudolateral, unterstützt Mandibelabsenkung",
+        "Function": "Das Platysma spannt die Halshaut und zieht Mundwinkel sowie Unterlippe nach kaudolateral; es unterstützt die Mandibelabsenkung bei weit geöffnetem Mund und drückt Anspannung oder Erschrecken mimisch aus.",
         "Segments": "N. facialis (VII), Ramus colli"
       }
     }

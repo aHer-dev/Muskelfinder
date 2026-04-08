@@ -29,7 +29,8 @@
       "dataFile": "wirbelsaeule.json",
       "subgroups": [
         { "id": "ruecken", "name": "Rückenmuskulatur", "joints": ["Wirbelsäule"] },
-        { "id": "bauch", "name": "Bauchmuskulatur", "joints": ["Rumpf"] }
+        { "id": "bauch", "name": "Bauchmuskulatur", "joints": ["Rumpf"] },
+        { "id": "beckenboden", "name": "Beckenboden", "joints": ["Beckenboden"] }
       ]
     },
     {

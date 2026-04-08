@@ -7,7 +7,7 @@
       "Segments": "Rr. dorsales der Spinalnerven",
       "Origin": "Procc. spinosi (zervikal, thorakal, lumbal)",
       "Insertion": "Nächsthöhere Procc. spinosi",
-      "Function": "Streckung der Wirbelsäule (segmental)",
+      "Function": "Die Mm. interspinales wirken als segmentale Extensoren: Durch die Annäherung benachbarter Dornfortsätze leisten sie einen feinen Beitrag zur Aufrichtung der Wirbelsäule und unterstützen dabei propriozeptiv die Gelenkstellung.",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "ruecken",
@@ -40,7 +40,7 @@
       "Segments": "Rr. dorsales der Spinalnerven",
       "Origin": "Procc. spinosi L3–Th10",
       "Insertion": "Procc. spinosi Th8–Th2 (M. spinalis thoracis)",
-      "Function": "Sicherung der Krümmungen, bilateral: Streckung, unilateral: Seitwärtsneigung",
+      "Function": "Die Mm. spinales sichern die natürlichen Wirbelsäulenkrümmungen. Bei beidseitiger Kontraktion richten sie die Wirbelsäule auf; wirken sie einseitig, kommt es zu einer Seitwärtsneigung in Richtung der aktiven Seite.",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "ruecken",
@@ -73,7 +73,7 @@
       "Segments": "Rr. dorsales der Spinalnerven",
       "Origin": "Procc. transversi (zervikal und lumbal)",
       "Insertion": "Nächsthöhere Procc. transversi",
-      "Function": "Unilateral: Seitwärtsneigung, bilateral: Extension",
+      "Function": "Bei einseitiger Aktivität neigen die Mm. intertransversarii mediales die Wirbelsäule zur ipsilateralen Seite. Werden sie beiderseits aktiviert, leisten sie einen ergänzenden Beitrag zur segmentalen Streckung.",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "ruecken",
@@ -106,7 +106,7 @@
       "Segments": "Rr. dorsales der Spinalnerven",
       "Origin": "Procc. transversi (zervikal, thorakal, lumbal)",
       "Insertion": "Procc. spinosi 1–2 Wirbel höher",
-      "Function": "Rotation der Wirbelsäule zur kontralateralen Seite",
+      "Function": "Die Mm. rotatores drehen jeden Wirbel zur Gegenseite hin. Da sie nur wenige Segmente überspringen, ermöglichen sie eine präzise, segmentübergreifende Rotationsbewegung der Wirbelsäule.",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "ruecken",
@@ -156,7 +156,7 @@
         "Procc. spinosi C2–Th1 (cervicis)",
         "Procc. spinosi Th1–Th6, C6–C7 (thoracis)"
       ],
-      "Function": "Bilateral: Streckung von HWS und BWS, unilateral: Rotation zur kontralateralen Seite",
+      "Function": "Beidseitig aktiv streckt der M. semispinalis HWS und BWS kräftig durch; bei einseitiger Kontraktion dreht er den Kopf und die Halswirbelsäule zur Gegenseite, was ihm eine wichtige Rolle bei Rotationsbewegungen des Kopfes verleiht.",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "ruecken",
@@ -189,7 +189,7 @@
       "Segments": "Rr. dorsales der Spinalnerven",
       "Origin": "Os sacrum (S4) bis C2, Procc. transversi",
       "Insertion": "Procc. spinosi 2–4 Wirbel höher",
-      "Function": "Bilateral: Fixation und Streckung der Wirbelsäule, unilateral: Rotation zur kontralateralen Seite",
+      "Function": "Strecken und sichern die Wirbelsäule segmentnah; einseitig Rotation zur Gegenseite",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "ruecken",
@@ -212,7 +212,7 @@
       "easy": {
         "Origin": "Os sacrum (S4) bis C2, Procc. transversi",
         "Insertion": "Procc. spinosi 2–4 Wirbel höher",
-        "Function": "Die Mm. multifidi strecken und fixieren die Wirbelsäule bei beidseitiger Aktivität; einseitig wirken sie als Rotatoren zur Gegenseite. Ihr dicht geflochtenes Muster aus kurzen und längeren Fasern macht sie zu den wichtigsten segmentalen Stabilisatoren der Wirbelsäule.",
+        "Function": "Strecken und sichern die Wirbelsäule segmentnah; einseitig Rotation zur Gegenseite",
         "Segments": "Rr. dorsales der Spinalnerven"
       }
     },
@@ -236,7 +236,7 @@
         "1.–6. Rippe (Pars thoracalis)",
         "Procc. transversi C4–C6 (Pars cervicalis)"
       ],
-      "Function": "Streckung und Seitwärtsneigung der Wirbelsäule, zervikal: Atemhilfsmuskel",
+      "Function": "Strecken den Rumpf; einseitig Seitneigung, zervikal zusätzlich Atemhilfe",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "ruecken",
@@ -259,7 +259,7 @@
       "easy": {
         "Origin": "Pars lumbalis: Sakrum und Crista iliaca | Pars thoracalis: 7.–12. Rippe",
         "Insertion": "Anguli costae Rippen 7–12 (Pars lumbalis) | 1.–6. Rippe (Pars thoracalis) | Procc. transversi C4–C6 (Pars cervicalis)",
-        "Function": "Die Mm. iliocostales strecken die Wirbelsäule bei beidseitiger Aktivität und neigen den Rumpf bei einseitiger Kontraktion zur aktiven Seite. Der zervikale Anteil beteiligt sich zusätzlich als Atemhilfsmuskel, indem er die Rippen mitanhebt.",
+        "Function": "Strecken den Rumpf; einseitig Seitneigung, zervikal zusätzlich Atemhilfe",
         "Segments": "Rr. dorsales der Spinalnerven"
       }
     },
@@ -283,7 +283,7 @@
         "1.–12. Rippe (thorakal)",
         "Proc. mastoideus (capitis)"
       ],
-      "Function": "Bilateral: Streckung von Wirbelsäule und Kopf, unilateral: Seitwärtsneigung und ipsilaterale Rotation",
+      "Function": "Die Mm. longissimi richten bei beidseitiger Aktivität die Wirbelsäule und den Kopf auf; bei einseitiger Kontraktion bewirken sie eine Lateralflexion und ipsilaterale Rotation. Die Kapitis-Anteile ermöglichen zusätzlich eine Reklination des Kopfes.",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "ruecken",
@@ -329,7 +329,7 @@
         "Proc. mastoideus, Linea nuchalis superior (capitis)",
         "Procc. transversi C1–C3 (cervicis)"
       ],
-      "Function": "Bilateral: Streckung von Kopf und HWS, unilateral: Seitwärtsneigung und ipsilaterale Rotation",
+      "Function": "Beidseitig kontrahiert streckt der M. splenius Kopf und Halswirbelsäule durch. Bei einseitiger Aktivität entsteht eine Kombination aus Seitwärtsneigung und Rotation zur gleichen Seite, womit er als Antagonist zu den kontralateralen Mm. rotatores wirkt.",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "ruecken",
@@ -362,7 +362,7 @@
       "Segments": "Nn. intercostales, Th1–Th4",
       "Origin": "Procc. spinosi C6–Th2, Lig. nuchae",
       "Insertion": "2.–5. Rippe (lateral der Anguli costae)",
-      "Function": "Hebt die Rippen, fördert die Einatmung",
+      "Function": "Hebt die oberen Rippen und unterstützt die Einatmung",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "ruecken",
@@ -384,7 +384,7 @@
       "easy": {
         "Origin": "Procc. spinosi C6–Th2, Lig. nuchae",
         "Insertion": "2.–5. Rippe (lateral der Anguli costae)",
-        "Function": "Der M. serratus posterior superior zieht die oberen Rippen nach kranial und weitet dadurch den Brustkorb; er ist ein inspiratorischer Atemhilfsmuskel, der besonders bei forcierter oder erschwerter Einatmung aktiviert wird.",
+        "Function": "Hebt die oberen Rippen und unterstützt die Einatmung",
         "Segments": "Nn. intercostales, Th1–Th4"
       }
     },
@@ -395,7 +395,7 @@
       "Segments": "Nn. intercostales, Th9–Th12",
       "Origin": "Procc. spinosi Th11–L2, Fascia thoracolumbalis",
       "Insertion": "9.–12. Rippe (lateral der Anguli costae)",
-      "Function": "Senkt die Rippen, fördert die Ausatmung",
+      "Function": "Senkt die unteren Rippen und unterstützt die forcierte Ausatmung",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "ruecken",
@@ -417,7 +417,7 @@
       "easy": {
         "Origin": "Procc. spinosi Th11–L2, Fascia thoracolumbalis",
         "Insertion": "9.–12. Rippe (lateral der Anguli costae)",
-        "Function": "Der M. serratus posterior inferior zieht die unteren Rippen nach kaudal und stabilisiert sie gegen den Zug des Zwerchfells; damit unterstützt er die aktive Ausatmung und wirkt der inspiratorischen Rippenhebung entgegen.",
+        "Function": "Senkt die unteren Rippen und unterstützt die forcierte Ausatmung",
         "Segments": "Nn. intercostales, Th9–Th12"
       }
     },
@@ -428,7 +428,7 @@
       "Segments": "Nn. intercostales, Th5–Th12",
       "Origin": "Proc. xiphoideus, Rippenknorpel 5–7",
       "Insertion": "Symphysis pubica, Os pubis",
-      "Function": "Rumpfflexion, Bauchpresse, erhöht intraabdominalen Druck",
+      "Function": "Der M. rectus abdominis beugt den Rumpf nach ventral, indem er Brustkorb und Becken annähert. Darüber hinaus erhöht er den intraabdominalen Druck und unterstützt damit Bauchpresse, Defäkation, Miktion und Geburt.",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "bauch",
@@ -450,7 +450,7 @@
       "easy": {
         "Origin": "Proc. xiphoideus, Rippenknorpel 5–7",
         "Insertion": "Symphysis pubica, Os pubis",
-        "Function": "Rumpfflexion, Bauchpresse, erhöht intraabdominalen Druck",
+        "Function": "Der M. rectus abdominis beugt den Rumpf nach ventral, indem er Brustkorb und Becken annähert. Darüber hinaus erhöht er den intraabdominalen Druck und unterstützt damit Bauchpresse, Defäkation, Miktion und Geburt.",
         "Segments": "Nn. intercostales, Th5–Th12"
       }
     },
@@ -461,7 +461,7 @@
       "Segments": "Nn. intercostales, Th5–Th12, N. iliohypogastricus, N. ilioinguinalis",
       "Origin": "Außenfläche der 5.–12. Rippe",
       "Insertion": "Crista iliaca, Lig. inguinale, Linea alba, Rektusscheide",
-      "Function": "Bilateral: Rumpfflexion, Bauchpresse. Unilateral: Lateralflexion ipsilateral, Rotation kontralateral",
+      "Function": "Beidseitig zieht der M. obliquus externus den Brustkorb nach unten und beugt den Rumpf; einseitig dreht er die Rumpfmittellinie zur Gegenseite und unterstützt die Lateralflexion zur eigenen Seite. Er ist zudem wesentlich an der Erhöhung des intraabdominalen Drucks beteiligt.",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "bauch",
@@ -483,7 +483,7 @@
       "easy": {
         "Origin": "Außenfläche der 5.–12. Rippe",
         "Insertion": "Crista iliaca, Lig. inguinale, Linea alba, Rektusscheide",
-        "Function": "Der M. rectus abdominis beugt den Rumpf nach ventral, indem er Brustkorb und Becken annähert. Darüber hinaus erhöht er den intraabdominalen Druck und unterstützt damit Bauchpresse, Defäkation, Miktion und Geburt.",
+        "Function": "Beidseitig zieht der M. obliquus externus den Brustkorb nach unten und beugt den Rumpf; einseitig dreht er die Rumpfmittellinie zur Gegenseite und unterstützt die Lateralflexion zur eigenen Seite. Er ist zudem wesentlich an der Erhöhung des intraabdominalen Drucks beteiligt.",
         "Segments": "Nn. intercostales, Th5–Th12, N. iliohypogastricus, N. ilioinguinalis"
       }
     },
@@ -494,7 +494,7 @@
       "Segments": "Nn. intercostales, Th8–Th12, N. iliohypogastricus, N. ilioinguinalis",
       "Origin": "Fascia thoracolumbalis, Crista iliaca, Lig. inguinale",
       "Insertion": "Rippenknorpel 10–12, Linea alba, Rektusscheide",
-      "Function": "Bilateral: Rumpfflexion, Bauchpresse. Unilateral: Lateralflexion ipsilateral, Rotation ipsilateral",
+      "Function": "Beidseits aktiviert beugt der M. obliquus internus den Rumpf; einseitig erzeugt er eine Rotation zur gleichen Seite sowie eine Lateralflexion ipsilateral. Zusammen mit dem M. transversus abdominis trägt er wesentlich zur Rumpfstabilisation bei.",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "bauch",
@@ -516,7 +516,7 @@
       "easy": {
         "Origin": "Fascia thoracolumbalis, Crista iliaca, Lig. inguinale",
         "Insertion": "Rippenknorpel 10–12, Linea alba, Rektusscheide",
-        "Function": "Beidseitig zieht der M. obliquus externus den Brustkorb nach unten und beugt den Rumpf; einseitig dreht er die Rumpfmittellinie zur Gegenseite und unterstützt die Lateralflexion zur eigenen Seite. Er ist zudem wesentlich an der Erhöhung des intraabdominalen Drucks beteiligt.",
+        "Function": "Beidseits aktiviert beugt der M. obliquus internus den Rumpf; einseitig erzeugt er eine Rotation zur gleichen Seite sowie eine Lateralflexion ipsilateral. Zusammen mit dem M. transversus abdominis trägt er wesentlich zur Rumpfstabilisation bei.",
         "Segments": "Nn. intercostales, Th8–Th12, N. iliohypogastricus, N. ilioinguinalis"
       }
     },
@@ -527,7 +527,7 @@
       "Segments": "Nn. intercostales, Th7–Th12, N. iliohypogastricus, N. ilioinguinalis",
       "Origin": "Innenfläche der 7.–12. Rippenknorpel, Fascia thoracolumbalis, Crista iliaca, Lig. inguinale",
       "Insertion": "Linea alba, Rektusscheide",
-      "Function": "Erhöht den intraabdominalen Druck (Bauchpresse), Core-Stabilisation",
+      "Function": "Der M. transversus abdominis umgibt den Rumpf wie ein muskuläres Korsett und erhöht bei Kontraktion den intraabdominalen Druck. Er ist der wichtigste Stabilisator der Lendenwirbelsäule und des Beckens und bildet die Grundlage jeder Core-Stabilisation.",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "bauch",
@@ -549,7 +549,7 @@
       "easy": {
         "Origin": "Innenfläche der 7.–12. Rippenknorpel, Fascia thoracolumbalis, Crista iliaca, Lig. inguinale",
         "Insertion": "Linea alba, Rektusscheide",
-        "Function": "Beidseits aktiviert beugt der M. obliquus internus den Rumpf; einseitig erzeugt er eine Rotation zur gleichen Seite sowie eine Lateralflexion ipsilateral. Zusammen mit dem M. transversus abdominis trägt er wesentlich zur Rumpfstabilisation bei.",
+        "Function": "Der M. transversus abdominis umgibt den Rumpf wie ein muskuläres Korsett und erhöht bei Kontraktion den intraabdominalen Druck. Er ist der wichtigste Stabilisator der Lendenwirbelsäule und des Beckens und bildet die Grundlage jeder Core-Stabilisation.",
         "Segments": "Nn. intercostales, Th7–Th12, N. iliohypogastricus, N. ilioinguinalis"
       }
     },
@@ -560,7 +560,7 @@
       "Segments": "Plexus lumbalis, Th12, L1–L4",
       "Origin": "Crista iliaca, Lig. iliolumbale",
       "Insertion": "12. Rippe, Procc. costarii L1–L4",
-      "Function": "Unilateral: Lateralflexion, bilateral: Extension der LWS, senkt 12. Rippe (Atemhilfe)",
+      "Function": "Hebt einseitig das Becken und neigt die LWS zur gleichen Seite; beidseitig stabilisiert er Lendenregion und 12. Rippe",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "bauch",
@@ -582,7 +582,7 @@
       "easy": {
         "Origin": "Crista iliaca, Lig. iliolumbale",
         "Insertion": "12. Rippe, Procc. costarii L1–L4",
-        "Function": "Der M. transversus abdominis umgibt den Rumpf wie ein muskuläres Korsett und erhöht bei Kontraktion den intraabdominalen Druck. Er ist der wichtigste Stabilisator der Lendenwirbelsäule und des Beckens und bildet die Grundlage jeder Core-Stabilisation.",
+        "Function": "Hebt einseitig das Becken und neigt die LWS zur gleichen Seite; beidseitig stabilisiert er Lendenregion und 12. Rippe",
         "Segments": "Plexus lumbalis, Th12, L1–L4"
       }
     },
@@ -593,7 +593,7 @@
       "Segments": "Plexus sacralis, S4, S5",
       "Origin": "Spina ischiadica",
       "Insertion": "Lateraler Rand des Os sacrum und Os coccygis (oberer Teil)",
-      "Function": "Trägt und unterstützt Beckeneingeweide, erhöht intraabdominalen Druck",
+      "Function": "Der M. coccygeus hebt den Beckenboden an und zieht das Os coccygis nach ventral; damit sichert er die Lage der Beckeneingeweide und trägt zur Erhöhung des intraabdominalen Drucks bei, etwa beim Husten, Pressen oder Niesen.",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "beckenboden",
@@ -614,7 +614,7 @@
       "easy": {
         "Origin": "Spina ischiadica",
         "Insertion": "Lateraler Rand des Os sacrum und Os coccygis (oberer Teil)",
-        "Function": "Trägt und unterstützt Beckeneingeweide, erhöht intraabdominalen Druck",
+        "Function": "Der M. coccygeus hebt den Beckenboden an und zieht das Os coccygis nach ventral; damit sichert er die Lage der Beckeneingeweide und trägt zur Erhöhung des intraabdominalen Drucks bei, etwa beim Husten, Pressen oder Niesen.",
         "Segments": "Plexus sacralis, S4, S5"
       }
     },
@@ -641,7 +641,7 @@
         "Os coccygis",
         "Lig. anococcygeum"
       ],
-      "Function": "Trägt und unterstützt Beckeneingeweide, erhöht intraabdominalen Druck, Kontinenzsicherung",
+      "Function": "Der M. levator ani bildet die muskuläre Hauptplatte des Beckenbodens und übernimmt mehrere Aufgaben gleichzeitig: Er trägt die Beckenorgane, sichert Harn- und Stuhlkontinenz und hebt bei Kontraktion den Beckenboden an. Zudem verengt er Harnröhre und Rektum reflektorisch bei intraabdominaler Druckerhöhung.",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "beckenboden",
@@ -663,7 +663,7 @@
       "easy": {
         "Origin": "M. puborectalis: Corpus ossis pubis | M. pubococcygeus: Arcus tendineus m. levatoris ani | M. iliococcygeus: Spina ischiadica",
         "Insertion": "Os coccygis | Lig. anococcygeum",
-        "Function": "Der M. coccygeus hebt den Beckenboden an und zieht das Os coccygis nach ventral; damit sichert er die Lage der Beckeneingeweide und trägt zur Erhöhung des intraabdominalen Drucks bei, etwa beim Husten, Pressen oder Niesen.",
+        "Function": "Der M. levator ani bildet die muskuläre Hauptplatte des Beckenbodens und übernimmt mehrere Aufgaben gleichzeitig: Er trägt die Beckenorgane, sichert Harn- und Stuhlkontinenz und hebt bei Kontraktion den Beckenboden an. Zudem verengt er Harnröhre und Rektum reflektorisch bei intraabdominaler Druckerhöhung.",
         "Segments": "Plexus sacralis, N. pudendus, S3, S4"
       }
     },
@@ -674,7 +674,7 @@
       "Segments": "N. pudendus, S2, S3, S4",
       "Origin": "Rami der Ossa ischii",
       "Insertion": "Rami der Ossa ischii (Gegenseite)",
-      "Function": "Trägt und unterstützt Beckeneingeweide",
+      "Function": "Spannt die tiefe Urogenitalplatte quer aus und unterstützt Kontinenz sowie Organhalt",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "beckenboden",
@@ -695,7 +695,7 @@
       "easy": {
         "Origin": "Rami der Ossa ischii",
         "Insertion": "Rami der Ossa ischii (Gegenseite)",
-        "Function": "Der M. levator ani bildet die muskuläre Hauptplatte des Beckenbodens und übernimmt mehrere Aufgaben gleichzeitig: Er trägt die Beckenorgane, sichert Harn- und Stuhlkontinenz und hebt bei Kontraktion den Beckenboden an. Zudem verengt er Harnröhre und Rektum reflektorisch bei intraabdominaler Druckerhöhung.",
+        "Function": "Spannt die tiefe Urogenitalplatte quer aus und unterstützt Kontinenz sowie Organhalt",
         "Segments": "N. pudendus, S2, S3, S4"
       }
     },
@@ -706,7 +706,7 @@
       "Segments": "N. pudendus, S2, S3, S4",
       "Origin": "Tuber ischiadicum",
       "Insertion": "Corpus perineale",
-      "Function": "Trägt und unterstützt Beckeneingeweide",
+      "Function": "Stabilisiert das perineale Zentrum und unterstützt den oberflächlichen Beckenboden",
       "Image": "",
       "region": "wirbelsaeule",
       "subgroup": "beckenboden",
@@ -727,7 +727,7 @@
       "easy": {
         "Origin": "Tuber ischiadicum",
         "Insertion": "Corpus perineale",
-        "Function": "Der M. transversus perinei profundus spannt das Diaphragma urogenitale quer aus und stabilisiert das Centrum tendineum perinei; er sichert die Lage der Beckenorgane und wirkt bei Kontinenzreflexen mit.",
+        "Function": "Stabilisiert das perineale Zentrum und unterstützt den oberflächlichen Beckenboden",
         "Segments": "N. pudendus, S2, S3, S4"
       }
     }
