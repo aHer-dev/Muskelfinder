@@ -99,6 +99,26 @@
                 <button id="flag-btn" class="flag-btn" title="Als schwierig markieren">⚑</button>
             </div>
 
+            <div id="card-image-panel" class="card-image-panel" hidden>
+                <button
+                    id="card-image-toggle"
+                    class="card-image-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="card-image-content">
+                    <span id="card-image-toggle-text">Mit Bild anzeigen</span>
+                    <span class="card-image-toggle-arrow" aria-hidden="true">▾</span>
+                </button>
+                <div id="card-image-content" class="card-image-content" aria-hidden="true">
+                    <div class="card-image-content-inner">
+                        <div id="card-image-stage" class="card-image-stage" hidden>
+                            <img id="card-image" class="card-image" alt="" decoding="async" loading="lazy">
+                        </div>
+                        <p id="card-image-message" class="card-image-message" hidden></p>
+                    </div>
+                </div>
+            </div>
+
             <!-- Lernkarte -->
             <div id="flashcard" class="flashcard" role="button" tabindex="0" aria-label="Karte aufdecken">
                 <div id="card-inner" class="flashcard-inner">

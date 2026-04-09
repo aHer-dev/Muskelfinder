@@ -1913,6 +1913,151 @@ body.page-flashcards #start-session:focus-visible:not(:disabled) {
     padding: 5px 16px;
 }
 
+/* ── Optionales Bild-Dropdown ──────────────────────────────────── */
+.card-image-panel {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-image-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 14px;
+    min-height: 38px;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--glass-border) 90%, transparent);
+    background: color-mix(in srgb, var(--glass-bg) 88%, transparent);
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transition: border-color var(--transition), background var(--transition), color var(--transition), transform var(--transition);
+}
+
+.card-image-toggle:hover,
+.card-image-toggle:focus-visible {
+    color: var(--text-primary);
+    border-color: color-mix(in srgb, var(--accent) 30%, var(--glass-border));
+    background: color-mix(in srgb, var(--glass-hover) 88%, transparent);
+    transform: translateY(-1px);
+}
+
+.card-image-toggle-arrow {
+    font-size: 12px;
+    transition: transform 180ms ease;
+}
+
+.card-image-panel.is-open .card-image-toggle-arrow {
+    transform: rotate(180deg);
+}
+
+.card-image-content {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: grid-template-rows 180ms ease, opacity 180ms ease;
+}
+
+.card-image-panel.is-open .card-image-content {
+    grid-template-rows: 1fr;
+    opacity: 1;
+}
+
+.card-image-content-inner {
+    overflow: hidden;
+}
+
+.card-image-stage {
+    width: 100%;
+    min-height: clamp(180px, 28vh, 260px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    position: relative;
+}
+
+.card-image-stage.is-loading::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-lg);
+    background:
+        linear-gradient(
+            90deg,
+            rgba(148, 163, 184, 0.08) 0%,
+            rgba(148, 163, 184, 0.18) 50%,
+            rgba(148, 163, 184, 0.08) 100%
+        );
+    background-size: 200% 100%;
+    animation: imageShimmer 1.2s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.card-image {
+    max-width: 100%;
+    max-height: min(320px, 42vh);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: calc(var(--radius-md) + 2px);
+    opacity: 0;
+    transition: opacity 180ms ease;
+}
+
+.card-image.is-ready {
+    opacity: 1;
+}
+
+.card-image-message {
+    margin: 0;
+    padding: 14px 16px;
+    width: 100%;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.5;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+}
+
+@media (max-width: 640px) {
+    .card-image-panel {
+        margin-bottom: 10px;
+    }
+
+    .card-image-stage {
+        min-height: 170px;
+        padding: 12px;
+    }
+
+    .card-image {
+        max-height: min(260px, 34vh);
+    }
+}
+
+@media (max-width: 360px) {
+    .card-image-toggle {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
 /* ── Flashcard (Flip-Karte) ─────────────────────────────────────── */
 .flashcard {
     width: 100%;

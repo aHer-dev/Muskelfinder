@@ -33,7 +33,11 @@ let session = {
     current:     null,
     stats:       { correct: 0, wrong: 0, unsure: 0 },
     flipped:     false,
-    isExtraRound: false
+    isExtraRound: false,
+    currentMuscle: null,
+    cardImages: [],
+    cardImageLoaded: false,
+    cardImageRequestId: 0
 };
 
 // ── DOM ──────────────────────────────────────────────────────────
@@ -54,6 +58,13 @@ const el = {
     resetBtn:        document.getElementById('reset-progress'),
     sessionProgress: document.getElementById('session-progress'),
     backToOverview:  document.getElementById('back-to-overview'),
+    cardImagePanel:  document.getElementById('card-image-panel'),
+    cardImageToggle: document.getElementById('card-image-toggle'),
+    cardImageToggleText: document.getElementById('card-image-toggle-text'),
+    cardImageContent: document.getElementById('card-image-content'),
+    cardImageStage:  document.getElementById('card-image-stage'),
+    cardImage:       document.getElementById('card-image'),
+    cardImageMessage: document.getElementById('card-image-message'),
     flashcard:       document.getElementById('flashcard'),
     cardInner:       document.getElementById('card-inner'),
     cardName:        document.getElementById('card-name'),
@@ -232,6 +243,10 @@ function nextCard() {
     session.flipped = false;
 
     const muscle    = allMuscles.find(m => m.Name === session.current);
+    session.currentMuscle = muscle;
+    session.cardImages = MuscleData.getImages(muscle);
+    session.cardImageLoaded = false;
+    session.cardImageRequestId++;
     const cardState = ProgressManager.getCardState(session.current);
     const done      = session.stats.correct + session.stats.wrong + session.stats.unsure;
     const total     = done + session.queue.length + 1;
@@ -255,6 +270,7 @@ function nextCard() {
     el.cardInner.style.minHeight = '';
     el.cardButtons.hidden = true;
     el.flipBtn.hidden     = false;
+    resetCardImagePanel();
 }
 
 function buildCardBack(muscle) {
@@ -305,6 +321,7 @@ function flipCard() {
     el.cardInner.classList.add('flipped');
     el.flipBtn.hidden     = true;
     el.cardButtons.hidden = false;
+    el.cardImagePanel.hidden = session.cardImages.length === 0;
 
     // Karte wächst auf die Höhe der Rückseite
     requestAnimationFrame(() => {
@@ -314,6 +331,75 @@ function flipCard() {
             el.cardInner.style.minHeight = h + 'px';
         }
     });
+}
+
+function resetCardImagePanel() {
+    if (!el.cardImagePanel) return;
+
+    el.cardImagePanel.hidden = true;
+    el.cardImagePanel.classList.remove('is-open');
+    el.cardImageToggle.setAttribute('aria-expanded', 'false');
+    el.cardImageContent.setAttribute('aria-hidden', 'true');
+    el.cardImageToggleText.textContent = 'Mit Bild anzeigen';
+    el.cardImageStage.hidden = true;
+    el.cardImageStage.classList.remove('is-loading');
+    el.cardImage.hidden = true;
+    el.cardImage.classList.remove('is-ready');
+    el.cardImage.removeAttribute('src');
+    el.cardImage.alt = '';
+    el.cardImageMessage.hidden = true;
+    el.cardImageMessage.textContent = '';
+}
+
+async function loadCardImage() {
+    if (!session.currentMuscle || session.cardImages.length === 0 || session.cardImageLoaded) {
+        return;
+    }
+
+    const requestId = ++session.cardImageRequestId;
+    const imagePath = session.cardImages[0];
+
+    el.cardImageStage.hidden = false;
+    el.cardImageStage.classList.add('is-loading');
+    el.cardImage.hidden = true;
+    el.cardImage.classList.remove('is-ready');
+    el.cardImageMessage.hidden = true;
+    el.cardImageMessage.textContent = '';
+
+    try {
+        const resolvedPath = await MuscleData.preloadImage(imagePath, { fetchPriority: 'low' });
+        if (requestId !== session.cardImageRequestId || session.currentMuscle?.Name !== session.current) return;
+
+        el.cardImage.src = resolvedPath;
+        el.cardImage.alt = `${session.currentMuscle.Name} – Muskelbild`;
+        el.cardImage.hidden = false;
+        requestAnimationFrame(() => el.cardImage.classList.add('is-ready'));
+        session.cardImageLoaded = true;
+    } catch (error) {
+        if (requestId !== session.cardImageRequestId || session.currentMuscle?.Name !== session.current) return;
+
+        el.cardImageStage.hidden = true;
+        el.cardImageMessage.textContent = 'Bild konnte gerade nicht geladen werden.';
+        el.cardImageMessage.hidden = false;
+    } finally {
+        if (requestId === session.cardImageRequestId) {
+            el.cardImageStage.classList.remove('is-loading');
+        }
+    }
+}
+
+function toggleCardImagePanel() {
+    if (el.cardImagePanel.hidden || session.cardImages.length === 0) return;
+
+    const willOpen = !el.cardImagePanel.classList.contains('is-open');
+    el.cardImagePanel.classList.toggle('is-open', willOpen);
+    el.cardImageToggle.setAttribute('aria-expanded', String(willOpen));
+    el.cardImageContent.setAttribute('aria-hidden', String(!willOpen));
+    el.cardImageToggleText.textContent = willOpen ? 'Bild ausblenden' : 'Mit Bild anzeigen';
+
+    if (willOpen) {
+        void loadCardImage();
+    }
 }
 
 function handleCorrect() {
@@ -406,6 +492,7 @@ function bindEvents() {
     el.flipBtn.addEventListener('click', flipCard);
     el.flashcard.addEventListener('click', () => { if (!session.flipped) flipCard(); });
     el.flashcard.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); if (!session.flipped) flipCard(); } });
+    el.cardImageToggle.addEventListener('click', toggleCardImagePanel);
 
     el.btnCorrect.addEventListener('click', handleCorrect);
     el.btnWrong.addEventListener('click', handleWrong);
