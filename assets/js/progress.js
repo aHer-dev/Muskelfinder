@@ -18,10 +18,11 @@
 // ════════════════════════════════════════════════════════════════
 const ProgressManager = (() => {
     const STORAGE_KEY    = 'muskelfinder_progress_v1';
+    const STATE_VERSION  = 2;
     const FACH_INTERVALS = [0, 1, 3, 7, 14, 30, 90, 180]; // Index = Fach-Nummer
 
     // state.cards = { "Muskelname": { fach, nextDue, totalCorrect, totalWrong, lastSeen } }
-    let state = { version: 1, cards: {} };
+    let state = { version: STATE_VERSION, cards: {} };
 
     // ── Intern ───────────────────────────────────────────────
     function _persist() {
@@ -29,10 +30,41 @@ const ProgressManager = (() => {
         catch (e) { console.warn('ProgressManager: Speichern fehlgeschlagen.', e); }
     }
 
+    function _isPlainObject(value) {
+        return !!value && typeof value === 'object' && !Array.isArray(value);
+    }
+
+    function _toClampedInt(value, fallback, min, max = Number.MAX_SAFE_INTEGER) {
+        const num = Number(value);
+        if (!Number.isFinite(num)) return fallback;
+        return Math.min(max, Math.max(min, Math.floor(num)));
+    }
+
+    function _toISODate(value, fallback) {
+        const ts = typeof value === 'string' ? Date.parse(value) : Number.NaN;
+        return Number.isNaN(ts) ? fallback : new Date(ts).toISOString();
+    }
+
+    function _toOptionalISODate(value) {
+        if (value == null) return null;
+        return _toISODate(value, null);
+    }
+
     function _init() {
         try {
             const raw = localStorage.getItem(STORAGE_KEY);
-            if (raw) state = JSON.parse(raw);
+            if (!raw) {
+                state = _normalizeState(state);
+                return;
+            }
+
+            const parsed = JSON.parse(raw);
+            const normalized = _normalizeState(parsed);
+            state = normalized;
+
+            if (JSON.stringify(parsed) !== JSON.stringify(normalized)) {
+                _persist();
+            }
         } catch (e) { console.warn('ProgressManager: Laden fehlgeschlagen.', e); }
     }
 
@@ -51,6 +83,39 @@ const ProgressManager = (() => {
         const d = new Date();
         d.setHours(23, 59, 59, 999);
         return d;
+    }
+
+    function _normalizeCard(card) {
+        const fallback = _newCard();
+        const fach = _toClampedInt(card?.fach, fallback.fach, 1, 7);
+
+        return {
+            fach,
+            nextDue: _toISODate(card?.nextDue, fallback.nextDue),
+            totalCorrect: _toClampedInt(card?.totalCorrect, 0, 0),
+            totalWrong: _toClampedInt(card?.totalWrong, 0, 0),
+            lastSeen: _toOptionalISODate(card?.lastSeen),
+            difficult: !!card?.difficult
+        };
+    }
+
+    function _normalizeState(rawState) {
+        if (!_isPlainObject(rawState)) {
+            return { version: STATE_VERSION, cards: {} };
+        }
+
+        const cards = {};
+        const rawCards = _isPlainObject(rawState.cards) ? rawState.cards : {};
+
+        for (const [name, card] of Object.entries(rawCards)) {
+            if (typeof name !== 'string' || name.trim() === '') continue;
+            cards[name] = _normalizeCard(card);
+        }
+
+        return {
+            version: STATE_VERSION,
+            cards
+        };
     }
 
     // ── Deck-Verwaltung ──────────────────────────────────────
@@ -223,7 +288,7 @@ const ProgressManager = (() => {
             resetCards[name] = _newCard();
         }
 
-        state = { version: 1, cards: resetCards };
+        state = { version: STATE_VERSION, cards: resetCards };
         _persist();
     }
 

@@ -49,6 +49,9 @@ const AppDialog = (() => {
 })();
 
 const BackupManager = (() => {
+    const BACKUP_TYPE = 'muskelfinder-backup';
+    const BACKUP_VERSION = 2;
+    const QUIZ_HISTORY_LIMIT = 5;
     const STORAGE_KEYS = {
         flashcards: 'muskelfinder_progress_v1',
         xp: 'muskelfinder_xp_v1',
@@ -59,49 +62,203 @@ const BackupManager = (() => {
         return !!value && typeof value === 'object' && !Array.isArray(value);
     }
 
-    function readJSON(key, fallback) {
+    function hasOwn(obj, key) {
+        return Object.prototype.hasOwnProperty.call(obj, key);
+    }
+
+    function readStorageEntry(key) {
         try {
             const raw = localStorage.getItem(key);
-            return raw ? JSON.parse(raw) : fallback;
+            if (raw == null) return { exists: false, value: null, error: null };
+            return { exists: true, value: JSON.parse(raw), error: null };
         } catch (error) {
-            return fallback;
+            return { exists: true, value: null, error };
         }
     }
 
-    function sanitizeFlashcards(data) {
-        if (!isPlainObject(data) || data.version !== 1 || !isPlainObject(data.cards)) {
+    function captureStorageSnapshot(sectionNames) {
+        const snapshot = {};
+
+        for (const sectionName of sectionNames) {
+            const storageKey = STORAGE_KEYS[sectionName];
+            snapshot[storageKey] = localStorage.getItem(storageKey);
+        }
+
+        return snapshot;
+    }
+
+    function restoreStorageSnapshot(snapshot) {
+        for (const [storageKey, rawValue] of Object.entries(snapshot)) {
+            if (rawValue == null) localStorage.removeItem(storageKey);
+            else localStorage.setItem(storageKey, rawValue);
+        }
+    }
+
+    function toNonNegativeInt(value) {
+        const num = Number(value);
+        if (!Number.isFinite(num)) return 0;
+        return Math.max(0, Math.floor(num));
+    }
+
+    function toClampedInt(value, fallback, min, max = Number.MAX_SAFE_INTEGER) {
+        const num = Number(value);
+        if (!Number.isFinite(num)) return fallback;
+        return Math.min(max, Math.max(min, Math.floor(num)));
+    }
+
+    function toISODate(value, fallback) {
+        const ts = typeof value === 'string' ? Date.parse(value) : Number.NaN;
+        return Number.isNaN(ts) ? fallback : new Date(ts).toISOString();
+    }
+
+    function toOptionalISODate(value) {
+        if (value == null) return null;
+        return toISODate(value, null);
+    }
+
+    function toOptionalDayStamp(value) {
+        return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)
+            ? value
+            : null;
+    }
+
+    function createEmptyFlashcardsState() {
+        return {
+            version: 2,
+            cards: {}
+        };
+    }
+
+    function sanitizeFlashcardCard(card) {
+        const fach = toClampedInt(card?.fach, 1, 1, 7);
+
+        return {
+            fach,
+            nextDue: toISODate(card?.nextDue, new Date().toISOString()),
+            totalCorrect: toNonNegativeInt(card?.totalCorrect),
+            totalWrong: toNonNegativeInt(card?.totalWrong),
+            lastSeen: toOptionalISODate(card?.lastSeen),
+            difficult: !!card?.difficult
+        };
+    }
+
+    function sanitizeFlashcards(data, options = {}) {
+        if (!isPlainObject(data)) {
+            if (options.strict) throw new Error('Ungültiges Lernkarten-Backup');
+            return createEmptyFlashcardsState();
+        }
+
+        const rawCards = isPlainObject(data.cards) ? data.cards : null;
+        if (options.strict && rawCards == null) {
             throw new Error('Ungültiges Lernkarten-Backup');
         }
 
-        return {
-            version: 1,
-            cards: data.cards
-        };
-    }
-
-    function sanitizeXP(data) {
-        if (!isPlainObject(data)) {
-            return { totalXP: 0, lastDailyBonus: null };
+        const cards = {};
+        for (const [name, card] of Object.entries(rawCards || {})) {
+            if (typeof name !== 'string' || name.trim() === '') continue;
+            cards[name] = sanitizeFlashcardCard(card);
         }
 
         return {
-            totalXP: Number.isFinite(data.totalXP) && data.totalXP >= 0 ? data.totalXP : 0,
-            lastDailyBonus: typeof data.lastDailyBonus === 'string' ? data.lastDailyBonus : null,
+            version: 2,
+            cards
         };
     }
 
-    function sanitizeQuizSeries(data) {
-        return isPlainObject(data) ? data : {};
+    function createEmptyXPState() {
+        return {
+            version: 2,
+            totalXP: 0,
+            lastDailyBonus: null
+        };
+    }
+
+    function sanitizeXP(data, options = {}) {
+        if (!isPlainObject(data)) {
+            if (options.strict) throw new Error('Ungültiges XP-Backup');
+            return createEmptyXPState();
+        }
+
+        return {
+            version: 2,
+            totalXP: toNonNegativeInt(data.totalXP),
+            lastDailyBonus: toOptionalDayStamp(data.lastDailyBonus),
+        };
+    }
+
+    function sanitizeQuizHistoryEntry(entry) {
+        const answered = toNonNegativeInt(entry?.answered);
+        const correct = Math.min(answered, toNonNegativeInt(entry?.correct));
+        const fallbackPct = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+        const pct = Math.min(100, toNonNegativeInt(entry?.pct ?? fallbackPct));
+
+        return { pct, correct, answered };
+    }
+
+    function sanitizeQuizSeriesEntry(stats) {
+        if (!isPlainObject(stats)) {
+            return { rounds: 0, answers: 0, correct: 0, history: [] };
+        }
+
+        const answers = toNonNegativeInt(stats.answers);
+        const correct = Math.min(answers, toNonNegativeInt(stats.correct));
+
+        return {
+            rounds: toNonNegativeInt(stats.rounds),
+            answers,
+            correct,
+            history: Array.isArray(stats.history)
+                ? stats.history.map(sanitizeQuizHistoryEntry).slice(-QUIZ_HISTORY_LIMIT)
+                : []
+        };
+    }
+
+    function sanitizeQuizSeries(data, options = {}) {
+        if (!isPlainObject(data)) {
+            if (options.strict) throw new Error('Ungültiges Quiz-Serien-Backup');
+            return {};
+        }
+
+        const normalized = {};
+        for (const [key, value] of Object.entries(data)) {
+            if (typeof key !== 'string' || key.trim() === '') continue;
+            normalized[key] = sanitizeQuizSeriesEntry(value);
+        }
+
+        return normalized;
+    }
+
+    function getSanitizedStoredSection(sectionName) {
+        const storageKey = STORAGE_KEYS[sectionName];
+        const entry = readStorageEntry(storageKey);
+
+        if (entry.error) {
+            throw new Error(`Gespeicherte Daten für "${sectionName}" sind beschädigt und konnten nicht sicher exportiert werden.`);
+        }
+
+        if (sectionName === 'flashcards') {
+            return entry.exists
+                ? sanitizeFlashcards(entry.value, { strict: true })
+                : createEmptyFlashcardsState();
+        }
+        if (sectionName === 'xp') {
+            return entry.exists
+                ? sanitizeXP(entry.value, { strict: true })
+                : createEmptyXPState();
+        }
+        return entry.exists
+            ? sanitizeQuizSeries(entry.value, { strict: true })
+            : {};
     }
 
     function buildBackupPayload() {
         return {
-            backupType: 'muskelfinder-backup',
-            version: 1,
+            backupType: BACKUP_TYPE,
+            version: BACKUP_VERSION,
             exportedAt: new Date().toISOString(),
-            flashcards: sanitizeFlashcards(readJSON(STORAGE_KEYS.flashcards, { version: 1, cards: {} })),
-            xp: sanitizeXP(readJSON(STORAGE_KEYS.xp, { totalXP: 0, lastDailyBonus: null })),
-            quizSeries: sanitizeQuizSeries(readJSON(STORAGE_KEYS.quizSeries, {})),
+            flashcards: getSanitizedStoredSection('flashcards'),
+            xp: getSanitizedStoredSection('xp'),
+            quizSeries: getSanitizedStoredSection('quizSeries'),
         };
     }
 
@@ -118,26 +275,81 @@ const BackupManager = (() => {
         URL.revokeObjectURL(url);
     }
 
-    function importBackup(jsonString) {
-        const parsed = JSON.parse(jsonString);
-
-        // Alte reine Lernkarten-Backups weiter unterstützen
-        if (isPlainObject(parsed) && parsed.version === 1 && isPlainObject(parsed.cards) && !parsed.backupType) {
-            localStorage.setItem(STORAGE_KEYS.flashcards, JSON.stringify(sanitizeFlashcards(parsed)));
-            return { type: 'legacy-flashcards' };
+    function normalizeLegacyFlashcardBackup(parsed) {
+        if (!isPlainObject(parsed) || parsed.backupType || !isPlainObject(parsed.cards)) {
+            return null;
         }
 
-        if (!isPlainObject(parsed) || parsed.backupType !== 'muskelfinder-backup') {
+        return {
+            type: 'legacy-flashcards',
+            sections: {
+                flashcards: sanitizeFlashcards(parsed, { strict: true })
+            }
+        };
+    }
+
+    function normalizeFullBackup(parsed) {
+        if (!isPlainObject(parsed) || parsed.backupType !== BACKUP_TYPE) {
             throw new Error('Unbekanntes Backup-Format');
         }
 
-        localStorage.setItem(STORAGE_KEYS.flashcards, JSON.stringify(sanitizeFlashcards(
-            isPlainObject(parsed.flashcards) ? parsed.flashcards : { version: 1, cards: {} }
-        )));
-        localStorage.setItem(STORAGE_KEYS.xp, JSON.stringify(sanitizeXP(parsed.xp)));
-        localStorage.setItem(STORAGE_KEYS.quizSeries, JSON.stringify(sanitizeQuizSeries(parsed.quizSeries)));
+        const version = toNonNegativeInt(parsed.version);
+        if (version === 0) {
+            throw new Error('Backup-Version fehlt oder ist ungültig');
+        }
+        if (version > BACKUP_VERSION) {
+            throw new Error('Dieses Backup stammt aus einer neueren Version und kann hier nicht sicher importiert werden.');
+        }
+        if (![1, 2].includes(version)) {
+            throw new Error('Nicht unterstützte Backup-Version');
+        }
 
-        return { type: 'full-backup' };
+        const requiredSections = ['flashcards', 'xp', 'quizSeries'];
+        for (const sectionName of requiredSections) {
+            if (!hasOwn(parsed, sectionName)) {
+                throw new Error(`Backup unvollständig: "${sectionName}" fehlt.`);
+            }
+        }
+
+        return {
+            type: 'full-backup',
+            sections: {
+                flashcards: sanitizeFlashcards(parsed.flashcards, { strict: true }),
+                xp: sanitizeXP(parsed.xp, { strict: true }),
+                quizSeries: sanitizeQuizSeries(parsed.quizSeries, { strict: true })
+            }
+        };
+    }
+
+    function persistSections(sections) {
+        const sectionNames = Object.keys(sections);
+        const snapshot = captureStorageSnapshot(sectionNames);
+        const serializedEntries = sectionNames.map(sectionName => [
+            STORAGE_KEYS[sectionName],
+            JSON.stringify(sections[sectionName])
+        ]);
+
+        try {
+            for (const [storageKey, serializedValue] of serializedEntries) {
+                localStorage.setItem(storageKey, serializedValue);
+            }
+        } catch (error) {
+            try {
+                restoreStorageSnapshot(snapshot);
+            } catch (rollbackError) {
+                console.error('Backup-Rollback fehlgeschlagen.', rollbackError);
+            }
+            throw error;
+        }
+    }
+
+    function importBackup(jsonString) {
+        const parsed = JSON.parse(jsonString);
+        const legacy = normalizeLegacyFlashcardBackup(parsed);
+        const normalized = legacy || normalizeFullBackup(parsed);
+
+        persistSections(normalized.sections);
+        return { type: normalized.type };
     }
 
     function resetAllProgress() {
@@ -359,7 +571,7 @@ const BackupManager = (() => {
                 </p>
                 <div class="backup-actions">
                     <button id="backup-export-btn" class="btn-primary" type="button">↓ Alles exportieren</button>
-                    <label class="btn-secondary btn-file-label" for="backup-import-file">↑ Backup importieren</label>
+                    <button id="backup-import-btn" class="btn-secondary" type="button">↑ Backup importieren</button>
                     <input type="file" id="backup-import-file" accept=".json" hidden>
                 </div>
             </div>
@@ -369,10 +581,85 @@ const BackupManager = (() => {
         function openAnleitung()  { anleitungModal.classList.add('open'); }
         function closeAnleitung() { anleitungModal.classList.remove('open'); }
         function openBackup()     { backupModal.classList.add('open'); }
+        function getBackupImportInput() {
+            return document.getElementById('backup-import-file');
+        }
         function closeBackup() {
             backupModal.classList.remove('open');
-            const input = document.getElementById('backup-import-file');
+            const input = getBackupImportInput();
             if (input) input.value = '';
+        }
+
+        async function pickBackupFile() {
+            if (typeof window.showOpenFilePicker === 'function') {
+                try {
+                    const [handle] = await window.showOpenFilePicker({
+                        multiple: false,
+                        excludeAcceptAllOption: false,
+                        types: [{
+                            description: 'JSON-Backup',
+                            accept: { 'application/json': ['.json'] }
+                        }]
+                    });
+                    return handle ? await handle.getFile() : null;
+                } catch (error) {
+                    if (error?.name === 'AbortError') return null;
+                    throw error;
+                }
+            }
+
+            const input = getBackupImportInput();
+            if (!input) return null;
+
+            return new Promise((resolve, reject) => {
+                let settled = false;
+                let focusTimeout = null;
+
+                function cleanup() {
+                    input.removeEventListener('change', handleChange);
+                    input.removeEventListener('cancel', handleCancel);
+                    window.removeEventListener('focus', handleFocus);
+                    if (focusTimeout) window.clearTimeout(focusTimeout);
+                }
+
+                function finish(value, isError = false) {
+                    if (settled) return;
+                    settled = true;
+                    cleanup();
+                    if (isError) reject(value);
+                    else resolve(value);
+                }
+
+                function handleChange(event) {
+                    const file = event.target.files?.[0] || null;
+                    input.value = '';
+                    finish(file);
+                }
+
+                function handleCancel() {
+                    input.value = '';
+                    finish(null);
+                }
+
+                function handleFocus() {
+                    focusTimeout = window.setTimeout(() => {
+                        if (!input.files || input.files.length === 0) {
+                            finish(null);
+                        }
+                    }, 300);
+                }
+
+                input.value = '';
+                input.addEventListener('change', handleChange, { once: true });
+                input.addEventListener('cancel', handleCancel, { once: true });
+                window.addEventListener('focus', handleFocus, { once: true });
+
+                try {
+                    input.click();
+                } catch (error) {
+                    finish(error, true);
+                }
+            });
         }
 
         document.getElementById('anleitung-btn').addEventListener('click', function () {
@@ -398,17 +685,21 @@ const BackupManager = (() => {
             if (e.key === 'Escape') closeBackup();
         });
 
-        document.getElementById('backup-export-btn').addEventListener('click', function () {
-            BackupManager.downloadBackup();
+        document.getElementById('backup-export-btn').addEventListener('click', async function () {
+            try {
+                BackupManager.downloadBackup();
+            } catch (error) {
+                console.error('Backup-Export fehlgeschlagen.', error);
+                await AppDialog.alert(error?.message || 'Fehler: Das Backup konnte nicht erstellt werden.');
+            }
         });
 
-        document.getElementById('backup-import-file').addEventListener('change', async function (event) {
-            const file = event.target.files[0];
+        document.getElementById('backup-import-btn').addEventListener('click', async function () {
+            const file = await pickBackupFile();
             if (!file) return;
 
             const confirmed = await AppDialog.confirm('Backup importieren und den aktuellen gespeicherten Lernstand überschreiben?');
             if (!confirmed) {
-                event.target.value = '';
                 return;
             }
 
@@ -423,8 +714,7 @@ const BackupManager = (() => {
                 window.location.reload();
             } catch (error) {
                 console.error('Backup-Import fehlgeschlagen.', error);
-                await AppDialog.alert('Fehler: Die Datei konnte nicht importiert werden.');
-                event.target.value = '';
+                await AppDialog.alert(error?.message || 'Fehler: Die Datei konnte nicht importiert werden.');
             }
         });
 

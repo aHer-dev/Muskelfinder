@@ -38,8 +38,9 @@ function loadQuiz() {
     if (QuizSession.isComplete()) { QuizSession.showSummary(); return; }
 
     const pool = QuizFilter.getPool();
+    const usable = pool.filter(m => m.Origin && m.Insertion);
 
-    if (pool.length < 4) {
+    if (usable.length < 4) {
         document.getElementById('options').innerHTML =
             '<p class="quiz-empty-hint">Zu wenige Muskeln — bitte Auswahl auf der <a href="quiz.html">Lernseite</a> anpassen.</p>';
         document.getElementById('quizHead').textContent  = '⚠️ Zu wenige Muskeln';
@@ -48,7 +49,8 @@ function loadQuiz() {
         return;
     }
 
-    currentMuscle = pool[Math.floor(Math.random() * pool.length)];
+    currentMuscle = QuizSession.pickNext(usable);
+    if (!currentMuscle) return;
     renderQuiz(currentMuscle);
 }
 

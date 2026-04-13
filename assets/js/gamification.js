@@ -17,6 +17,7 @@
 
 const Gamification = (() => {
     const STORAGE_KEY = 'muskelfinder_xp_v1';
+    const STATE_VERSION = 2;
 
     // ── Level-Kurve ───────────────────────────────────────────────
     const XP_SCALE    = 50;
@@ -44,19 +45,69 @@ const Gamification = (() => {
 
     // ── State ─────────────────────────────────────────────────────
     let _state = {
+        version:        STATE_VERSION,
         totalXP:        0,
         lastDailyBonus: null,   // "YYYY-MM-DD"
     };
 
+    function _isPlainObject(value) {
+        return !!value && typeof value === 'object' && !Array.isArray(value);
+    }
+
+    function _toNonNegativeInt(value, fallback = 0) {
+        const num = Number(value);
+        if (!Number.isFinite(num)) return fallback;
+        return Math.max(0, Math.floor(num));
+    }
+
+    function _normalizeDailyBonus(value) {
+        return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)
+            ? value
+            : null;
+    }
+
+    function _normalizeState(rawState) {
+        if (!_isPlainObject(rawState)) {
+            return {
+                version: STATE_VERSION,
+                totalXP: 0,
+                lastDailyBonus: null
+            };
+        }
+
+        return {
+            version: STATE_VERSION,
+            totalXP: _toNonNegativeInt(rawState.totalXP, 0),
+            lastDailyBonus: _normalizeDailyBonus(rawState.lastDailyBonus)
+        };
+    }
+
     function _load() {
         try {
             const raw = localStorage.getItem(STORAGE_KEY);
-            if (raw) _state = { ..._state, ...JSON.parse(raw) };
-        } catch (e) { /* ignore */ }
+            if (!raw) {
+                _state = _normalizeState(_state);
+                return;
+            }
+
+            const parsed = JSON.parse(raw);
+            const normalized = _normalizeState(parsed);
+            _state = normalized;
+
+            if (JSON.stringify(parsed) !== JSON.stringify(normalized)) {
+                _save();
+            }
+        } catch (e) {
+            _state = _normalizeState(null);
+        }
     }
 
     function _save() {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(_state));
+        try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(_state));
+        } catch (error) {
+            console.warn('Gamification: Speichern fehlgeschlagen.', error);
+        }
     }
 
     // ── Interne XP-Vergabe ────────────────────────────────────────

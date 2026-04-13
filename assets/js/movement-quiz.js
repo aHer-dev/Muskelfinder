@@ -38,14 +38,9 @@ function loadQuiz() {
     if (QuizSession.isComplete()) { QuizSession.showSummary(); return; }
 
     const pool = QuizFilter.getPool();
-
-    const effectiveMode = _mode === 'gemischt'
-        ? (Math.random() < 0.5 ? 'funktion-muskel' : 'muskel-funktion')
-        : _mode;
-
-    const usable = pool.filter(m =>
-        effectiveMode === 'funktion-muskel' ? !!m.Function : !!m.Movements
-    );
+    const usable = _mode === 'gemischt'
+        ? pool.filter(m => m.Function || m.Movements)
+        : pool.filter(m => _mode === 'funktion-muskel' ? !!m.Function : !!m.Movements);
 
     if (usable.length < 4) {
         document.getElementById('quizHead').textContent = '⚠️ Zu wenige Muskeln';
@@ -55,8 +50,21 @@ function loadQuiz() {
         return;
     }
 
-    const muscle = usable[Math.floor(Math.random() * usable.length)];
+    const muscle = QuizSession.pickNext(usable);
+    if (!muscle) return;
+
+    const effectiveMode = _mode === 'gemischt'
+        ? _pickMixedMode(muscle)
+        : _mode;
+
     renderQuiz(muscle, effectiveMode, pool);
+}
+
+function _pickMixedMode(muscle) {
+    const availableModes = [];
+    if (muscle.Function)  availableModes.push('funktion-muskel');
+    if (muscle.Movements) availableModes.push('muskel-funktion');
+    return availableModes[Math.floor(Math.random() * availableModes.length)];
 }
 
 function renderQuiz(muscle, effectiveMode, pool) {

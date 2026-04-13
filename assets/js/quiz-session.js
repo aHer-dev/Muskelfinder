@@ -23,6 +23,8 @@ const QuizSession = (() => {
     let _wrongItems = []; // [{ name, label }]  label = korrekte Antwort als Text
     let _seriesStats = createEmptySeriesStats();
     let _roundCommitted = false;
+    let _askedIds = new Set();
+    let _lastAskedId = null;
 
     function createEmptySeriesStats() {
         return {
@@ -53,11 +55,48 @@ const QuizSession = (() => {
         return '{"deckOnly":false,"regions":[],"subgroups":[]}';
     }
 
+    function isPlainObject(value) {
+        return !!value && typeof value === 'object' && !Array.isArray(value);
+    }
+
+    function toNonNegativeInt(value) {
+        const num = Number(value);
+        if (!Number.isFinite(num)) return 0;
+        return Math.max(0, Math.floor(num));
+    }
+
+    function normalizeHistoryEntry(entry) {
+        const answered = toNonNegativeInt(entry?.answered);
+        const correct = Math.min(answered, toNonNegativeInt(entry?.correct));
+        const fallbackPct = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+        const pct = Math.min(100, toNonNegativeInt(entry?.pct ?? fallbackPct));
+
+        return { pct, correct, answered };
+    }
+
+    function normalizeSeriesStore(store) {
+        if (!isPlainObject(store)) return {};
+
+        const normalized = {};
+        for (const [key, value] of Object.entries(store)) {
+            if (typeof key !== 'string' || key.trim() === '') continue;
+            normalized[key] = normalizeSeriesStats(value);
+        }
+
+        return normalized;
+    }
+
     function getSeriesStore() {
         try {
             const raw = localStorage.getItem(SERIES_STORAGE_KEY);
             const parsed = raw ? JSON.parse(raw) : {};
-            return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
+            const normalized = normalizeSeriesStore(parsed);
+
+            if (raw && JSON.stringify(parsed) !== JSON.stringify(normalized)) {
+                saveSeriesStore(normalized);
+            }
+
+            return normalized;
         } catch (error) {
             console.warn('QuizSession: Serienstatistik konnte nicht geladen werden.', error);
             return {};
@@ -65,24 +104,25 @@ const QuizSession = (() => {
     }
 
     function saveSeriesStore(store) {
-        localStorage.setItem(SERIES_STORAGE_KEY, JSON.stringify(store));
+        try {
+            localStorage.setItem(SERIES_STORAGE_KEY, JSON.stringify(store));
+        } catch (error) {
+            console.warn('QuizSession: Serienstatistik konnte nicht gespeichert werden.', error);
+        }
     }
 
     function normalizeSeriesStats(stats) {
-        if (!stats || typeof stats !== 'object') return createEmptySeriesStats();
+        if (!isPlainObject(stats)) return createEmptySeriesStats();
+
+        const answers = toNonNegativeInt(stats.answers);
+        const correct = Math.min(answers, toNonNegativeInt(stats.correct));
 
         return {
-            rounds: Number.isFinite(stats.rounds) ? stats.rounds : 0,
-            answers: Number.isFinite(stats.answers) ? stats.answers : 0,
-            correct: Number.isFinite(stats.correct) ? stats.correct : 0,
+            rounds: toNonNegativeInt(stats.rounds),
+            answers,
+            correct,
             history: Array.isArray(stats.history)
-                ? stats.history
-                    .map(entry => ({
-                        pct: Number.isFinite(entry?.pct) ? entry.pct : 0,
-                        correct: Number.isFinite(entry?.correct) ? entry.correct : 0,
-                        answered: Number.isFinite(entry?.answered) ? entry.answered : 0
-                    }))
-                    .slice(-HISTORY_LIMIT)
+                ? stats.history.map(normalizeHistoryEntry).slice(-HISTORY_LIMIT)
                 : []
         };
     }
@@ -193,6 +233,38 @@ const QuizSession = (() => {
         document.dispatchEvent(new Event('quiz-restart'));
     }
 
+    function _itemId(item) {
+        if (item && typeof item === 'object') return item.Name || item.id || '';
+        return String(item || '');
+    }
+
+    /**
+     * Wählt innerhalb einer Runde möglichst einen noch nicht gezeigten Eintrag.
+     * Sobald alle verfügbaren Einträge schon drankamen, sind Wiederholungen
+     * erlaubt, aber direkte Doppelungen werden wenn möglich vermieden.
+     */
+    function pickNext(pool) {
+        if (!Array.isArray(pool) || pool.length === 0) return null;
+
+        let candidates = pool.filter(item => !_askedIds.has(_itemId(item)));
+        if (candidates.length === 0) candidates = [...pool];
+
+        if (candidates.length > 1 && _lastAskedId) {
+            const withoutLast = candidates.filter(item => _itemId(item) !== _lastAskedId);
+            if (withoutLast.length > 0) candidates = withoutLast;
+        }
+
+        const next = candidates[Math.floor(Math.random() * candidates.length)];
+        const nextId = _itemId(next);
+
+        if (nextId) {
+            _askedIds.add(nextId);
+            _lastAskedId = nextId;
+        }
+
+        return next;
+    }
+
     // ── Sitzung starten ──────────────────────────────────────────
     function init(basePath, quizType) {
         _basePath  = basePath || '';
@@ -203,6 +275,8 @@ const QuizSession = (() => {
         _wrongItems = [];
         _seriesStats = loadSeriesStats();
         _roundCommitted = false;
+        _askedIds = new Set();
+        _lastAskedId = null;
         resetRoundStatsBar();
         updateProgress();
     }
@@ -352,6 +426,7 @@ const QuizSession = (() => {
         isComplete,
         showSummary,
         updateProgress,
+        pickNext,
         getAllSeriesStats,
         getAggregatedStatsByQuizType
     };

@@ -26,7 +26,11 @@ const QuizFilter = (() => {
         try {
             const raw = localStorage.getItem(STORAGE_KEY);
             if (raw) _state = { ..._state, ...JSON.parse(raw) };
+            _state.deckOnly = !!_state.deckOnly;
+            if (!Array.isArray(_state.regions)) _state.regions = [];
+            else _state.regions = _state.regions.filter(id => typeof id === 'string' && id.trim() !== '');
             if (!Array.isArray(_state.subgroups)) _state.subgroups = [];
+            else _state.subgroups = _state.subgroups.filter(id => typeof id === 'string' && id.trim() !== '');
         } catch (e) { /* ignore */ }
     }
 

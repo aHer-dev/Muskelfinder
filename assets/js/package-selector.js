@@ -1,10 +1,18 @@
 const PackageSelector = (() => {
     const STORAGE_KEY = 'muskelfinder_selected_packages';
+    const DEFAULT_SELECTION = ['obere-extremitaet'];
 
     function getSaved() {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        const parsed = saved ? JSON.parse(saved) : ['obere-extremitaet'];
-        return parsed.length > 0 ? parsed : ['obere-extremitaet'];
+        try {
+            const saved = localStorage.getItem(STORAGE_KEY);
+            const parsed = saved ? JSON.parse(saved) : DEFAULT_SELECTION;
+            const normalized = Array.isArray(parsed)
+                ? parsed.filter(id => typeof id === 'string' && id.trim() !== '')
+                : DEFAULT_SELECTION;
+            return normalized.length > 0 ? normalized : DEFAULT_SELECTION;
+        } catch (error) {
+            return DEFAULT_SELECTION;
+        }
     }
 
     function save(regionIds) {

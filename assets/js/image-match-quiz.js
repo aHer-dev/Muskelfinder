@@ -48,7 +48,8 @@ function loadQuiz() {
         return;
     }
 
-    currentMuscle = withImage[Math.floor(Math.random() * withImage.length)];
+    currentMuscle = QuizSession.pickNext(withImage);
+    if (!currentMuscle) return;
     const effectiveMode = quizMode === 'gemischt'
         ? (Math.random() < 0.5 ? 'bild-name' : 'name-bild')
         : quizMode;
